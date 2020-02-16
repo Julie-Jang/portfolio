@@ -1,6 +1,6 @@
 /*@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");*/
-body {font-family: inherit, sans-serif;}
-h1, h2, h3 { font-family: Impact, Charcoal, sans-serif; text-align:right; font-size:6rem; font-weight:800;}
+body {font-family: inherit, sans-serif; font-size:12px;}
+h1, h2, h3 { font-family: Impact, Charcoal, sans-serif;}
 H2 {color:#3046c5;}
 header h2 {color:#CEC8FF;}
 footer {background-image :linear-gradient(#CEC8FF, white); padding: 20px 0; }
@@ -10,7 +10,7 @@ footer {background-image :linear-gradient(#CEC8FF, white); padding: 20px 0; }
 .site-footer{background-image: linear-gradient(#b7a8f8, white);padding: 20px 0px;}
 img {width:100%; height:auto;}
 
-@import url('https://fonts.googleapis.com/css?family=Barlow');
+/*@import url('https://fonts.googleapis.com/css?family=Barlow');*/
 
 body {
 	background: url('../img/01.png') no-repeat center center fixed; 
@@ -56,11 +56,11 @@ h1.main, p.demos {
 }
 .sp-container h2 {
 	position: absolute;
-	top: 50%;
+	top: 30%;
 	line-height: 100px;
 	height: 90px;
-	margin-top: -50px;
-	font-size: 90px;
+	/*margin-top: -50px;*/
+	font-size: 5rem;
 	width: 100%;
 	text-align: center;
 	color: transparent;
@@ -81,19 +81,18 @@ h1.main, p.demos {
 	-ms-animation-delay: 3s;
 	animation-delay: 3s;
 }
-/*.sp-container h2.frame-3 {
+.sp-container h2.frame-3 {
 	-webkit-animation-delay: 6s;
 	-moz-animation-delay: 6s;
 	-ms-animation-delay: 6s;
 	animation-delay: 6s;
 }
 .sp-container h2.frame-4 {
-	font-size: 200px;
 	-webkit-animation-delay: 9s;
 	-moz-animation-delay: 9s;
 	-ms-animation-delay: 9s;
 	animation-delay: 9s;
-}*/
+}
 .sp-container h2.frame-5 {
 	-webkit-animation: none;
 	-moz-animation: none;
@@ -101,7 +100,7 @@ h1.main, p.demos {
 	animation: none;
 	color: transparent;
     text-shadow: 0px 0px 1px #fff;
-    top:30% !important;
+    top:5% !important;
 }
 .sp-container h2.frame-5 span {
 	-webkit-animation: blurFadeIn 3s ease-in 12s backwards;
@@ -147,7 +146,7 @@ h1.main, p.demos {
 .sp-circle-link {
 	position: absolute;
 	left: 50%;
-	bottom: 100px;
+	bottom: 15%;
 	margin-left: -50px;
 	text-align: center;
 	line-height: 100px;
@@ -155,7 +154,7 @@ h1.main, p.demos {
 	height: 100px;
 	background: #fff;
 	color: #3f1616;
-	font-size: 25px;
+	font-size: 1rem;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
