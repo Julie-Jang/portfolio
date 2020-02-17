@@ -12,7 +12,7 @@ padding:0 30px; margin:10px 0;
 -webkit-animation-name: slider; 
 -webkit-animation-duration: 2s;
 -webkit-animation-timing-function:ease-in-out;
-opacity: 0;
+opacity: 1;
 }
 
 #texteffect h2.word2{animation-delay:0.5s; -webkit-animation-delay:0.5s;}
@@ -42,7 +42,7 @@ opacity: 0;
 @media screen and (max-width:768px) {
 	h1 img {width:50%; position:relative;}
 	#texteffect {position:fixed; top:0; left:100px;}
-	#texteffect h2{font-size:1.5rem; float:left; padding:0; margin:10px 0;}
+	#texteffect h2{font-size:1.5rem; float:left; padding:0 10px; margin:10px 0;}
 	.gallary { width:95%; margin:0 auto; position:relative;right:0;top:75px;}
 }
 
