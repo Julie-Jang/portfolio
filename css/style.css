@@ -2,7 +2,7 @@
 /*@import url('https://fonts.googleapis.com/css?family=Barlow');*/
 * {margin:0; padding:0; border:0;}
 body {font-family: 'Barlow', sans-serif; font-size:12px; background:url('../img/bg2.gif') repeat-x bottom;background-attachment: fixed;}
-
+.container {padding:0 !important;}
 /* header*/
 h1 {position:fixed; top:0; left:0;}
 #texteffect {position:fixed; top:20%}
@@ -70,10 +70,15 @@ opacity: 0.3;
 			filter: grayscale(1) blur(5px);
 }
 
+footer {position:fixed; bottom:0; left:20px;}
+footer .btn-link {color:black;}
 /* Media queries */
 @media screen and (max-width:768px) {
+	header {background:white; position:fixed; height:65px; width:100%;z-index:10;}
 	h1 img {width:50%; position:relative;}
 	#texteffect {position:fixed; top:10px; left:80px;}
 	#texteffect h2{font-size:1.3rem; float:left; padding:0 5px; margin:10px 0; letter-spacing:0.1rem;}
 	.gallary { width:95%; margin:0 auto; position:relative;right:0;top:75px;}
+	footer {position:relative; width:100%; text-align: center; top:0; left: 0; padding-top:100px;}
+
 }
