@@ -56,13 +56,15 @@ opacity: 0;
 
 .gallary{
 	position:absolute;
-	top:50px; right:100px;
-	width:70%;
-	min-height:600px;
+	top:20px; right:20px;
+	width:80%;
+	text-align:right;
 }
 
+.gallary li {display:inline-block;vertical-align: top; margin-bottom:10px;}
+
 .gallary img{
-	position:absolute;
+	/*position:absolute;*/
 	z-index:1;
 	width:95%; height:auto; 
 	margin:0;
