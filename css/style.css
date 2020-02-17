@@ -12,7 +12,7 @@ padding:0 30px; margin:10px 0;
 -webkit-animation-name: slider; 
 -webkit-animation-duration: 2s;
 -webkit-animation-timing-function:ease-in-out;
-opacity: 1;
+opacity: 0.2;
 }
 
 #texteffect h2.word2{animation-delay:0.5s; -webkit-animation-delay:0.5s;}
@@ -27,7 +27,7 @@ opacity: 1;
 #texteffect h1.word10{animation-delay:4.5s; -webkit-animation-delay:4.5s;}
 */
 @-webkit-keyframes slider {
-       from {-webkit-transform: translateX(175px); opacity: 0;}
+       from {-webkit-transform: translateX(150px); opacity: 0;}
        to{-webkit-transform: translateX(0px); opacity: 1;}        
 }
 
