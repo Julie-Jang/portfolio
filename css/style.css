@@ -1,18 +1,18 @@
 /*@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css");*/
 /*@import url('https://fonts.googleapis.com/css?family=Barlow');*/
 * {margin:0; padding:0; border:0;}
-body {font-family: 'Barlow', sans-serif; font-size:12px;}
-h1 {margin:0}
+body {font-family: 'Barlow', sans-serif; font-size:12px; background:url('../img/bg2.gif') repeat-x bottom;background-attachment: fixed;}
 
-
+/* header*/
+h1 {position:fixed; top:0; left:0;}
 #texteffect {position:fixed; top:20%}
 #texteffect h2{
 font-family: 'Shadows Into Light', cursive;
-padding:0 10px; margin:10px 0;
+padding:0 30px; margin:10px 0;
 -webkit-animation-name: slider; 
--webkit-animation-duration: 2s;
+-webkit-animation-duration: 2s;}
 -webkit-animation-timing-function: ease-in-out;
-opacity: 1;
+opacity: 0;
 }
 
 #texteffect h2.word2{animation-delay:0.5s; -webkit-animation-delay:0.5s;}
@@ -30,3 +30,64 @@ opacity: 1;
        from {-webkit-transform: translateX(175px); opacity: 0;}
        to{-webkit-transform: translateX(0px); opacity: 1;}        
 }
+
+/* gallary */
+.gallary img:hover{
+	-webkit-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		 -ms-transform: scale(1.5);
+		  -o-transform: scale(1.5);
+			 transform: scale(1.5);
+}
+.gallary img{
+	-webkit-transition: all .5s cubic-bezier( .6, 2, .4, 1);
+		-moz-transition: all .5s cubic-bezier( .6, 2, .4, 1);
+		 -ms-transition: all .5s cubic-bezier( .6, 2, .4, 1);
+		  -o-transition: all .5s cubic-bezier( .6, 2, .4, 1);
+			 transition: all .5s cubic-bezier( .6, 2, .4, 1);
+}
+.gallary:hover img:not(:hover){
+	-webkit-filter: grayscale(1) blur(5px);
+		-moz-filter: grayscale(1) blur(5px);
+			-ms-filter: grayscale(1) blur(5px);
+			-o-filter: grayscale(1) blur(5px);
+				filter: grayscale(1) blur(5px);
+}
+
+.gallary{
+	position:absolute;
+	top:50px; right:100px;
+	width:70%;
+	min-height:600px;
+}
+
+.gallary img{
+	position:absolute;
+	z-index:1;
+	width:95%; height:auto; 
+	margin:0;
+	box-shadow:0 0 3px black;
+	-webkit-transition:all .5s cubic-bezier(.6,2,.4,1);
+	-moz-transition:all .5s cubic-bezier(.6,2,.4,1);
+		-ms-transition:all .5s cubic-bezier(.6,2,.4,1);
+		-o-transition:all .5s cubic-bezier(.6,2,.4,1);
+			transition:all .5s cubic-bezier(.6,2,.4,1);
+}
+.gallary li:hover img{
+	z-index:5;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-o-transform: scale(1.5);
+			transform: scale(1.5);
+	box-shadow:0 0 10px black;
+}
+.gallary:hover li:not(:hover) img{
+	-webkit-filter: grayscale(1) blur(5px);
+	-moz-filter: grayscale(1) blur(5px);
+		-ms-filter: grayscale(1) blur(5px);
+		-o-filter: grayscale(1) blur(5px);
+			filter: grayscale(1) blur(5px);
+}
+
+
