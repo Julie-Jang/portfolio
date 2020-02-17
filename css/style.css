@@ -12,7 +12,7 @@ padding:0 30px; margin:10px 0;
 -webkit-animation-name: slider; 
 -webkit-animation-duration: 2s;
 -webkit-animation-timing-function:ease-in-out;
-opacity: 0.2;
+opacity: 0.3;
 }
 
 #texteffect h2.word2{animation-delay:0.5s; -webkit-animation-delay:0.5s;}
