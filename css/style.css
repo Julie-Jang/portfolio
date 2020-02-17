@@ -10,8 +10,8 @@ h1 {position:fixed; top:0; left:0;}
 font-family: 'Shadows Into Light', cursive;
 padding:0 30px; margin:10px 0;
 -webkit-animation-name: slider; 
--webkit-animation-duration: 2s;}
--webkit-animation-timing-function: ease-in-out;
+-webkit-animation-duration: 2s;
+-webkit-animation-timing-function:ease-in-out;
 opacity: 0;
 }
 
@@ -32,28 +32,6 @@ opacity: 0;
 }
 
 /* gallary */
-.gallary img:hover{
-	-webkit-transform: scale(1.5);
-		-moz-transform: scale(1.5);
-		 -ms-transform: scale(1.5);
-		  -o-transform: scale(1.5);
-			 transform: scale(1.5);
-}
-.gallary img{
-	-webkit-transition: all .5s cubic-bezier( .6, 2, .4, 1);
-		-moz-transition: all .5s cubic-bezier( .6, 2, .4, 1);
-		 -ms-transition: all .5s cubic-bezier( .6, 2, .4, 1);
-		  -o-transition: all .5s cubic-bezier( .6, 2, .4, 1);
-			 transition: all .5s cubic-bezier( .6, 2, .4, 1);
-}
-.gallary:hover img:not(:hover){
-	-webkit-filter: grayscale(1) blur(5px);
-		-moz-filter: grayscale(1) blur(5px);
-			-ms-filter: grayscale(1) blur(5px);
-			-o-filter: grayscale(1) blur(5px);
-				filter: grayscale(1) blur(5px);
-}
-
 .gallary{
 	position:absolute;
 	top:20px; right:20px;
@@ -66,7 +44,7 @@ opacity: 0;
 .gallary img{
 	/*position:absolute;*/
 	z-index:1;
-	width:95%; height:auto; 
+	width:100%; height:auto; 
 	margin:0;
 	box-shadow:0 0 3px black;
 	-webkit-transition:all .5s cubic-bezier(.6,2,.4,1);
