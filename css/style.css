@@ -84,7 +84,7 @@ opacity: 0.3;
 .w3-modal img {width:auto !important; height:auto; max-height:800px; cursor: pointer; margin:0 auto;}
 .w3-button {background-color: rgba(255, 254, 254, 0.5); z-index:1;}
 
-footer {position:fixed; bottom:20px; left:20px; z-index:-1;}
+footer {position:fixed; bottom:20px; left:20px;}
 footer .btn-link {background-color: rgba(255, 254, 254, 0.5); color:black;}
 footer span {background-color: rgba(255, 254, 254, 0.5); color:black;}
 /* Media queries */
