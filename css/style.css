@@ -31,7 +31,6 @@ opacity: 0.3;
 	float:right;
   }
   
-  /* Create four equal gallarys that sits next to each other */
   .gallary {
 	-ms-flex: 25%; /* IE10 */
 	flex: 25%;
