@@ -76,7 +76,7 @@ opacity: 0.3;
 			filter: grayscale(1) blur(5px);
 }
 */
-.w3-modal {padding-top:0; height:auto;}
+.w3-modal {padding-top:0; height:100%; z-index:11;}
 .w3-modal-content {width:90% !important; background:none; text-align:center;}
 .w3-modal img {width:auto !important; height:auto; max-height:800px;}
 
@@ -85,8 +85,8 @@ footer .btn-link {background-color: rgba(255, 254, 254, 0.5); color:black;}
 footer span {background-color: rgba(255, 254, 254, 0.5); color:black;}
 /* Media queries */
 @media screen and (max-width:768px) {
-	.container {width:100% !important; float:none !important;}
-	header {background:white; position:fixed; height:65px; width:100%;z-index:10;}
+	.container {width:100% !important; float:none !important; padding-top:70px;}
+	header {background:white; position:fixed; height:75px; width:100%;z-index:10;}
 	h1 img {width:50%; position:relative;}
 	#texteffect {position:fixed; top:10px; left:80px;}
 	#texteffect h2{font-size:1.3rem; float:left; padding:0 5px; margin:10px 0; letter-spacing:0.1rem;}
@@ -98,6 +98,8 @@ footer span {background-color: rgba(255, 254, 254, 0.5); color:black;}
 	  width:100% !important; 
 	  float:none !important;
 	}
+	.w3-modal {padding-top:100px !important;}
+	.w3-modal img{width:100% !important; height:100%; max-width:768px; max-height:800px;}
   }
   
   /* Responsive layout - makes the two gallarys stack on top of each other instead of next to each other */
@@ -107,5 +109,6 @@ footer span {background-color: rgba(255, 254, 254, 0.5); color:black;}
 	  flex: 100%;
 	  max-width: 100%;
 	}
+	.w3-modal {display:none !important;}
   }
   
