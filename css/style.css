@@ -77,8 +77,9 @@ opacity: 0.3;
 }
 
 
-footer {position:fixed; bottom:0; left:20px;}
-footer .btn-link {color:black;}
+footer {position:fixed; bottom:20px; left:20px; z-index:-1;}
+footer .btn-link {background-color: rgba(255, 254, 254, 0.5); color:black;}
+footer span {background-color: rgba(255, 254, 254, 0.5); color:black;}
 /* Media queries */
 @media screen and (max-width:768px) {
 	.container {width:100% !important; float:none !important;}
@@ -86,7 +87,7 @@ footer .btn-link {color:black;}
 	h1 img {width:50%; position:relative;}
 	#texteffect {position:fixed; top:10px; left:80px;}
 	#texteffect h2{font-size:1.3rem; float:left; padding:0 5px; margin:10px 0; letter-spacing:0.1rem;}
-	footer {clear:both; position:relative; width:100%; text-align: center; top:0; left: 0; padding-top:100px;}
+	footer {clear:both; position:relative; width:100%; text-align: center; left: 0; padding-top:100px;}
 	.gallary {
 	  -ms-flex: 50%;
 	  flex: 50%;
