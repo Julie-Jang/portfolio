@@ -11,8 +11,8 @@ padding:0 30px; margin:10px 0;
 opacity: 0.3;
 }
 
-#texteffect h2.word2{font-size:1.3rem; animation-delay:0.5s; -webkit-animation-delay:0.5s;}
-#texteffect h2.word3{font-size:1.3rem; animation-delay:1.0s; -webkit-animation-delay:1.0s;}
+#texteffect h2.word2{font-size:1.4rem; animation-delay:0.5s; -webkit-animation-delay:0.5s;}
+#texteffect h2.word3{font-size:1.4rem; animation-delay:1.0s; -webkit-animation-delay:1.0s;}
 #texteffect h2.word4{font-size:1.5rem;margin-top:40px; animation-delay:1.5s; -webkit-animation-delay:1.5s;}
 #texteffect h2.word5{font-size:1.5rem;animation-delay:2.0s; -webkit-animation-delay:2.0s;}
 #texteffect h2.word6{font-size:1.5rem;animation-delay:2.5s; -webkit-animation-delay:2.5s;}
