@@ -60,13 +60,14 @@ opacity: 0.3;
 }
 .gallary li:hover img{
 	z-index:5;
-	-webkit-transform: scale(1.5);
-	-moz-transform: scale(1.5);
-		-ms-transform: scale(1.5);
-		-o-transform: scale(1.5);
-			transform: scale(1.5);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-o-transform: scale(1.1);
+			transform: scale(1.1);
 	box-shadow:0 0 10px black;
 }
+/*
 .gallary:hover li:not(:hover) img{
 	-webkit-filter: grayscale(1) blur(5px);
 	-moz-filter: grayscale(1) blur(5px);
@@ -74,7 +75,10 @@ opacity: 0.3;
 		-o-filter: grayscale(1) blur(5px);
 			filter: grayscale(1) blur(5px);
 }
-
+*/
+.w3-modal {padding-top:0; height:auto;}
+.w3-modal-content {width:90% !important; background:none; text-align:center;}
+.w3-modal img {width:auto !important; height:auto; max-height:800px;}
 
 footer {position:fixed; bottom:20px; left:20px; z-index:-1;}
 footer .btn-link {background-color: rgba(255, 254, 254, 0.5); color:black;}
