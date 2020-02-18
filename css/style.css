@@ -1,7 +1,7 @@
 body {font-family: 'Barlow', sans-serif; font-size:12px; background:url('../img/bg2.gif') repeat-x bottom;background-attachment: fixed;}
 /* header*/
 h1 {position:fixed; top:0; left:0;}
-#texteffect {position:fixed; top:20%}
+#texteffect {position:fixed; top:20%; z-index:-1;}
 #texteffect h2{
 font-family: 'Shadows Into Light', cursive;
 padding:0 30px; margin:10px 0;
@@ -11,9 +11,11 @@ padding:0 30px; margin:10px 0;
 opacity: 0.3;
 }
 
-#texteffect h2.word2{animation-delay:0.5s; -webkit-animation-delay:0.5s;}
-#texteffect h2.word3{animation-delay:1.0s; -webkit-animation-delay:1.0s;}
-#texteffect h2.word4{animation-delay:1.5s; -webkit-animation-delay:1.5s;}
+#texteffect h2.word2{font-size:1.3rem; animation-delay:0.5s; -webkit-animation-delay:0.5s;}
+#texteffect h2.word3{font-size:1.3rem; animation-delay:1.0s; -webkit-animation-delay:1.0s;}
+#texteffect h2.word4{font-size:1.5rem;margin-top:40px; animation-delay:1.5s; -webkit-animation-delay:1.5s;}
+#texteffect h2.word5{font-size:1.5rem;animation-delay:2.0s; -webkit-animation-delay:2.0s;}
+#texteffect h2.word6{font-size:1.5rem;animation-delay:2.5s; -webkit-animation-delay:2.5s;}
 
 @-webkit-keyframes slider {
        from {-webkit-transform: translateX(150px); opacity: 0;}
@@ -90,8 +92,8 @@ footer span {background-color: rgba(255, 254, 254, 0.5); color:black;}
 	.container {width:100% !important; float:none !important; padding-top:70px;}
 	header {background:white; position:fixed; height:75px; width:100%;z-index:10;}
 	h1 img {width:50%; position:relative;}
-	#texteffect {position:fixed; top:10px; left:80px;}
-	#texteffect h2{font-size:1.3rem; float:left; padding:0 5px; margin:10px 0; letter-spacing:0.1rem;}
+	#texteffect {position:fixed; top:10px; left:80px; margin-top:15px;}
+	#texteffect h2{font-size:1.3rem; float:left; padding:0 5px; margin:0; letter-spacing:0.1rem;-webkit-animation-name:none; }
 	footer {clear:both; position:relative; width:100%; text-align: center; left: 0; padding-top:100px;}
 	.gallary {
 	  -ms-flex: 50%;
@@ -102,10 +104,15 @@ footer span {background-color: rgba(255, 254, 254, 0.5); color:black;}
 	}
 	.w3-modal {padding-top:100px !important;}
 	.w3-modal img{width:100% !important; height:100%; max-width:768px; max-height:800px;}
+	#texteffect h2.word4,
+	#texteffect h2.word5,
+	#texteffect h2.word6{display:none;}
+
   }
   
   /* Responsive layout - makes the two gallarys stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
+	#texteffect {margin-top:5px;}
 	.gallary {
 	  -ms-flex: 100%;
 	  flex: 100%;
