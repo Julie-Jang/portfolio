@@ -79,6 +79,7 @@ opacity: 0.3;
 .w3-modal {padding-top:0; height:100%; z-index:11;}
 .w3-modal-content {width:90% !important; background:none; text-align:center;}
 .w3-modal img {width:auto !important; height:auto; max-height:800px;}
+.w3-button {background-color: rgba(255, 254, 254, 0.5);}
 
 footer {position:fixed; bottom:20px; left:20px; z-index:-1;}
 footer .btn-link {background-color: rgba(255, 254, 254, 0.5); color:black;}
