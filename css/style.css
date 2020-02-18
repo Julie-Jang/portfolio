@@ -107,12 +107,14 @@ footer span {background-color: rgba(255, 254, 254, 0.5); color:black;}
 	#texteffect h2.word4,
 	#texteffect h2.word5,
 	#texteffect h2.word6{display:none;}
+	#texteffect h2.word2,
+	#texteffect h2.word3 {margin-left:20px; font-size:1.2rem;}
 
   }
   
   /* Responsive layout - makes the two gallarys stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-	#texteffect {margin-top:5px;}
+	#texteffect {margin-top:5px; }
 	.gallary {
 	  -ms-flex: 100%;
 	  flex: 100%;
