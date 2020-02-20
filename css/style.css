@@ -1,21 +1,30 @@
-body {font-family: 'Barlow', sans-serif; font-size:12px; background:url('../img/bg2.gif') repeat-x bottom;background-attachment: fixed;}
+body {font-family: 'Barlow', sans-serif; font-size:12px; }
+body.bg {background:url('../img/bg2.gif') repeat-x bottom;background-attachment: fixed;}
 /* header*/
-h1 {position:fixed; top:0; left:0;}
-#texteffect {position:fixed; top:20%; z-index:-1;}
+header {position:fixed; top:0; left:0;}
+#texteffect {top:120px; z-index:-1;}
 #texteffect h2{
 font-family: 'Shadows Into Light', cursive;
 padding:0 30px; margin:10px 0;
 -webkit-animation-name: slider; 
 -webkit-animation-duration: 2s;
 -webkit-animation-timing-function:ease-in-out;
-opacity: 0.3;
+opacity: 0.8;
 }
 
 #texteffect h2.word2{font-size:1.4rem; animation-delay:0.5s; -webkit-animation-delay:0.5s;}
 #texteffect h2.word3{font-size:1.4rem; animation-delay:1.0s; -webkit-animation-delay:1.0s;}
-#texteffect h2.word4{font-size:1.5rem;margin-top:40px; animation-delay:1.5s; -webkit-animation-delay:1.5s;}
-#texteffect h2.word5{font-size:1.5rem;animation-delay:2.0s; -webkit-animation-delay:2.0s;}
-#texteffect h2.word6{font-size:1.5rem;animation-delay:2.5s; -webkit-animation-delay:2.5s;}
+#texteffect h2.word4{font-size:1.2rem;margin-top:30px; animation-delay:1.5s; -webkit-animation-delay:1.5s;}
+#texteffect h2.word5{font-size:1.1rem;animation-delay:2.0s; -webkit-animation-delay:2.0s;}
+#texteffect h2.word6{font-size:1.1rem;animation-delay:2.5s; -webkit-animation-delay:2.5s;}
+#texteffect h2.word7{font-size:1.1rem;animation-delay:3.0s; -webkit-animation-delay:3.0s;}
+#texteffect h2.word8{font-size:1.1rem;animation-delay:3.5s; -webkit-animation-delay:3.5s;}
+#texteffect h2.word9{font-size:1.1rem;animation-delay:4.0s; -webkit-animation-delay:4.0s;}
+#texteffect h2.word10{font-size:1.1rem;animation-delay:4.5s; -webkit-animation-delay:4.5s;}
+#texteffect h2.word11{font-size:1.1rem;animation-delay:5.0s; -webkit-animation-delay:5.0s;}
+
+#texteffect h2.word2 a{background:url('../img/monitor-2x.png') no-repeat right; padding-right:20px; text-decoration: underline;}
+#texteffect h2.word3 a{background:url('../img/camera-slr-2x.png') no-repeat right; padding-right:20px;text-decoration: underline;}
 
 @-webkit-keyframes slider {
        from {-webkit-transform: translateX(150px); opacity: 0;}
@@ -32,23 +41,16 @@ opacity: 0.3;
 	width:80%;
 	float:right;
   }
-  
-  .gallary {
-	-ms-flex: 25%; /* IE10 */
-	flex: 25%;
-	max-width: 25%;
-	padding: 0 4px;
-  }
-  
-  .gallary img {
-	margin-top: 8px;
+.row {margin:0;}
+.col {padding:0 0 0 10px;}    
+.col li img {
 	vertical-align: middle;
 	width: 100%;
   }
   
-.gallary li {list-style:none; margin-top:10px;}
+.col li {list-style:none; margin-top:10px;}
 
-.gallary img{
+.col img{
 	/*position:absolute;*/
 	cursor: pointer;
 	z-index:1;
@@ -61,7 +63,7 @@ opacity: 0.3;
 		-o-transition:all .5s cubic-bezier(.6,2,.4,1);
 			transition:all .5s cubic-bezier(.6,2,.4,1);
 }
-.gallary li:hover img{
+.col li:hover img{
 	z-index:5;
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
@@ -70,15 +72,7 @@ opacity: 0.3;
 			transform: scale(1.1);
 	box-shadow:0 0 10px black;
 }
-/*
-.gallary:hover li:not(:hover) img{
-	-webkit-filter: grayscale(1) blur(5px);
-	-moz-filter: grayscale(1) blur(5px);
-		-ms-filter: grayscale(1) blur(5px);
-		-o-filter: grayscale(1) blur(5px);
-			filter: grayscale(1) blur(5px);
-}
-*/
+
 .w3-modal {padding-top:0; height:100%; z-index:11;}
 .w3-modal-content {width:100% !important; background:none; text-align:center;}
 .w3-modal img {width:auto !important; height:auto; max-height:800px; cursor: pointer; margin:0 auto;}
@@ -90,38 +84,108 @@ footer span {background-color: rgba(255, 254, 254, 0.5); color:black;}
 /* Media queries */
 @media screen and (max-width:768px) {
 	.container {width:100% !important; float:none !important; padding-top:80px;}
+	.col:first-child {padding:0;}
 	header {background:white; position:fixed; height:80px; width:100%;z-index:10;}
 	h1 img {width:50%; position:relative;}
-	#texteffect {position:fixed; top:10px; left:80px; margin-top:15px;}
-	#texteffect h2{font-size:1.3rem; float:left; padding:0 5px; margin:0; letter-spacing:0.1rem;-webkit-animation-name:none; }
+	#texteffect {position:absolute; top:10px; left:80px; margin-top:15px;}
+	#texteffect h2{margin:0; letter-spacing:0.1rem;-webkit-animation-name:none; }
 	footer {clear:both; position:relative; width:100%; text-align: center; left: 0; padding-top:100px;}
-	.gallary {
-	  -ms-flex: 50%;
-	  flex: 50%;
-	  max-width: 50%;
-	  width:100% !important; 
-	  float:none !important;
-	}
 	.w3-modal {padding-top:100px !important;}
 	.w3-modal img{width:100% !important; height:100%; max-width:768px; max-height:800px;}
 	#texteffect h2{opacity:1;}
 	#texteffect h2.word4,
 	#texteffect h2.word5,
-	#texteffect h2.word6{display:none;}
-	#texteffect h2.word1 {margin-right:20px;}
-	#texteffect h2.word2,
-	#texteffect h2.word3 {font-size:1.1rem;}
+	#texteffect h2.word6,
+	#texteffect h2.word7,
+	#texteffect h2.word8,
+	#texteffect h2.word9,
+	#texteffect h2.word10,
+	#texteffect h2.word11{display:none;}
+	#texteffect h2.word2 {position:fixed; top:20px; right:0; font-size:1.2rem;}
+	#texteffect h2.word3 {position:fixed; top:50px; right:0; font-size:1.2rem;}
 
   }
   
   /* Responsive layout - makes the two gallarys stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
+	#texteffect h2.word1{margin:0; font-size:1.4rem; padding:22px 0 0 0; letter-spacing:0.1rem;-webkit-animation-name:none; }
+	#texteffect h2.word2 {right:0;padding-right:10px;}
+	#texteffect h2.word3 {right:0;padding-right:10px;}
 	#texteffect {margin-top:0; }
-	.gallary {
+	.col {
+	  margin:0 auto;	
+	  padding:0;	
 	  -ms-flex: 100%;
 	  flex: 100%;
 	  max-width: 100%;
 	}
 	.w3-modal {display:none !important;}
+	.col li:hover img{
+		z-index:5;
+		-webkit-transform: none;
+		-moz-transform: none;
+			-ms-transform:none;
+			-o-transform: none;
+				transform: none;
+		box-shadow:none;
+	}
   }
   
+
+
+
+  /* developer */
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+	position: relative;
+	opacity: 0.65;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  
+  }
+  .bgimg-1 {
+	background-image: url('../img/social-media-2786261_1920.jpg');
+	min-height: 500px;
+  }
+  
+  .bgimg-2 {
+	background-image: url('../img/internet-3116062_1920.jpg');
+	min-height: 500px;
+  }
+  
+  .bgimg-3 {
+	background-image: url('../img/icon-4102192.png');
+	min-height: 500px;
+  }
+  
+  .caption {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+  }
+  
+  .caption span.border {
+	background-color: #111;
+	color: #fff;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+  }
+  
+  h3 {
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font: 20px "Lato", sans-serif;
+	color: #111;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+	.bgimg-1, .bgimg-2, .bgimg-3 {
+	  background-attachment: scroll;
+	}
+  }
