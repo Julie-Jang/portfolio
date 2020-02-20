@@ -22,7 +22,6 @@ opacity: 0.8;
 #texteffect h2.word8{font-size:1.1rem;animation-delay:3.5s; -webkit-animation-delay:3.5s;}
 #texteffect h2.word9{font-size:1.1rem;animation-delay:4.0s; -webkit-animation-delay:4.0s;}
 #texteffect h2.word10{font-size:1.1rem;animation-delay:4.5s; -webkit-animation-delay:4.5s;}
-#texteffect h2.word11{font-size:1.1rem;animation-delay:5.0s; -webkit-animation-delay:5.0s;}
 
 #texteffect h2.word2 a{background:url('../img/monitor-2x.png') no-repeat right; padding-right:20px; text-decoration: underline;}
 #texteffect h2.word3 a{background:url('../img/camera-slr-2x.png') no-repeat right; padding-right:20px;text-decoration: underline;}
@@ -100,8 +99,7 @@ footer span {background-color: rgba(255, 254, 254, 0.5); color:black;}
 	#texteffect h2.word7,
 	#texteffect h2.word8,
 	#texteffect h2.word9,
-	#texteffect h2.word10,
-	#texteffect h2.word11{display:none;}
+	#texteffect h2.word10{display:none;}
 	#texteffect h2.word2 {position:fixed; top:20px; right:0; font-size:1.2rem;}
 	#texteffect h2.word3 {position:fixed; top:50px; right:0; font-size:1.2rem;}
 
