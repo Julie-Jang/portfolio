@@ -82,6 +82,9 @@ footer {position:fixed; bottom:20px; left:20px;}
 footer .btn-link {background-color: rgba(255, 254, 254, 0.5); color:black;}
 footer span {background-color: rgba(255, 254, 254, 0.5); color:black;}
 /* Media queries */
+@media screen and (min-width:1500px) {
+	.container {max-width:100% !important;
+}
 @media screen and (max-width:768px) {
 	.container {width:100% !important; float:none !important; padding-top:80px;}
 	.col:first-child {padding:0;}
