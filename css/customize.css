@@ -10,7 +10,6 @@
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: black;
   }
-  
   .announcement-bar__message {padding-left:65px !important; background:url('https://cdn.shopify.com/s/files/1/0525/1330/8870/files/Image_26_1X_4b27d3f6-ab03-4947-89f1-192ac56b2b9c.png') no-repeat 0 3px;}
   #shopify-section-announcement-bar {margin:0 auto; text-align:center; }
   .announcement-bar .announcement-bar__message {font-size:18px !important;}
