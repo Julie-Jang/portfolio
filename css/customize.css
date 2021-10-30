@@ -404,5 +404,9 @@
     .log_in a,
     .header.header-style1 .toplink-item.account .account-right>a {font-size:12px !important;}
   }
+
+  @media screen and (min-width: 984px)  {
+    shopify-section-template--15124874461382__16343340768d0ae320 .product-item {height:410px !important;}
+  }
   
   
