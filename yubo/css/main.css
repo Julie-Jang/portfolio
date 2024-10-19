@@ -141,7 +141,7 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
 .main_visual2 .main_wrap > .right > li {width: calc(50% - 1.5rem); margin-bottom:5rem; }
 .main_visual2 .main_wrap > .right > li a{display:block; height:100%; position:relative; padding:6rem 0 6rem 4rem;background:white;border-radius:5rem; border:1px solid #eee; height:46.5rem; transition:.2s }
 .main_visual2 .main_wrap > .right > li a h5 {font-size:4rem; font-weight:500; border-bottom:2px solid #2D62C5; padding-bottom:3rem; margin-bottom:3rem;}
-.main_visual2 .main_wrap > .right > li a p {font-size:2rem; font-weight:500; padding-right:4rem;}
+.main_visual2 .main_wrap > .right > li a p {font-size:2rem; font-weight:500; padding-right:3rem;}
 .main_visual2 .main_wrap > .right > li a::after {content: ''; display:block; width:3.2rem; height:2.2rem; position:absolute; right:4rem; bottom:5rem; background:url(../images/icon/icon_arrow_b.png) no-repeat 0 0; background-size:contain;}
 .main_visual2 .main_wrap > .right > li a:hover {color:white; background:#2D62C5; }
 .main_visual2 .main_wrap > .right > li a:hover h5 {border-bottom:2px solid white;}
@@ -219,13 +219,14 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
 @media screen and (max-width: 1280px) {
     .main_wrap .search_preschool .btn_search {top:31.5rem; right:9rem;}
     .main_wrap > .left, .main_wrap > .right {float:unset; width:100%;}
+    .slide_show.main-banenr2 {margin-top:10em;}
     .main_wrap.banner_visual2 > .left {margin-bottom:7rem;}
     .main_wrap.banner_visual2 > .left {max-width:100%;}
     .main_visual2 {background:#F3F3F3;padding-top:0;}
     .main_visual2 .main_wrap {padding:0;}
     .main_visual2 .main_wrap > .right {width:100%; padding:8rem 4rem 0; }
     .main_visual2 .main_wrap > .right > li {margin-bottom:3rem;}
-    .main_visual2 .main_wrap > .right > li a {padding:4rem 0 4rem 4rem; height:40rem;}
+    .main_visual2 .main_wrap > .right > li a {padding:4rem 0 4rem 4rem; height:32rem;}
     .main_visual2 .main_wrap > .left {background:#F3F3F3 url('../images/bg_main_banner_m.jpg') no-repeat center center; background-size:cover;}
     .main_wrap > .left h5 {padding-top:8rem; text-align:center; font-size:4rem;}
     .main_wrap > .left p {width:70%; margin:0 auto; text-align:center;padding-bottom:8rem;}
@@ -261,9 +262,10 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     section.intro_search ul li a::after {top:5rem; right:3rem; width:5rem; height:5rem; background-size:3rem;}
     .main_wrap .search_preschool .btn_search {right:13%;}
     .main_visual2 .main_wrap > .right > li a h5 {font-size:3.4rem;}
-    .main_visual2 .main_wrap > .right > li a {height:36rem; padding:3rem 0 3rem 2rem; border-radius:3rem;}
-    .main_banner li a::after {width:8rem; height:7rem;}
-    .main_banner li {height:32rem;}
+    .main_visual2 .main_wrap > .right > li a { padding:3rem 0 3rem 2rem; border-radius:3rem;}
+    .main_visual2 .main_wrap > .right > li a::after {bottom:3rem; right:2rem;}
+    .main_banner li a::after {width:6rem; height:5rem;}
+    .main_banner li {height:30rem;}
     .main_banner li:first-child a::after {top:6rem;}
     .main_banner li:nth-child(4) a::after {top:8rem;}
     .main_banner li:nth-child(4) a,
@@ -301,11 +303,14 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     section.intro ul li a em {font-size:1.8rem;}
     section.intro ul li a::after {width:3rem; bottom:1.5rem; right:3rem;}
     section.intro ul li:last-child a::after {width:4.4rem; bottom:1rem; right:2rem;}
-    .main_visual2 .main_wrap > .right > li a h5 {font-size:2.4rem; padding-bottom:2rem;}
+    .main_visual2 .main_wrap > .right > li a h5 {font-size:2.4rem; padding-bottom:2rem; margin-bottom:2rem;}
     .main_visual2 .main_wrap > .right > li a p {font-size:1.6rem; font-weight:500; padding-right:4rem;}
     .main_wrap h4.title {font-size:4rem;}
     .main_wrap p.title {font-size:2rem;}
     .banner_visual2 .tab_wrap_inner > li ul.notice_banner > li > a span.title {width:70%;}
+    .banner_visual2 .tab_wrap_inner > li:first-child > a {font-size:2.2rem;}
+    .btn_more_dot {top:3.5rem; width:3rem; height:3rem;}
+    .slide_show.main-banenr2 .visual_pagination-wrap {right:4rem;}
     }
 
 @media screen and (max-width: 430px) {
@@ -319,5 +324,8 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     .main_wrap .search_preschool .btn_preschool .btn {width:32rem; height:7rem; max-width:unset; font-size:2.4rem;padding:2.4rem 0;}
     .main_wrap .search_preschool .btn_preschool .btn::before {width:5rem; height:5rem; background-size: 3.4rem 3rem;}
     .main_wrap .search_preschool .btn_preschool .btn::after {top:1.5rem; right:2rem;}
+    .slide_show.main-banenr2 .visual_pagination-wrap {right:0.3rem;}
+    .tab_wrap_inner > li {min-width:unset;}
+    .banner_visual2 .tab_wrap_inner > li > a {padding:0 1rem;}
 }
 
