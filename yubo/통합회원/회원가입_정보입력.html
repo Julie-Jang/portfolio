@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>정보 입력 &lt; 통합회원 회원가입 &lt; 유보통합</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+</script>
+<![endif]-->
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<link rel="stylesheet" href="../css/common.css" type="text/css">
+<link rel="stylesheet" href="../css/main.css" type="text/css">
+<link rel="stylesheet" href="../css/sub.css" type="text/css">
+<link type="text/css" rel="stylesheet" href="../css/font-face.css">
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/sub.js"></script>
+<body>
+
+
+<!-- contents -->
+<section class="contents_wrap" id="contents">
+	<article class="members full">
+		<h1><a href="#"><span class="hidden">유보통합</span></a></h1>
+		<h2><b>통합회원 가입</b></h2>
+        <h3>정보 입력</h3>
+        <div class="progress_container">
+            <div class="progress_bar step_4"></div>
+        </div>
+		<!-- 정보 입력 -->
+		<form>
+            
+            <div class="board responsive t_left">
+                <!--<p class="t_right caution">* 표시는 필수 입력 항목입니다</p>-->
+                <h4 class="title">기본정보</h4>
+                <table>
+                    <caption>회원 구분, 아이디, 이름, 비밀번호, 비밀번호확인, 유선전화, 휴대전화, E-mail, 주소, 인증서 등록 테이블</caption>
+                    <colgroup class="medium_none">
+                        <col style="width: 20%">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><label for="mbrid">아이디 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <div class="col_one">
+                                    <input type="text" name="mbrid" id="mbrid" title="아이디 입력" value=""/>
+                                    <input type="button" value="중복확인" class="btn h36 line navy square" />
+                                </div>
+                                <p class="info">* 6~14자 영문자, 숫자조합, 한글제외/영문 대소문자 구분(첫글자는 영문으로 시작되어야 합니다.)</p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row"><label for="uspass">비밀번호 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <input type="password" class="maxw350" name="uspass" id="uspass" title="비밀번호 입력" value=""/>
+                                <p class="info">* 9~14자 영문자, 숫자, 특수문자 3종류 혼합</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="uspasschk">비밀번호확인 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td><input type="password" class="maxw350" name="uspasschk" id="uspasschk" title="비밀번호확인" value=""/></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label>이름 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td><input type="text" class="maxw350" id="" title="홍길동" value="홍길동" disabled=""></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="telno1">유선전화</label></th>
+                            <td>
+                                <div class="col_cell">
+                                    <select class="selectbox" name="telno1" id="telno1" title="지역번호 선택" onchange="">
+                                        <option selected="selected" value="">선택</option>
+                                        <option value="02">02</option>
+                                        <option value="031">031</option>
+                                        <option value="032">032</option>
+                                        <option value="033">033</option>
+                                        <option value="041">041</option>
+                                        <option value="042">042</option>
+                                        <option value="043">043</option>
+                                        <option value="044">044</option>
+                                        <option value="051">051</option>
+                                        <option value="052">052</option>
+                                        <option value="053">053</option>
+                                        <option value="054">054</option>
+                                        <option value="055">055</option>
+                                        <option value="061">061</option>
+                                        <option value="062">062</option>
+                                        <option value="063">063</option>
+                                        <option value="064">064</option>
+                                        <option value="070">070</option>
+                                    </select> 
+                                    <em class="space">-</em>
+                                    <input type="text" name="telno2" id="telno2" title="유선전화 앞자리" value="" maxlength="4"> 
+                                    <em class="space">-</em>
+                                    <input type="text" name="telno3" id="telno3" title="유선전화 뒷자리" value="" maxlength="4">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="cellno1">휴대전화 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <div class="col_cell">
+                                    <select class="selectbox" name="cellno1" id="cellno1" onchange="" title="통신사 선택">
+                                        <option selected="selected" value="">선택</option>
+                                        <option value="010">010</option>
+                                        <option value="011">011</option>
+                                        <option value="016">016</option>
+                                        <option value="017">017</option>
+                                        <option value="018">018</option>
+                                        <option value="019">019</option>
+                                    </select>
+                                    <em class="space">-</em>
+                                    <input type="text" name="cellno2" id="cellno2" title="휴대전화 앞자리" value="" maxlength="4">
+                                    <em class="space">-</em>
+                                    <input type="text" name="cellno3" id="cellno3" title="휴대전화 뒷자리" value="" maxlength="4">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="emil01">E-mail <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <div class="col_email">
+                                    <input type="text" name="emil01" id="emil01" title="이메일 아이디 입력" value="">
+                                    <em class="space">@</em>
+                                    <input type="text" name="emil02" id="emil02" title="이메일 도메인 입력" value="">
+                                    <select class="selectbox" name="emil03" id="emil03" onchange="" title="이메일 도메인 선택">
+                                        <option value="self" selected="selected">직접입력</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="daum.net">daum.net</option>
+                                        <option value="hanmail.net">hanmail.net</option>
+                                        <option value="gmail.com">gmail.com</option>
+                                        <option value="nate.com">nate.com</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="resdnczip1">주소 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <p>
+                                    <input type="text" name="" id="" maxlength="5" title="우편번호 입력" value="" readonly="readonly">
+                                    <input type="button" value="우편번호검색" class="btn h36 line navy square" id="">
+                                </p>
+                                <p class="mt5">
+                                    <input type="text" class="maxw525" name="" id="" title="주소입력 입력" value="" readonly="readonly">
+                                </p>
+                                <p class="mt5">
+                                    <input type="text" class="maxw525" name="" id="" title="상세주소 입력" value="">
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">인증서 등록</th>
+                            <td>
+                                <a href="#pop-up-add-certificate" data-rel="pop" class="btn h36 line navy square">인증서 등록</a>
+                                <p class="info">* 유치원 원서 접수를 원하시는 분은 인증서를 등록해주시기 바랍니다.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4 class="title mt50">부가정보</h4>
+                <table>
+                    <caption>회원 결혼유무, 임신여부, 자녀유무, 인증서등록, 관심보육센터, , 이메일 수신여부, SMS 수신여부 테이블</caption>
+                    <colgroup class="medium_none">
+                        <col style="width: 20%">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><label>결혼 유무 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <input type="radio" id="mrrgynN" name="rdo_mrrgyn" value="N"/>
+                                <label for="mrrgynN" class="radio">
+                                    <span></span>
+                                    동의
+                                </label>
+                                <input type="radio" id="mrrgynY"name="rdo_mrrgyn" value="Y"/>
+                                <label for="mrrgynY" class="radio">
+                                    <span></span>
+                                    미동의
+                                </label>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row"><label>임신 유무 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <input type="radio" id="rdo_pregY" name="rdo_pregyn" value="N"/>
+                                <label for="rdo_pregY" class="radio">
+                                    <span></span>
+                                    동의
+                                </label>
+                                <input type="radio" id="rdo_pregN"name="rdo_pregyn" value="Y"/>
+                                <label for="rdo_pregN" class="radio">
+                                    <span></span>
+                                    미동의
+                                </label>
+                            </td>
+                        </tr>       
+                        <tr>
+                            <th scope="row"><label>자녀 유무 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <input type="radio" id="childY" name="childyn" value="N"/>
+                                <label for="childY" class="radio">
+                                    <span></span>
+                                    동의
+                                </label>
+                                <input type="radio" id="childN"name="childyn" value="Y"/>
+                                <label for="childN" class="radio">
+                                    <span></span>
+                                    미동의
+                                </label>
+                            </td>
+                        </tr>    
+                        <tr>
+                            <th scope="row"><label>이용 홈페이지 선택 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <input type="checkbox" id="site01"/>
+                                <label for="site01" class="checkbox">
+                                    <span></span>
+                                    아이사랑
+                                </label>
+                                <input type="checkbox" id="site02"/>
+                                <label for="site02" class="checkbox">
+                                    <span></span>
+                                    유치원 입학 바로가기
+                                </label>
+
+                            </td>
+                        </tr>   
+                        <tr>
+                            <th scope="row"><label>이메일 수신 동의 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <input type="radio" id="agree_emailY" name="agree_emailyn" value="N"/>
+                                <label for="agree_emailY" class="radio">
+                                    <span></span>
+                                    동의
+                                </label>
+                                <input type="radio" id="agree_emailYN"name="agree_emailyn" value="Y"/>
+                                <label for="agree_emailYN" class="radio">
+                                    <span></span>
+                                    미동의
+                                </label>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <th scope="row"><label>문자 수신 동의 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <input type="radio" id="agree_textY" name="agree_textyn" value="N"/>
+                                <label for="agree_textY" class="radio">
+                                    <span></span>
+                                    동의
+                                </label>
+                                <input type="radio" id="agree_textN"name="agree_textyn" value="Y"/>
+                                <label for="agree_textN" class="radio">
+                                    <span></span>
+                                    미동의
+                                </label>
+                            </td>
+                        </tr>                              
+                    </tbody>
+                </table>
+            </div>
+            <div class="btn_group">
+                <a href="#" class="btn h60 btn maxw240">작성완료</a>
+                <a href="#" class="btn gray h60 btn maxw240">취소</a>
+            </div>
+        </form>
+	</article>
+</section>
+
+<!--// contents -->
+
+
+<!-- 인증서 등록 팝업 -->
+<div id="pop-up-add-certificate" class="popup_wrap">
+    <!-- Slide show -->
+    <div class="popup_inner_wrap maxw700">
+        <h3>인증서 등록</h3>
+        <a href="#" class="popup_close"><span class="hidden">닫기</span></a>
+        <section>
+            <div class="color_box">
+                <p class="t_center">주민등록번호 
+                    <input type="text" name="" id="" title="주민등록번호 앞자리" value="" maxlength="6" class="w33 ml20"/> 
+                    <em class="space">-</em>
+                    <input type="password" name="" id="" title="주민등록번호 뒷자리" value="" maxlength="7" class="w33"/>
+                </p>
+            </div>
+            <div class="f_14 mt20"><span class="pr20">입력한 주민번호는 저장되지 않고 조회를 위해서만 사용됩니다. </span>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbox">
+                    <span></span>
+                    내용 확인
+                </label>
+            </div>
+            <div class="btn_group">
+                <a href="#" class="btn">확인</a>
+            </div>
+        </section>
+    </div>
+</div>
+
+</body>
+</html>

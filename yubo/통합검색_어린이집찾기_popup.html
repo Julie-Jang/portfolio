@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>어린이집 찾기 &lt; 통합검색 &lt; 유보통합</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+</script>
+<![endif]-->
+<link rel="stylesheet" href="./css/style.css" type="text/css">
+<link rel="stylesheet" href="./css/common.css" type="text/css">
+<link rel="stylesheet" href="./css/main.css" type="text/css">
+<link rel="stylesheet" href="./css/sub.css" type="text/css">
+<link rel="stylesheet" href="./css/font-face.css" type="text/css">
+<link rel="stylesheet" href="./css/swiper.min.css">
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/sub.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/swiper.min.js"></script>
+<body>
+
+    
+<!-- 어린이집, 유치원 상세 팝업 -->
+<div id="" class="popup_wrap" style="display:block;">
+    <!-- Slide show -->
+    <div class="popup_inner_wrap maxw1340 kinder"><!-- 어린이 집일 경우 class kinder 추가(유치원은 kinder 삭제) -->
+        <h3>숲속 어린이집</h3>
+        <a href="#" class="popup_close"><span class="hidden">닫기</span></a>
+        <section>
+            <div class="board t_center facilities mb100 break_all">
+                <table>
+                    <caption>어린이집, 유치원의 기본현황, 영유아 및 교직원 현황, 교육/보육비용, 기타 내용의 테이블</caption>
+                    <colgroup>
+                        <col style="width: 15%">
+                        <col style="width: 15%;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col" colspan="2">구분</th>
+                            <th scope="col">체출구분</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" rowspan="6">기본현황</th>
+                            <td>설립유형</td>
+                            <td class="t_left">직장</td>
+                        </tr>
+                        <tr>
+                            <td>주소</td>
+                            <td class="t_left">부산광역시 강서구 신항남로 372</td>
+                        </tr>
+                        <tr>
+                            <td>전화번호</td>
+                            <td class="t_left">070-4145-5327</td>
+                        </tr>
+                        <tr>
+                            <td>팩스번호</td>
+                            <td class="t_left">070-4145-5327</td>
+                        </tr>
+                        <tr>
+                            <td>홈페이지</td>
+                            <td class="t_left"><a href="https://www.naver.com" target="_blank" title="새창" class="link">https://www.naver.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>위치정보</td>
+                            <td class="t_left relative">
+                                <span class="map_pin" style="top:10rem; left:30rem;"><span class="hidden">위치</span></span>
+                                <div id="map" class="map_s"><!-- 지도 -->
+                                    <img src="./images/sub/map.jpg" alt="어린이집 지도">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="5">영유아 및 교직원 현황</th>
+                            <td>현원/정원</td>
+                            <td class="t_left result_list"><em class="pr30">7명/20명</em>
+                                <span class="result_btn_group">
+                                    <a href="#" class="maxw220 btn h40 line lightgray round btn_more" title="정보 더보기 열기">정보 더보기</a>
+                                </span>
+                                <div class="result_detail mt20">
+                                    <div class="board t_center">
+                                        <table>
+                                            <caption>영유아 및 교직원 현황 총 정원, 총 현원, 연령별 상세 내용의 테이블</caption>
+                                            <colgroup>
+                                                <col style="width: 25%">
+                                                <col style="width: 25%;">
+                                                <col style="width: 25%;">
+                                                <col style="width: auto;">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2">총 정원</th>
+                                                    <th scope="col" rowspan="2">총 현원</th>
+                                                    <th scope="col" colspan="2" class="border_b">연령별</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">구분</th>
+                                                    <th scope="col">영아 혼합</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td rowspan="3">20</td>
+                                                    <td>7</td>
+                                                    <td>학급(반)수</td>
+                                                    <td>2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>정원 소계</td>
+                                                    <td>2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7</td>
+                                                    <td>현원 소계</td>
+                                                    <td>2</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="list mt20">
+                                        <li>※ 어린이집·유치원에서 자체 입력한 것으로 각각의 정보공시 사이트 상의 정보를 연동하여 공시한 것 입니다.</li>
+                                        <li>※ 어린이집 참고사항
+                                            <ul class="mt5 mb10 ml20">
+                                                <li>총 정/현원은 종일반 원아 기준임[기타(시간연장반, 휴일반 등) 제외]</li>
+                                                <li>어린이집 총정원(시군구 인가)과 정원 소계(반별최대정원)의 합은 다를 수 있습니다.</li>
+                                            </ul>
+                                        </li>
+                                        <li>※ 유치원 총정원은 인가 당시 시기에 따라 인가정원이 다를 수 있음</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>교직원수</td>
+                            <td class="t_left result_list"><em class="pr30">5명</em>
+                                <span class="result_btn_group">
+                                    <a href="#" class="maxw220 btn h40 line lightgray round btn_more" title="정보 더보기 열기">정보 더보기</a>
+                                </span>
+                                <div class="result_detail mt20">
+                                    <div class="board t_center keep_all">
+                                        <!-- 보육원 -->
+                                        <table>
+                                            <caption>교직원수의 총 교직원, 유형별 보육교직원, 보육교사 자격현황 상세 내용의 테이블</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="3">총 교직원</th>
+                                                    <th scope="col" colspan="8" class="border_b">유형별 보육교직원</th>
+                                                    <th scope="col" colspan="3" class="border_b">보육교사 자격현황</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col" rowspan="2">원장</th>
+                                                    <th scope="col" colspan="3" class="border_b">보육교사</th>
+                                                    <th scope="col" rowspan="2">특수교사</th>
+                                                    <th scope="col" rowspan="2">치료사</th>
+                                                    <th scope="col" rowspan="2">영양사</th>
+                                                    <th scope="col" rowspan="2">기타</th>
+                                                    <th scope="col" rowspan="2">1급</th>
+                                                    <th scope="col" rowspan="2">2급</th>
+                                                    <th scope="col" rowspan="2">3급</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">담임</th>
+                                                    <th scope="col">비담임</th>
+                                                    <th scope="col">방과후 시간연장</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>1<br/>(담임겸직)</td>
+                                                    <td>1</td>
+                                                    <td>3</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <!-- 유치원  -->
+                                        <table>
+                                            <caption>교직원수의 총 교직원, 유치원 직위별교원, 유치원교사 자격현황 상세 내용의 테이블</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2">총 교직원</th>
+                                                    <th scope="col" colspan="10" class="border_b">유형별 보육교직원</th>
+                                                    <th scope="col" colspan="4" class="border_b">보육교사 자격현황</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">원장</th>
+                                                    <th scope="col">원감</th>
+                                                    <th scope="col">수석<br/>교사</th>
+                                                    <th scope="col">보직<br/>교사</th>
+                                                    <th scope="col">교사</th>
+                                                    <th scope="col">특수<br/>교사</th>
+                                                    <th scope="col">보건<br/>교사</th>
+                                                    <th scope="col">영양<br/>교사</th>
+                                                    <th scope="col">기간제교원/<br/>강사</th>
+                                                    <th scope="col">사무<br/>직원</th>
+                                                    <th scope="col">수석<br/>교사</th>
+                                                    <th scope="col">1급<br/>정교사</th>
+                                                    <th scope="col">2급<br/>정교사</th>
+                                                    <th scope="col">준교사</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>5</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>3</td>
+                                                    <td>0</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                       
+                                    </div>
+                                </div>
+                                <ul class="list mt20">
+                                    <li>※ 어린이집·유치원에서 자체 입력한 것으로 각각의 정보공시 사이트 상의 정보를 연동하여 공시한 것 입니다.</li>
+                                    <li>※ 어린이집 참고사항
+                                        <ul class="dot_list mt5 mb10 ml20">
+                                            <li>총 정/현원은 종일반 원아 기준임[기타(시간연장반, 휴일반 등) 제외]</li>
+                                            <li>어린이집 총정원(시군구 인가)과 정원 소계(반별최대정원)의 합은 다를 수 있습니다.</li>
+                                        </ul>
+                                    </li>
+                                    <li>※ 유치원 총정원은 인가 당시 시기에 따라 인가정원이 다를 수 있음</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1일 운영시간</td>
+                            <td class="t_left">
+                                <p>07:30 ~ 19:30</p>
+                                <p class="c_999">※ 어린이집 1일 운영시간은 평일 기준으로 12시간 운영이 원칙이나 보호자의 근로시간 등을 고려하여 미리 보호자의 동의를 받는 경우에는 영유아 및 그 보호자에게 불편을 주지 않는 범위에서 조정하여 운영이 가능합니다.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>누리과정 운영시간</td>
+                            <td class="t_left">주당 0시간</td>
+                        </tr>
+                        <tr>
+                            <td>제공 서비스</td>
+                            <td class="t_left">일반</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" colspan="2">교육/보육비용</th>
+                            <td class="t_left result_list">
+                                <span class="result_btn_group">
+                                    <a href="#" class="maxw220 btn h40 line lightgray round btn_more" title="정보 더보기 열기">정보 더보기</a>
+                                </span>
+                                <div class="result_detail mt30">
+                                    <div class="board t_center">
+                                        <!--  어린이집 보육료 수납액 상세보기 -->
+                                        <p class="bold t_left f_18">어린이집 보육료 수납액 </p>
+                                        <p class="mt20 t_right">(단위: 원)</p>
+                                        <table>
+                                            <caption>어린이집 보육료 수납액 항목, 연령별 상세 내용의 테이블</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" colspan="2">항목</th>
+                                                    <th scope="col">0세</th>
+                                                    <th scope="col">1세</th>
+                                                    <th scope="col">2세</th>
+                                                    <th scope="col">3세</th>
+                                                    <th scope="col">4세</th>
+                                                    <th scope="col">5세</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" colspan="2">총수납액</th>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" rowspan="2">정부<br/>지원금</th>
+                                                    <th scope="row">보육료</th>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">기본보육료</th>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" colspan="2">부모부담금</th>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <p class="mt40 bold t_left f_18">어린이집 보육료 수납액 </p>
+                                        <p class="mt20 t_right">(단위: 원)</p>
+                                        <table>
+                                            <caption>어린이집 보육료 수납액 항목, 세부항목, 결제주기, 수납액 상세 내용의 테이블</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">항목</th>
+                                                    <th scope="col">세부항목</th>
+                                                    <th scope="col">결제주기</th>
+                                                    <th scope="col">수납액</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>입학준비금</td>
+                                                    <td>상해보험료</td>
+                                                    <td>연단위</td>
+                                                    <td>0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>입학준비금</td>
+                                                    <td>피복류구입비</td>
+                                                    <td>연단위</td>
+                                                    <td>110,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>특별활동비</td>
+                                                    <td>특별활동비</td>
+                                                    <td>월단위</td>
+                                                    <td>90,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>현장학습비</td>
+                                                    <td>현장학습비</td>
+                                                    <td>분기</td>
+                                                    <td>50,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>차량운행비</td>
+                                                    <td>차량운행비</td>
+                                                    <td>월단위</td>
+                                                    <td>35,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>부모부담행사비</td>
+                                                    <td>부모부담행사비</td>
+                                                    <td>연단위</td>
+                                                    <td>120,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>아침, 저녁급식비</td>
+                                                    <td>아침, 저녁급식비</td>
+                                                    <td>일단위</td>
+                                                    <td>4,000</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>시토특성화비용</td>
+                                                    <td>시토특성화비용</td>
+                                                    <td>월단위</td>
+                                                    <td>36,000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <!-- 유치원 교육/보육비용 상세보기 -->
+                                        <p class="t_right  mt30">(단위: 원)</p>
+                                        <table>
+                                            <caption>교육/보육비용 항목, 연력의 상세 내용의 테이블</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col" rowspan="2">구분</th>
+                                                    <th scope="col" colspan="3" class="border_b">교육과정 교육비</th>
+                                                    <th scope="col" colspan="3" class="border_b">방과후 과정 교육비</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">3세</th>
+                                                    <th scope="col">4세</th>
+                                                    <th scope="col">5세</th>
+                                                    <th scope="col">3세</th>
+                                                    <th scope="col">4세</th>
+                                                    <th scope="col">5세</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>학부모부담 경비</td>
+                                                    <td>373,200</td>
+                                                    <td>373,200</td>
+                                                    <td>373,200</td>
+                                                    <td>131,500</td>
+                                                    <td>131,500</td>
+                                                    <td>131,500</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <ul class="list mt20 c_999">
+                                    <li>※ 기관유형, 원비결정기준 등이 상이하여, 어린이집·유치원을 별개의 양식으로 공시하고 있으며, 국공립 교사 인건비 등은 포함되지 않은 금액입니다.</li>
+                                    <li>※ ‘15년 10월 이후 유치원 원비현황 공시장표가 변경됨에 따라 학부모부담 경비만 공시하고 있으며, 지원금(국가, 기타)은 공시대상에서 제외입니다.
+                                        <ul class="dot_list mt5 mb10 ml20">
+                                            <li>교육과정 교육비 학부모부담 경비 산출 방식 : 월 기본경비(수업료, 간식비 등) + 월 선택경 
+                                                비(입학금, 원복비, 현장학습비 등)</li>
+                                        </ul>
+                                    </li>
+                                    <li>(※ 세부내용은 유치원 알리미 사이트 참조)</li>
+                                </ul>
+                            </td>
+                        </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" rowspan="11">기타</th>
+                            <td>통합차량운영여부</td>
+                            <td class="t_left">통학차량 운행(3대)</td>
+                        </tr>
+                        <tr>
+                            <td>보험가입여부</td>
+                            <td class="t_left">책임보험 / 종합보험 가입</td>
+                        </tr>
+                        <tr>
+                            <td>특수교사</td>
+                            <td class="t_left">0명</td>
+                        </tr>
+                        <tr>
+                            <td>특수교사</td>
+                            <td class="t_left">1명</td>
+                        </tr>
+                        <tr>
+                            <td>보건교사</td>
+                            <td class="t_left">1명</td>
+                        </tr>
+                        <tr>
+                            <td>간호사</td>
+                            <td class="t_left">1명</td>
+                        </tr>
+                        <tr>
+                            <td>영양교사</td>
+                            <td class="t_left">1명</td>
+                        </tr>
+                        <tr>
+                            <td>영양사</td>
+                            <td class="t_left">1명</td>
+                        </tr>
+                        <tr>
+                            <td>조리사(원)</td>
+                            <td class="t_left">1명</td>
+                        </tr>
+                        <tr>
+                            <td>놀이터</td>
+                            <td class="t_left">실외</td>
+                        </tr>
+                        <tr>
+                            <td>보육실</td>
+                            <td class="t_left">9개</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </div>
+</div>
+<!--// 어린이집, 유치원 상세 팝업 -->
+
+
+</body>
+</html>

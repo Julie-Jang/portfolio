@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>출산예정일 &lt; 출산 &lt; 유보통합</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+</script>
+<![endif]-->
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<link rel="stylesheet" href="../css/common.css" type="text/css">
+<link rel="stylesheet" href="../css/main.css" type="text/css">
+<link rel="stylesheet" href="../css/sub.css" type="text/css">
+<link rel="stylesheet" href="../css/font-face.css" type="text/css">
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/sub.js"></script>
+
+<!-- include js 개발서버에는 적용 필요 없음!! -->
+<script src="../js/include.js"></script>
+<!--// include js -->
+
+<body>
+
+<!-- include header 개발서버에는 적용 필요 없음!! -->
+<div include-html="../include/header.html"></div> 
+<!--// include header 개발서버에는 적용 필요 없음!! -->
+
+
+<!-- sub title -->
+<section class="sub_visual sub02">
+	<div class="sub_title">
+		<h2>출산</h2>
+		<p class="txt">순산을 위한 모든 정보, 출산노하우부터 궁금증 해결까지 "아이사랑"이 도와드리겠습니다.</p>
+	</div>
+</section>
+
+<!-- Location -->
+<div class="location">
+	<ul>
+		<li><a href="#"><em class="hidden">홈</em></a></li>
+		<li>
+            <div class="custom_select">
+                <div class="select_selected"><a href="#">출산</a></div>
+                <div class="select_items">
+                    <div><a href="#">임신</a></div>
+                    <div class="on" title="선택됨"><a href="#">출산</a></div>
+                    <div><a href="#">육아</a></div>
+                    <div><a href="#">어린이집</a></div> <!-- 선택된 위치에 class on -->
+                    <div><a href="#">소통 &middot; 참여</a></div>
+                    <div><a href="#">상담실</a></div>
+                    <div><a href="#">홍보 &middot; 알림</a></div>
+                </div>
+            </div>
+        </li>
+		<li>
+            <div class="custom_select">
+                <div class="select_selected">출산예정일</a></div>
+                <div class="select_items">
+                    <div><a href="#"></a></div><!-- 선택된 위치에 class on -->
+                    <div class="on" title="선택됨"><a href="#">출산예정일</a></div>
+                </div>
+            </div>
+        </li>
+	</ul>
+</div>
+
+<!-- Contents -->
+<section class="contents_wrap" id="contents">
+	<!--<h3 class="title">출산예정일</h3>-->
+    <div class="color_box_blue birth mt15">
+		<p class="f_18">임신을 진심으로 축하드립니다!</p>
+		<p class="f_18 mt5">출산 여성들을 위해 출산예정일을 미리 알려드리는 서비스 입니다.아기와 만날 날을 기다리며 행복하게 출산 준비해 보세요.</p>
+	</div>
+
+    <h4 class="title mt60">출산예정일</h5>
+    <div class="board_top"><!-- 게시판 검색 -->
+        <div class="board responsive table_cell t_center">
+            <table>
+                <caption>출산예정일을 검색하는 내용의 테이블</caption>
+                <colgroup class="medium_none">
+                    <col style="width: 15%">
+                    <col style="width: auto">
+                    <col style="width: 30%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td>최근 생리일</td>
+                        <td class="col_three">
+                            <select id="year" class="selectbox large mr10" title="최근 생리일 년도 선택">
+                                <!-- 연도 옵션을 동적으로 생성 -->
+                            </select>
+                            <select id="month" class="selectbox large mr10" title="최근 생리일 월 선택">
+                                <!-- 월 옵션을 동적으로 생성 -->
+                            </select>
+                            <select id="day" class="selectbox large mr10" title="최근 생리일 일 선택">
+                                <!-- 일 옵션을 동적으로 생성 -->
+                            </select>
+                        </td>
+                        <td class="caution f_18 t_left">※ 최근 생리 시작일을 입력하세요.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="btn_area">
+            <button class="btn h60 maxw220 search" onclick="calculateDueDate()">출산 예정일 계산</button>
+        </div>
+    </div>
+
+    <!-- 출산 예정일 결과 값 -->
+    <div class="color_box dueDateResult" id="dueDateResult"></div>
+
+    <script>
+        // 연도, 월, 일 선택 박스를 초기화하는 함수
+        function initializeDateSelectors() {
+            const today = new Date();
+            const currentYear = today.getFullYear();
+            const currentMonth = today.getMonth() + 1; // 0-indexed라서 +1 필요
+            const currentDay = today.getDate();
+
+            // 연도 옵션 생성 (과거 50년부터 현재 연도까지)
+            const yearSelect = document.getElementById('year');
+            for (let i = currentYear; i >= currentYear - 50; i--) {
+                const option = document.createElement('option');
+                option.value = i;
+                option.text = i;
+                yearSelect.add(option);
+            }
+
+            // 월 옵션 생성 (1월부터 12월까지)
+            const monthSelect = document.getElementById('month');
+            for (let i = 1; i <= 12; i++) {
+                const option = document.createElement('option');
+                option.value = i;
+                option.text = i;
+                monthSelect.add(option);
+            }
+
+            // 일 옵션 생성 (1일부터 31일까지)
+            populateDays();
+
+            // 오늘 날짜를 선택된 값으로 설정
+            yearSelect.value = currentYear;
+            monthSelect.value = currentMonth;
+
+            // 일 옵션을 다시 초기화한 후, 현재 날짜를 설정
+            populateDays();
+            document.getElementById('day').value = currentDay;
+        }
+
+        // 선택된 월에 따라 일 옵션을 업데이트하는 함수
+        function populateDays() {
+            const year = document.getElementById('year').value;
+            const month = document.getElementById('month').value;
+            const daySelect = document.getElementById('day');
+            
+            // 기존 옵션을 모두 제거
+            daySelect.innerHTML = '';
+
+            // 선택된 년, 월에 따른 일 수 계산
+            const daysInMonth = new Date(year, month, 0).getDate();
+            for (let i = 1; i <= daysInMonth; i++) {
+                const option = document.createElement('option');
+                option.value = i;
+                option.text = i;
+                daySelect.add(option);
+            }
+        }
+
+        // 일 옵션을 월이 변경될 때마다 업데이트
+        document.getElementById('month').addEventListener('change', populateDays);
+        document.getElementById('year').addEventListener('change', populateDays);
+
+        // 출산 예정일 계산 함수
+        function calculateDueDate() {
+            const year = document.getElementById('year').value;
+            const month = document.getElementById('month').value;
+            const day = document.getElementById('day').value;
+
+            if (year && month && day) {
+                // 입력한 년, 월, 일을 날짜 객체로 변환
+                const lastPeriod = new Date(year, month - 1, day);
+                
+                // 280일(40주)을 추가
+                const dueDate = new Date(lastPeriod);
+                dueDate.setDate(dueDate.getDate() + 280);
+                
+                // 결과를 표시
+                document.getElementById("dueDateResult").innerHTML = 
+                `<p>출산 예정일은 <span class="point">${dueDate.getFullYear()}년 ${dueDate.getMonth() + 1}월 ${dueDate.getDate()}일</span>입니다.</p>`;
+        } else {
+            document.getElementById("dueDateResult").innerText = "먼저 날짜를 선택해주세요.";
+        }
+        }
+
+        // 페이지 로드 시 선택 박스를 초기화
+        window.onload = initializeDateSelectors;
+
+    </script>
+
+</section>
+<!--// contents -->
+
+
+
+<!-- include footer 개발서버에는 적용 필요 없음!! -->
+<div include-html="../include/footer.html"></div> 
+<script>
+	includeHTML(); 
+</script>
+<!--// include footer 개발서버에는 적용 필요 없음!! -->
+
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>재원아동정보등록 &lt; 재원아동정보 &lt; 우리아이정보 &lt; 마이룸 &lt; 유보통합</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+</script>
+<![endif]-->
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/common.css" type="text/css">
+<link rel="stylesheet" href="../../../css/main.css" type="text/css">
+<link rel="stylesheet" href="../../../css/sub.css" type="text/css">
+<link rel="stylesheet" href="../../../css/font-face.css" type="text/css">
+<script src="../../../js/jquery-1.12.4.min.js"></script>
+<script src="../../../js/common.js"></script>
+<script src="../../../js/sub.js"></script>
+<!-- 달력 css, js-->
+<script src="../../../js/jquery.ui.datepicker.js"></script>
+<link rel="stylesheet" href="../../../css/jquery-ui.css" type="text/css">
+
+<!-- include js 개발서버에는 적용 필요 없음!! -->
+<script src="../../../js/include.js"></script>
+<!--// include js -->
+
+<body>
+
+<!-- include header 개발서버에는 적용 필요 없음!! -->
+<div include-html="../../../include/header.html"></div> 
+<!--// include header 개발서버에는 적용 필요 없음!! -->
+
+
+<!-- sub title -->
+<section class="sub_visual mypage">
+	<div class="sub_title">
+		<h2>마이룸</h2>
+		<p>임신육아종합포털 "아이사랑"에서 다양한 서비스를 편리하게 이용하세요.</p>
+	</div>
+</section>
+
+<!-- Location -->
+<div class="location">
+	<ul>
+		<li><a href="#"><em class="hidden">홈</em></a></li>
+		<li>
+            <div class="custom_select">
+                <div class="select_selected"><a href="#">마이룸</a></div>
+                <div class="select_items">
+                    <div><a href="#">임신</a></div>
+                    <div class="on"><a href="#">어린이집</a></div> <!-- 선택된 위치에 class on -->
+            </div>
+        </li>
+		<li>
+            <div class="custom_select">
+                <div class="select_selected"><a href="#">우리아이정보</a></div>
+                <div class="select_items">
+                    <div><a href="#">임신</a></div>
+                    <div class="on"><a href="#">우리아이정보</a></div> <!-- 선택된 위치에 class on -->
+                </div>
+            </div>
+        </li>
+		<li>
+            <div class="custom_select">
+                <div class="select_selected"><a href="#">재원아동정보</a></div>
+                <div class="select_items">
+                    <div><a href="#">임신</a></div>
+                    <div class="on"><a href="#">재원아동정보</a></div> <!-- 선택된 위치에 class on -->
+                </div>
+            </div>
+        </li>
+		<li>
+            <div class="custom_select">
+                <div class="select_selected"><a href="#">재원아동정보조회</a></div>
+                <div class="select_items">
+                    <div><a href="#">임신</a></div>
+                    <div class="on"><a href="#">재원아동정보조회</a></div> <!-- 선택된 위치에 class on -->
+                </div>
+            </div>
+        </li>
+	</ul>
+</div>
+
+
+<!-- Contents -->
+<section class="contents_wrap" id="contents">
+    <div class="board_top"><!-- 게시판 검색 -->
+        <div class="board table_cell t_left">
+            <table>
+                <caption>결제대상원, 아동, 어린이집을 검색하는 내용의 테이블</caption>
+                <colgroup class="medium_none">
+                    <col style="width: 10%">
+                    <col style="width: auto">
+                    <col style="width: 20%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td class="pt0 pb0">등록 아동</td>
+                        <td class="pt0 pb0 w60">
+                            <select class="selectbox large mr10 full" title="등록 아동 선택">
+                                <option>전체</option>
+                                <option></option>
+                                <option></option>
+                            </select>
+                        </td>
+                        <td class="pt0 pb0"> <a href="#" class="btn h60 maxw220 search">확인</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="relative">
+        <ul class="tab_wrap_inner">
+            <li class="on"><a href="javascript:;" data-tab="tab-1">결제대상 아동 정보</a>
+                <div class="tab_con_inner" id="b_tab-1" style="display:block;">
+                    <!-- 구분 -->
+                    <div class="relative mt60 mb8">
+                        <div class="overflow_h">
+                            <ul class="sort">
+                                <li class="active"><a href="#">재원중인 어린이집만</a> </li>
+                                <li><a href="#">다녔던 어린이집만</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                
+                    <div class="board t_center mb100">
+                        <table>
+                            <caption>결제대상 아동명, 소급결제, 추가결제 아동, 어린이집명, 재원여부, 결제권자 내용의 테이블</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col" rowspan="2">아동명</th>
+                                    <th scope="col" colspan="3" class="border_b">소급결제</th>
+                                    <th scope="col" rowspan="2">추가결제 아동</th>
+                                    <th scope="col" rowspan="2">어린이집명</th>
+                                    <th scope="col" rowspan="2">재원여부</th>
+                                    <th scope="col" colspan="2" class="border_b">결제권자</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">동의여부</th>
+                                    <th scope="col">동의일자</th>
+                                    <th scope="col">동의경로</th>
+                                    <th scope="col">유형</th>
+                                    <th scope="col">결제권자명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="9" class="t_center">검색된 데이터가 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </li>
+            <li><a href="javascript:;" data-tab="tab-2">어린이집·등하원 정보</a>
+                <div class="tab_con_inner" id="b_tab-2">
+                    <!-- 구분 -->
+                    <div class="relative mt60 mb8">
+                        <div class="overflow_h">
+                            <div class="f_right calendar-box">
+                                <input type="text" class="datepicker" title="날짜를 입력해 주세요." placeholder="2024-08-01"/>
+                            </div>
+                            <script type="text/javascript">
+                                $(".datepicker").datepicker({
+                                    minDate: "today"
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="board t_center">
+                        <table>
+                            <caption>어린이집·등하원 정보 아동명, 인정결석, 등원시간, 하원시간, 총일수/등원한일수, 인정결석 신청, 등하원 오류 내용의 테이블</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">아동명</th>
+                                    <th scope="col">인정결석</th>
+                                    <th scope="col">등원시간</th>
+                                    <th scope="col">하원시간</th>
+                                    <th scope="col">총일수/등원한일수</th>
+                                    <th scope="col">인정결석 신청</th>
+                                    <th scope="col">등하원 오류</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="7" class="t_center">검색된 데이터가 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="mt20"><span class="badge line">인정결석</span> 아동 보호자가 신청한 인정결석 표시 입니다. (단, 신청이후 아동 등하원 한 경우에는 등하원 시간이 표시됩니다.)</p>
+                    <p>※ 실제아동이 등원하지 않았는데 등원시간이 등록되어 잇는 경우 신고해주세요.</p>
+
+                    <!-- pagenation -->
+                    <div class="pagination mb100">
+                        <a href="#" class="first"><span class="hidden">첫 페이지 목록으로 이동</span></a>
+                        <a href="#" class="prev"><span class="hidden">이전 페이지 목록으로 이동</span></a>
+                        <a href="#" class="active" title="현재 페이지">1</a>
+                        <a href="#" title="2페이지로 이동">2</a>
+                        <a href="#" title="3페이지로 이동">3</a>
+                        <a href="#" title="4페이지로 이동">4</a>
+                        <a href="#" title="5페이지로 이동">5</a>
+                        <a href="#" title="5페이지로 이동">6</a>
+                        <a href="#" title="5페이지로 이동">7</a>
+                        <a href="#" title="5페이지로 이동">8</a>
+                        <a href="#" title="5페이지로 이동">9</a>
+                        <a href="#" title="5페이지로 이동">10</a>
+                        <a href="#" class="next"><span class="hidden">다음 페이지 목록으로 이동</span></a>
+                        <a href="#" class="last"><span class="hidden">마지막 페이지 목록으로 이동</span></a>
+                    </div>
+                    <!--// pagenation -->
+                </div>
+            </li>
+            <li><a href="javascript:;" data-tab="tab-3">건강 검진 조회</a>
+                <div class="tab_con_inner" id="b_tab-3">
+                    <div class="board t_center mt40">
+                        <table>
+                            <caption>건강 검진 조회 이름, 생년월일, 결제일자, 차수, 검진기관 내용의 테이블</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">이름</th>
+                                    <th scope="col">생년월일</th>
+                                    <th scope="col">결제일자</th>
+                                    <th scope="col">차수</th>
+                                    <th scope="col">검진기관</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" class="t_center">검색된 데이터가 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- pagenation -->
+                    <div class="pagination mb100">
+                        <a href="#" class="first"><span class="hidden">첫 페이지 목록으로 이동</span></a>
+                        <a href="#" class="prev"><span class="hidden">이전 페이지 목록으로 이동</span></a>
+                        <a href="#" class="active" title="현재 페이지">1</a>
+                        <a href="#" title="2페이지로 이동">2</a>
+                        <a href="#" title="3페이지로 이동">3</a>
+                        <a href="#" title="4페이지로 이동">4</a>
+                        <a href="#" title="5페이지로 이동">5</a>
+                        <a href="#" title="5페이지로 이동">6</a>
+                        <a href="#" title="5페이지로 이동">7</a>
+                        <a href="#" title="5페이지로 이동">8</a>
+                        <a href="#" title="5페이지로 이동">9</a>
+                        <a href="#" title="5페이지로 이동">10</a>
+                        <a href="#" class="next"><span class="hidden">다음 페이지 목록으로 이동</span></a>
+                        <a href="#" class="last"><span class="hidden">마지막 페이지 목록으로 이동</span></a>
+                    </div>
+                    <!--// pagenation -->
+                </div>
+            </li>
+            <li><a href="javascript:;" data-tab="tab-4">예방접종 정보</a>
+                <div class="tab_con_inner" id="b_tab-4">
+                    <div class="board t_center mt40">
+                        <table>
+                            <caption>예방접종 정보 이름, 생년월일, 결제일자, 차수, 검진기관 내용의 테이블</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">이름</th>
+                                    <th scope="col">생년월일</th>
+                                    <th scope="col">결제일자</th>
+                                    <th scope="col">차수</th>
+                                    <th scope="col">검진기관</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" class="t_center">검색된 데이터가 없습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- pagenation -->
+                    <div class="pagination mb100">
+                        <a href="#" class="first"><span class="hidden">첫 페이지 목록으로 이동</span></a>
+                        <a href="#" class="prev"><span class="hidden">이전 페이지 목록으로 이동</span></a>
+                        <a href="#" class="active" title="현재 페이지">1</a>
+                        <a href="#" title="2페이지로 이동">2</a>
+                        <a href="#" title="3페이지로 이동">3</a>
+                        <a href="#" title="4페이지로 이동">4</a>
+                        <a href="#" title="5페이지로 이동">5</a>
+                        <a href="#" title="5페이지로 이동">6</a>
+                        <a href="#" title="5페이지로 이동">7</a>
+                        <a href="#" title="5페이지로 이동">8</a>
+                        <a href="#" title="5페이지로 이동">9</a>
+                        <a href="#" title="5페이지로 이동">10</a>
+                        <a href="#" class="next"><span class="hidden">다음 페이지 목록으로 이동</span></a>
+                        <a href="#" class="last"><span class="hidden">마지막 페이지 목록으로 이동</span></a>
+                    </div>
+                    <!--// pagenation -->
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+		
+</section>
+<!--// contents -->
+
+
+
+
+
+
+<!-- include footer 개발서버에는 적용 필요 없음!! -->
+<div include-html="../../../include/footer.html"></div> 
+<script>
+	includeHTML(); 
+</script>
+<!--// include footer 개발서버에는 적용 필요 없음!! -->
+
+</body>
+</html>

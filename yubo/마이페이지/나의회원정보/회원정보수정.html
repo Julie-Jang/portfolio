@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>회원정보 수정 &lt; 나의 회원정보 &lt; 마이룸 &lt; 유보통합</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+</script>
+<![endif]-->
+<link rel="stylesheet" href="../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../css/common.css" type="text/css">
+<link rel="stylesheet" href="../../css/main.css" type="text/css">
+<link rel="stylesheet" href="../../css/sub.css" type="text/css">
+<link type="text/css" rel="stylesheet" href="../../css/font-face.css">
+<script src="../../js/jquery-1.12.4.min.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/sub.js"></script>
+
+
+<!-- include js 개발서버에는 적용 필요 없음!! -->
+<script src="../../js/include.js"></script>
+<!--// include js -->
+
+<body>
+
+<!-- include header 개발서버에는 적용 필요 없음!! -->
+<div include-html="../../include/header.html"></div> 
+<!--// include header 개발서버에는 적용 필요 없음!! -->
+
+
+<!-- sub title -->
+<section class="sub_visual mypage">
+	<div class="sub_title">
+		<h2>마이룸</h2>
+		<p>임신육아종합포털 "아이사랑"에서 다양한 서비스를 편리하게 이용하세요.</p>
+	</div>
+</section>
+
+<!-- Location -->
+<div class="location">
+	<ul>
+		<li><a href="#"><em class="hidden">홈</em></a></li>
+		<li>
+            <div class="custom_select">
+                <div class="select_selected"><a href="#">마이룸</a></div>
+                <div class="select_items">
+                    <div><a href="#">임신</a></div>
+                    <div class="on"><a href="#">어린이집</a></div> <!-- 선택된 위치에 class on -->
+            </div>
+        </li>
+		<li>
+            <div class="custom_select">
+                <div class="select_selected"><a href="#">나의 회원정보</a></div>
+                <div class="select_items">
+                    <div><a href="#">임신</a></div>
+                    <div class="on"><a href="#">나의 회원정보</a></div> <!-- 선택된 위치에 class on -->
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="custom_select">
+                <div class="select_selected"><a href="#">회원정보 수정</a></div>
+                <div class="select_items">
+                    <div><a href="#">임신</a></div>
+                    <div class="on"><a href="#">회원정보 수정</a></div> <!-- 선택된 위치에 class on -->
+                </div>
+            </div>
+        </li>
+	</ul>
+</div>
+
+
+<!-- contents -->
+<section class="contents_wrap" id="contents">
+	<article class="members full">
+		<!-- 정보 입력 -->
+		<form>
+            
+            <div class="board responsive t_left">
+                <!--<p class="t_right caution">* 표시는 필수 입력 항목입니다</p>-->
+                <h4 class="title">기본정보</h4>
+                <table>
+                    <caption>회원 구분, 아이디, 이름, 비밀번호, 비밀번호확인, 유선전화, 휴대전화, E-mail, 주소, 인증서 등록 테이블</caption>
+                    <colgroup class="medium_none">
+                        <col style="width: 22%">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><label for="mbrid">아이디 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>sdsdfs</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label>이름 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>홍길동 <input type="button" value="개명" class="btn h36 line navy square pl18 pr18 ml20" id=""/>
+                            <span class="f_14 caution pl15">본인인증완료</span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="telno1">유선전화</label></th>
+                            <td>
+                                <div class="col_cell">
+                                    <select class="selectbox" name="telno1" id="telno1" title="지역번호 선택" onchange="">
+                                        <option selected="selected" value="">선택</option>
+                                        <option value="02">02</option>
+                                        <option value="031">031</option>
+                                        <option value="032">032</option>
+                                        <option value="033">033</option>
+                                        <option value="041">041</option>
+                                        <option value="042">042</option>
+                                        <option value="043">043</option>
+                                        <option value="044">044</option>
+                                        <option value="051">051</option>
+                                        <option value="052">052</option>
+                                        <option value="053">053</option>
+                                        <option value="054">054</option>
+                                        <option value="055">055</option>
+                                        <option value="061">061</option>
+                                        <option value="062">062</option>
+                                        <option value="063">063</option>
+                                        <option value="064">064</option>
+                                        <option value="070">070</option>
+                                    </select> 
+                                    <em class="space">-</em>
+                                    <input type="text" name="telno2" id="telno2" title="유선전화 앞자리" value="" maxlength="4"> 
+                                    <em class="space">-</em>
+                                    <input type="text" name="telno3" id="telno3" title="유선전화 뒷자리" value="" maxlength="4">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="cellno1">휴대전화 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                010-8888-7777
+                                <a href="#" class="btn h36 line navy square pl18 pr18 ml20">본인인증</a>
+                                <a href="#pop-up-cell" data-rel="pop" class="btn h36 line navy square pl18 pr18 ml5">변경이력</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="emil01">E-mail <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <div class="col_email">
+                                    <input type="text" name="emil01" id="emil01" title="이메일 아이디 입력" value="">
+                                    <em class="space">@</em>
+                                    <input type="text" name="emil02" id="emil02" title="이메일 도메인 입력" value="">
+                                    <select class="selectbox" name="emil03" id="emil03" onchange="" title="이메일 도메인 선택">
+                                        <option value="self" selected="selected">직접입력</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="daum.net">daum.net</option>
+                                        <option value="hanmail.net">hanmail.net</option>
+                                        <option value="gmail.com">gmail.com</option>
+                                        <option value="nate.com">nate.com</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="resdnczip1">주소 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <p>
+                                    <input type="text" name="" id="" maxlength="5" title="우편번호" value="" readonly="readonly">
+                                    <input type="button" value="우편번호" class="btn h36 line navy square" id="">
+                                </p>
+                                <p class="mt5">
+                                    <input type="text" class="maxw525" name="" id="" title="주소입력 입력" value="" readonly="readonly">
+                                </p>
+                                <p class="mt5">
+                                    <input type="text" class="maxw525" name="" id="" title="상세주소 입력" value="">
+                                </p>
+                                <p class="mt5">
+                                    <input type="checkbox" id="site01"/>
+                                    <label for="site01" class="checkbox">
+                                        <span></span>
+                                        <em class="caution f_14">입소대기 주소변경</em>
+                                    </label>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">휴대전화 등록번호 변경</th>
+                            <td>
+                                <p class="f_14 mt10">입력하신 휴대폰 번호로 기존에 등록된 휴대전화 번호를 변경 가능합니다.</p>
+                                <div class="col_four mt10 mb20">
+                                    변경할 연락처 
+                                    <select class="selectbox ml10" name="cellno1" id="cellno1" onchange="" title="통신사 선택">
+                                        <option selected="selected" value="">선택</option>
+                                        <option value="010">010</option>
+                                        <option value="011">011</option>
+                                        <option value="016">016</option>
+                                        <option value="017">017</option>
+                                        <option value="018">018</option>
+                                        <option value="019">019</option>
+                                    </select>
+                                    <em class="space">-</em>
+                                    <input type="text" name="cellno2" id="cellno2" title="휴대전화 앞자리" value="" maxlength="4">
+                                    <em class="space">-</em>
+                                    <input type="text" name="cellno3" id="cellno3" title="휴대전화 뒷자리" value="" maxlength="4">
+                                </div>
+
+                                <div class="board t_center mb10">
+                                    <table>
+                                        <caption>현재 연락서 리스트 내용의 테이블</caption>
+                                        <colgroup class="medium_none">
+                                            <col style="width: 10%">
+                                            <col style="width: 22%">
+                                            <col style="width: auto;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" colspan="2">구분</th>
+                                                <th scope="col">현재 연락처</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="t_center">
+                                                    <input type="checkbox" id="check02"/>
+                                                    <label for="check02" class="checkbox">
+                                                        <span></span>
+                                                    </label>
+                                                </td>
+                                                <td class="t_center c_black">마이룸</td>
+                                                <td class="w60">
+                                                    <div class="col_cell">
+                                                        <select class="selectbox ml10" name="cellno1" id="cellno1" onchange="" title="통신사 선택">
+                                                            <option  selected="selected" value="010">010</option>
+                                                            <option value="011">011</option>
+                                                            <option value="016">016</option>
+                                                            <option value="017">017</option>
+                                                            <option value="018">018</option>
+                                                            <option value="019">019</option>
+                                                        </select>
+                                                        <em class="space">-</em>
+                                                        <input type="text" name="cellno2" id="cellno2" title="휴대전화 앞자리" value="1234" maxlength="4">
+                                                        <em class="space">-</em>
+                                                        <input type="text" name="cellno3" id="cellno3" title="휴대전화 뒷자리" value="5678" maxlength="4">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t_center">
+                                                    <input type="checkbox" id="check02"/>
+                                                    <label for="check02" class="checkbox">
+                                                        <span></span>
+                                                    </label>
+                                                </td>
+                                                <td class="t_center c_black">입소대기 연락처</td>
+                                                <td>
+                                                    <div class="col_cell">
+                                                        <select class="selectbox ml10" name="cellno1" id="cellno1" onchange="" title="통신사 선택">
+                                                            <option value="010" selected="selected">010</option>
+                                                            <option value="011">011</option>
+                                                            <option value="016">016</option>
+                                                            <option value="017">017</option>
+                                                            <option value="018">018</option>
+                                                            <option value="019">019</option>
+                                                        </select>
+                                                        <em class="space">-</em>
+                                                        <input type="text" name="cellno2" id="cellno2" title="휴대전화 앞자리" value="1234" maxlength="4">
+                                                        <em class="space">-</em>
+                                                        <input type="text" name="cellno3" id="cellno3" title="휴대전화 뒷자리" value="5678" maxlength="4">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="t_center">
+                                                    <input type="checkbox" id="check02"/>
+                                                    <label for="check02" class="checkbox">
+                                                        <span></span>
+                                                    </label>
+                                                </td>
+                                                <td class="t_center c_black">시간제 보육 연락처</td>
+                                                <td>
+                                                    <div class="col_cell">
+                                                        <select class="selectbox ml10" name="cellno1" id="cellno1" onchange="" title="통신사 선택">
+                                                            <option  selected="selected" value="010">010</option>
+                                                            <option value="011">011</option>
+                                                            <option value="016">016</option>
+                                                            <option value="017">017</option>
+                                                            <option value="018">018</option>
+                                                            <option value="019">019</option>
+                                                        </select>
+                                                        <em class="space">-</em>
+                                                        <input type="text" name="cellno2" id="cellno2" title="휴대전화 앞자리" value="1234" maxlength="4">
+                                                        <em class="space">-</em>
+                                                        <input type="text" name="cellno3" id="cellno3" title="휴대전화 뒷자리" value="5678" maxlength="4">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4 class="title mt70">이용 홈페이지</h4>
+                <table>
+                    <caption>이용 홈페이지 내용 테이블</caption>
+                    <colgroup class="medium_none">
+                        <col style="width: 22%">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><label>이용 홈페이지 선택 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <input type="checkbox" id="usesite01"/>
+                                <label for="usesite01" class="checkbox">
+                                    <span></span>
+                                    아이사랑
+                                </label>
+                                <input type="checkbox" id="usesite02"/>
+                                <label for="usesite02" class="checkbox">
+                                    <span></span>
+                                    처음학교로
+                                </label>
+                                <input type="checkbox" id="usesite03"/>
+                                <label for="usesite03" class="checkbox">
+                                    <span></span>
+                                    육아종합지원센터
+                                </label>
+                                <input type="checkbox" id="usesite04"/>
+                                <label for="usesite04" class="checkbox">
+                                    <span></span>
+                                    보육교직원 통합 정보시스템
+                                </label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4 class="title mt70">부가정보</h4>
+                <table>
+                    <caption>회원 결혼유무, 임신여부, 자녀유무, 인증서등록, 관심보육센터, , 이메일 수신여부, SMS 수신여부 테이블</caption>
+                    <colgroup class="medium_none">
+                        <col style="width: 22%">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><label>결혼 유무 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <input type="radio" id="mrrgynN" name="rdo_mrrgyn" value="N"/>
+                                <label for="mrrgynN" class="radio">
+                                    <span></span>
+                                    동의
+                                </label>
+                                <input type="radio" id="mrrgynY"name="rdo_mrrgyn" value="Y"/>
+                                <label for="mrrgynY" class="radio">
+                                    <span></span>
+                                    미동의
+                                </label>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row"><label>임신 유무 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <input type="radio" id="rdo_pregY" name="rdo_pregyn" value="N"/>
+                                <label for="rdo_pregY" class="radio">
+                                    <span></span>
+                                    동의
+                                </label>
+                                <input type="radio" id="rdo_pregN"name="rdo_pregyn" value="Y"/>
+                                <label for="rdo_pregN" class="radio">
+                                    <span></span>
+                                    미동의
+                                </label>
+                            </td>
+                        </tr>       
+                        <tr>
+                            <th scope="row"><label>자녀 유무 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <input type="radio" id="childY" name="childyn" value="N"/>
+                                <label for="childY" class="radio">
+                                    <span></span>
+                                    동의
+                                </label>
+                                <input type="radio" id="childN"name="childyn" value="Y"/>
+                                <label for="childN" class="radio">
+                                    <span></span>
+                                    미동의
+                                </label>
+                            </td>
+                        </tr>    
+                        <tr>
+                            <th scope="row"><label>이용 홈페이지 선택 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <input type="checkbox" id="site01"/>
+                                <label for="site01" class="checkbox">
+                                    <span></span>
+                                    아이사랑
+                                </label>
+                                <input type="checkbox" id="site02"/>
+                                <label for="site02" class="checkbox">
+                                    <span></span>
+                                    처음학교로
+                                </label>
+
+                            </td>
+                        </tr>   
+                        <tr>
+                            <th scope="row"><label>이메일 수신 동의 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <input type="radio" id="agree_emailY" name="agree_emailyn" value="N"/>
+                                <label for="agree_emailY" class="radio">
+                                    <span></span>
+                                    동의
+                                </label>
+                                <input type="radio" id="agree_emailYN"name="agree_emailyn" value="Y"/>
+                                <label for="agree_emailYN" class="radio">
+                                    <span></span>
+                                    미동의
+                                </label>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <th scope="row"><label>문자 수신 동의 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <input type="radio" id="agree_textY" name="agree_textyn" value="N"/>
+                                <label for="agree_textY" class="radio">
+                                    <span></span>
+                                    동의
+                                </label>
+                                <input type="radio" id="agree_textN"name="agree_textyn" value="Y"/>
+                                <label for="agree_textN" class="radio">
+                                    <span></span>
+                                    미동의
+                                </label>
+                            </td>
+                        </tr>                              
+                    </tbody>
+                </table>
+
+
+                <h4 class="title mt70">타 포털 이용 동의 현황</h4>
+                <table>
+                    <caption>육아종합지원센터, 보육교직원 통합 정보시스템, 처음학교로 이용동의 내용의 테이블</caption>
+                    <colgroup class="medium_none">
+                        <col style="width: 22%">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">육아종합지원센터 <i class="required" aria-label="필수입력사항">*</i></th>
+                            <td>
+                                <p>
+                                    <input type="radio" id="agree01Y" name="agree01YN" value="N"/>
+                                    <label for="agree01Y" class="radio">
+                                        <span></span>
+                                        동의
+                                    </label>
+                                    <input type="radio" id="agree01N"name="agree01YN" value="Y"/>
+                                    <label for="agree01N" class="radio">
+                                        <span></span>
+                                        미동의
+                                    </label>
+                                </p>
+                                <p class="mt20">
+                                    <span class="dot_list_blue">회원 이용약관</span>
+                                    <a href="#pop-up-policy-01" data-rel="pop" class="btn h30 line navy square pl10 pr10 ml20 mr20" title="육아종합지원센터 회원 이용약관 내용보기 팝업">내용보기</a>
+                                    <span class="dot_list_blue">개인정보 수집 및 이용동의</span>
+                                    <a href="#pop-up-policy-02" data-rel="pop" class="btn h30 line navy square pl10 pr10 ml20" title="육아종합지원센터 개인정보 수집 및 이용동의 내용보기 팝업">내용보기</a>
+                                </p>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <th scope="row">보육교직원 통합 정보시스템 <i class="required" aria-label="필수입력사항">*</i></th>
+                            <td>
+                                <p>
+                                    <input type="radio" id="agree02Y" name="agre02YN" value="N"/>
+                                    <label for="agree02Y" class="radio">
+                                        <span></span>
+                                        동의
+                                    </label>
+                                    <input type="radio" id="agree02N"name="agre02YN" value="Y"/>
+                                    <label for="agree02N" class="radio">
+                                        <span></span>
+                                        미동의
+                                    </label>
+                                </p>
+                                <p class="mt20">
+                                    <span class="dot_list_blue">회원 이용약관</span>
+                                    <a href="#pop-up-policy-03" data-rel="pop" class="btn h30 line navy square pl10 pr10 ml20 mr20" title="보육교직원 통합 정보시스템 회원 이용약관 내용보기 팝업">내용보기</a>
+                                    <span class="dot_list_blue">개인정보 수집 및 이용동의</span>
+                                    <a href="#pop-up-policy-04" data-rel="pop" class="btn h30 line navy square pl10 pr10 ml20" title="보육교직원 통합 정보시스템 개인정보 수집 및 이용동의 내용보기 팝업">내용보기</a>
+                                </p>
+                            </td>
+                        </tr>       
+                        <tr>
+                            <th scope="row">처음학교로 <i class="required" aria-label="필수입력사항">*</i></th>
+                            <td>
+                                <p>
+                                    <input type="radio" id="agree03Y" name="agre03YN" value="N"/>
+                                    <label for="agree03Y" class="radio">
+                                        <span></span>
+                                        동의
+                                    </label>
+                                    <input type="radio" id="agree03N"name="agre03YN" value="Y"/>
+                                    <label for="agree03N" class="radio">
+                                        <span></span>
+                                        미동의
+                                    </label>
+                                </p>
+                                <p class="mt20">
+                                    <span class="dot_list_blue">회원 이용약관</span>
+                                    <a href="#pop-up-policy-05" data-rel="pop" class="btn h30 line navy square pl10 pr10 ml20 mr20" title="처음학교로 회원 이용약관 내용보기 팝업">내용보기</a>
+                                    <span class="dot_list_blue">개인정보 수집 및 이용동의</span>
+                                    <a href="#pop-up-policy-06" data-rel="pop" class="btn h30 line navy square pl10 pr10 ml20 mr20" title="처음학교로 개인정보 수집 및 이용동의 내용보기 팝업">내용보기</a>
+                                    <span class="dot_list_blue">개인정보 제 3자 제공 내역 동의</span>
+                                    <a href="#pop-up-policy-07" data-rel="pop" class="btn h30 line navy square pl10 pr10 ml20" title="처음학교로 개인정보 수집 및 이용동의 내용보기 팝업">내용보기</a>
+                                </p>
+                            </td>
+                        </tr>                                
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="btn_group mt80">
+                <a href="#" class="btn h60 btn maxw240">변경완료</a>
+            </div>
+        </form>
+	</article>
+</section>
+
+<!--// contents -->
+
+
+
+
+
+
+<!-- 핸드폰 변경 이력 팝업 -->
+<div id="pop-up-cell" class="popup_wrap popup_double">
+	<div class="popup_inner_wrap maxw520">
+		<h5>변경이력</h5>
+		<a href="#" class="popup_close"><span class="hidden">닫기</span></a>
+		<section>
+			<div class="board">
+				<table>
+					<caption>핸드폰 변경이력 번호, 변경일시, 변경구분, 변경 전 전화번호, 변경 후 전화번호 내용의 테이블</caption>
+					<colgroup class="medium_none">
+						<col style="width: 10%">
+						<col style="width: 15%;">
+						<col style="width: 10%;">
+						<col style="width: auto;">
+						<col style="width: auto;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">변경일시</th>
+							<th scope="col">변경구분</th>
+							<th scope="col">변경 전 전화번호</th>
+							<th scope="col">변경 후 전화번호</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>2024-08-01</td>
+							<td>구분</td>
+							<td>010-1234-5678</td>
+							<td>010-1111-2222</td>
+						</tr>
+						<!--<tr>
+							<td colspan="5">검색된 데이터가 없습니다.</td>
+						</tr>-->
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</div>
+</div>
+<!--// 핸드폰 변경 이력 팝업 -->
+
+
+
+<!-- 약관동의 팝업 -->
+<div id="pop-up-policy-01" class="popup_wrap">
+	<div class="popup_contents maxw1340">
+		<h3>회원 이용약관</h3>
+		<a href="#" class="popup_close"><span class="hidden">닫기</span></a>
+        <section class="members w1180" >
+            <!-- 육아종합지원센터 이용약관 -->
+            <div class="policy" tabindex="0" style="height:50vh;">
+                <div class="txt">
+                    <p class="policy_title">제1조 (목적)</p>
+                    <p>본 약관은 교육부가 아이사랑보육포털 및 18개 중앙·시도보육정보센터 홈페이지(이하 당사이트)를 통하여 제공하는 인터넷 관련 서비스 (이하 “서비스”)의 이용조건과 절차, 이용자와 교육부의 권리, 의무, 책임사항과 기타 필요한 사항을 규정함을 목적으로 합니다.</p>
+    
+                    <p class="policy_title">제2조 (용어의 정의)</p>
+                    <ul>
+                        <li>① 본 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+                            <ul>
+                                <li>1. 아이사랑보육포털 : 인터넷주소가 www.childecare.go.kr(중앙 및 시도 보육정보센터 홈페이지 www.지역명.childcare.go.kr포함)로 등록된 정보통신망</li>
+                                <li>2. 이용자 : 본 약관에 따라 당 사이트에서 제공하는 서비스를 받는 자</li>
+                                <li>3. 가입 : 당 사이트가 제공하는 신청서 양식에 해당 정보를 기입하고, 본 약관이나 당 사이트의 운영기준에 동의하여 서비스 이용계약을 완료시키는 행위</li>
+                                <li>4. 회원 : 서비스를 이용하기 위하여 회원약관에 동의하고, 당 사이트의 회원으로 가입한 개인 및 원장</li>
+                                <li>5. 아이디(ID) : 회원 식별과 회원의 서비스 이용을 위하여 당 사이트에서 지정하거나 회원이 선정한 영문자와 숫자의 조합</li>
+                                <li>6. 비밀번호 : 회원식별과 회원의 서비스 이용을 위하여 회원임을 확인하고 개인정보보호를 위해 회원 자신이 설정한 영문자와 숫자의 조합</li>
+                                <li>7. 탈퇴 : 회원이 이용계약을 종료시키는 행위</li>
+                                <li>8. 공인인증서 : 전자서명을 생성하기 위하여 이용된 정보가 가입자에게 유일하게 속한다는 사실 등을 확인하고 이를 증명하는 전자적 정보로서 전자서명법 제15조의 규정에 의하여 공인인증기관이 발급한 인증서</li>
+                            </ul>
+                        </li>
+                        <li>② 본 약관에 사용하는 용어의 정의는 제1항에서 정의한 것을 제외하고는 관계 법령 및 서비스 안내에서 정하는 바에 의합니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제3조 (약관의 효력과 변경)</p>
+                    <ul>
+                        <li>① 본 약관은 당 사이트에서 제공하는 서비스를 이용하는 모든 약관에 동의한 이용자에 대하여 그 효력을 발생합니다.</li>
+                        <li>② 본 약관의 내용은 서비스의 일부 화면 또는 기타 방법에 의하여 이를 공지하거나 그 내용을 전자우편 등의 방법으로 통지함으로써 효력이 발생합니다.</li>
+                        <li>③ 교육부가 필요하다고 인정되는 경우 이 약관을 임의로 변경할 수 있으며, 변경된 약관은 제2항과 같은 방법으로 공지 또는 통지함으로써 그 효력이 발생합니다.</li>
+                        <li>④ 이용자가 변경된 약관에 동의하지 않는 경우 서비스 이용을 중단하거나 회원탈퇴를 할 수 있습니다. 단, 변경된 약관의 효력이 발생한 이후에도 서비스를 계속 사용할 경우 변경사항에 동의한 것으로 간주됩니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제4조 (약관 외 준칙)</p>
+                    <p>본 약관에 명시되지 않은 사항은 공공기관의 개인정보보호에 관한 법률, 전기통신 기본법, 전기통신 사업법, 정보통신 윤리위원회 심의규정, 정보통신 윤리강령, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 및 기타 관계 법령, 교육부가 별도로 정한 규정에 따릅니다.</p>
+    
+                    <p class="policy_title">제5조 (이용계약의 성립 및 이용계약의 해지)</p>
+                    <ul>
+                        <li>① 이용계약은 신청자가 온라인으로 당 사이트에서 제공하는 소정의 가입신청 양식에서 요구하는 사항을 기록하여 가입을 완료하는 것으로 성립됩니다.</li>
+                        <li>② 당 사이트는 다음 각 호에 해당하는 이용계약에 대하여는 가입을 취소할 수 있습니다.
+                            <ul>
+                                <li>1. 다른 사람의 명의를 사용하여 신청한 경우</li>
+                                <li>2. 이용 계약 신청서의 내용을 허위로 기재하였거나 신청한 경우</li>
+                                <li>3. 사회의 안녕, 질서 혹은 미풍양속을 저해할 목적으로 신청한 경우</li>
+                                <li>4. 다른 사람의 당 사이트 서비스 이용을 방해하거나 그 정보를 도용하는 등의 행위를 한 경우</li>
+                                <li>5. 당 사이트를 이용하여 법령과 본 약관이 금지하는 행위를 하는 경우</li>
+                                <li>6. 기타 당 사이트가 정한 이용신청요건이 미비된 경우</li>
+                            </ul>
+                        </li>
+                        <li>③ 당 사이트는 다음 각 호에 해당하는 경우 그 사유가 해소될 때까지 이용계약 성립을 유보할 수 있습니다.
+                            <ul>
+                                <li>1. 서비스 관련 제반 용량이 부족한 경우</li>
+                                <li>2. 기술상 장애 사유가 있는 경우</li>
+                            </ul>
+                        </li>
+                        <li>④ 회원이 서비스 이용계약을 해지하고자 할 경우에는 본인이 온라인 또는 당 사이트에서 정하는 방법을 통하여 이용계약의 해지를 신청해야 합니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제6조 (서비스의 종류 및 이용 방법)</p>
+                    <ul>
+                        <li>① 당 사이트에서 제공하는 서비스는 아래와 같습니다
+                            <ul>
+                                <li>1. 당 사이트가 자체 개발하거나 다른 기관과의 협의 등을 통해 제공하는 일체의 서비스</li>
+                            </ul>
+                        </li>
+                        <li>② 제1항에 의한 서비스의 종류, 서비스의 내용 및 이용방법 등은 당 사이트의 사정에 따라 변경될 수 있습니다.</li>
+                        <li>이에 대하여 당 사이트는 귀하 또는 제3자에게 어떠한 책임도 부담하지 아니합니다.</li>
+                        <li>③ 제1항에 의한 서비스 중 일부에 대하여는 아이디(ID)와 비밀번호, 공인인증서 등 서비스에서 정하는 방법을 거쳐야 이용할 수 있습니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제7조 (서비스 이용시간)</p>
+                    <ul>
+                        <li>① 서비스의 이용은 당 사이트의 업무상 또는 기술상 특별한 지장이 없는 한 연중무휴, 1일 24시간 제공하는 것을 원칙으로 합니다.<br/>다만, 당 사이트의 정기점검 등의 서비스 점검 및 조치 등을 위하여 필요로 하는 시간은 그러하지 않습니다.</li>
+                        <li>② 당 사이트는 서비스별로 이용할 수 있는 시간을 별도로 정할 수 있으며, 필요한 경우에는 이를 조정할 수 있습니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제8조 (서비스 중지 및 정보의 저장과 사용)</p>
+                    <ul>
+                        <li>① 당 사이트 서비스에 보관되거나 내용이 국가의 비상사태, 정전, 당 사이트의 관리 범위 외의 서비스 설비 장애 및 기타 불가항력에 의하여 보관되지 못하였거나 삭제된 경우, 전송되지 못한 경우 및 기타 통신 데이터의 손실이 있을 경우에 당 사이트는 관련 책임을 부담하지 아니합니다.</li>
+                        <li>② 당 사이트가 정상적인 서비스 제공의 어려움으로 인하여 일시적으로 서비스를 중지하여야 할 경우에는 서비스 중지 1주일 전에 고지 후 서비스를 중지할 수 있으며, 이 기간 동안 귀하가 고지내용을 인지하지 못한 데 대하여 당 사이트는 책임을 부담하지 아니합니다. 부득이한 사정이 있을 경우 위 사전 고지기간은 감축되거나 생략될 수 있습니다. 또한 위 서비스 중지에 의하여 본 서비스에 보관되거나 내용이 보관되지 못하였거나 삭제된 경우, 전송되지 못한 경우 및 기타 통신 데이터의 손실이 있을 경우에 대하여도 당 사이트는 책임을 부담하지 아니합니다.</li>
+                        <li>③ 당 사이트의 사정으로 서비스를 영구적으로 중단하여야 할 경우 제2항에 의합니다. 다만, 이 경우 사전 고지기간은 1개월로 합니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제9조 (정보의 제공 및 홍보물 게재)</p>
+                    <ul>
+                        <li>① 당 사이트는 서비스를 운영함에 있어서 필요하다고 인정되는 각종 정보를 서비스에 게재하거나 전자우편 등의 방법으로 제공할 수 있습니다.</li>
+                        <li>② 당 사이트는 서비스에 적절하다고 판단되거나 활용 가능성 있는 홍보물을 게재할 수 있습니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제10조 (게시물의 저작권 등)</p>
+                    <ul>
+                        <li>① 이용자의 공개 게시물의 내용이 다음 각 호에 해당하는 경우 당 사이트는 이용자에게 사전 통지 없이 해당 공개 게시물을 삭제할 수 있습니다.
+                            <ul>
+                                <li>1. 다른 이용자 또는 제3자를 비방하거나 중상모략으로 명예를 손상시키는 내용</li>
+                                <li>2. 공서양속에 위반되는 내용의 정보, 문장, 도형 등을 유포하는 내용</li>
+                                <li>3. 범죄행위와 관련이 있다고 판단되는 내용</li>
+                                <li>4. 다른 이용자 또는 제3자의 저작권 등 기타 권리를 침해하는 내용</li>
+                                <li>5. 기타 관계 법령에 위배된다고 판단되는 내용</li>
+                                <li>6. 종교적, 정치적 분쟁을 야기하는 내용으로서, 이러한 분쟁으로 인하여 당사이트의 업무가 방해 되거나 방해되리라고 판단되는 경우</li>
+                            </ul>
+                        </li>
+                        <li>② 이용자의 공개 게시물로 인한 법률상 이익 침해를 근거로, 다른 이용자 또는 제3자가 이용자 또는 당 사이트를 대상으로 하여 민형사상의 법적 조치(예: 고소, 가처분신청, 손해배상 청구 소송)를 취하는 동시에 법적 조치와 관련된 게시물의 삭제를 요청해오는 경우, 당 사이트는 동 법적 조치의 결과(예: 검찰의 기소, 법원의 가처분결정, 손해배상판결)가 있을 때까지 관련 게시물에 대한 접근을 잠정적으로 제한할 수 있습니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제11조 (서비스 이용상의 책임)</p>
+                    <p>이용자는 당 사이트에서 허용한 경우를 제외하고는 서비스를 이용하여 상품을 판매하거나 고객을 유인하는 영업활동을 할 수 없으며, 특히 해킹, 광고를 통한 수익, 음란사이트를 통한 상업적 행위, 상용 소프트웨어 불법배포 등을 할 수 없습니다.
+                        이를 어기고 발생한 영업활동의 결과 및 손실, 관계기관에 의한 수사·처벌 등 법적조치 등에 관해서는 교육부가 책임을 지지 않습니다.</p>
+    
+                    <p class="policy_title">제12조 (서비스의 이용제한 등)</p>
+                    <p>당 사이트는 이용자가 다음 각 호에 해당하는 경우 사전통지 없이 이용계약의 해지 또는 서비스 제공을 중지하거나 관계당국에 고발하는 등의 필요한 조치를 취할 수 있습니다.</p>
+                    <ul>
+                        <li>1. 상용 또는 불법, 음란, 저속하다고 판단되는 게시물, 타인의 사생활 침해 기타 공공질서 및 미풍양속에 위반되는 내용인 경우</li>
+                        <li>2. 다른 이용자, 제3자를 비방, 모욕하거나 명예를 훼손하는 내용인 경우</li>
+                        <li>3. 국익 또는 사회적 공익을 저해하는 경우</li>
+                        <li>4. 범죄행위를 목적으로 하거나 기타 범죄행위와 관련된 경우</li>
+                        <li>5. 교육부 및 제3자의 지적재산권, 기타 권리를 침해하는 내용인 경우</li>
+                        <li>6. 타인의 개인정보, 아이디(ID)와 비밀번호 및 공인인증서 등의 정보를 부정 사용하거나 이를 무단수집 또는 저장하는 경우</li>
+                        <li>7. 다량의 정보 전송, 광고성 정보의 전송, 컴퓨터 바이러스 프로그램의 유포 등 서비스의 안정적인 운영에 지장을 주거나 줄 우려가 있는 경우</li>
+                        <li>8. 정보통신윤리위원회 등 외부기관의 시정 요구가 있거나 선거관리위원회의 중지, 경고 또는 시정명령을 받는 선거법 위반행위가 있는 경우</li>
+                        <li>9. 본 약관 및 당 사이트의 운영기준, 기타 관계 법령 등에 위배되는 경우</li>
+                    </ul>
+    
+                    <p class="policy_title">제13조 (당 사이트의 의무)</p>
+                    <ul>
+                        <li>① 당 사이트는 법령과 본 약관이 금지하거나 미풍양속에 반하는 행위를 하지 않으며, 계속적, 안정적으로 서비스를 제공하기 위해 노력할 의무가 있습니다.</li>
+                        <li>② 당 사이트는 이용자의 개인정보를 본인의 승낙 없이 타인에게 누설, 배포하지 않습니다. 다만, 전기통신 관련 법령 등 관계 법령에 의하여 관계 국가기관 등의 요구가 있는 경우에는 그러하지 않으며, 당 사이트와 교육부가 운영하는 다른 사이트간의 회원정보 통합관리와 관련하여 필요한 경우에는 개인정보 등 관련정보를 교육부가 운영하는 다른 사이트에 제공할 수 있습니다.</li>
+                        <li>③ 당 사이트는 이용자가 안전하게 서비스를 이용할 수 있도록 이용자의 개인정보(신용정보 포함) 보호를 위한 보안시스템을 갖추어야 합니다.</li>
+                        <li>④ 당 사이트는 이용자의 귀책사유로 인한 서비스 이용 장애에 대하여 책임을 지지 않습니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제14조 (이용자의 의무)</p>
+                    <ul>
+                        <li>① 이용자는 서비스의 이용 및 가입시에 요구되는 정보를 정확하게 기입하여야 하며, 이미 제공된 정보는 정확한 정보가 되도록 유지, 갱신하여야 합니다. 만일, 해당 정보를 정확히 기입하지 아니하거나 이미 제공된 정보를 유지, 갱신하지 아니하여 발생하는 문제에 대한 책임은 본인에게 있습니다.</li>
+                        <li>② 이용자는 서비스를 이용할 때 다음 각 호의 행위를 하여서는 아니되며, 이로 인하여 문제가 발생될 경우 그 책임은 본인에게 있습니다.
+                            <ul>
+                                <li>1. 타인의 개인정보, 아이디(ID)와 비밀번호 및 공인인증서 등의 정보를 부정 사용하는 행위</li>
+                                <li>2. 자기의 개인정보, 아이디(ID)와 비밀번호 및 공인인증서 등의 정보를 타인에게 이용하게 하는 행위</li>
+                                <li>3. 범죄행위를 목적으로 하거나 기타 범죄행위와 관련된 행위</li>
+                                <li>4. 선량한 풍속, 기타 사회질서를 해하는 행위</li>
+                                <li>5. 타인의 명예를 훼손하거나 모욕하는 행위</li>
+                                <li>6. 타인의 지적재산권 등의 권리를 침해하는 행위</li>
+                                <li>7. 해킹행위 또는 컴퓨터바이러스의 유포행위</li>
+                                <li>8. 타인의 의사에 반하여 광고성 정보 등 일정한 내용을 지속적으로 전송하는 행위</li>
+                                <li>9. 서비스의 안전적인 운영에 지장을 주거나 줄 우려가 있는 일체의 행위</li>
+                                <li>10. 당 사이트에 게시된 정보를 변경하는 행위</li>
+                                <li>11. 본 약관 및 당 사이트의 운영기준, 기타 관계 법령 등에 위배되는 행위</li>
+                            </ul>
+                        </li>
+                        <li>③ 이용자는 본 약관에서 규정하는 사항과 서비스 이용안내, 공지사항 또는 주의사항을 준수하여야 합니다.</li>
+                        <li>④ 이용자는 당 사이트 서비스를 이용하여 얻은 정보를 당 사이트의 사전승낙 없이 복사, 복제, 변경, 번역, 출판·방송 기타의 방법으로 사용하거나 이를 타인에게 제공할 수 없습니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제15조 (이용자의 정보보안)</p>
+                    <ul>
+                        <li>① 이용자는 당 사이트의 서비스 가입 절차를 완료하는 순간부터 귀하는 입력한 정보의 비밀을 유지할 책임이 있으며, 이용자의 인증을 통하여 발생하는 모든 결과에 대한 책임은 이용자 본인에게 있습니다.</li>
+                        <li>② 아이디(ID)와 비밀번호, 공인인증서 등의 관리에 관한 모든 관리책임은 이용자에게 있습니다. 만일, 아이디(ID)와 비밀번호가 부정하게 사용되었다는 사실을 발견한 경우에는 즉시 당 사이트에 신고하여야 하며, 신고를 하지 않음으로 인한 모든 책임은 이용자 본인에게 있습니다.</li>
+                        <li>③ 이용자는 당 사이트 서비스의 사용 종료 시마다 정확히 접속을 종료해야 하며, 정확히 종료하지 아니함으로써 제3자가 이용자에 관한 정보를 습득하거나 이용하게 되는 등의 결과로 인해 발생하는 손해 및 손실에 대하여 당 사이트는 책임을 지지 않습니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제16조 (당 사이트의 소유권)</p>
+                    <ul>
+                        <li>① 당 사이트가 제공하는 서비스, 그에 필요한 소프트웨어, 이미지, 마크, 로고, 디자인, 서비스명칭, 정보 및 상표 등과 관련된 지적재산권 및 기타 권리는 교육부에 소유권이 있습니다.</li>
+                        <li>② 당 사이트가 명시적으로 승인한 경우를 제외하고는 전항의 소정의 각 재산에 대한전부 또는 일부의 수정, 대여, 대출, 판매, 배포, 제작, 양도, 재라이센스, 담보권 설정 행위, 상업적 이용 행위를 할 수 없으며, 제3자로 하여금 이와 같은 행위를 하도록 허락할 수 없습니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제17조 (양도금지)</p>
+                    <p>회원이 서비스의 이용권한, 기타 이용계약상의 지위를 타인에게 양도, 증여할 수 없으며, 이를 담보로 제공할 수 없습니다.</p>
+    
+                    <p class="policy_title">제18조 (손해배상)</p>
+                    <p>당 사이트는 서비스와 관련하여 이용자에게 어떠한 손해가 발생하더라도 당 사이트가 고의로 행한 범죄행위를 제외하고는 이에 대하여 책임을 부담하지 아니합니다.</p>
+    
+                    <p class="policy_title">제19조 (면책사항)</p>
+                    <ul>
+                        <li>① 당 사이트는 귀하가 서비스를 이용하여 기대하는 손익이나 서비스를 통하여 얻은 자료로 인한 손해 등에 관하여 책임을 지지 않으며, 이용자가 본 서비스에 게재한 정보, 자료, 사실의 신뢰도, 정확성 등 내용에 대하여 책임을 지지 않습니다.</li>
+                        <li>② 당 사이트는 이용자간 또는 이용자와 제3자간에 서비스를 매개로 하여 물품거래, 금전거래 등과 관련하여 어떠한 책임도 부담하지 아니합니다.</li>
+                        <li>③ 당 사이트는 국가의 비상사태, 천재지변, 정전, 당 사이트의 관리 범위 외의 서비스 설비 장애, 서비스 이용량의 폭주 기타 서비스 장애 등으로 정상적인 서비스를 제공하지 못하여 생기는 손해 등에 대하여 책임을 지지 않습니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제20조 (관할법원)</p>
+                    <p>서비스 이용과 관련하여 교육부와 이용자 사이에 분쟁이 발행한 경우, 쌍방간의 분쟁의 해결을 위해 성실히 협의한 후가 아니면 제소할 수 없습니다.</p>
+    
+                    <p class="policy_title">제21조 (기타 사항)</p>
+                    <p>본 약관에서 정하지 아니한 사항과 본 약관의 해석에 관하여는 국내 관련 법령과 기타 상관습에 의합니다.</p>
+    
+                    <p class="policy_title">제 23조 (시행일)</p>
+                    <p>본 약관은 2024년 6월 27일부터 시행합니다.</p>
+                </div>
+            </div>
+        </section>
+	</div>
+</div>
+
+<div id="pop-up-policy-02" class="popup_wrap">
+	<div class="popup_contents maxw1340">
+		<h3>개인정보 수집 및 이용동의</h3>
+		<a href="#" class="popup_close"><span class="hidden">닫기</span></a>
+        <section class="members w1180">
+            <!-- 육아종합지원센터 개인정보 수집 및 이용동의 -->
+            <div class="policy" tabindex="0" style="height:50vh;">
+                <div class="txt">
+                    <p>육아종합지원센터 홈페이지는 정보주체의 동의하에 따라 회원관리 및 양질의 서비스 제공을 위하여 다음과 같이 최소한의 개인정보를 수집하고 있습니다.<br/>
+                        육아종합지원센터 홈페이지 회원가입을 위하여 개인정보 수집 및 이용에 대한 아래의 내용을 자세히 읽어 보신 후 동의 여부를 결정하여 주시기 바랍니다.<br/>
+                        수집한 개인정보는 본 수집·이용 목적 외의 다른 목적으로 사용되지 않습니다.</p>
+                    <p class="policy_title">1. 수집하는 개인정보 항목</p>
+                    <p>필수항목 : ID, 성명, 비밀번호, 전화번호, 휴대폰번호, 이메일, 주소</p>
+                    <p class="policy_title">2. 개인정보의 수집 및 이용 목적</p>
+                    <p>홈페이지 회원제 서비스 이용(게시물 등록, 교육신청 및 수강관리, 상담서비스 이용 등)</p>
+                    <p class="policy_title">3. 개인정보의 이용 및 보유기간</p>
+                    <p>육아종합지원센터 홈페이지 탈퇴시까지</p>
+                    <p>※ 2년 이상 장기 미접속자는 자동으로 탈퇴처리 됩니다</p>
+                    <p class="policy_title">4. 동의를 거부할 권리가 있다는 사실과 동의 거부에 따른 불이익 내용</p>
+                    <p>이용자는 육아종합지원센터 홈페이지에서 수집하는 개인정보에 대한 동의를 거부할 권리가 있으며 동의 거부시에는 회원가입 및 게시물 등록, 상담서비스 이용 등 일부서비스 제공이 제한됩니다.</p>
+                </div>
+            </div>
+
+        </section>
+	</div>
+</div>
+
+<div id="pop-up-policy-03" class="popup_wrap">
+	<div class="popup_contents maxw1340">
+		<h3>회원 이용약관</h3>
+		<a href="#" class="popup_close"><span class="hidden">닫기</span></a>
+        <section class="members w1180">
+            <!-- 보육교직원 통합 정보시스템  이용약관 -->
+            <div class="policy" tabindex="0" style="height:50vh;">
+                <div class="txt">
+                    <p class="policy_title">제 1 조 (목적)</p>
+                    <p>본 약관은 교육부가 보육교직원 통합정보(이하 당사이트)을 통하여 제공하는 인터넷 관련 서비스(이하 “서비스”)의 이용조건과 절차, 이용자와 교육부의 권리, 의무, 책임사항과 기타 필요한 사항을 규정함을 목적으로 합니다.</p>
+    
+                    <p class="policy_title">제 2 조 (용어의 정의)</p>
+                    <ul>
+                        <li>① 본 약관에서 사용하는 용어의 정의는 다음과 같습니다.
+                            <ul>
+                                <li>1. 보육교직원 통합정보 (http://chrd.childcare.go.kr)</li>
+                                <li>2. 이용자 :본 약관에 따라 당 사이트에서 제공하는 서비스를 받는 자</li>
+                                <li>3. 가입 :당 사이트가 제공하는 신청서 양식에 해당 정보를 기입하고, 본 약관이나 당 사이트의 운영기준에 동의하여 서비스 이용계약을 완료시키는 행위</li>
+                                <li>4. 회원 :서비스를 이용하기 위하여 회원약관에 동의하고, 당 사이트의 회원으로 가입한 개인 및 단체, 교육기관</li>
+                                <li>5. 아이디(ID) :회원 식별과 회원의 서비스 이용을 위하여 당 사이트에서 지정하거나 회원이 선정한 영문자와 숫자의 조합</li>
+                                <li>6. 비밀번호 :회원식별과 회원의 서비스 이용을 위하여 회원임을 확인하고 개인정보보호를 위해 회원 자신이 설정한 영문자와 숫자의 조합</li>
+                                <li>7. 탈퇴 :회원이 이용계약을 종료시키는 행위</li>
+                                <li>8. 공동인증서 :전자서명을 생성하기 위하여 이용된 정보가 가입자에게 유일하게 속한다는 사실 등을 확인하고 이를 증명하는 전자적 정보로서 전자서명법 제15조의 규정에 의하여 공동인증기관이 발급한 인증서</li>
+                            </ul>
+                        </li>
+                        <li>② 본 약관에 사용하는 용어의 정의는 제1항에서 정의한 것을 제외하고는 관계 법령 및 서비스 안내에서 정하는 바에 의합니다.</li>
+                    </ul>
+                    <p class="policy_title">제 3 조 (약관의 효력과 변경)</p>
+                    <ul>
+                        <li>① 본 약관은 당 사이트에서 제공하는 서비스를 이용하는 모든 약관에 동의한 이용자에 대하여 그 효력을 발생합니다.</li>
+                        <li>② 본 약관의 내용은 서비스의 일부 화면 또는 기타 방법에 의하여 이를 공지하거나 그 내용을 전자우편 등의 방법으로 통지함으로써 효력이 발생합니다.</li>
+                        <li>③ 교육부가 필요하다고 인정되는 경우 이 약관을 임의로 변경할 수 있으며, 변경된 약관은 제2항과 같은 방법으로 공지 또는 통지함으로써 그 효력이 발생합니다.</li>
+                        <li>④ 이용자가 변경된 약관에 동의하지 않는 경우 서비스 이용을 중단하거나 회원탈퇴를 할 수 있습니다. 단, 변경된 약관의 효력이 발생한 이후에도 서비스를 계속 사용할 경우 변경사항에 동의한 것으로 간주됩니다.</li>
+                        <li>⑤ 만 14세 미만 회원 가입 시, 법정 대리인의 동의를 받지 않을 경우에 가입할 수 없습니다.</li>
+                    </ul>
+                    <p class="policy_title">제 4 조 (약관 외 준칙)</p>
+                    <p>본 약관에 명시되지 않은 사항은 개인정보보호법, 전기통신 기본법, 전기통신 사업법, 정보통신 윤리위원회 심의규정, 정보통신 윤리강령, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 및 기타 관계 법령, 교육부가 별도로 정한 규정에 따릅니다.</p>
+    
+                    <p class="policy_title">제 5 조 (이용계약의 성립 및 이용계약의 해지)</p>
+                    <ul>
+                        <li>① 이용계약은 신청자가 온라인으로 당 사이트에서 제공하는 소정의 가입신청 양식에서 요구하는 사항을 기록하여 가입을 할 수 있습니다. 이용자가 변경된 약관에 동의하지 않는 경우 서비스 이용을 중단하거나 회원탈퇴를 할 수 있습니다. 완료하는 것으로 성립됩니다.</li>
+                        <li>② 당 사이트는 다음 각 호에 해당하는 이용계약에 대하여는 가입을 취소할 수 있습니다.
+                            <ul>
+                                <li>1. 다른 사람의 명의를 사용하여 신청한 경우</li>
+                                <li>2. 이용 계약 신청서의 내용을 허위로 기재하였거나 신청한 경우</li>
+                                <li>3. 사회의 안녕, 질서 혹은 미풍양속을 저해할 목적으로 신청한 경우</li>
+                                <li>4. 다른 사람의 당 사이트 서비스 이용을 방해하거나 그 정보를 도용하는 등의 행위를 한 경우</li>
+                                <li>5. 당 사이트를 이용하여 법령과 본 약관이 금지하는 행위를 하는 경우</li>
+                                <li>6. 기타 당 사이트가 정한 이용신청요건이 미비된 경우</li>
+                            </ul>
+                        </li>
+                        <li>③ 당 사이트는 다음 각 호에 해당하는 경우 그 사유가 해소될 때까지 이용계약 성립을 유보할 수 있습니다.
+                            <ul>
+                                <li>1. 서비스 관련 제반 용량이 부족한 경우</li>
+                                <li>2. 기술상 장애 사유가 있는 경우</li>
+                            </ul>
+                        </li>
+                        <li>④ 회원이 서비스 이용계약을 해지하고자 할 경우에는 본인이 온라인 또는 당 사이트에서 정하는 방법을 통하여 이용계약의 해지를 신청해야 합니다.</li>
+                    </ul>
+                    <p class="policy_title">제 6 조 (서비스의 종류 및 이용 방법)</p>
+                    <ul>
+                        <li>① 당 사이트에서 제공하는 서비스는 아래와 같습니다. 당 사이트가 자체 개발하거나 다른 기관과의 협의 등을 통해 제공하는 일체의 서비스</li>
+                        <li>② 제1항에 의한 서비스의 종류, 서비스의 내용 및 이용방법 등은 당 사이트의 사정에 따라 변경될 수 있습니다. 이에 대하여 당 사이트는 귀하 또는 제3자에게 어떠한 책임도 부담하지 아니합니다.</li>
+                        <li>③ 제1항에 의한 서비스 중 일부에 대하여는 아이디(ID)와 비밀번호, 공동인증서 등 서비스에서 정하는 방법을 거쳐야 이용할 수 있습니다.</li>
+                    </ul>
+                    <p class="policy_title">제 7 조 (서비스 이용시간)</p>
+                    <ul>
+                        <li>① 서비스의 이용은 당 사이트의 업무상 또는 기술상 특별한 지장이 없는 한 연중무휴, 1일 24시간 제공하는 것을 원칙으로 합니다. 다만, 당 사이트의 정기점검 등의 서비스 점검 및 조치 등을 위하여 필요로 하는 시간은 그러하지 않습니다.</li>
+                        <li>② 당 사이트는 서비스별로 이용할 수 있는 시간을 별도로 정할 수 있으며, 필요한 경우에는 이를 조정할 수 있습니다.</li>
+                    </ul>
+                    <p class="policy_title">제 8 조 (서비스 중지 및 정보의 저장과 사용)</p>
+                    <ul>
+                        <li>① 당 사이트 서비스에 보관되거나 내용이 국가의 비상사태, 정전, 당 사이트의 관리 범위 외의 서비스 설비 장애 및 기타 불가 항력에 의하여 보관되지 못하였거나 삭제된 경우, 전송되지 못한 경우 및 기타 통신 데이터의 손실이 있을 경우에 당 사이트는 관련 책임을 부담하지 아니합니다.</li>
+                        <li>② 당 사이트가 정상적인 서비스 제공의 어려움으로 인하여 일시적으로 서비스를 중지하여야 할 경우에는 서비스 중지 1주일 전에 고지 후 서비스를 중지할 수 있으며, 이 기간 동안 귀하가 고지내용을 인지하지 못한 데 대하여 당 사이트는 책임을 부담하지 아니합니다. 부득이한 사정이 있을 경우 위 사전 고지기간은 감축되거나 생략될 수 있습니다. 또한 위 서비스 중지에 의하여 본 서비스에 보관되거나 내용이 보관되지 못하였거나 삭제된 경우, 전송되지 못한 경우 및 기타 통신 데이터의 손실이 있을 경우에 대하여도 당 사이트는 책임을 부담하지 아니합니다.</li>
+                        <li>③ 당 사이트의 사정으로 서비스를 영구적으로 중단하여야 할 경우 제2항에 의합니다. 다만, 이 경우 사전 고지기간은 1개월로 합니다.</li>
+                    </ul>
+                    <p class="policy_title">제 9 조 (정보의 제공 및 홍보물 게재)</p>
+                    <ul>
+                        <li>① 당 사이트는 서비스를 운영함에 있어서 필요하다고 인정되는 각종 정보를 서비스에 게재하거나 전자우편 등의 방법으로 제공할 수 있습니다.</li>
+                        <li>② 당 사이트는 서비스에 적절하다고 판단되거나 활용 가능성 있는 홍보물을 게재할 수 있습니다.</li>
+                    </ul>
+                    <p class="policy_title">제 10 조 (게시물의 저작권 등)</p>
+                    <ul>
+                        <li>① 이용자의 공개 게시물의 내용이 다음 각 호에 해당하는 경우 당 사이트는 이용자에게 사전 통지 없이 해당 공개 게시물을 삭제할 수 있습니다.
+                            <ul>
+                                <li>1. 다른 이용자 또는 제3자를 비방하거나 중상모략으로 명예를 손상시키는 내용</li>
+                                <li>2. 공서양속에 위반되는 내용의 정보, 문장, 도형 등을 유포하는 내용</li>
+                                <li>3. 범죄행위와 관련이 있다고 판단되는 내용</li>
+                                <li>4. 다른 이용자 또는 제3자의 저작권 등 기타 권리를 침해하는 내용</li>
+                                <li>5. 기타 관계 법령에 위배된다고 판단되는 내용</li>
+                                <li>6. 종교적, 정치적 분쟁을 야기하는 내용으로서, 이러한 분쟁으로 인하여 당사이트의 업무가 방해 되거나 방해되리라고 판단되는 경우</li>
+                            </ul>
+                        </li>
+                        <li>② 이용자의 공개 게시물로 인한 법률상 이익 침해를 근거로, 다른 이용자 또는 제3자가 이용자 또는 당 사이트를 대상으로 하여 민형사상의 법적 조치(예: 고소, 가처분신청, 손해배상 청구 소송)를 취하는 동시에 법적 조치와 관련된 게시물의 삭제를 요청해오는 경우, 당 사이트는 동 법적 조치의 결과(예: 검찰의 기소, 법원의 가처분결정, 손해배상판결)가 있을 때까지 관련 게시물에 대한 접근을 잠정적으로 제한할 수 있습니다.</li>
+                    </ul>
+                    <p class="policy_title">제 11 조 (서비스 이용상의 책임)</p>
+                    <p>이용자는 당 사이트에서 허용한 경우를 제외하고는 서비스를 이용하여 상품을 판매하거나 고객을 유인하는 영업활동을 할 수 없으며, 특히 해킹, 광고를 통한 수익, 음란사이트를 통한 상업적 행위, 상용 소프트웨어 불법배포 등을 할 수 없습니다. 이를 어기고 발생한 영업활동의 결과 및 손실, 관계기관에 의한 수사·처벌 등 법적조치 등에 관해서는 교육부가 책임을 지지 않습니다.</p>
+                    <p class="policy_title">제 12 조 (서비스의 이용제한 등)</p>
+                    <p>당 사이트는 이용자가 다음 각 호에 해당하는 경우 사전통지 없이 이용계약의 해지 또는 서비스 제공을 중지하거나 관계당국에 고발하는 등의 필요한 조치를 취할 수 있습니다.</p>
+                    <ul>
+                        <li>1. 상용 또는 불법, 음란, 저속하다고 판단되는 게시물, 타인의 사생활 침해 기타 공공질서 및 미풍양속에 위반되는 내용인 경우</li>
+                        <li>2. 다른 이용자, 제3자를 비방, 모욕하거나 명예를 훼손하는 내용인 경우</li>
+                        <li>3. 국익 또는 사회적 공익을 저해하는 경우</li>
+                        <li>4. 범죄행위를 목적으로 하거나 기타 범죄행위와 관련된 경우</li>
+                        <li>5. 교육부 및 제3자의 지적재산권, 기타 권리를 침해하는 내용인 경우</li>
+                        <li>6. 타인의 개인정보, 아이디(ID)와 비밀번호 및 공동인증서 등의 정보를 부정 사용하거나 이를 무단수집 또는 저장하는 경우</li>
+                        <li>7. 다량의 정보 전송, 광고성 정보의 전송, 컴퓨터 바이러스 프로그램의 유포 등 서비스의 안정적인 운영에 지장을 주거나 줄 우려가 있는 경우</li>
+                        <li>8. 정보통신윤리위원회 등 외부기관의 시정 요구가 있거나 선거관리위원회의 중지, 경고 또는 시정명령을 받는 선거법 위반행위가 있는 경우</li>
+                        <li>9. 본 약관 및 당 사이트의 운영기준, 기타 관계 법령 등에 위배되는 경우</li>
+                    </ul>
+                    <p class="policy_title">제 13 조 (당 사이트의 의무)</p>
+                    <ul>
+                        <li>① 당 사이트는 법령과 본 약관이 금지하거나 미풍양속에 반하는 행위를 하지 않으며, 계속적, 안정적으로 서비스를 제공하기 위해 노력할 의무가 있습니다.</li>
+                        <li>② 당 사이트는 이용자의 개인정보를 본인의 승낙 없이 타인에게 누설, 배포하지 않습니다. 다만, 전기통신 관련 법령 등 관계 법령에 의하여 관계 국가기관 등의 요구가 있는 경우에는 그러하지 않으며, 당 사이트와 교육부가 운영하는 다른 사이트간의 회원정보 통합관리와 관련하여 필요한 경우에는 개인정보 등 관련정보를 교육부가 운영하는 다른 사이트에 제공할 수 있습니다.</li>
+                        <li>③ 당 사이트는 이용자가 안전하게 서비스를 이용할 수 있도록 이용자의 개인정보(신용정보 포함) 보호를 위한 보안시스템을 갖추어야 합니다.</li>
+                        <li>④ 당 사이트는 이용자의 귀책사유로 인한 서비스 이용 장애에 대하여 책임을 지지 않습니다.</li>
+                    </ul>
+                    <p class="policy_title">제 14 조 (이용자의 의무)</p>
+                    <ul>
+                        <li>① 이용자는 서비스의 이용 및 가입시에 요구되는 정보를 정확하게 기입하여야 하며, 이미 제공된 정보는 정확한 정보가 되도록 유지, 갱신하여야 합니다. 만일, 해당 정보를 정확히 기입하지 아니하거나 이미 제공된 정보를 유지, 갱신하지 아니하여 발생하는 문제에 대한 책임은 본인에게 있습니다.</li>
+                        <li>② 이용자는 서비스를 이용할 때 다음 각 호의 행위를 하여서는 아니되며, 이로 인하여 문제가 발생될 경우 그 책임은 본인에게 있습니다.
+                            <ul>
+                                <li>1. 타인의 개인정보, 아이디(ID)와 비밀번호 및 공동인증서 등의 정보를 부정 사용하는 행위</li>
+                                <li>2. 자기의 개인정보, 아이디(ID)와 비밀번호 및 공동인증서 등의 정보를 타인에게 이용하게 하는 행위</li>
+                                <li>3. 범죄행위를 목적으로 하거나 기타 범죄행위와 관련된 행위</li>
+                                <li>4. 선량한 풍속, 기타 사회질서를 해하는 행위</li>
+                                <li>5. 타인의 명예를 훼손하거나 모욕하는 행위</li>
+                                <li>6. 타인의 지적재산권 등의 권리를 침해하는 행위</li>
+                                <li>7. 해킹행위 또는 컴퓨터바이러스의 유포행위</li>
+                                <li>8. 타인의 의사에 반하여 광고성 정보 등 일정한 내용을 지속적으로 전송하는 행위</li>
+                                <li>9. 서비스의 안전적인 운영에 지장을 주거나 줄 우려가 있는 일체의 행위</li>
+                                <li>10. 당 사이트에 게시된 정보를 변경하는 행위</li>
+                                <li>11. 본 약관 및 당 사이트의 운영기준, 기타 관계 법령 등에 위배되는 행위</li>
+                            </ul>
+                        </li>
+                        <li>③ 이용자는 본 약관에서 규정하는 사항과 서비스 이용안내, 공지사항 또는 주의사항을 준수하여야 합니다.
+                        ④ 이용자는 당 사이트 서비스를 이용하여 얻은 정보를 당 사이트의 사전승낙 없이 복사, 복제, 변경, 번역, 출판·방송 기타의 방법으로 사용하거나 이를 타인에게 제공할 수 없습니다.</li>
+                    </ul>
+                    <p class="policy_title">제 15 조 (이용자의 정보보안)</p>
+                    <ul>
+                        <li>① 이용자는 당 사이트의 서비스 가입 절차를 완료하는 순간부터 귀하는 입력한 정보의 비밀을 유지할 책임이 있으며, 이용자의 인증을 통하여 발생하는 모든 결과에 대한 책임은 이용자 본인에게 있습니다.</li>
+                        <li>② 아이디(ID)와 비밀번호, 공동인증서 등의 관리에 관한 모든 관리책임은 이용자에게 있습니다. 만일, 아이디(ID)와 비밀번호가 부정하게 사용되었다는 사실을 발견한 경우에는 즉시 당 사이트에 신고하여야 하며, 신고를 하지 않음으로 인한 모든 책임은 이용자 본인에게 있습니다.</li>
+                        <li>③ 이용자는 당 사이트 서비스의 사용 종료 시마다 정확히 접속을 종료해야 하며, 정확히 종료하지 아니함으로써 제3자가 이용자에 관한 정보를 습득하거나 이용하게 되는 등의 결과로 인해 발생하는 손해 및 손실에 대하여 당 사이트는 책임을 지지 않습니다.</li>
+                    </ul>
+                    <p class="policy_title">제 16 조 (당 사이트의 소유권)</p>
+                    <ul>
+                        <li>① 당 사이트가 제공하는 서비스, 그에 필요한 소프트웨어, 이미지, 마크, 로고, 디자인, 서비스명칭, 정보 및 상표 등과 관련된 지적재산권 및 기타 권리는 교육부에 소유권이 있습니다.</li>
+                        <li>② 당 사이트가 명시적으로 승인한 경우를 제외하고는 전항의 소정의 각 재산에 대한 전부 또는 일부의 수정, 대여, 대출, 판매, 배포, 제작, 양도, 재라이센스, 담보권 설정 행위, 상업적 이용 행위를 할 수 없으며, 제3자로 하여금 이와 같은 행위를 하도록 허락할 수 없습니다.</li>
+                    </ul>
+                    <p class="policy_title">제 17 조 (양도금지)</p>
+                    <p>회원이 서비스의 이용권한, 기타 이용계약상의 지위를 타인에게 양도, 증여할 수 없으며, 이를 담보로 제공할 수 없습니다.</p>
+    
+                    <p class="policy_title">제 18 조 (손해배상)</p>
+                    <p>당 사이트는 서비스와 관련하여 이용자에게 어떠한 손해가 발생하더라도 당 사이트가 고의로 행한 범죄행위를 제외하고는 이에 대하여 책임을 부담하지 아니합니다. </p>
+    
+                    <p class="policy_title">제 19 조 (면책사항)</p>
+                    <ul>
+                        <li>① 당 사이트는 귀하가 서비스를 이용하여 기대하는 손익이나 서비스를 통하여 얻은 자료로 인한 손해 등에 관하여 책임을 지지 않으며, 이용자가 본 서비스에 게재한 정보, 자료, 사실의 신뢰도, 정확성 등 내용에 대하여 책임을 지지 않습니다.</li>
+                        <li>② 당 사이트는 이용자간 또는 이용자와 제3자간에 서비스를 매개로 하여 물품거래, 금전거래 등과 관련하여 어떠한 책임도 부담하지 아니합니다.</li>
+                        <li>③ 당 사이트는 국가의 비상사태, 천재지변, 정전, 당 사이트의 관리 범위 외의 서비스 설비 장애, 서비스 이용량의 폭주 기타 서비스 장애 등으로 정상적인 서비스를 제공하지 못하여 생기는 손해 등에 대하여 책임을 지지 않습니다.</li>
+                    </ul>
+                    <p class="policy_title">제 20 조 (관할법원)</p>
+                    <p>서비스 이용과 관련하여 교육부와 이용자 사이에 분쟁이 발행한 경우, 쌍방간의 분쟁의 해결을 위해 성실히 협의한 후가 아니면 제소할 수 없습니다.</p>
+    
+                    <p class="policy_title">제 21 조 (기타 사항)</p>
+                    <p>본 약관에서 정하지 아니한 사항과 본 약관의 해석에 관하여는 국내 관련 법령과 기타 상관습에 의합니다.</p>
+    
+                    <p class="policy_title">제 22조 (시행일)</p>
+                    <p>본 약관은 2024년 6월 27일부터 시행합니다.(2024.6.27 개정)</p>
+    
+                </div>
+            </div>
+
+        </section>
+	</div>
+</div>
+
+<div id="pop-up-policy-04" class="popup_wrap">
+	<div class="popup_contents maxw1340">
+		<h3>개인정보 수집 및 이용동의</h3>
+		<a href="#" class="popup_close"><span class="hidden">닫기</span></a>
+        <section class="members w1180">
+            <!-- 보육교직원 통합 정보시스템  개인정보 수집 및 이용동의 -->
+            <div class="policy" tabindex="0" style="height:50vh;">
+                <div class="txt">
+                    <p>보육교직원 통합 정보시스템은 정보주체의 동의하에 따라 회원관리 및 양질의 서비스 제공을 위하여 다음과 같이 최소한의 개인정보를 수집하고 있습니다.<br/>
+                        수집한 개인정보는 본 수집·이용 목적 외의 다른 목적으로 사용되지 않습니다.</p>
+                    <p class="policy_title">1. 수집하는 개인정보 항목</p>
+                    <p>(필수) : ID, 성명, 비밀번호, 휴대폰, 이메일, 주소, 관심 육아종합지원센터, 14세미만 가입인 경우(법정대리인 이름, 법정대리인 연락처)</p>
+                    <p class="policy_title">2. 개인정보의 수집 및 이용 목적</p>
+                    <p>포털 제공 회원제 서비스 이용(자격증 교부 및 자격관련 정보 제공, 양성교육·보수교육 운영지원을 위한 교육생 관리, 상당글 등록 등)</p>
+                    <p class="policy_title">3. 개인정보의 이용 및 보유기간</p>
+                    <p>보육교직원 통합 정보시스템 회원 탈퇴 시까지</p>
+                    <p>※ 2년 이상 장기 미접속자는 자동으로 탈퇴처리 됩니다</p>
+                    <p class="policy_title">4. 동의를 거부할 권리가 있다는 사실과 동의 거부에 따른 불이익</p>
+                    <p>이용자는 보육교직원 통합 정보시스템에서 수집하는 개인정보에 대한 동의를 거부할 권리가 있으며 동의 거부 시에는 회원가입 및 자격 신청, 양성교육․보수교육 신청 등 일부 서비스 제공이 제한됩니다.</p>
+    
+                </div>
+            </div>
+
+        </section>
+	</div>
+</div>
+
+<div id="pop-up-policy-05" class="popup_wrap">
+	<div class="popup_contents maxw1340">
+		<h3>회원 이용약관</h3>
+		<a href="#" class="popup_close"><span class="hidden">닫기</span></a>
+        <section class="members w1180">
+            <!-- 처음학교로 이용약관 -->
+            <div class="policy" tabindex="0" style="height:50vh;">
+                <div class="txt">
+                    <p class="policy_title">제1조 (목적)</p>
+                    <p>본 약관은 교육부와 시•도교육청이 처음학교로를 통하여 제공하는 인터넷 관련 서비스(이하 “서비스”)의 이용조건과 절차, 이용자와 서비스 제공기관의 권리, 의무, 책임사항과 기타 필요한 사항을 규정함을 목적으로 합니다.</p>
+    
+                    <p class="policy_title">제 2 조 (용어의 정의)</p>
+                    <ul>
+                        <li>①본 약관에서 사용하는 용어의 정의는 다음과 같습니다. 처음학교로 학부모, 시·도교육(지원)청 담당자, 유치원 서비스
+                            <ul>
+                                <li>1. 이용자 : 본 약관에 따라 당 사이트에서 제공하는 서비스를 받는 자</li>
+                                <li>2. 가입 : 당 사이트가 제공하는 신청서 양식에 해당 정보를 기입하고, 본 약관이나 당 사이트의 운영기준에 동의하여 서비스 이용계약을 완료시키는 행위</li>
+                                <li>3. 회원 : 서비스를 이용하기 위하여 회원약관에 동의하고, 당 사이트의 회원으로 가입한 개인</li>
+                                <li>4. 아이디(ID) : 회원 식별과 회원의 서비스 이용을 위하여 당 사이트에서 지정하거나 회원이 선정한 영문자와 숫자의 조합</li>
+                                <li>5. 로그인 : 회원식별과 회원의 서비스 이용을 위하여 회원임을 확인하고 개인정보보호를 위해 회원 자신의 고유의 공동인증서로 식별</li>
+                                <li>6. 공동인증서 : 전자서명을 생성하기 위하여 이용된 정보가 가입자에게 유일하게 속한다는 사실 등을 확인하고 이를 증명하는 전자적 정보로서 전자서명법 제15조의 규정에 의하여 공인인증기관이 발급한 인증서</li>
+                            </ul>
+                        </li>
+                        <li>② 본 약관에 사용하는 용어의 정의는 제1항에서 정의한 것을 제외하고는 관계 법령 및 서비스 안내에서 정하는 바에 의합니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제 3 조 (약관의 효력과 변경)</p>
+                    <ul>
+                        <li>① 본 약관은 당 사이트에서 제공하는 서비스를 이용하는 모든 약관에 동의한 이용자에 대하여 그 효력을 발생합니다.</li>
+                        <li>② 본 약관의 내용은 그 내용을 본 사이트에 공지함으로써 효력이 발생합니다.</li>
+                        <li>③ 교육부와 시•도교육청은 필요하다고 인정되는 경우 이 약관을 임의로 변경할 수 있으며, 변경된 약관은 제2항과 같은 방법으로 공지함으로써 그 효력이 발생합니다.</li>
+                        <li>④ 이용자가 변경된 약관에 동의하지 않는 경우 서비스 이용을 중단하게 할 수 있습니다. 단, 변경된 약관의 효력이 발생한 이후에도 서비스를 계속 사용할 경우 변경사항에 동의한 것으로 간주합니다.</li>
+                        <li>⑤ 만 14세 미만 회원 가입은 불가 합니다.(유치원 현장접수를 통하여 원서접수는 가능합니다.)</li>
+                    </ul>
+    
+                    <p class="policy_title">제 4 조 (약관 외 준칙)</p>
+                    <p>본 약관에 명시되지 않은 사항은 개인정보보호법, 전기통신 기본법, 전기통신 사업법, 정보통신 윤리위원회 심의규정, 정보통신 윤리강령, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 및 기타 관계 법령, 교육부와 시•도교육청이 정한 규정에 따릅니다.</p>
+    
+    
+                    <p class="policy_title">제 5 조 (이용계약의 성립 및 이용계약의 해지)</p>
+                    <ul>
+                        <li>① 이용계약은 신청자가 온라인으로 당 사이트에서 제공하는 소정의 가입신청 양식에서 요구하는 사항을 기록하여 가입을 완료하는 것으로 성립되며, 다음해 2월 말 일괄 해지 처리됩니다.</li>
+                        <li>② 당 사이트는 다음 각 호에 해당하는 이용계약에 대하여는 가입을 취소할 수 있습니다.
+                            <ul>
+                                <li>1. 다른 사람의 명의를 사용하여 신청한 경우</li>
+                                <li>2. 이용 계약 신청서의 내용을 허위로 기재하였거나 신청한 경우</li>
+                                <li>3. 사회의 안녕, 질서 혹은 미풍양속을 저해할 목적으로 신청한 경우</li>
+                                <li>4. 다른 사람의 당 사이트 서비스 이용을 방해하거나 그 정보를 도용하는 등의 행위를 한 경우</li>
+                                <li>5. 당 사이트를 이용하여 법령과 본 약관이 금지하는 행위를 하는 경우</li>
+                                <li>6. 민법 등 관계법령에서 정하는 유아에 대한 친권자 등 법정 대리인의 동의 없이 권리가 없는 자가 권리를 행사하는 경우</li>
+                                <li>7. 기타 당 사이트가 정한 이용신청요건이 미비한 경우</li>
+                            </ul>
+                        </li>
+                        <li>③ 당 사이트는 다음 각 호에 해당하는 경우 그 사유가 해소될 때까지 이용계약 성립을 유보할 수 있습니다.
+                            <ul>
+                                <li>1. 서비스 관련 제반 용량이 부족한 경우</li>
+                                <li>2. 기술상 장애 사유가 있는 경우</li>
+                            </ul>
+                        </li>
+                        <li>④ 회원이 서비스 이용계약을 해지하고자 할 경우에는 본인이 당 사이트에서 정하는 방법을 통하여 이용계약의 해지를 신청해야 합니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제 6 조 (서비스의 종류 및 이용 방법)</p>
+                    <ul>
+                        <li>① 당 사이트에서 제공하는 서비스는 아래와 같습니다.</li>
+                        <li>당 사이트가 자체 개발하거나 다른 기관과의 협의 등을 통해 제공하는 일체의 서비스</li>
+                        <li>② 제1항에 의한 서비스의 종류, 서비스의 내용 및 이용방법 등은 당 사이트의 사정에 따라 변경될 수 있습니다. 이에 대하여 당 사이트는 귀하 또는 제3자에게 어떠한 책임도 부담하지 아니합니다.</li>
+                        <li>③ 제1항에 의한 서비스 중 일부에 대하여는 아이디(ID), 공동인증서 등 서비스에서 정하는 방법을 거쳐야 이용할 수 있습니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제 7 조 (서비스 이용시간)</p>
+                    <ul>
+                        <li>① 서비스의 이용은 당 사이트의 업무상 또는 기술상 특별한 지장이 없는 한 유치원 입학 관련 일정 동안 서비스를 제공하는 것을 원칙으로 합니다. 다만, 당 사이트의 정기점검 등의 서비스 점검 및 조치 등을 위하여 필요로 하는 시간은 그러하지 않습니다.</li>
+                        <li>② 당 사이트는 서비스별로 이용할 수 있는 시간을 별도로 정할 수 있으며, 필요한 경우에는 이를 조정할 수 있습니다</li>
+                    </ul>
+    
+                    <p class="policy_title">제 8 조 (서비스 중지 및 정보의 저장과 사용)</p>
+                    <ul>
+                        <li>① 당 사이트 서비스에 보관되거나 내용이 국가의 비상사태, 정전, 당 사이트의 관리 범위 외의 서비스 설비 장애 및 기타 불가항력에 의하여 보관되지 못하였거나 삭제된 경우, 전송되지 못한 경우 및 기타 통신 데이터의 손실이 있을 경우에 당 사이트는 관련 책임을 부담하지 아니합니다.</li>
+                        <li>② 당 사이트가 정상적인 서비스 제공의 어려움으로 인하여 일시적으로 서비스를 중지하여야 할 경우에는 서비스 중지 1주일 전에 고지 후 서비스를 중지할 수 있으며, 이 기간 동안 귀하가 고지내용을 인지하지 못한 데 대하여 당 사이트는 책임을 부담하지 아니합니다. 부득이한 사정이 있을 경우 위 사전 고지기간은 감축되거나 생략될 수 있습니다. 또한 위 서비스 중지에 의하여 본 서비스에 보관되거나 내용이 보관되지 못하였거나 삭제된 경우, 전송되지 못한 경우 및 기타 통신 데이터의 손실이 있을 경우에 대하여도 당 사이트는 책임을 부담하지 아니합니다.</li>
+                        <li>③ 당 사이트의 사정으로 서비스를 영구적으로 중단하여야 할 경우 제2항에 의합니다. 다만, 이 경우 사전 고지기간은 1개월로 합니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제 9 조 (정보의 제공 및 홍보물 게재)</p>
+                    <ul>
+                        <li>① 당 사이트는 서비스를 운영함에 있어서 필요하다고 인정되는 각종 정보를 서비스에 게재할 수 있습니다.</li>
+                        <li>② 당 사이트는 서비스에 적절하다고 판단되거나 활용 가능성 있는 홍보물을 게재할 수 있습니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제 10 조 (게시물의 저작권 등)</p>
+                    <ul>
+                        <li>① 이용자의 공개 게시물의 내용이 다음 각 호에 해당하는 경우 당 사이트는 이용자에게 사전 통지 없이 해당 공개 게시물을 삭제할 수 있습니다.
+                            <ul>
+                                <li>1. 다른 이용자 또는 제3자를 비방하거나 중상모략으로 명예를 손상시키는 내용</li>
+                                <li>2. 공공의 질서와 선량한 풍속에 위반되는 내용의 정보, 문장, 도형 등을 유포하는 내용</li>
+                                <li>3. 범죄행위와 관련이 있다고 판단되는 내용</li>
+                                <li>4. 다른 이용자 또는 제3자의 저작권 등 기타 권리를 침해하는 내용</li>
+                                <li>5. 기타 관계 법령에 위배된다고 판단되는 내용</li>
+                                <li>6. 종교적, 정치적 분쟁을 야기하는 내용으로서, 이러한 분쟁으로 인하여 당사이트의 업무가 방해 되거나 방해되리라고 판단되는 경우</li>
+                            </ul>
+                        </li>
+                        <li>② 이용자의 공개 게시물로 인한 법률상 이익 침해를 근거로, 다른 이용자 또는 제3자가 이용자 또는 당 사이트를 대상으로 하여 민형사상의 법적 조치(예: 고소, 가처분신청, 손해배상 청구 소송)를 취하는 동시에 법적 조치와 관련된 게시물의 삭제를 요청해오는 경우, 당 사이트는 동 법적 조치의 결과(예: 검찰의 기소, 법원의 가처분결정, 손해배상판결)가 있을 때까지 관련 게시물에 대한 접근을 잠정적으로 제한할 수 있습니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제 11 조 (서비스 이용상의 책임)</p>
+                    <p>이용자는 당 사이트에서 허용한 경우를 제외하고는 서비스를 이용하여 상품을 판매하거나 고객을 유인하는 영업활동을 할 수 없으며, 특히 민법 등 관계법령에서 정하는 유아에 대한 친권자 등 법정대리인의 동의 없이 권리가 없는 자가 권리를 행사하거나, 해킹, 광고를 통한 수익, 음란사이트를 통한 상업적 행위, 상용 소프트웨어 불법배포 등을 할 수 없습니다. 이를 어기고 발생한 영업활동의 결과 및 손실, 관계기관에 의한 수사•처벌 등 법적조치 등에 관해서는 교육부가 책임을 지지 않습니다.</p>
+                    
+                    <p class="policy_title">제 12 조 (서비스의 이용제한 등)</p>
+                    <p>당 사이트는 이용자가 다음 각 호에 해당하는 경우 사전통지 없이 이용계약의 해지 또는 서비스 제공을 중지하거나 관계당국에 고발하는 등의 필요한 조치를 취할 수 있습니다.</p>
+                    <ul>
+                        <li>1. 상용 또는 불법, 음란, 저속하다고 판단되는 게시물, 타인의 사생활 침해 기타 공공질서 및 미풍양속에 위반되는 내용인 경우</li>
+                        <li>2. 다른 이용자, 제3자를 비방, 모욕하거나 명예를 훼손하는 내용인 경우</li>
+                        <li>3. 국익 또는 사회적 공익을 저해하는 경우</li>
+                        <li>4. 범죄행위를 목적으로 하거나 기타 범죄행위와 관련된 경우</li>
+                        <li>5. 교육부 및 제3자의 지적재산권, 기타 권리를 침해하는 내용인 경우</li>
+                        <li>6. 타인의 개인정보, 아이디(ID)와 비밀번호 및 공동인증서 등의 정보를 부정 사용하거나 이를 무단수집 또는 저장하는 경우</li>
+                        <li>7. 다량의 정보 전송, 광고성 정보의 전송, 컴퓨터 바이러스 프로그램의 유포 등 서비스의 안정적인 운영에 지장을 주거나 줄 우려가 있는 경우</li>
+                        <li>8. 정보통신윤리위원회 등 외부기관의 시정 요구가 있거나 선거관리위원회의 중지, 경고 또는 시정명령을 받는 선거법 위반행위가 있는 경우</li>
+                        <li>9. 본 약관 및 당 사이트의 운영기준, 기타 관계 법령 등에 위배되는 경우</li>
+                    </ul>
+    
+                    <p class="policy_title">제 13 조 (당 사이트의 의무)</p>
+                    <ul>
+                        <li>① 당 사이트는 법령과 본 약관이 금지하거나 미풍양속에 반하는 행위를 하지 않으며, 계속적, 안정적으로 서비스를 제공하기 위해 노력할 의무가 있습니다.</li>
+                        <li>② 당 사이트는 이용자의 개인정보를 본인의 승낙 없이 타인에게 누설, 배포하지 않습니다. 다만, 전기통신 관련 법령 등 관계 법령에 의하여 관계 국가기관 등의 요구가 있는 경우에는 그러하지 않으며, 당 사이트와 교육부와 시•도교육청이 운영하는 다른 사이트간의 회원정보 통합관리와 관련하여 필요한 경우에는 개인정보 등 관련정보를 교육부 및 시•도교육청이 운영하는 다른 사이트에 제공할 수 있습니다.</li>
+                        <li>③ 당 사이트는 이용자가 안전하게 서비스를 이용할 수 있도록 이용자의 개인정보 보호를 위한 보안시스템을 갖추어야 합니다.</li>
+                        <li>④ 당 사이트는 이용자의 귀책사유로 인한 서비스 이용 장애에 대하여 책임을 지지 않습니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제 14 조 (이용자의 의무)</p>
+                    <ul>
+                        <li>① 이용자는 서비스의 이용 및 가입시에 요구되는 정보를 정확하게 기입하여야 하며, 이미 제공된 정보는 정확한 정보가 되도록 유지, 갱신하여야 합니다. 만일, 해당 정보를 정확히 기입하지 아니하거나 이미 제공된 정보를 유지, 갱신하지 아니하여 발생하는 문제에 대한 책임은 본인에게 있습니다.</li>
+                        <li>② 이용자는 서비스를 이용할 때 다음 각 호의 행위를 하여서는 아니되며, 이로 인하여 문제가 발생할 경우 그 책임은 본인에게 있습니다.
+                            <ul>
+                                <li>1. 타인의 개인정보, 아이디(ID), 공동인증서 등의 정보를 부정 사용하는 행위</li>
+                                <li>2. 자기의 개인정보, 아이디(ID), 공동인증서 등의 정보를 타인에게 이용하게 하는 행위</li>
+                                <li>3. 범죄행위를 목적으로 하거나 기타 범죄행위와 관련된 행위</li>
+                                <li>4. 선량한 풍속, 기타 사회질서를 해하는 행위</li>
+                                <li>5. 타인의 명예를 훼손하거나 모욕하는 행위</li>
+                                <li>6. 타인의 지적재산권 등의 권리를 침해하는 행위</li>
+                                <li>7. 해킹행위 또는 컴퓨터바이러스의 유포행위</li>
+                                <li>8. 타인의 의사에 반하여 광고성 정보 등 일정한 내용을 지속해서 전송하는 행위</li>
+                                <li>9. 서비스의 안정적인 운영에 지장을 주거나 줄 우려가 있는 모든 행위</li>
+                                <li>10. 당 사이트에 게시된 정보를 변경하는 행위</li>
+                                <li>11. 본 약관 및 당 사이트의 운영기준, 기타 관계 법령 등에 위배되는 행위</li>
+                            </ul>
+                        </li>
+                        <li>③ 이용자는 본 약관에서 규정하는 사항과 서비스 이용안내, 공지사항 또는 주의사항을 준수하여야 합니다.</li>
+                        <li>④ 이용자는 당 사이트 서비스를 이용하여 얻은 정보를 당 사이트의 사전승낙 없이 복사, 복제, 변경, 번역, 출판•방송 기타의 방법으로 사용하거나 이를 타인에게 제공할 수 없습니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제 15 조 (이용자의 정보보안)</p>
+                    <ul>
+                        <li>① 이용자는 당 사이트의 서비스 가입 절차를 완료하는 순간부터 귀하는 입력한 정보의 비밀을 유지할 책임이 있으며, 이용자의 인증을 통하여 발생하는 모든 결과에 대한 책임은 이용자 본인에게 있습니다.</li>
+                        <li>② 아이디(ID), 공동인증서 등의 관리에 관한 모든 관리책임은 이용자에게 있습니다. 만일, 아이디(ID)와 비밀번호가 부정하게 사용되었다는 사실을 발견한 경우에는 즉시 당 사이트에 신고하여야 하며, 신고를 하지 않음으로 인한 모든 책임은 이용자 본인에게 있습니다.</li>
+                        <li>③ 이용자는 당 사이트 서비스의 사용 종료 시마다 정확히 로그아웃(Log-out)해야 하며, 로그아웃하지 아니하여 제3자가 귀하에 관한 정보를 도용하는 등의 결과로 인해 발생하는 손해 및 손실에 대하여 우리 공단 홈페이지는 책임을 부담하지 아니합니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제 16 조 (당 사이트의 소유권)</p>
+                    <ul>
+                        <li>① 당 사이트가 제공하는 서비스, 그에 필요한 소프트웨어, 이미지, 마크, 로고, 디자인, 서비스명칭, 정보 및 상표 등과 관련된 지적재산권 및 기타 권리는 교육부 및 시•도교육청에 소유권이 있습니다.</li>
+                        <li>② 당 사이트가 명시적으로 승인한 경우를 제외하고는 전항의 소정의 각 재산에 대한전부 또는 일부의 수정, 대여, 대출, 판매, 배포, 제작, 양도, 라이선스 부당활용, 담보권 설정 행위, 상업적 이용 행위를 할 수 없으며, 제3자로 하여금 이와 같은 행위를 하도록 허락할 수 없습니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제 17 조 (양도금지)</p>
+                    <p>회원이 서비스의 이용권한, 기타 이용계약상의 지위를 타인에게 양도, 증여할 수 없으며, 이를 담보로 제공할 수 없습니다.</p>
+    
+                    <p class="policy_title">제 18 조 (손해배상)</p>
+                    <p>당 사이트는 서비스와 관련하여 이용자에게 어떠한 손해가 발생하더라도 당 사이트가 고의로 행한 범죄행위를 제외하고는 이에 대하여 책임을 부담하지 아니합니다.</p>
+    
+                    <p class="policy_title">제 19 조 (면책사항)</p>
+                    <ul>
+                        <li>① 당 사이트는 귀하가 서비스를 이용하여 기대하는 손익이나 서비스를 통하여 얻은 자료로 인한 손해 등에 관하여 책임을 지지 않으며, 이용자가 본 서비스에 게재한 정보, 자료, 사실의 신뢰도, 정확성 등 내용에 대하여 책임을 지지 않습니다.</li>
+                        <li>② 당 사이트는 이용자간 또는 이용자와 제3자간에 서비스를 매개로 하여 물품거래, 금전거래 등과 관련하여 어떠한 책임도 부담하지 아니합니다.</li>
+                        <li>③ 당 사이트는 국가의 비상사태, 천재지변, 정전, 당 사이트의 관리 범위 외의 서비스 설비 장애, 서비스 이용량의 폭주 기타 서비스 장애 등으로 정상적인 서비스를 제공하지 못하여 생기는 손해 등에 대하여 책임을 지지 않습니다.</li>
+                    </ul>
+    
+                    <p class="policy_title">제 20 조 (관할법원)</p>
+                    <p>서비스 이용과 관련하여 교육부 및 시•도교육청과 이용자 사이에 분쟁이 발행한 경우, 쌍방간의 분쟁의 해결을 위해 성실히 협의한 후가 아니면 제소할 수 없습니다.</p>
+    
+                    <p class="policy_title">제 21 조 (기타 사항)</p>
+                    <p>본 약관에서 정하지 아니한 사항과 본 약관의 해석에 관하여는 국내 관련 법령과 기타 상관습에 의합니다.</p>
+                    
+                    <p class="policy_title">제 22조 (시행일)</p>
+                    <p>본 약관은 2021년 10월 29일부터 시행합니다.</p>
+                </div>
+            </div>
+
+
+        </section>
+	</div>
+</div>
+
+<div id="pop-up-policy-06" class="popup_wrap">
+	<div class="popup_contents maxw1340">
+		<h3>개인정보 수집 및 이용동의</h3>
+		<a href="#" class="popup_close"><span class="hidden">닫기</span></a>
+        <section class="members w1180">
+            <!-- 처음학교로 개인정보 수집 및 이용동의 -->
+            <div class="policy" tabindex="0" style="height:50vh;">
+                <div class="txt">
+                    <p class="policy_title">보호자 서비스 회원가입을 위한 개인정보 수집·이용 동의서</p>
+                    <p>유치원입학관리시스템은 정보주체의 동의하에 따라 회원관리 및 양질의 서비스 제공을 위하여 다음과 같이 최소한의 개인정보를 수집하고 있습니다.<br />내용을 자세히 읽어 보신
+                        후 동의 여부를 결정하여 주시기 바랍니다.수집한 개인정보는 본 수집•이용 목적 외의 다른 목적으로 사용되지 않습니다.</p>
+                    <p class="policy_title">개인정보 수집·이용내역</p>
+                    <ul>
+                        <li>1. 수집·이용 항목
+                            <ul>
+                                <li>(필수) : 보호자 개인정보(성명, 아이디, 연락처, 주소), 자녀 개인정보(성명, 자녀 주민등록번호(외국인등록번호), 자녀 성별, 자녀와 보호자
+                                    관계, 자녀 주소)</li>
+                                <li>(선택) : 본인 외 추가로 연락받기를 원하는 분의 개인정보(성명, 추가 연락처)</li>
+                            </ul>
+                        </li>
+                        <li>2. 수집 목적 : 유치원입학관리시스템 서비스 이용(공지사항, 원서접수 및 선발결과 확인, FAQ 서비스 이용 등)</li>
+                        <li>3. 보유기간 : 목적달성시까지 보유(5개월) 후 즉시 파기</li>
+                        <li>4. 귀하는 유치원입학관리시스템에서 수집하는 개인정보에 대한 수집 동의를 거부할 권리가 있습니다. 그러나 동의 거부 시에는 유치원 입학 대상자 확인을 할 수 없어
+                            서비스 이용이 불가능합니다.
+                            <ul>
+                                <li>※ (필수정보 동의) 정보주체가 14세 미만의 아동인 경우 위와 같이 개인정보를 제공하는데 동의하십니까? 동의 / 미동의</li>
+                                <li>※ (선택정보 동의)정보주체가 14세 미만의 아동인 경우 위와 같이 개인정보를 제공하는데 동의하십니까? 동의 / 미동의</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                    <p class="policy_title">민감정보 처리 내역</p>
+                    <ul>
+                        <li>1. 수집·이용 항목 : (선택) 건강관련정보
+                            <p>※ 각 유치원별 선발 정책에 따라 수집될 수 있습니다.</p>
+                        </li>
+                        <li>2. 수집 목적 : 유치원별 선발 정책에 따라 건강관련정보가 필요한 경우 수집되어 활용</li>
+                        <li>3. 보유기간 : 목적달성시까지 보유(5개월) 후 즉시 파기</li>
+                        <li>4. 귀하는 유치원입학관리시스템에서 수집하는 민감정보에 대한 수집 동의를 거부할 권리가 있습니다. 그러나 동의 거부 시에는 건강관련정보 확인이 불가하므로 일부 선발 절차에 제한을 받을 수 있습니다.
+                            <p>※ (선택정보 동의) 정보주체가 14세 미만의 아동인 경우 위와 같이 민감정보를 처리하는데 동의하십니까?동의/미동의</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+	</div>
+</div>
+
+<div id="pop-up-policy-07" class="popup_wrap">
+	<div class="popup_contents maxw1340">
+		<h3>개인정보 제 3자 제공 내역 동의</h3>
+		<a href="#" class="popup_close"><span class="hidden">닫기</span></a>
+        <section class="members w1180">
+            <!-- 처음학교로 개인정보 제 3자 제공 내역 동의 -->
+            <div class="policy" tabindex="0" style="height:50vh;">
+                <div class="txt">
+                    <p class="policy_title">개인정보 제3자 제공 내역</p>
+                    <ul>
+                        <li>1. 개인정보를 제공 받는 자 : 유아학비지원시스템(e-유치원)</li>
+                        <li>2. 제공받는 자의 개인정보 이용목적 : 유치원에서 유아학비지원 기본 정보 등록 시 활용</li>
+                        <li>3. 제공하는 개인정보 항목 : (필수) 자녀성명, 자녀주민등록번호(외국인등록번호), 주소, 우편번호, 보호자 성명, 보호자 연락처1, 보호자 연락처2(추가연락처)
+                            <ul>
+                                <li>※ 각 항목의 연계를 위한 활용항목은 각 유치원별 정책에 따름</li>
+                                <li>※ 제공형태 : 전자적 제공</li>
+                            </ul>
+                        </li>
+                        <li>4. 제공받는 자의 보유·이용기간 : 유아학비지원시스템 개인정보방침에 따름
+                            <p>※유아학비지원시스템개인정보 처리방침 : <a class="link" title="새창열림" href="https://www.childschool.go.kr/ca/prv/private.do" target="_blank">https://www.childschool.go.kr/ca/prv/private.do</a></p>
+                        </li>
+                        <li>5. 귀하는 유치원입학관리시스템의 개인정보 제3자 제공에 대한 동의를 거부할 권리가 있습니다. 그러나 동의 거부 시에는 유아학비지원정책 등의 제한을 받을 수 있습니다.
+                            <p>※ 정보주체가 14세 미만의 아동인 경우 위와 같이 개인정보를 제3자 제공하는데 동의하십니까? 동의 / 미동의</p>
+                        </li>
+                    </ul>
+                    <p class="policy_title">기타 고지 사항</p>
+                    <p>자녀의 주민등록번호는 관련 법령에 따라 정보주체의 동의 없이 개인정보를 수집·이용합니다.</p>
+                    <ul>
+                        <li>1. 개인정보 처리 사유 : 유치원 입학업무 관리(유아교육법 제19조의2)</li>
+                        <li>2. 개인정보 항목 :　유아 주민등록번호(외국인등록번호)</li>
+                        <li>3. 수집 근거 :유아교육법 제19조의 2 및 같은 법 시행령 제34조의 3</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+	</div>
+</div>
+<!--// 약관동의 팝업 -->
+
+
+<!-- include footer 개발서버에는 적용 필요 없음!! -->
+<div include-html="../../include/footer.html"></div> 
+<script>
+	includeHTML(); 
+</script>
+<!--// include footer 개발서버에는 적용 필요 없음!! -->
+
+</body>
+</html>

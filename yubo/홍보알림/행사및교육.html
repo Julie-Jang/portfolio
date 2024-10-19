@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>행사및교육 &lt; 홍보 &middot; 알림 &lt; 유보통합</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+</script>
+<![endif]-->
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<link rel="stylesheet" href="../css/common.css" type="text/css">
+<link rel="stylesheet" href="../css/main.css" type="text/css">
+<link rel="stylesheet" href="../css/sub.css" type="text/css">
+<link rel="stylesheet" href="../css/font-face.css" type="text/css">
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/sub.js"></script>
+
+
+<!-- include js 개발서버에는 적용 필요 없음!! -->
+<script src="../js/include.js"></script>
+<!--// include js -->
+
+<body>
+
+<!-- include header 개발서버에는 적용 필요 없음!! -->
+<div include-html="../include/header.html"></div> 
+<!--// include header 개발서버에는 적용 필요 없음!! -->
+
+
+<!-- sub title -->
+<section class="sub_visual sub07"><!-- 카테고리별로 백그라운드 이미지 바뀜 sub01 부터 sub07 까지-->
+    <div class="sub_title">
+        <h2>홍보·알림</h2>
+        <p>"아이사랑"에서 공지, 행사, 교육정보를 알려드립니다.</p>
+    </div>
+</section>
+
+<!-- Location -->
+<div class="location">
+    <ul>
+        <li><a href="#"><em class="hidden">홈</em></a></li>
+        <li>
+            <div class="custom_select">
+                <div class="select_selected"><a href="#">홍보 &middot; 알림</a></div>
+                <div class="select_items">
+                    <div><a href="#">임신</a></div>
+                    <div><a href="#">출산</a></div>
+                    <div><a href="#">육아</a></div>
+                    <div><a href="#">어린이집</a></div>
+                    <div><a href="#">소통 &middot; 참여</a></div>
+                    <div><a href="#">상담실</a></div>
+                    <div class="on"><a href="#">홍보 &middot; 알림</a></div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="custom_select">
+                <div class="select_selected"><a href="#">행사 및 교육</a></div>
+                <div class="select_items">
+                    <div><a href="#">공지사항</a></div>
+                    <div><a href="#">정책뉴스</a></div>
+                    <div class="on"><a href="#">행사 및 교육</a></div> <!-- 선택된 위치에 class on -->
+                    <div><a href="#">건강정보</a></div>
+                    <div><a href="#">자료실</a></div>
+                    <div><a href="#">미디어 자료실</a></div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<!-- Contents -->
+<section class="contents_wrap" id="contents">
+    <h3 class="title">행사 및 교육</h3>
+    <div class="board_top"><!-- 게시판 검색 -->
+        <div class="board responsive table_cell">
+            <table>
+                <caption>추가결제권자, 아동을 검색하는 내용의 테이블</caption>
+                <colgroup class="medium_none">
+                    <col style="width: 10%">
+                    <col style="width: auto">
+                    <col style="width: 28%">
+                    <col style="width: 12%">
+                    <col style="width: 30%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td>지역</td>
+                        <td>
+                            <select class="selectbox large mr10" title="결제 대상 년도 선택">
+                                <option>지역선택</option>
+                                <option></option>
+                                <option></option>
+                            </select>
+                        </td>
+                        <td class="second_td">
+                            <input type="checkbox" id="site01">
+                            <label for="site01" class="checkbox">
+                                <span></span>
+                                행사명
+                            </label>
+                            <input type="checkbox" id="site02">
+                            <label for="site02" class="checkbox">
+                                <span></span>
+                                주최
+                            </label>
+                        </td>
+                        <td class="second_td">검색어</td>
+                        <td><input type="text" name="" id="" title="검색어 입력" value="" placeholder="검색어 입력"> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="btn_area">
+            <a href="#" class="btn h60 maxw220 search">검색</a>
+        </div>
+    </div>
+
+    <p class="point t_right mb75 mt-40">※ 본자료는 해당지역의 육아종합지원센터에서 제공한 자료 입니다.</p>
+    <!-- 달력 -->
+    <div class="relative">
+        <div class="calendar_container">
+            <div class="calendar_controls">
+                <button id="prev_year" class="btn_pre"><span class="hidden">이전 년도</span></button>
+                <span id="current_year"></span>
+                <button id="next_year" class="btn_next"><span class="hidden">다음 년도</span></button>
+
+                <button id="prev_month" class="btn_pre"><span class="hidden">이전 월</span></button>
+                <span id="current_month"></span>
+                <button id="next_month" class="btn_next"><span class="hidden">다음 월</span></button>
+                
+            </div>
+            <table class="calendar" aria-label="달력">
+                <thead>
+                    <tr>
+                        <th scope="col">일</th>
+                        <th scope="col">월</th>
+                        <th scope="col">화</th>
+                        <th scope="col">수</th>
+                        <th scope="col">목</th>
+                        <th scope="col">금</th>
+                        <th scope="col">토</th>
+                    </tr>
+                </thead>
+                <tbody id="calendar_body">
+                    <!-- 날짜가 여기 채워집니다 -->
+                </tbody>
+            </table>
+        </div>
+        <!-- 날짜 세부 정보가 여기에 표시됩니다 -->
+        <div class="calendar_detail">
+            <p class="dot_list_blue mt20">전국의 보육관련 행사를 날짜별로 확인하실 수 있습니다.</p>
+            <ul class="calendar_detail_list">
+                <li>
+                    <h6>2024 충청북도 영유가 발달지원 코디네이터</h6>
+                    <ul>
+                        <li><b>행사기간:</b> 2024-08-06~2024-09-30</li>
+                        <li><b>행사장소:</b>경기도육아종합지원센터</li>
+                    </ul>
+                    <p class="btn_area">
+                        <a href="#">센터행사교육</a>
+                    </p>
+                </li>
+                <li>
+                    <h6>2024 충청북도 영유가 발달지원 코디네이터</h6>
+                    <ul>
+                        <li><b>행사기간:</b> 2024-08-06~2024-09-30</li>
+                        <li><b>행사장소:</b>경기도육아종합지원센터</li>
+                    </ul>
+                    <p class="btn_area">
+                        <a href="#">센터행사교육</a>
+                    </p>
+                </li>
+                <li>
+                    <h6>2024 충청북도 영유가 발달지원 코디네이터</h6>
+                    <ul>
+                        <li><b>행사기간:</b> 2024-08-06~2024-09-30</li>
+                        <li><b>행사장소:</b>경기도육아종합지원센터</li>
+                    </ul>
+                    <p class="btn_area">
+                        <a href="#">센터행사교육</a>
+                    </p>
+                </li>
+                <li>
+                    <h6>2024 충청북도 영유가 발달지원 코디네이터</h6>
+                    <ul>
+                        <li><b>행사기간:</b> 2024-08-06~2024-09-30</li>
+                        <li><b>행사장소:</b>경기도육아종합지원센터</li>
+                    </ul>
+                    <p class="btn_area">
+                        <a href="#">센터행사교육</a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="btn_right">
+        <a href="#" class="btn h50">행사전체보기</a>
+    </div>
+
+
+    <div class="fraction mt100"><b>총</b> <span>1,125</span> 건</div>
+		<div class="board boardlist responsive t_center">
+			<table>
+				<caption>행사전체의 번호, 지역, 제목, 첨부파일, 등록일, 조회수 내용의 테이블</caption>
+				<colgroup class="medium_none">
+					<col style="width: 8%">
+					<col style="width: 15%;">
+					<col style="width: auto;">
+					<col style="width: 8%;">
+					<col style="width: 20%;">
+					<col style="width: 8%;">
+				</colgroup>
+				<thead class="medium_none">
+					<tr>
+						<th scope="col">번호</th>
+						<th scope="col">지역</th>
+						<th scope="col">제목</th>
+						<th scope="col">첨부</th>
+						<th scope="col">등록일</th>
+						<th scope="col">조회수</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="divide line">10</td>
+                        <td class="divide">지역</td>
+						<td class="t_left t_con">
+							<a href="#" title="상세 페이지로 이동">제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</a>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td class="divide line">2024-01-01</td>
+						<td class="divide">100</td>
+					</tr>
+					<tr>
+						<td class="divide line">9</td>
+                        <td class="divide">지역</td>
+						<td class="t_left t_con">
+							<a href="#" title="상세 페이지로 이동">제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</a>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td class="divide line">2024-01-01</td>
+						<td class="divide">100</td>
+					</tr>
+					<tr>
+						<td class="divide line">8</td>
+                        <td class="divide">지역</td>
+						<td class="t_left t_con">
+							<a href="#" title="상세 페이지로 이동">제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</a>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td class="divide line">2024-01-01</td>
+						<td class="divide">100</td>
+					</tr>
+					<tr>
+						<td class="divide line">7</td>
+                        <td class="divide">지역</td>
+						<td class="t_left t_con">
+							<a href="#" title="상세 페이지로 이동">제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</a>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td class="divide line">2024-01-01</td>
+						<td class="divide">100</td>
+					</tr>
+					<tr>
+						<td class="divide line">6</td>
+                        <td class="divide">지역</td>
+						<td class="t_left t_con">
+							<a href="#" title="상세 페이지로 이동">제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</a>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td class="divide line">2024-01-01</td>
+						<td class="divide">100</td>
+					</tr>
+					<tr>
+						<td class="divide line">5</td>
+                        <td class="divide">지역</td>
+						<td class="t_left t_con">
+							<a href="#" title="상세 페이지로 이동">제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</a>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td class="divide line">2024-01-01</td>
+						<td class="divide">100</td>
+					</tr>
+					<tr>
+						<td class="divide line">4</td>
+                        <td class="divide">지역</td>
+						<td class="t_left t_con">
+							<a href="#" title="상세 페이지로 이동">제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</a>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td class="divide line">2024-01-01</td>
+						<td class="divide">100</td>
+					</tr>
+					<tr>
+						<td class="divide line">3</td>
+                        <td class="divide">지역</td>
+						<td class="t_left t_con">
+							<a href="#" title="상세 페이지로 이동">제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</a>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td class="divide line">2024-01-01</td>
+						<td class="divide">100</td>
+					</tr>
+					<tr>
+						<td class="divide line">2</td>
+                        <td class="divide">지역</td>
+						<td class="t_left t_con">
+							<a href="#" title="상세 페이지로 이동">제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</a>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td class="divide line">2024-01-01</td>
+						<td class="divide">100</td>
+					</tr>
+					<tr>
+						<td class="divide line">1</td>
+                        <td class="divide">지역</td>
+						<td class="t_left t_con">
+							<a href="#" title="상세 페이지로 이동">제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</a>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td class="divide line">2024-01-01</td>
+						<td class="divide">100</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- pagenation -->
+		<div class="pagination">
+			<a href="#" class="first"><span class="hidden">첫 페이지 목록으로 이동</span></a>
+			<a href="#" class="prev"><span class="hidden">이전 페이지 목록으로 이동</span></a>
+			<a href="#" class="active" title="현재 페이지">1</a>
+			<a href="#" title="2페이지로 이동">2</a>
+			<a href="#" title="3페이지로 이동">3</a>
+			<a href="#" title="4페이지로 이동">4</a>
+			<a href="#" title="5페이지로 이동">5</a>
+			<a href="#" title="5페이지로 이동">6</a>
+			<a href="#" title="5페이지로 이동">7</a>
+			<a href="#" title="5페이지로 이동">8</a>
+			<a href="#" title="5페이지로 이동">9</a>
+			<a href="#" title="5페이지로 이동">10</a>
+			<a href="#" class="next"><span class="hidden">다음 페이지 목록으로 이동</span></a>
+			<a href="#" class="last"><span class="hidden">마지막 페이지 목록으로 이동</span></a>
+		</div>
+		<!--// pagenation -->
+    
+</section>
+<!--// contents -->
+
+<script> // 달력 스크립트
+const calendarBody = document.getElementById('calendar_body');
+const currentYearSpan = document.getElementById('current_year');
+const currentMonthSpan = document.getElementById('current_month');
+let today = new Date();
+let currentYear = today.getFullYear();
+let currentMonth = today.getMonth();
+
+function generateCalendar(year, month) {
+    calendarBody.innerHTML = '';
+    const firstDay = new Date(year, month, 1).getDay(); // 이번 달 1일의 요일
+    const daysInMonth = new Date(year, month + 1, 0).getDate(); // 이번 달의 마지막 날짜
+    const daysInPrevMonth = new Date(year, month, 0).getDate(); // 이전 달의 마지막 날짜
+
+    // 연도와 월을 각각의 span 태그에 할당
+    currentYearSpan.textContent = `${year}년`;
+    currentMonthSpan.textContent = `${month + 1}월`;
+
+    let row = document.createElement('tr');
+    let dayCount = 0; // 일수 카운트 (6주를 맞추기 위한 변수)
+    let nextMonthDay = 1; // 다음 달의 첫 날짜
+
+    // 첫 주의 남은 칸을 이전 달의 날짜로 채움
+    for (let i = 0; i < firstDay; i++) {
+        const cell = document.createElement('td');
+        const button = document.createElement('button');
+        button.textContent = daysInPrevMonth - firstDay + 1 + i; // 이전 달의 마지막 며칠
+        button.classList.add('prev-month', 'c_bbb'); // 클래스 추가
+        cell.appendChild(button);
+        row.appendChild(cell);
+        dayCount++;
+    }
+
+    // 이번 달의 날짜 채움
+    for (let day = 1; day <= daysInMonth; day++) {
+        const cell = document.createElement('td');
+        const button = document.createElement('button');
+        button.textContent = day;
+        button.setAttribute('aria-label', `${year}년 ${month + 1}월 ${day}일`);
+
+        // 오늘 날짜 강조
+        if (year === today.getFullYear() && month === today.getMonth() && day === today.getDate()) {
+            button.classList.add('today');
+        }
+
+        cell.appendChild(button);
+        row.appendChild(cell);
+        dayCount++;
+
+        if ((day + firstDay) % 7 === 0) {
+            calendarBody.appendChild(row);
+            row = document.createElement('tr');
+        }
+    }
+
+    // 마지막 주 남은 칸을 다음 달의 날짜로 채움
+    const remainingDays = (firstDay + daysInMonth) % 7;
+    if (remainingDays !== 0) {
+        for (let i = 1; i <= 7 - remainingDays; i++) {
+            const cell = document.createElement('td');
+            const button = document.createElement('button');
+            button.textContent = nextMonthDay++; // 다음 달의 첫 며칠
+            button.classList.add('next-month', 'c_bbb'); // 클래스 추가
+            cell.appendChild(button);
+            row.appendChild(cell);
+            dayCount++;
+        }
+        calendarBody.appendChild(row);
+    }
+
+    // 6주가 안 될 경우 빈 칸을 추가하면서 다음 달의 날짜를 계속 채움
+    while (dayCount < 42) {  // 7일 * 6주 = 42일
+        if (dayCount % 7 === 0) {
+            row = document.createElement('tr');
+        }
+        const cell = document.createElement('td');
+        const button = document.createElement('button');
+        button.textContent = nextMonthDay++; // 다음 달의 날짜 추가
+        button.classList.add('next-month', 'c_bbb'); // 클래스 추가
+        cell.appendChild(button);
+        row.appendChild(cell);
+        calendarBody.appendChild(row);
+        dayCount++;
+    }
+}
+
+// 연도 및 월 변경을 위한 버튼 이벤트
+document.getElementById('prev_year').addEventListener('click', () => {
+    currentYear--;
+    generateCalendar(currentYear, currentMonth);
+});
+
+document.getElementById('prev_month').addEventListener('click', () => {
+    if (currentMonth === 0) {
+        currentMonth = 11;
+        currentYear--;
+    } else {
+        currentMonth--;
+    }
+    generateCalendar(currentYear, currentMonth);
+});
+
+document.getElementById('next_month').addEventListener('click', () => {
+    if (currentMonth === 11) {
+        currentMonth = 0;
+        currentYear++;
+    } else {
+        currentMonth++;
+    }
+    generateCalendar(currentYear, currentMonth);
+});
+
+document.getElementById('next_year').addEventListener('click', () => {
+    currentYear++;
+    generateCalendar(currentYear, currentMonth);
+});
+
+// 페이지 로드 시 오늘 날짜로 달력 생성
+generateCalendar(currentYear, currentMonth);
+
+
+</script>
+
+
+
+
+
+
+<!-- include footer 개발서버에는 적용 필요 없음!! -->
+<div include-html="../include/footer.html"></div> 
+<script>
+    includeHTML(); 
+</script>
+<!--// include footer 개발서버에는 적용 필요 없음!! -->
+
+</body>
+</html>

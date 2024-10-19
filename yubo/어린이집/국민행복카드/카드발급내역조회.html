@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>카드발급내역조회 &lt; 국민행복카드 &lt; 어린이집 &lt; 유보통합</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+</script>
+<![endif]-->
+<link rel="stylesheet" href="../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../css/common.css" type="text/css">
+<link rel="stylesheet" href="../../css/main.css" type="text/css">
+<link rel="stylesheet" href="../../css/sub.css" type="text/css">
+<link rel="stylesheet" href="../../css/font-face.css" type="text/css">
+<script src="../../js/jquery-1.12.4.min.js"></script>
+<script src="../../js/common.js"></script>
+<script src="../../js/sub.js"></script>
+
+<!-- include js 개발서버에는 적용 필요 없음!! -->
+<script src="../../js/include.js"></script>
+<!--// include js -->
+
+<body>
+
+<!-- include header 개발서버에는 적용 필요 없음!! -->
+<div include-html="../../include/header.html"></div> 
+<!--// include header 개발서버에는 적용 필요 없음!! -->
+
+
+<!-- sub title -->
+<section class="sub_visual sub04">
+	<div class="sub_title">
+		<h2>어린이집</h2>
+		<p>사랑하는 아이를 기르는 일, "아이사랑"이 함께 하겠습니다.</p>
+	</div>
+</section>
+
+<!-- Location -->
+<div class="location">
+	<ul>
+		<li><a href="#"><em class="hidden">홈</em></a></li>
+		<li>
+            <div class="custom_select">
+                <div class="select_selected"><a href="#">어린이집</a></div>
+                <div class="select_items">
+                    <div><a href="#">임신</a></div>
+                    <div><a href="#">출산</a></div>
+                    <div><a href="#">육아</a></div>
+                    <div class="on"><a href="#">어린이집</a></div> <!-- 선택된 위치에 class on -->
+                    <div><a href="#">소통 &middot; 참여</a></div>
+                    <div><a href="#">상담실</a></div>
+                    <div><a href="#">홍보 &middot; 알림</a></div>
+                </div>
+            </div>
+        </li>
+		<li>
+            <div class="custom_select">
+                <div class="select_selected"><a href="#">국민행복카드</a></div>
+                <div class="select_items">
+                    <div class="on"><a href="#">국민행복카드</a></div><!-- 선택된 위치에 class on -->
+                    <div><a href="#">임신 중 잘 지내기</a></div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="custom_select">
+                <div class="select_selected"><a href="#">카드발급내역조회</a></div>
+                <div class="select_items">
+                    <div class="on"><a href="#">카드발급내역조회</a></div> <!-- 선택된 위치에 class on -->
+                    <div><a href="#">지도로 어린이집 찾기</a></div>
+                </div>
+            </div>
+        </li>
+	</ul>
+</div>
+
+<!-- Contents -->
+<section class="contents_wrap" id="contents">
+    <div class="color_box_line search_box pt60 pb60 pl60 pr60">
+        <div class="board table_cell responsive t_center mt20">
+            <table>
+                <caption>입소대기 아동 조회 아동명, 아동주민등록번호, 보육 만나이, 입소희망 예정월, 입소순위 점수 내용의 테이블</caption>
+                <colgroup class="medium_none">
+                    <col style="width: 10%">
+                    <col style="width: 25%;">
+                    <col style="width: 22%;">
+                    <col style="width: auto;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td><p class="dot_list mb0 bold f_18">실명인증</p></td>
+                        <td class="t_left"><input type="text" name="" id="" title="실명인증" value="" class="maxw220"></td>
+                        <td><p class="dot_list mb0 bold f_18">주민등록번호 (외국인등록번호)</p></td>
+                        <td class="t_left">
+                            <div class="col_email">
+                                <input type="text" name="socialNo" id="socialNo" title="주민등록번호 앞자리" value="" maxlength="6">
+                                <em class="space">-</em>
+                                <input type="password" name="socialNo02" id="socialNo02" title="주민등록번호 뒷자리" value="" maxlength="7">
+                                <input type="button" value="실명확인" class="btn h36 line navy square ml10">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>        
+    </div>
+
+    <div class="board t_center mt70">
+        <table>
+            <caption>카드 발급 내역 조회 결과의 카드사, 카드종류, 카드번호, 신청일, 발급일, 발급경로, 발급진행상황, 미발급사유 내용의 테이블</caption>
+                <tr>
+                    <th scope="col">카드사</th>
+                    <th scope="col">카드종류</th>
+                    <th scope="col">카드번호</th>
+                    <th scope="col">신청일</th>
+                    <th scope="col">발급일</th>
+                    <th scope="col">발급경로</th>
+                    <th scope="col">발급진행상황</th>
+                    <th scope="col">미발급사유</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="8">카드 발급내역이 없습니다.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="mt20">※ 휴지·폐지 등 카드의 카드상태 여부는 확인 불가합니다. '상세내역'을 클릭하시면 발급중단 사유를 확인하실 수 있습니다.</p>
+    <div class="btn_group btn_right mt100">
+        <a href="#" class="btn h50">자주쓰는 카드 등록</a>
+    </div>
+
+
+    <h4 class="title mt100">카드발급처리결과</h4>
+    <ul class="step_list mt40">
+        <li>
+            <span class="badge line">STEP 1</span>
+            <p>카드신청 접수</p>
+        </li>
+        <li>
+            <span class="badge line">STEP 2</span>
+            <p>카드사 접수대기</p>
+        </li>
+        <li>
+            <span class="badge line">STEP 3</span>
+            <p>심사</p>
+        </li>
+        <li>
+            <span class="badge line">STEP 4</span>
+            <p>카드발급 확정</p>
+        </li>
+        <li>
+            <span class="badge line">STEP 5</span>
+            <p>카드제작</p>
+        </li>
+        <li>
+            <span class="badge line">STEP 6</span>
+            <p>특송등기 발송</p>
+        </li>
+        <li>
+            <span class="badge line">STEP 7</span>
+            <p>카드수령</p>
+        </li>
+    </ul>
+
+    <h4 class="title mt70">국민행복카드 이용관련 문의</h4>
+    <ul class="dot_list_blue mt20">
+        <li>KB국민 국민행복카드 전용 상담실 : <tel class="point">1599-7900</tel></li>
+        <li>우리카드 국민행복카드 전용 상담실 : <tel class="point">1599-9977</tel></li>
+        <li>하나카드 국민행복카드 전용 상담실 : <tel class="point">1599-7733</tel></li>
+        <li>신한카드 국민행복카드 전용 상담실 : <tel class="point">1544-8868</tel></li>
+        <li>NH농협카드 국민행복카드 전용 상담실 : <tel class="point">1644-2336</tel></li>
+        <li>롯데카드 국민행복카드 전용 상담실 : <tel class="point">1899-4282</tel></li>
+        <li>BC카드 국민행복카드 전용 상담실 : <tel class="point">1899-4651</tel></li>
+        <li>삼성카드 국민행복카드 전용 상담실 : <tel class="point">1566-3336</tel></li>
+    </ul>
+    <p class="caution">※ 국민행복카드 상담 및 승인, 카드 분실 및 해지, 재발급, 정보 변경 등</p>
+
+
+</section>
+<!--// contents -->
+
+
+<!-- include footer 개발서버에는 적용 필요 없음!! -->
+<div include-html="../../include/footer.html"></div> 
+<script>
+	includeHTML(); 
+</script>
+<!--// include footer 개발서버에는 적용 필요 없음!! -->
+
+</body>
+</html>
