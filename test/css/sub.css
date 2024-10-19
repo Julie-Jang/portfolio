@@ -1312,4 +1312,5 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 
 	.calendar_detail .calendar_detail_list > li p.btn_area {position:relative; top:unset; right:unset; margin-top:1rem;}
 	.search_preschool .custom_select2_wrap .select_area ul li a, .search_preschool .custom_select2_wrap .select_area .selected {padding:0.5rem 2rem; font-size:1.4rem;}
+	.search_preschool .radio {font-size:1.8rem !important}
 }
