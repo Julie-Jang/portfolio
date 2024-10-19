@@ -1,5 +1,12 @@
 @charset "utf-8";
 /* intro */
+section.intro {/*-webkit-transform: translateZ(0); overflow:hidden; position:relative; width:100%; height:100%; height: calc(100vh - 1px); background:url(../images/bg_intro.jpg) no-repeat center top; background-size:cover;*/}
+section.intro h1 {font-size:5.2rem;  color:white; font-weight:700; line-height:1.5; padding-top:5rem; padding-left:10rem;}
+section.intro h1 em {display:block; font-size:3.2rem; font-weight:300; letter-spacing:0.02rem;}
+section.intro p.h2 {position:absolute; top:6rem; right:10rem;background:url(../images/text_intro.svg) no-repeat right top; background-size:contain; width:30rem; height:12rem;}
+section.intro ul {position:fixed; width:100%; bottom:6rem; left:0; text-align:center; }
+section.intro ul li {display:inline-block; vertical-align:top; margin:3rem; width:53rem; height:16rem; border-radius:3rem; box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.26);}
+section.intro ul li a {font-size:5rem; font-weight:600; position:relative;display:block; padding:4rem 6rem; height:100%; color:white; text-align:left; border-radius:3rem;}
 section.intro ul li a::after {content:''; display:block; position:absolute; width:4.5rem; height:4.5rem; right:5rem; top:calc(50% - 2rem); background:url(../images/icon/icon_in.svg) no-repeat center 0; background-size:contain;} 
 section.intro ul li:last-child a::after {width:7.5rem; background:url(../images/icon/icon_zoom.svg) no-repeat center 0;background-size:contain;} 
 section.intro ul li a em {font-size:2.6rem; font-weight:300; padding-left:1rem;}
@@ -271,7 +278,7 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
 @media screen and (max-width: 680px) {
     .main_wrap .search_preschool {padding:5rem 3rem 9.5rem;}
     /* intro */
-    section.intro {background:url(../images/bg_intro_m.jpg) no-repeat center top; background-size:cover;}
+    section.intro {background:/*url(../images/bg_intro_m.jpg) no-repeat center top; background-size:cover;*/red;}
     section.intro h1 {font-size:4.5rem;}
     section.intro h1 em {font-size:2.7rem;letter-spacing: 0.1rem;}
     section.intro p.h2 {top:5rem; width:20rem;}
