@@ -264,13 +264,13 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
 
 @media screen and (max-width: 680px) {
     .main_wrap .search_preschool {padding:5rem 3rem 9.5rem;}
-    /* intro */
+    /* intro 
     section.intro {background:url(../images/bg_intro_m.jpg) no-repeat center top; background-size:cover;}
     section.intro h1 {font-size:4.5rem;}
     section.intro h1 em {font-size:2.7rem;letter-spacing: 0.1rem;}
     section.intro p.h2 {top:5rem; width:20rem;}
     section.intro ul li a{font-size: 4rem; padding:3.5rem 3rem;}
-    section.intro ul li a::after {top:unset; bottom:5rem;}
+    section.intro ul li a::after {top:unset; bottom:5rem;}*/
     .slide_show.main-banenr2 .visual_pagination-wrap {right:7rem;}
     .banner_visual {padding:9.5rem 0 0;}
     .banner_visual .slide_show .swiper-ctrl .btn_prev {left:3rem;}
