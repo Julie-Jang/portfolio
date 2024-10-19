@@ -278,7 +278,8 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
 @media screen and (max-width: 680px) {
     .main_wrap .search_preschool {padding:5rem 3rem 9.5rem;}
     /* intro */
-    section.intro {background:url(../images/bg_intro_m.jpg) no-repeat center top; background-size:100%;}
+    /*section.intro {background:url(../images/bg_intro_m.jpg) no-repeat center top; background-size:cover;}*/
+    section.intro {background:red;}
     section.intro h1 {font-size:4.5rem;}
     section.intro h1 em {font-size:2.7rem;letter-spacing: 0.1rem;}
     section.intro p.h2 {top:5rem; width:20rem;}
