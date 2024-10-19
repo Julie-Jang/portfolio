@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* intro */
-section.intro {position:relative; width:100%; height:100vh; background:url(../images/bg_intro.jpg) no-repeat center top; background-size:cover;}
-section.intro h1 {font-size:5.2rem; font-weight:700; line-height:1.5; padding-left:10rem;padding-top:5rem;color:white;}
+section.intro {position:relative; width:100%; height:100%; background:url(../images/bg_intro.jpg) no-repeat center top; background-size:cover;}
+/*section.intro h1 {font-size:5.2rem; font-weight:700; line-height:1.5; padding-left:10rem;padding-top:5rem;color:white;}
 section.intro h1 em {display:block; font-size:3.2rem; font-weight:300; letter-spacing:0.02rem;}
 section.intro p.h2 {position:fixed; top:6rem; right:10rem;background:url(../images/text_intro.svg) no-repeat right top; background-size:contain; width:30rem; height:12rem;}
 section.intro ul {position:fixed; width:100%; bottom:6rem; left:0; overflow:hidden; gap:6rem; display: flex; display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex; justify-content: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center;}
@@ -12,7 +12,7 @@ section.intro ul li:last-child a::after {width:7.5rem; background:url(../images/
 section.intro ul li a em {font-size:2.6rem; font-weight:300; padding-left:1rem;}
 section.intro ul li:first-child a {background-color:#265413cf; }
 section.intro ul li:last-child a {background-color:#153374d6;}
-
+*/
 section.intro_search {margin-top:2.8rem;}
 section.intro_search h2 {font-size:3rem;font-weight:200; text-align:center; margin-bottom:3.5rem;}
 section.intro_search h2 b{font-size:5rem; font-weight:700;}
