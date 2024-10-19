@@ -290,6 +290,7 @@ $(document).ready(function() {
         } else {
             $this.attr('title', '정보 더보기 열기');
         }
+        return false;
     });
         
     
