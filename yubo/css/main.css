@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* intro */
 section.intro {  width:100%; min-width:360px; height:100vh; background:url(../images/bg_intro.jpg) no-repeat center top; background-size:cover;}
-section.intro .intro_wrap {position:relative; color:white; position:relative; padding-top:5rem;}
+section.intro .intro_wrap {position:relative; color:white; padding-top:5rem;}
 section.intro h1 {font-size:5.2rem; font-weight:700; line-height:1.5; padding-left:10rem;}
 section.intro h1 em {display:block; font-size:3.2rem; font-weight:300; letter-spacing:0.02rem;}
 section.intro p.h2 {position:absolute; top:6rem; right:10rem;background:url(../images/text_intro.svg) no-repeat right top; background-size:contain; width:30rem; height:12rem;}
