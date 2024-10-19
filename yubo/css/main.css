@@ -233,7 +233,7 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
 
 @media screen and (max-width: 1100px) {
     /* intro */
-    section.intro ul li {margin:1rem; width: calc(50% - 6rem);}
+    section.intro ul {gap:1rem;}
     section.intro ul li a {padding-right:12rem; padding: 4rem 6rem;}
     section.intro ul li a em {display:block; padding-left:0; }
 
