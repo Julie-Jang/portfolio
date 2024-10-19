@@ -324,7 +324,7 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     .main_wrap .search_preschool .btn_preschool .btn {width:32rem; height:7rem; max-width:unset; font-size:2.4rem;padding:2.4rem 0;}
     .main_wrap .search_preschool .btn_preschool .btn::before {width:5rem; height:5rem; background-size: 3.4rem 3rem;}
     .main_wrap .search_preschool .btn_preschool .btn::after {top:1.5rem; right:2rem;}
-    .slide_show.main-banenr2 .visual_pagination-wrap {right:0.3rem;}
+    .slide_show.main-banenr2 .visual_pagination-wrap {right:0.8rem;}
     .tab_wrap_inner > li {min-width:unset;}
     .banner_visual2 .tab_wrap_inner > li > a {padding:0 1rem;}
 }
