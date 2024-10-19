@@ -198,7 +198,7 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
 
 @media screen and (max-width: 1520px) {
     /* intro */
-    section.intro h1 {padding:5rem 4rem 0 0;}
+    section.intro h1 {padding:5rem 4rem;}
     section.intro p.h2 {right:4rem;}
     .main_wrap {padding:0 4rem;}
     .main_bg1 .main_wrap {padding:0;}
