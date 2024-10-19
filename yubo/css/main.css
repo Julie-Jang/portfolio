@@ -309,6 +309,10 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     }
 
 @media screen and (max-width: 430px) {
+    #header .member li.my_account a::before {display:none;}
+    #header .member li.my_account a {padding-left:0;}
+    #header .member li {padding-left:1.5rem;}
+    #header .member li.logout, #header .member li.login {margin-right:1.5rem;}
     section.intro ul li {height:17rem;}
     section.intro ul li a {font-size:3rem; padding:3rem 2rem;}
     .main_wrap .search_preschool .btn_preschool {bottom:-4rem;}

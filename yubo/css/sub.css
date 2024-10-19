@@ -683,7 +683,7 @@ em.count{margin:0 1rem;}
 .btn_close::after {content: '';  position: absolute; right:50%; top: 0; width: 0.1rem; height: 4rem; transform: rotate(135deg); background-color: black;}
 
 /* popup */
-.popup_wrap {display: none; position: fixed;left: 0%;top: 0%;z-index: 1000;background-color:rgba(0,0,0,0.3) ;width: 100%; height:100vh; }
+.popup_wrap {display: none; position: fixed;left: 0%;top: 0%;z-index: 1000;background-color:rgba(0,0,0,0.3) ;width: 100%; height: calc(100vh - 1px); }
 .popup_wrap > div {max-height:95%; min-width:40rem; overflow:hidden; padding-bottom:4rem;}
 .popup_wrap .popup_inner{position: fixed;left: 50%;top: 50%; background-color: #fff; width:80%; max-width:134rem; box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.26);height:80vh;transform: translate(calc(-50.2% + 0.5px), calc(-50.2% + 0.5px)); border-radius:5rem; }
 .popup_wrap .popup_contents {width:auto; height:auto; position: fixed;left: 50%;top: 50%;z-index: 1000; background-color: #fff; border-radius:5rem;box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.26); transform: translate(calc(-50.2% + 0.5px), calc(-50.2% + 0.5px));}
@@ -773,7 +773,7 @@ em.count{margin:0 1rem;}
 .app_list ul li p {padding-top:3rem; }
 
 /* tab */
-.pop_contents .tab_wrap_inner{display: flex; display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex;flex-wrap: nowrap; -webkit-box-lines: single; -moz-box-lines: single; -ms-flex-wrap: none; -webkit-flex-wrap: nowrap;gap:1rem;padding-bottom:1rem; overflow-x:auto;max-width:100%; position:unset;}
+.pop_contents .tab_wrap_inner{min-height:6.7rem; display: flex; display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex;flex-wrap: nowrap; -webkit-box-lines: single; -moz-box-lines: single; -ms-flex-wrap: none; -webkit-flex-wrap: nowrap;gap:1rem;padding-bottom:1rem; overflow-x:auto;max-width:100%; position:unset;}
 .pop_contents .tab_wrap_inner > li {flex:0 0 auto}
 .pop_contents .tab_wrap_inner > li > a {display: block;width: 100%;text-align: center;border: 1px solid #bbb; border-radius:10rem; padding:2.2rem 4rem;white-space: nowrap;overflow: hidden;text-overflow: ellipsis; font-size:2.2rem; font-weight:500; color:#999;}
 .pop_contents .tab_wrap_inner > li.on > a, .tab_wrap_inner > li > a:hover,.tab_wrap_inner > li > a:focus, .tab_wrap_inner > li > a.on {background-color: #2D62C5;color: #fff;}
