@@ -1195,6 +1195,8 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 	.board.responsive .col_two .selectbox ,
 	.board.responsive .col_two input[type="text"]  {width: calc(50% - 1.3rem); max-width:100%;}
 
+	.search_preschool .board.responsive > table > tbody > tr{overflow:unset;}
+
 	.col_btn input {width: calc(33% - 1.3rem); max-width:100%;}
 	.board.responsive .col_four input[type="text"],	.board.responsive .col_four select {width: calc(26.5% - 1.3rem); max-width:100%;}
 	.board .info {line-height:1.2;font-size:1.5rem;}
