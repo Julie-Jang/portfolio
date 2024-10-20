@@ -92,6 +92,7 @@ select:focus {background-color: white; }
 
 @media (max-width:820px) {
 	html { font-size: 8px; }
+	html, body {overflow: auto; -webkit-overflow-scrolling: touch;} /* iOS에서 부드러운 스크롤 */
 }
 
 /* for IE */
