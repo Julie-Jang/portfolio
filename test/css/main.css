@@ -256,7 +256,7 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     .slide_show .visual_pagination-wrap {top:3.6rem; left:4rem;}
     .main_visual .slide_show .swiper-wrap .swiper-slide {height:40rem;}
     .main_visual .slide_show .swiper-wrap .swiper-slide p {margin:12rem auto 0; padding:0 4rem; font-size:3rem;}
-    .main_wrap .search_preschool {margin:-5rem 4rem 0;}
+    .main_wrap .search_preschool {margin:-5rem 2rem 0;width: calc(100% - 4rem);}
 
 
 
@@ -281,7 +281,8 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     .main_banner li:nth-child(6) a::after {top:8rem;}
     .main_banner li a {padding:3rem 2rem; font-size:1.4rem;}
     .main_banner li a span {font-size:2rem;}
-    .main_banner li.point a {font-size:2.4rem; padding-top:16rem;}
+    .main_banner li.point a {font-size:2rem; padding-top:16rem;}
+    .main_bg, .main_bg1 {padding:0 0 4rem;}
     
 }
 
@@ -302,9 +303,9 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     section.intro ul li a::after {top:unset; bottom:5rem;}
     .slide_show.main-banenr2 .visual_pagination-wrap {right:7rem;}
     .banner_visual {padding:9.5rem 0 0;}
-    .banner_visual .slide_show .swiper-ctrl .btn_prev {left:2rem;}
+    .banner_visual .slide_show .swiper-ctrl .btn_prev {left:1rem;}
     .banner_visual .slide_show .swiper-ctrl .btn_next {right:4rem;}
-    .banner_visual .slide_show .swiper-container {margin:0 0 0 7rem;}
+    .banner_visual .slide_show .swiper-container {margin:0 0 0 5rem;}
 }
 
 
@@ -317,14 +318,19 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     section.intro ul li a em {font-size:1.8rem;}
     section.intro ul li a::after {width:3rem; bottom:1.5rem; right:3rem;}
     section.intro ul li:last-child a::after {width:4.4rem; bottom:1rem; right:2rem;}
-    .main_wrap h4.title {font-size:4rem;}
+    .main_wrap h4.title {font-size:3.4rem;}
     .main_wrap > .left h5 {font-size:3rem;}
-    .main_wrap > .left p {font-size:2rem;}
-    .main_wrap p.title {font-size:2rem;}
+    .main_wrap > .left p {font-size:1.8rem; padding-bottom:4rem;}
+    .main_wrap > .left h5 {padding-top:4rem;}
+    .main_wrap p.title {font-size:1.8rem; margin-bottom:3rem;}
+    .main_banner {padding:0 2rem;}
+    .main_wrap {padding:0 2rem;}
     .banner_visual2 .tab_wrap_inner > li ul.notice_banner > li > a span.title {width:70%;}
     .banner_visual2 .tab_wrap_inner > li:first-child > a {font-size:2.2rem;}
-    .btn_more_dot {top:3.5rem; width:3rem; height:3rem;}
+    .main_visual2 .main_wrap > .right {padding:4rem 2rem 0;}
+    .btn_more_dot {top:-0.5rem; width:3rem; height:3rem;}
     .slide_show.main-banenr2 .visual_pagination-wrap {right:4rem;}
+    .f_link {padding:0;}
     }
 
 @media screen and (max-width: 430px) {
@@ -334,7 +340,7 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     #header .member li.logout, #header .member li.login {margin-right:1.5rem;}
     section.intro ul li {height:17rem;}
     section.intro ul li a {font-size:3rem; padding:3rem 2rem;}
-    .slide_show.main-banenr2 .visual_pagination-wrap {right:0.8rem;}
+    .slide_show.main-banenr2 .visual_pagination-wrap {right:2rem; bottom:2rem;}
     .tab_wrap_inner > li {min-width:unset;}
     .banner_visual2 .tab_wrap_inner > li > a {padding:0 1rem;}
 }
