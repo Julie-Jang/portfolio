@@ -39,7 +39,7 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
 .slide_show .swiper-wrap{width:100%;}
 .slide_show .swiper-wrap .swiper-wrapper {margin:0 auto; }
 .main_visual {position:relative;}
-.main_visual .slide_show .swiper-wrap .swiper-slide{width:100%; height:66rem; transition:ease-in-out;background-image:url(../images/bg_main_visual01.jpg); background-repeat:no-repeat; background-size:cover; background-position:center center;}
+.main_visual .slide_show .swiper-wrap .swiper-slide{width:100%; height:66rem; transition:ease-in-out;background-image:url(../images/bg_main_visual01.jpg); background-repeat:no-repeat; background-size:cover; background-position:center center;background-attachment: fixed;}
 .main_visual .slide_show .swiper-wrap .swiper-slide p {max-width:152rem; margin:12.5rem auto 0; color:white; font-size:6rem; font-weight:600; line-height:1.2; padding:0 6rem;}
 .main_visual .slide_show .swiper-wrap .swiper-slide.swiper-slide-01 {background-image:url(../images/bg_main_visual01.jpg);}
 .main_visual .slide_show .swiper-wrap .swiper-slide.swiper-slide-02 {background-image:url(../images/bg_main_visual01.jpg);}
