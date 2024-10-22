@@ -1362,7 +1362,7 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 	.search_preschool .radio {font-size:1.8rem !important; margin-right:1rem;}
 	.search_preschool_detail dl dd button {padding: 0 0.5em;}
 	section.intro_search {margin-top:0;}
-	section.intro_search + .search_preschool {padding:2rem 3rem;}
+	section.intro_search + .search_preschool {padding:2rem 3rem 4rem;}
 	.search_preschool_detail .detail p {font-size:2rem;}
 	.search_preschool .table_cell table td {font-size:2rem !important;}
 	.board_top {padding:2rem 3rem;}
