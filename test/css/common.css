@@ -55,7 +55,7 @@ nav.sitemap_view #gnb_myroom {display:block;}
 #gnb_myroom.on {display:block}*/
 
 /* header search */
-#header.action + .top_search {top:5rem;}
+#header.action + .top_search {top:6rem;}
 .top_search {display:none; position:fixed; top:6rem; left:0; z-index:3; width:100%; background:white;box-shadow:5px 10px 10px 0 #eee; text-align:center; height:70vh;}
 .header.action + .top_search.active {top:5rem;}
 .top_search .top_search_close {position: absolute;top: 6rem;right: 11%; }
@@ -169,6 +169,13 @@ footer {background-color: #474747;color: #fff; position: relative; border-top:1p
 	#header .member li.search_open_btn a::after{right:0.5rem;top:0.3rem;width:3rem;height:3rem;}
 	#header .member li.search_open_btn a::before{right:0.3rem;top:2.6rem;width:0.5rem;height:0.3rem;}
 
+	.top_search .top_search_close {top:3rem; right:3rem;}
+	.top_search .top_search_close a {width:4rem; height:4rem;}
+	.top_search .top_search_close::before {height:4rem;}
+	.top_search .top_search_close::after {height:4rem;}
+	.top_search input[type="text"] {margin: 9rem 0 5rem;}
+	.top_search .btn_search {top:3.5rem;}
+
 	nav {display: none;background-color:rgba(0,0,0,0.3) ;top: 0; position: absolute;width: 100%;overflow: auto;height:100vh; z-index:3;}
 	nav .gnb {background-color:white;top: 7rem; right:0;margin-left: 0;position: absolute;width: 90%; height:100vh;overflow: auto;}
 	nav ul li {position:relative;}
@@ -224,7 +231,7 @@ footer {background-color: #474747;color: #fff; position: relative; border-top:1p
 }
 
 @media screen and (max-width: 640px) {
-	.top_search input[type="text"] {width:80%;}
+	.top_search input[type="text"] {width:80%; margin:9rem auto 5rem;}
 	.utility li .search {font-size: 2rem;padding: 0 0 0 1rem;}
 }
 
