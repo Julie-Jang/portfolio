@@ -1336,13 +1336,15 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 	.btn_result_type .fraction li {padding-right:1rem; padding-left:0.5rem;}
 	.btn_result_type .fraction li:first-child {padding-left:0;}
 
-	section.intro_search ul li a span {font-size:3rem;}
-	section.intro_search ul li a em::after {width:4rem; height:4rem;background-size:2.5rem;}
+	section.intro_search ul li a span {font-size:2.4rem; margin-bottom:1rem;}
+	section.intro_search ul li a em::after {width:3rem; height:3rem;background-size:2rem;top:-0.7rem;}
 	.btn_detail:after {display:none;}
 	.result_btn_group .btn_compare {background-position:center right 2rem;}
 	.result_btn_group .btn_more {background-position:right 1rem top 1.7rem; text-align:left; padding:1.2rem 1rem 1rem 2rem !important;}
 	.result_list .result_btn_group a {padding:1.2rem 1rem 1rem;  }
-	section.intro_search h2 {font-size: 3rem;}
+	section.intro_search ul {margin-bottom:3rem;}
+	section.intro_search h2 {font-size: 2rem;margin-bottom: 2rem;}
+	section.intro_search h2 b {font-size:2.8rem;}
 	section.intro_search ul li a em {font-size:1.6rem;}
 	.members .color_box p a {position:unset; display: inline-block; margin-top: 2rem;}
 	.app_list {padding:4rem;}
@@ -1354,6 +1356,9 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 	.calendar_detail .calendar_detail_list > li p.btn_area {position:relative; top:unset; right:unset; margin-top:1rem;}
 	.search_preschool .custom_select2_wrap .select_area ul li a, .search_preschool .custom_select2_wrap .select_area .selected {padding:0.5rem 2rem; font-size:1.4rem;}
 	.search_preschool .radio {font-size:1.8rem !important; margin-right:1rem;}
-	section.intro_search h2 b {font-size:4rem;}
 	.search_preschool_detail dl dd button {padding: 0 0.5em;}
+	section.intro_search {margin-top:0;}
+	section.intro_search + .search_preschool {padding:2rem 3rem;}
+	.search_preschool_detail .detail p {font-size:2rem;}
+	.search_preschool .table_cell table td {font-size:2rem !important;}
 }
