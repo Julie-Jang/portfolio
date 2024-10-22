@@ -32,7 +32,6 @@ section.intro_search + .search_preschool { padding:4rem 4rem 8rem;}
 section.intro_search + .search_preschool input[type="text"] {width:100%; font-family:inherit; font-weight:300;}
 section.intro_search + .search_preschool .btn_search {right:5%;}
 .search_preschool select + select + select + input[type="text"] {width:50%;}
-.main_wrap .search_preschool select + select + select + input[type="text"] {width:100%;}
 
 
 /* silide banner */
@@ -168,7 +167,7 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
 /* 공지사항 tab */
 .banner_visual2 {overflow:hidden;}
 .main_wrap.banner_visual2 > .left {max-width:62rem;}
-.banner_visual2 .tab_wrap_inner {gap:0; height:60rem;}
+.banner_visual2 .tab_wrap_inner {gap:0;}
 .banner_visual2 .tab_wrap_inner > li > a {border:0; padding:0 2.2rem; font-size:2rem; background:none;line-height:2.7rem; position:relative;}
 .banner_visual2 .tab_wrap_inner > li > a:hover, .banner_visual2 .tab_wrap_inner > li > a:focus, .banner_visual2 .tab_wrap_inner > li > a.on , .banner_visual2 .tab_wrap_inner > li.on > a{border:0; font-size:2.6rem; background:none; color:black; font-weight:600; border-radius:0;}
 .banner_visual2 .tab_wrap_inner > li > a:after {content: ''; display:block; width:0.1rem; height:1.5rem; position:absolute; top:0.6rem; right:0; background:black;}
@@ -207,30 +206,35 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     .main_banner {padding:0 4rem;}
 }
 
-@media screen and (max-width: 1400px) {
-    /* banner */
-    .banner_visual .slide_show .swiper-wrap .swiper-slide a {padding:10rem 3rem 0;}
-    .banner_visual .slide_show .swiper-wrap .swiper-slide a > div {font-size:2.2rem;}
+@media screen and (max-width: 1520px) {
+    .banner_visual2 .tab_wrap_inner > li ul.notice_banner > li > a {padding:0.5rem 2rem;}
+}
+
+
+@media screen and (max-width: 1310px) {
+    .banner_visual2 .tab_wrap_inner > li ul.notice_banner > li > a {padding:1rem 2rem;}
+    .banner_visual2 .tab_wrap_inner > li ul.notice_banner > li > a span.title {font-size:1.6rem;}
 }
 
 
 @media screen and (max-width: 1280px) {
+    .search_preschool select + select + select + input[type="text"] {width:100%;margin-top:0;}
     .main_wrap .search_preschool .btn_search {top:31.5rem; right:9rem;}
     .main_wrap > .left, .main_wrap > .right {float:unset; width:100%;}
-    .slide_show.main-banenr2 {margin-top:10em;}
-    .main_wrap.banner_visual2 > .left {margin-bottom:7rem;}
+    .slide_show.main-banenr2 {margin-top:2em;}
     .main_wrap.banner_visual2 > .left {max-width:100%;}
     .main_visual2 {background:#F3F3F3;padding-top:0;}
     .main_visual2 .main_wrap {padding:0;}
     .main_visual2 .main_wrap > .right {width:100%; padding:8rem 4rem 0; }
     .main_visual2 .main_wrap > .right > li {margin-bottom:3rem;}
-    .main_visual2 .main_wrap > .right > li a {padding:4rem 0 4rem 4rem; height:32rem;}
+    .main_visual2 .main_wrap > .right > li a {padding:4rem 0 4rem 4rem; height:27rem;}
     .main_visual2 .main_wrap > .left {background:#F3F3F3 url('../images/bg_main_banner_m.jpg') no-repeat center center; background-size:cover;}
     .main_wrap > .left h5 {padding-top:8rem; text-align:center; font-size:4rem;}
     .main_wrap > .left p {width:70%; margin:0 auto; text-align:center;padding-bottom:8rem;}
     .main_banner li {width:calc(50% - 1.5rem); margin-bottom:3rem;}
     .main_bg,.main_bg1,.main_bg3 {padding:0 0 7rem;}
     .main_wrap h4.title {padding-top:7rem;}
+
 }
 
 @media screen and (max-width: 1100px) {
@@ -247,21 +251,27 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
 }
 
 
-@media screen and (max-width: 1000px) {
-    .main_visual .slide_show .swiper-wrap .swiper-slide p {margin:24rem auto 0; padding:0 4rem; font-size:5rem;}
-    .slide_show .visual_pagination-wrap {top:3.6rem; left:4rem;}
-}
-
 @media screen and (max-width: 740px) {
+    .slide_show .main_visual_btn {top:57%;}
+    .slide_show .visual_pagination-wrap {top:3.6rem; left:4rem;}
+    .main_visual .slide_show .swiper-wrap .swiper-slide {height:40rem;}
+    .main_visual .slide_show .swiper-wrap .swiper-slide p {margin:12rem auto 0; padding:0 4rem; font-size:3rem;}
+    .main_wrap .search_preschool {margin:-5rem 4rem 0;}
+
+
+
+
     /* 어린이집 찾기 */
     section.intro_search ul li a {padding:3rem;}
     section.intro_search ul li a span {padding-right:9rem;}
     section.intro_search ul li a em {font-size:2.4rem;}
     section.intro_search ul li a::after {top:5rem; right:3rem; width:5rem; height:5rem; background-size:3rem;}
-    .main_wrap .search_preschool .btn_search {right:13%;}
+    .main_wrap .search_preschool .btn_search {right:9rem;}
     .main_visual2 .main_wrap > .right > li a h5 {font-size:3.4rem;}
-    .main_visual2 .main_wrap > .right > li a { padding:3rem 0 3rem 2rem; border-radius:3rem;}
+    .main_visual2 .main_wrap > .right > li a { padding:2rem 0 2rem 2rem; border-radius:3rem;}
     .main_visual2 .main_wrap > .right > li a::after {bottom:3rem; right:2rem;}
+    .main_visual2 .main_wrap > .right > li a h5 {font-size:2.4rem; padding-bottom:1.5rem; margin-bottom:2rem;}
+    .main_visual2 .main_wrap > .right > li a p {font-size:1.4rem; font-weight:500; padding-right:4rem;}
     .main_banner li a::after {width:6rem; height:5rem;}
     .main_banner li {height:30rem;}
     .main_banner li:first-child a::after {top:6rem;}
@@ -276,7 +286,13 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
 }
 
 @media screen and (max-width: 680px) {
-    .main_wrap .search_preschool {padding:5rem 3rem 9.5rem;}
+    input[type=text], input[type=password], select {font-size:1.8rem !important; padding-left:2rem !important;}
+    .main_wrap .search_preschool {padding:4rem 3rem 7rem;}
+    .main_wrap .search_preschool .btn_search {top:29.5rem; right:6rem;}
+    .main_wrap .search_preschool .btn_preschool {bottom:-4rem;}
+    .main_wrap .search_preschool .btn_preschool .btn {width:32rem; height:7rem; max-width:unset; font-size:2.4rem;padding:2.4rem 0;}
+    .main_wrap .search_preschool .btn_preschool .btn::before {width:5rem; height:5rem; background-size: 3.4rem 3rem;}
+    .main_wrap .search_preschool .btn_preschool .btn::after {top:1.5rem; right:2rem;}
     /* intro */
     section.intro {background:url(../images/bg_intro_m.jpg) no-repeat center top; background-size:cover;}
     section.intro h1 {font-size:4.5rem;}
@@ -286,7 +302,7 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     section.intro ul li a::after {top:unset; bottom:5rem;}
     .slide_show.main-banenr2 .visual_pagination-wrap {right:7rem;}
     .banner_visual {padding:9.5rem 0 0;}
-    .banner_visual .slide_show .swiper-ctrl .btn_prev {left:3rem;}
+    .banner_visual .slide_show .swiper-ctrl .btn_prev {left:2rem;}
     .banner_visual .slide_show .swiper-ctrl .btn_next {right:4rem;}
     .banner_visual .slide_show .swiper-container {margin:0 0 0 7rem;}
 }
@@ -301,9 +317,9 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     section.intro ul li a em {font-size:1.8rem;}
     section.intro ul li a::after {width:3rem; bottom:1.5rem; right:3rem;}
     section.intro ul li:last-child a::after {width:4.4rem; bottom:1rem; right:2rem;}
-    .main_visual2 .main_wrap > .right > li a h5 {font-size:2.4rem; padding-bottom:2rem; margin-bottom:2rem;}
-    .main_visual2 .main_wrap > .right > li a p {font-size:1.6rem; font-weight:500; padding-right:4rem;}
     .main_wrap h4.title {font-size:4rem;}
+    .main_wrap > .left h5 {font-size:3rem;}
+    .main_wrap > .left p {font-size:2rem;}
     .main_wrap p.title {font-size:2rem;}
     .banner_visual2 .tab_wrap_inner > li ul.notice_banner > li > a span.title {width:70%;}
     .banner_visual2 .tab_wrap_inner > li:first-child > a {font-size:2.2rem;}
@@ -318,10 +334,6 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     #header .member li.logout, #header .member li.login {margin-right:1.5rem;}
     section.intro ul li {height:17rem;}
     section.intro ul li a {font-size:3rem; padding:3rem 2rem;}
-    .main_wrap .search_preschool .btn_preschool {bottom:-4rem;}
-    .main_wrap .search_preschool .btn_preschool .btn {width:32rem; height:7rem; max-width:unset; font-size:2.4rem;padding:2.4rem 0;}
-    .main_wrap .search_preschool .btn_preschool .btn::before {width:5rem; height:5rem; background-size: 3.4rem 3rem;}
-    .main_wrap .search_preschool .btn_preschool .btn::after {top:1.5rem; right:2rem;}
     .slide_show.main-banenr2 .visual_pagination-wrap {right:0.8rem;}
     .tab_wrap_inner > li {min-width:unset;}
     .banner_visual2 .tab_wrap_inner > li > a {padding:0 1rem;}

@@ -54,7 +54,7 @@ input[type=number]{-moz-appearance:textfield;}
 input[type=password]{-webkit-text-security:disc!important;}
 /* input custom */
 input[type="checkbox"],input[type="radio"]{position:absolute;opacity:0;z-index:-1;width:0;}
-.checkbox, .radio {display:inline-block; padding-top:0.4rem; padding-left:3.2rem; margin-right:3rem;}
+.checkbox, .radio {display:inline-block; padding-top:0.4rem; padding-left:3.2rem; margin-right:3rem; font-size:1.6rem;}
 .checkbox:last-child, .radio:last-child {margin-right:0;}
 label.checkbox span,label.radio span{width:2.2rem;height:2.2rem;display:inline-block; border:1px solid #BEBEBE;position:relative;cursor:pointer; margin:-0.4rem 0.5rem 0 -3.2rem;}
 label.checkbox span{border-radius:0.5rem}
