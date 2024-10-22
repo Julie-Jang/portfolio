@@ -1254,6 +1254,7 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 	.search_preschool .custom_select2_wrap .select_area ul li a,
 	.search_preschool .custom_select2_wrap .select_area .selected {font-size:1.8rem;padding: 1.5rem 1rem;}
 	.board_top .board .col_email .calendar-box input[type="text"] {font-size:2rem;}
+	.search_preschool .custom_select2_wrap {top:7.3rem;}
 }
 
 @media screen and (max-height: 800px) {
