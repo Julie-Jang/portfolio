@@ -227,7 +227,9 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     .main_visual2 .main_wrap {padding:0;}
     .main_visual2 .main_wrap > .right {width:100%; padding:8rem 4rem 0; }
     .main_visual2 .main_wrap > .right > li {margin-bottom:3rem;}
-    .main_visual2 .main_wrap > .right > li a {padding:4rem 0 4rem 4rem; height:27rem;}
+    .main_visual2 .main_wrap > .right > li a {padding:4rem 0 4rem 4rem; height:25rem;}
+    .main_visual2 .main_wrap > .right > li a h5 {font-size:3rem; padding-bottom:2rem; margin-bottom:2rem;}
+    .main_visual2 .main_wrap > .right > li a p {font-size:1.8rem;}
     .main_visual2 .main_wrap > .left {background:#F3F3F3 url('../images/bg_main_banner_m.jpg') no-repeat center center; background-size:cover;}
     .main_wrap > .left h5 {padding-top:8rem; text-align:center; font-size:4rem;}
     .main_wrap > .left p {width:70%; margin:0 auto; text-align:center;padding-bottom:8rem;}
@@ -271,18 +273,19 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     .main_visual2 .main_wrap > .right > li a { padding:2rem 0 2rem 2rem; border-radius:3rem;}
     .main_visual2 .main_wrap > .right > li a::after {bottom:3rem; right:2rem;}
     .main_visual2 .main_wrap > .right > li a h5 {font-size:2.4rem; padding-bottom:1.5rem; margin-bottom:2rem;}
-    .main_visual2 .main_wrap > .right > li a p {font-size:1.4rem; font-weight:500; padding-right:4rem;}
-    .main_banner li a::after {width:6rem; height:5rem;}
-    .main_banner li {height:30rem;}
+    .main_visual2 .main_wrap > .right > li a p {padding-right:4rem;}
+    .main_banner li a::after {width:6rem; height:5rem; right:3rem; bottom:3rem;}
+    .main_banner li {height:24rem;}
     .main_banner li:first-child a::after {top:6rem;}
     .main_banner li:nth-child(4) a::after {top:8rem;}
     .main_banner li:nth-child(4) a,
     .main_banner li:nth-child(6) a {padding-top:18rem;}
     .main_banner li:nth-child(6) a::after {top:8rem;}
-    .main_banner li a {padding:3rem 2rem; font-size:1.4rem;}
+    .main_banner li a {padding:3rem 2rem;}
     .main_banner li a span {font-size:2rem;}
-    .main_banner li.point a {font-size:2rem; padding-top:16rem;}
+    .main_banner li.point a {font-size:2rem; padding-top:14rem;}
     .main_bg, .main_bg1 {padding:0 0 4rem;}
+    .main_bg1.pb80 {padding-bottom:4rem !important;}
     
 }
 
@@ -323,13 +326,17 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     .main_wrap > .left p {font-size:1.8rem; padding-bottom:4rem;}
     .main_wrap > .left h5 {padding-top:4rem;}
     .main_wrap p.title {font-size:1.8rem; margin-bottom:3rem;}
+    .main_wrap .banner_visual p.title {font-size:2.4rem;}
     .main_banner {padding:0 2rem;}
     .main_wrap {padding:0 2rem;}
     .banner_visual2 .tab_wrap_inner > li ul.notice_banner > li > a span.title {width:70%;}
     .banner_visual2 .tab_wrap_inner > li:first-child > a {font-size:2.2rem;}
+    .main_banner li a::after {width:4rem; height:3rem; right:2rem; bottom:2rem;}
     .main_visual2 .main_wrap > .right {padding:4rem 2rem 0;}
     .btn_more_dot {top:-0.5rem; width:3rem; height:3rem;}
     .slide_show.main-banenr2 .visual_pagination-wrap {right:4rem;}
+    .main_visual2 .main_wrap > .right > li a p {font-size:1.4rem; font-weight:500;}
+    .main_banner li a { font-size:1.4rem;}
     .f_link {padding:0;}
     }
 
@@ -343,5 +350,8 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     .slide_show.main-banenr2 .visual_pagination-wrap {right:2rem; bottom:2rem;}
     .tab_wrap_inner > li {min-width:unset;}
     .banner_visual2 .tab_wrap_inner > li > a {padding:0 1rem;}
+
+
+
 }
 
