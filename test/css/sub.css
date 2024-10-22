@@ -278,9 +278,9 @@ th i.icon_arrow.down {background-image:url(../images/icon/icon_arrow_down.svg); 
 .result_list .result_btn_group a{width:48%; margin-top:1rem;}
 .result_list .result_btn_group a:nth-child(even){margin-left:1%;}
 .result_list .result_detail {display:none;border-radius:1rem; background:#F0F0F0; font-size:1.4rem; padding:1.5rem 2rem; overflow:hidden;}
-.result_list .result_detail dt {width:33%; float:left; position:relative; padding-left:1rem;}
+.result_list .result_detail dt {width:37%; float:left; position:relative; padding-left:1rem; clear:both;}
 .result_list .result_detail dt::before {content:''; display:block; position:absolute; top:43%; left:0; width:0.2rem; height:0.2rem; background:black;}
-.result_list .result_detail dd {width:67%; float:left;}
+.result_list .result_detail dd {width:auto; float:left;}
 
 .facilities .result_list .result_detail {background:none; max-width:86rem; will-change: transform; padding:0; border-radius:0;}
 
