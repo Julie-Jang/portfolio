@@ -1285,6 +1285,9 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 }
 
 @media screen and (max-width: 640px) {
+	section.contents_wrap > h3.title {font-size:3rem;}
+	.sub_visual .sub_title h2 {font-size:3rem;}
+	.sub_visual .sub_title p {font-size:1.8rem;}
 	.members .login {max-width:100%;}
 	.members .tab ul li a {width:calc(100% - 1rem);}
 	.members .color_box {padding: 3rem;}
@@ -1361,4 +1364,6 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 	section.intro_search + .search_preschool {padding:2rem 3rem;}
 	.search_preschool_detail .detail p {font-size:2rem;}
 	.search_preschool .table_cell table td {font-size:2rem !important;}
+	.board_top {padding:2rem 3rem;}
+	.board.table_cell table > thead > tr > th, .board.table_cell table > tbody > tr > th, .board.table_cell table > tbody > tr > td {font-size:2rem;}
 }
