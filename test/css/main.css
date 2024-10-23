@@ -259,6 +259,7 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     .main_visual .slide_show .swiper-wrap .swiper-slide p {margin:12rem auto 0; padding:0 4rem; font-size:3rem;}
     .main_wrap .search_preschool {margin:-5rem 2rem 0;width: calc(100% - 4rem);}
 
+
     /* 어린이집 찾기 */
     section.intro_search ul li a {padding:3rem;}
     section.intro_search ul li a span {padding-right:9rem;}
@@ -329,6 +330,8 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     .banner_visual2 .tab_wrap_inner > li:first-child > a {font-size:2.2rem;}
     .main_banner li a::after {width:4rem; height:3rem; right:2rem; bottom:2rem;}
     .main_visual2 .main_wrap > .right {padding:4rem 2rem 0;}
+    .main_visual2 .main_wrap > .right > li,
+    .main_banner li  {width:calc(50% - 1rem);}
     .btn_more_dot {top:-0.5rem; width:3rem; height:3rem;}
     .slide_show.main-banenr2 .visual_pagination-wrap {right:4rem;}
     .main_visual2 .main_wrap > .right > li a p {font-size:1.4rem; font-weight:500;}
