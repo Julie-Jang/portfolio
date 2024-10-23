@@ -1187,7 +1187,7 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 
 	/* Board responsive */
 	.board_top {padding:4rem; z-index:2; }
-	.board_top select.selectbox {width:100%; margin-right:0; margin-bottom:1rem; padding:0 2.5rem 0 1.5rem; background-position:right 1rem center;}
+	.board_top select.selectbox {width:100%; margin-right:0; margin-bottom:1rem; padding:0 2.5rem 0 1.5rem; background-position:right 2rem center;}
 
 	.board_top select.selectbox + select.selectbox + input[type="text"] {width:100%;}
 	.board_top input[type="text"] {width:100%;}
@@ -1282,6 +1282,12 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 	.color_box_blue.card3::before ,
 	.color_box_blue.board::before {width:8rem; height:8rem; top:calc(50% - 4rem); left:3rem; background-size:4rem;}
 	.text_flex li {width:calc(50% - 2rem);}
+	.board_detail .title-box {padding:2.7rem 2rem 2.2rem;}
+	.board_detail .board_detail_list {padding:1.8rem 2rem;}
+	.board_detail .file {padding:2.5rem 2rem;}
+	.board_detail .content {padding:2.5rem 2rem;}
+	.view_bottom dl {padding:1.7rem 2rem;}
+	.comment_area .comment_list > li dl {padding:2.5rem 0;}
 }
 
 @media screen and (max-width: 640px) {
@@ -1296,6 +1302,8 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 	.members .color_box p a {bottom:0.2rem;}
 	.members h2 b {display:block;}
 	.tab > li > a,.tab_wrap_inner > li > span{padding:1.8rem 2.5rem;  }
+	.board_top .btn_search {bottom:3.6rem; right:5rem;}
+
 
 	/* 어린이집 찾기 */
 	.pagination > a + a {margin-left:0;}

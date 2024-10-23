@@ -331,7 +331,7 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     .main_banner li a::after {width:4rem; height:4rem; right:2rem; bottom:2rem;}
     .main_visual2 .main_wrap > .right {padding:4rem 2rem 0;}
     .main_visual2 .main_wrap > .right > li,
-    .main_banner li  {width:calc(50% - 1rem);}
+    .main_banner li  {width:calc(50% - 1rem); margin-bottom:2rem;}
     .btn_more_dot {top:-0.5rem; width:3rem; height:3rem;}
     .slide_show.main-banenr2 .visual_pagination-wrap {right:4rem;}
     .main_visual2 .main_wrap > .right > li a p {font-size:1.4rem; font-weight:500;}
