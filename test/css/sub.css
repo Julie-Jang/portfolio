@@ -1142,7 +1142,6 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 	.search_preschool_detail .detail dl {position:relative;top:auto; padding-left:0;}
 	.search_preschool_detail .detail p { padding-left:0; padding-bottom:2rem;}
 
-
 	/* 로케이션 */
 	.location {padding:2rem 3rem 1.5rem; font-size:2rem; position:relative;}
 	.location > ul, .location > ul > li, .location .custom_select {position:unset;}

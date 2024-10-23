@@ -112,7 +112,6 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
 .banner_visual > p.title {text-align:center; font-size:4rem; margin-bottom:1rem;}
 .banner_visual > p.title b {font-weight:600;}
 
-
 .popup_wrap .slide_show .visual_pagination-wrap{z-index:2;position:absolute;left:calc(50% - 1rem);top:unset; bottom:10%;left:15%; width:78%; padding:0; height:auto; overflow:unset;border-radius:0;}
 .popup_wrap .slide_show .swiper-ctrl{top:50%;width:100%; position:absolute;}
 .popup_wrap .slide_show .swiper-ctrl .btn_ctrl{position:absolute; z-index:9999;}
@@ -259,9 +258,6 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     .main_visual .slide_show .swiper-wrap .swiper-slide {height:40rem;}
     .main_visual .slide_show .swiper-wrap .swiper-slide p {margin:12rem auto 0; padding:0 4rem; font-size:3rem;}
     .main_wrap .search_preschool {margin:-5rem 2rem 0;width: calc(100% - 4rem);}
-
-
-
 
     /* 어린이집 찾기 */
     section.intro_search ul li a {padding:3rem;}
