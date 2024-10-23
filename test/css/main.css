@@ -328,7 +328,7 @@ section.intro_search + .search_preschool .btn_search {right:5%;}
     .main_wrap {padding:0 2rem;}
     .banner_visual2 .tab_wrap_inner > li ul.notice_banner > li > a span.title {width:70%;}
     .banner_visual2 .tab_wrap_inner > li:first-child > a {font-size:2.2rem;}
-    .main_banner li a::after {width:4rem; height:3rem; right:2rem; bottom:2rem;}
+    .main_banner li a::after {width:4rem; height:4rem; right:2rem; bottom:2rem;}
     .main_visual2 .main_wrap > .right {padding:4rem 2rem 0;}
     .main_visual2 .main_wrap > .right > li,
     .main_banner li  {width:calc(50% - 1rem);}
