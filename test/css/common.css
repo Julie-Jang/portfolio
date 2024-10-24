@@ -245,7 +245,7 @@ footer {background-color: #474747;color: #fff; position: relative; border-top:1p
 @media screen and (max-width: 640px) {
 	#header.sub_header .header_wrap h1 {font-size:2.4rem; }
 	#header.sub_header .header_wrap h1 em {font-size:1.4rem; }
-	#header.sub_header .header_wrap .util {margin-top:1.5rem;}
+	#header.sub_header .header_wrap .util {margin-top:1.2rem;}
 	#header.sub_header .header_wrap .util li a {padding:0.8rem 1rem 0.6rem; font-size:1.6rem;}
 	.top_search input[type="text"] {width:80%; margin:9rem auto 5rem;}
 	.utility li .search {font-size: 2rem;padding: 0 0 0 1rem;}
