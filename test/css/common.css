@@ -24,6 +24,17 @@
 #header .member li .all_menu .line{width:2rem;height:0.2rem;background-color:black;display:block;margin:0.4rem auto;border-radius:0.2rem;transition:width .3s ease-in-out,transform .3s ease-in-out;}
 #header .member li .all_menu .line:nth-child(3){width:1.4rem;margin-left:0.6rem;}
 
+#header.sub_header.action {position:unset;}
+#header.sub_header {border:0; background:#265097; box-shadow:0px 1px 14px 0px rgba(0, 0, 0, 0.15);}
+#header.sub_header .header_wrap {width:100%; max-width:142rem; margin:0 auto; overflow:hidden;padding:1rem 0 1.4rem;}
+#header.sub_header .header_wrap a {color:white;}
+#header.sub_header .header_wrap h1 {font-size:3rem; font-weight:700; display:inline-block; line-height:1.5;}
+#header.sub_header .header_wrap h1 em {font-size:1.6rem; font-weight:400; display:block;}
+#header.sub_header .header_wrap h1 a {display:block; background:url(../images/icon/icon_header_arrow.png) no-repeat center bottom; background-size:contain; padding-bottom:0.2rem;}
+#header.sub_header .header_wrap .util {float:right; margin-top:1rem;overflow:hidden;}
+#header.sub_header .header_wrap .util li{float:left; margin-left:1rem;}
+#header.sub_header .header_wrap .util li a {display:block; border:2px solid white; border-radius:5rem; padding:1.2rem 4rem 1rem; font-size:2.2rem;}
+#header.sub_header .header_wrap .util li a.account {background:white; color:#265097;}
 /* Sitemap */
 nav.sitemap_view {position:fixed; display:block; top:0; left:0; width:100%; height:100vh; background:white; overflow:auto; z-index:4;}
 nav.sitemap_view .all_menu_title {display:block; font-size:4rem;  text-align:center; margin:3rem 0;}
@@ -169,6 +180,7 @@ footer {background-color: #474747;color: #fff; position: relative; border-top:1p
 	#header .member li.search_open_btn a::after{right:0.5rem;top:0.3rem;width:3rem;height:3rem;}
 	#header .member li.search_open_btn a::before{right:0.3rem;top:2.6rem;width:0.5rem;height:0.3rem;}
 
+	#header.sub_header .header_wrap {padding:1rem 3rem 2rem}
 	.top_search .top_search_close {top:3rem; right:3rem;}
 	.top_search .top_search_close a {width:4rem; height:4rem;}
 	.top_search .top_search_close::before {height:4rem;}
@@ -231,6 +243,10 @@ footer {background-color: #474747;color: #fff; position: relative; border-top:1p
 }
 
 @media screen and (max-width: 640px) {
+	#header.sub_header .header_wrap h1 {font-size:2.4rem; }
+	#header.sub_header .header_wrap h1 em {font-size:1.4rem; }
+	#header.sub_header .header_wrap .util {margin-top:1.5rem;}
+	#header.sub_header .header_wrap .util li a {padding:0.8rem 1rem 0.6rem; font-size:1.6rem;}
 	.top_search input[type="text"] {width:80%; margin:9rem auto 5rem;}
 	.utility li .search {font-size: 2rem;padding: 0 0 0 1rem;}
 }
