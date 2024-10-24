@@ -1251,7 +1251,7 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 
 
 	/* 어린이집 찾기 */
-	.pagination > a + a {margin-left:0;}
+	.pagination > a + a {margin:0 -0.3rem;}
 	.pagination > a.first,.pagination > a.prev, .pagination > a.next, .pagination > a.last{width:2.5rem;height:2.5rem; vertical-align:bottom;}
 	.result_preschool.result_favorite .result_list .result_btn_group a.btn_more {padding:2.2rem 2rem !important; background-position: center right 1.5rem;} 
 	.result_preschool.result_favorite .result_list .result_btn_group a.btn_compare {padding-right:2rem !important; background-position: center right 1.8rem;}
