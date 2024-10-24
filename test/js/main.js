@@ -14,10 +14,10 @@ $(document).ready(function () {
                 centeredSlidesValue: false,
                 autoplayConfig: false,
                 breakpoints: {
-                    1400: { slidesPerView: 4.0 }, 
-                    1200: { slidesPerView: 3.0 }, 
-                    680: { slidesPerView: 2.0 },
-                    200: { slidesPerView: 1.5 }      
+                    1400: { slidesPerView: 4.0, spaceBetween: 40 }, 
+                    1200: { slidesPerView: 3.0, spaceBetween: 30 }, 
+                    680: {slidesPerView: 2.0, spaceBetween: 10 },
+                    200: { slidesPerView: 1.5, spaceBetween: 10 }      
                 }
             },
             "photo-list": {
