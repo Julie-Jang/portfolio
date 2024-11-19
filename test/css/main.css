@@ -47,10 +47,10 @@
 .second_banner .banner_visual .slide_show .swiper_wrap .swiper_slide a .date {float:right;}
 .second_banner .banner_img {display:none;}
 .second_banner .visual_pagination-wrap {display:none;}
-.main_center_banner {position:relative; width:100%; max-width:140rem; margin:4.1rem auto 11rem; height:0; padding-top:16%; }
-.main_center_banner a {display:block; width:100%; height:100%;}
-.main_center_banner.provider {background:url(../images/img_main_center.png) no-repeat center 0; background-size:contain;}
-.main_center_banner.employee {background:url(../images/img_main_center_employee.png) no-repeat center 0; background-size:contain;}
+.main_center_banner {position:relative; width:100%; max-width:140rem; margin:4.1rem auto 11rem; }
+.main_center_banner a {display:block; width:100%;  height:0;padding-top:16%;}
+.main_center_banner.provider a {background:url(../images/img_main_center.png) no-repeat center 0; background-size:contain;}
+.main_center_banner.employee a {background:url(../images/img_main_center_employee.png) no-repeat center 0; background-size:contain;}
 .third_banner {width:100%; background:url(../images/bg_third_main_banner.gif) no-repeat center 0; overflow:hidden; padding-bottom:10rem; margin-bottom:11rem;}
 .third_banner .main_content {width:100%; max-width:121.4rem; margin:11.5rem auto 0;overflow:hidden;}
 .third_banner .main_content .left {width:30%; float:left;}
@@ -138,9 +138,8 @@
     .fourth_banner .swiper-pagination-bullet {background:#F2F2F5; }
     .fourth_banner .swiper-pagination-bullet-active {background:#3D75A6;border-radius:0;}
 
-    .main_center_banner {height:0; padding-top:37%;}
-    .main_center_banner.provider{margin:0 auto 4rem;background:url(../images/img_main_center_m.png) no-repeat center 0; background-size:contain; }
-    .main_center_banner.employee{margin:0 auto 4rem; padding-top:38.5%;background:url(../images/img_main_center_employee_m.png) no-repeat center 0; background-size:contain; }
+    .main_center_banner.provider a {margin:0 auto 4rem; padding-top:37%; background:url(../images/img_main_center_m.png) no-repeat center 0; background-size:contain; }
+    .main_center_banner.employee a {margin:0 auto 4rem; padding-top:38.5%;background:url(../images/img_main_center_employee_m.png) no-repeat center 0; background-size:contain; }
 }
 
 @media screen and (max-width: 640px) {
