@@ -1,7 +1,4 @@
 $(document).ready(function() {
-	let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-	
 	// Sticky header
 	$(window).on('load resize scroll',function(){
 		var gnb = $(this).scrollTop();
@@ -94,7 +91,7 @@ $(document).ready(function() {
         $('.menu_dimmed').toggle();
     });
 
-    $(".btn_search_open a.close, .m_util .btn_search.close").click(function() {
+    $(".m_menu.off, .btn_search_open a.close, .m_util .btn_search.close").click(function() {
         $(".top_search").slideUp(function() {
             // 슬라이드 애니메이션 후 Swiper를 재초기화
             //document.querySelectorAll(".slide_show").forEach((slideShowContainer) => {
@@ -257,7 +254,17 @@ $(document).ready(function() {
 		}
 	});
 
+	let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
 
+	function setFullHeight() {
+		var height = window.innerHeight;
+		document.querySelector('.menu_dimmed').style.height = height + 'px';
+	}
+	
+	// 페이지 로드 및 화면 크기 변경 시 실행
+	window.addEventListener('load', setFullHeight);
+	window.addEventListener('resize', setFullHeight);
 	
 });
 
