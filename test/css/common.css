@@ -71,7 +71,7 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 
 /* Search */
 #header.action + .top_search {top:6rem;}
-.top_search {display:none; position:fixed; top:11rem; left:0; z-index:3; width:100%; background:white;text-align:center;}
+.top_search {display:none; position:fixed; top:11rem; left:0; z-index:6; width:100%; background:white;text-align:center;}
 .header.action + .top_search.active {top:5rem;}
 
 .top_search .search_bar {position:relative;margin:4rem auto; width:48rem;}
@@ -170,7 +170,7 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 
 @media screen and (max-width: 1800px) {
 	/* header */
-	nav > ul.gnb {gap:4rem; padding-left:5rem;}
+	nav > ul.gnb {gap:5rem; padding-left:5rem;}
 	.utility li.btn_search_open {margin-right:0;}
 }
 
@@ -200,26 +200,29 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 	.m_util .btn_search.close::after {content: '';  position: absolute; right:50%; top: 0; width: 0.3rem; height: 2.5rem; transform: rotate(135deg); background-color: #000A2E;border-radius:1rem;}
 	.top_search {top:7rem;}
 	.top_search .search_bar {width:80%; margin:3rem auto;}
-	nav {display: none;background:white url(../images/bg_m_menu.gif) no-repeat center bottom; background-size:contain; top: 5.1rem;margin-left: 0;position: absolute;width: 100%;overflow: auto;height:auto; padding-bottom:20rem;}
-	nav > .m_member {display:block;padding:3rem 3rem 0 3rem; overflow:hidden;}
-	nav > .m_member a {display:block; float:left; }
-	nav > .m_member a + a {margin-left:3rem;}
-	nav > .m_member .login {font-size:2.8rem; font-weight:700;}
-	nav > .m_member .account {font-size:2.6rem;}
+	nav {display: none;background:white url(../images/bg_m_menu.gif) no-repeat center bottom; background-size:contain; top: 5.1rem;margin-left: 0;position: absolute;width: 100%;overflow: auto;height:auto; padding:0 3rem 20rem;}
+	nav > .m_member {display:block; overflow:hidden; border-radius:0.5rem; width:100%; margin-top:2rem;}
+	nav > .m_member.provider {background:#8ABA4B;padding:1.5rem 2rem; }
+	nav > .m_member.employee {background:#349ADB;padding:1.5rem 2rem; }
+	nav > .m_member.provider > a,nav > .m_member.employee > a {display:inline-block; vertical-align:middle; color:white;background:url(../images/icon/icon_V.svg) no-repeat 0 center; padding-left:3rem; font-family:'Pretendard'; font-size:2.4rem; text-decoration:underline; font-weight:300; letter-spacing:-0.05em;}
+	nav > .m_member .login {font-size:2.8rem; font-weight:700; }
 	nav > .m_member .join {float:right; background:#8D8D97; border-radius:0.5rem; color:white; padding:0.3rem 1rem; margin-top:0.5rem;}
 
-	nav > ul.gnb {display:block; padding:3rem; }
+	nav > .m_member .right {display:block; float:right;}
+	nav > .m_member .right .account {display:inline-block; margin:0.8rem 3rem 0 0; width:2.2rem; height:2.2rem; background:url(../images/icon/icon_mypage_m.svg) no-repeat center center; background-size:contain;}
+	nav > .m_member .right .logout {display:inline-block; margin:0.8rem 0 0 0; width:2.2rem; height:2.2rem;  background:url(../images/icon/icon_logout_m.svg) no-repeat center center; background-size:contain;}
+	nav > ul.gnb {display:block; padding:2rem 0; }
 	nav > ul.gnb > li > ul {display:none;}
 	nav > ul.gnb > li > a {font-size:2rem; position:relative;  }
-	nav > ul.gnb > li a {padding:0.5rem 0;display:block; }
+	nav > ul.gnb > li a {padding:0.8rem 0;display:block; }
 	nav > ul.gnb > li.active > a {color:#003F9D;}
 	nav > ul.gnb > li.active > a::after {display:none;}
-	nav > ul.gnb > li > ul {margin-bottom:2rem;}
+	nav > ul.gnb > li > ul {margin-bottom:1rem;}
 	nav > ul > li.depth {position:relative; }
 	nav > ul > li.depth > a::after  {content:"";display:block; position:absolute; top:1.5rem; right:0.5rem; border:solid #aaa;width:1rem;height:1rem;margin:0 0 0.1rem 0.9rem;border-width:0 0.3rem 0.3rem 0;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);}
-	nav > ul > li.depth > ul > li a {display: block; position:relative; padding: 0.8rem 3rem 0.8rem 1rem;font-size: 1.6rem; font-weight: 600;color: #303038;}
+	nav > ul > li.depth > ul > li a {display: block; position:relative; padding: 0.8rem 3rem 0.8rem 1rem;font-size: 1.8rem; font-weight: 600;color: #303038;}
 	nav > ul > li.depth > ul > li a:hover, nav > ul > li.depth > ul > li a:focus {background:#5478B6; border-radius:0.5rem; color:white;}
-	nav > ul > li.depth > ul > li a::after {content: '>'; font-size:1.3rem; display:block; position:absolute; top:1rem; right:1rem; color:white; }
+	nav > ul > li.depth > ul > li a::after {content: '>'; font-size:1.3rem; display:block; position:absolute; top:1.5rem; right:1.5rem; color:white; }
 
 	/* lnb */
 	.lnb {display: none}
