@@ -266,6 +266,10 @@ $(document).ready(function() {
 	window.addEventListener('load', setFullHeight);
 	window.addEventListener('resize', setFullHeight);
 
+	// 페이지 로드 및 화면 크기 변경 시 실행
+	window.addEventListener('load', setFullHeight);
+	window.addEventListener('resize', setFullHeight);
+
 	window.onload = function() {
 		var viewport = document.querySelector("meta[name=viewport]");
 		viewport.parentNode.removeChild(viewport);  // 기존 viewport meta 태그 제거
@@ -274,7 +278,6 @@ $(document).ready(function() {
 		newViewport.content = "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no";
 		document.getElementsByTagName('head')[0].appendChild(newViewport);  // 새로운 viewport 태그 추가
 	};
-	
 
 });
 
