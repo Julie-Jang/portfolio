@@ -5,7 +5,7 @@
 <title>사회서비스 공급자&middot;종사자 상담지원시스템</title>
 <link rel="shortcut icon" href="./images/favicon.ico">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="format-detection" content="telephone=no, address=no, email=no">
 <meta name="description" content="사회서비스 공급자·종사자 상담지원시스템">
 <meta name="keywords" content="사회서비스 공급자·종사자 상담지원시스템,중서원,kcpass">
@@ -13,16 +13,16 @@
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
 </script>
 <![endif]-->
-<link rel="stylesheet" href="../css/style.css" type="text/css">
-<link rel="stylesheet" href="../css/common.css" type="text/css">
-<link rel="stylesheet" href="../css/main.css" type="text/css">
-<link rel="stylesheet" href="../css/sub.css" type="text/css">
-<link rel="stylesheet" href="../css/fontface.css" type="text/css">
-<link rel="stylesheet" href="../css/swiper.min.css">
-<script src="../js/jquery-1.12.4.min.js"></script>
-<script src="../js/common.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/style.css" type="text/css">
+<link rel="stylesheet" href="./css/common.css" type="text/css">
+<link rel="stylesheet" href="./css/main.css" type="text/css">
+<link rel="stylesheet" href="./css/sub.css" type="text/css">
+<link rel="stylesheet" href="./css/fontface.css" type="text/css">
+<link rel="stylesheet" href="./css/swiper.min.css">
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/swiper.min.js"></script>
 <body>
 
 
@@ -33,19 +33,27 @@
 	<a href="#footer">하단 바로가기</a>
 </div>
 
-<!-- units -->
-
-
 <header id="header" class="header">
 	<div class="navi">
 		<div class="menu_bg"></div>
 		<h1><a href="#">사회서비스 공급자·종사자 상담지원시스템</a></h1>
-		<a class="m_menu" href="#"><span class="d_none">모바일메뉴</span></a>
+		<div class="m_util">
+			<a href="#" class="btn_search"><em class="d_none">검색</em></a>
+			<a class="m_menu" href="#"><span class="d_none">모바일메뉴</span></a>
+		</div>
+		
 		<nav id="gnbMenu" class="gnb">
-			<!--<p class="all_menu_title">전체메뉴</p>
-			<p class="all_menu_close">
-				<a href="#"><em class="d_none">전체메뉴 닫기</em></a>
-			</p>-->
+			<div class="m_member">
+				<a href="#" class="login">로그인</a>
+				<!-- 로그인 후
+				<a href="#" class="account">홍길동</a>
+				<a href="#" class="login">로그아웃</a>
+				-->
+				<a href="#" class="join">회원가입</a>
+			</div>
+			<div class="all_menu_close">
+				<a href="#"><em class="hidden">전체메뉴 닫기</em></a>
+			</div>
 			<ul class="gnb">
 				<li class="depth">
 					<a class="menu01 on" href="#">지원사업소개</a>
@@ -109,49 +117,51 @@
 						<em class="d_none">검색</em>
 					</a>
 				</li>
-				
-				<li class="account"><a href="#">홍길동</a></li>
-				<li class="login"><a href="#">로그아웃</a></li>
+				<li class="part provider"><!-- 공급자인 경우 class 값 provider , 종사자인 경우 class 값 employee -->
+					<a href="#">김지은 <em>(공급자)</em></a>
+				</li>
+				<!-- 종사자인 경우
+				<li class="part employee"> 
+					<a href="#">김지은 <em>(공급자)</em></a>
+				</li>-->
+				<li class="account"><a href="#">마이페이지</a></li>
+				<li class="logout"><a href="#">로그아웃</a></li>
 				<!-- 로그인 전 
 				<li class="login"><a href="#">로그인</a></li>
 				-->
 				<li class="join"><a href="#">회원가입</a></li>
+				<!-- Sitemap-->
+				<li class="all_menu_btn"><a class="all_menu" href="#gnbMenu"><em class="hidden">전체메뉴</em></a></li>
 			</ul>
 		</nav>
 		
 	</div>
+	<aside class="quick_menu" id="quick_menu">
+		<ul>
+			<li><a href="#"><i class="link01">홈</i></a></li>
+			<li><a href="#"><i class="link02">임신</i></a></li>
+			<li><a href="#"><i class="link03">출산</i></a></li>
+			<li><a href="#"><i class="link04">육아</i></a></li>
+			<li><a href="#"><i class="link05">어린이집</i></a></li>
+			<li><a href="#none"><i class="top">TOP</i></a></li>
+		</ul>
+	</aside>
 </header>
 <div class="menu_dimmed"></div>
 
-
 <div class="top_search">
 	<strong class="hidden">통합검색</strong>
-	<p class="top_search_close">
-		<a href="#"><em class="hidden">검색 닫기</em></a>
-	</p>
+
 	<fieldset>
 		<form>
-			<label for="search" class="hidden">검색어를 입력해주세요.</label>
-			<input id="search" type="text" placeholder="검색어를 입력해주세요" value="">
-			<button class="btn_search" title="검색" onclick=""><span class="hidden">검색</span></button>
-			<dl class="recommend">
-				<dt>추천검색어</dt>
-				<dd><a href="#">#인기검색어1</a></dd>				
-				<dd><a href="#">#인기검색어2</a></dd>				
-				<dd><a href="#">#인기검색어3</a></dd>				
-				<dd><a href="#">#인기검색어4</a></dd>				
-				<dd><a href="#">#인기검색</a></dd>				
-				<dd><a href="#">#인기검색어6</a></dd>				
-				<dd><a href="#">#인기검색어1456445</a></dd>				
-				<dd><a href="#">#인기검색어8</a></dd>				
-				<dd><a href="#">#인기</a></dd>				
-				<dd><a href="#">#인기검색어1324234</a></dd>				
-				<dd><a href="#">#인기검색어123424</a></dd>				
-			</dl>
+			<div class="search_bar">
+				<label for="search" class="hidden">검색어를 입력해주세요.</label>
+				<input id="search" type="text" placeholder="검색어를 입력해주세요" value="">
+				<button class="btn_search" title="검색" onclick=""><span class="hidden">검색</span></button>
+			</div>
 		</form>
 	</fieldset>
 </div>
-
 
 <!-- sub title -->
 <section class="sub_visual sub01"><!-- 메뉴별로 sub01 ~ sub07-->
@@ -887,44 +897,23 @@
 	<div class="footer_wrap">
 		<div class="f_link">
 			<ul class="link_wrap">
-				<li><h1><a href="#"><span class="hidden">아이사랑</span></a></h1></li>
-				<li><a href="#">이용약관</a></li>
+				<li><a href="#">중앙사회서비스원 소개</a></li>
+				<li><a href="#">이메일주소무단수집거부</a></li>
 				<li><a href="#">개인정보처리방침</a></li>
-				<li><a href="#">시스템 이용문의</a></li>
-				<li><a href="#">전화번호 안내</a></li>
-				<li><a href="#">모바일 서비스</a></li>
-				<li>
-					<span class="webwach_logo">
-						<a href="https://www.wa.or.kr/board/list.asp?search=total&amp;SearchString=%BE%C6%C0%CC%BB%E7%B6%FB&amp;BoardID=0006" target="_blank"><img src="https://www.childcare.go.kr/usr/images/common/wa.png" alt="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)"></a>
+				<li><a href="#">오시는길</a></li>
+				<!--<li>
+					<span class="webwach-logo">
+						<a href="https://www.wa.or.kr/board/list.asp?search=total&amp;SearchString=%BE%C6%C0%CC%BB%E7%B6%FB&amp;BoardID=0006" target="_blank"><img src="https://www.childcare.go.kr/usr/images/common/wa.png" alt="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)" style="width:50px;"></a>
 					</span>
-				</li>
+				</li>-->
 			</ul>
 		</div>
 		<div class="address_wrap">
 			<div class="address_inner">
-				<p><img src="../images/f_logo01.png" alt="교육부"></p>
-				<address>정부세종청사 14동<span class="br"></span>
-					세종특별자치시 갈매로 408</address>
-			</div>
-			<div class="address_inner">
-				<p><img src="../images/f_logo03.png" alt="보건복지부"></p>
-				<address>정부세종청사 10동<span class="br"></span>
-					세종특별자치시 도움4로 13</address>
-			</div>
-			<div class="address_inner">
-				<p><img src="../images/f_logo02.png" alt="한국사회보장정보원"></p>
-				<address>
-					한국사회보장정보원(04933) 서울 광진구 능동로 400<br/>
-						Copyright ⓒ 한국사회보장정보원. All rights reserved.
-				</address>
-			</div>
-			<div class="address_inner">
-				<address>
-					<span>아이사랑 헬프데스크</span><em><b>1566-3232</b>(단축번호 1번)</em>
-				</address>
+				<address>(04551) 서울특별시 중구 삼일대로 340, 9층 대표번호 : 02-2271-9017<br/>Copyright © 2022 kcpass. All rights reserved.</address>
+				<p><img src="./images/logo_fotter.png" alt="사회서비스 공급자·종사자 상담지원시스템"></p>
 			</div>
 		</div>
 	</div>
 </footer>
 </body>
-</html>

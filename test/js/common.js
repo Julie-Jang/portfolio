@@ -15,7 +15,7 @@ $(document).ready(function() {
 	});
 		
 	// GNB
-	$("nav > ul > li > a,nav a, .menu_bg").bind("mouseover focus click", function(e){
+	$("nav > ul.gnb > li > a,nav > ul.gnb a, .menu_bg").bind("mouseover focus click", function(e){
 		if($(window).width() >= 1350 && (e.type === "mouseover" || e.type === "focus")) {
 			$('.menu_dimmed').show();
 			$('header').addClass("on");
@@ -231,6 +231,28 @@ $(document).ready(function() {
 			hgroupTrigger.attr('title', '답변 모두 열기'); 
 		}
 	});
+
+    $(".btn_search_open a, .m_util .btn_search").click(function() {
+        $(".top_search").slideToggle(function() {
+            // 슬라이드 애니메이션 후 Swiper를 재초기화
+            //document.querySelectorAll(".slide_show").forEach((slideShowContainer) => {
+            //    initializeSwiper(slideShowContainer);
+            //});
+        });
+        $(this).toggleClass("close");
+        $('nav > ul > li > ul, .menu_bg').stop().slideUp(100);
+        $('.menu_dimmed').toggle();
+    });
+
+    $(".btn_search_open a.close, .m_util .btn_search.close").click(function() {
+        $(".top_search").slideUp(function() {
+            // 슬라이드 애니메이션 후 Swiper를 재초기화
+            //document.querySelectorAll(".slide_show").forEach((slideShowContainer) => {
+            //    initializeSwiper(slideShowContainer);
+            //});
+        });
+        $('.menu_dimmed').hide();
+    });
 	
 });
 

@@ -117,9 +117,15 @@
 						<em class="d_none">검색</em>
 					</a>
 				</li>
-				
-				<li class="account"><a href="#">홍길동</a></li>
-				<li class="login"><a href="#">로그아웃</a></li>
+				<li class="part provider"><!-- 공급자인 경우 class 값 provider , 종사자인 경우 class 값 employee -->
+					<a href="#">김지은 <em>(공급자)</em></a>
+				</li>
+				<!-- 종사자인 경우
+				<li class="part employee"> 
+					<a href="#">김지은 <em>(공급자)</em></a>
+				</li>-->
+				<li class="account"><a href="#">마이페이지</a></li>
+				<li class="logout"><a href="#">로그아웃</a></li>
 				<!-- 로그인 전 
 				<li class="login"><a href="#">로그인</a></li>
 				-->
@@ -145,28 +151,14 @@
 
 <div class="top_search">
 	<strong class="hidden">통합검색</strong>
-	<p class="top_search_close">
-		<a href="#"><em class="hidden">검색 닫기</em></a>
-	</p>
+
 	<fieldset>
 		<form>
-			<label for="search" class="hidden">검색어를 입력해주세요.</label>
-			<input id="search" type="text" placeholder="검색어를 입력해주세요" value="">
-			<button class="btn_search" title="검색" onclick=""><span class="hidden">검색</span></button>
-			<dl class="recommend">
-				<dt>추천검색어</dt>
-				<dd><a href="#">#인기검색어1</a></dd>				
-				<dd><a href="#">#인기검색어2</a></dd>				
-				<dd><a href="#">#인기검색어3</a></dd>				
-				<dd><a href="#">#인기검색어4</a></dd>				
-				<dd><a href="#">#인기검색</a></dd>				
-				<dd><a href="#">#인기검색어6</a></dd>				
-				<dd><a href="#">#인기검색어1456445</a></dd>				
-				<dd><a href="#">#인기검색어8</a></dd>				
-				<dd><a href="#">#인기</a></dd>				
-				<dd><a href="#">#인기검색어1324234</a></dd>				
-				<dd><a href="#">#인기검색어123424</a></dd>				
-			</dl>
+			<div class="search_bar">
+				<label for="search" class="hidden">검색어를 입력해주세요.</label>
+				<input id="search" type="text" placeholder="검색어를 입력해주세요" value="">
+				<button class="btn_search" title="검색" onclick=""><span class="hidden">검색</span></button>
+			</div>
 		</form>
 	</fieldset>
 </div>
@@ -272,7 +264,12 @@
 
 <!-- 중앙 배너 -->
 <div class="main_content">
-	<div class="main_center_banner"><a href="#">사회서비스 공급자 지원사업 자가진단</a></div>
+	<div class="main_center_banner provider"><!-- 공급자인 경우 class 값 provider , 종사자인 경우 class 값 employee -->
+		<a href="#"><span class="hidden">사회서비스 공급자 지원사업 자가진단<span class="hidden"></a>
+	</div>
+	<div class="main_center_banner employee"><!-- 공급자인 경우 class 값 provider , 종사자인 경우 class 값 employee -->
+		<a href="#"><span class="hidden">사회서비스 종사자 심리상담 신청<span class="hidden"></a>
+	</div>
 </div>
 
 <div class="third_banner">

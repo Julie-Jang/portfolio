@@ -5,7 +5,7 @@
 <title>사회서비스 공급자&middot;종사자 상담지원시스템</title>
 <link rel="shortcut icon" href="./images/favicon.ico">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="format-detection" content="telephone=no, address=no, email=no">
 <meta name="description" content="사회서비스 공급자·종사자 상담지원시스템">
 <meta name="keywords" content="사회서비스 공급자·종사자 상담지원시스템,중서원,kcpass">
@@ -13,16 +13,16 @@
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
 </script>
 <![endif]-->
-<link rel="stylesheet" href="../css/style.css" type="text/css">
-<link rel="stylesheet" href="../css/common.css" type="text/css">
-<link rel="stylesheet" href="../css/main.css" type="text/css">
-<link rel="stylesheet" href="../css/sub.css" type="text/css">
-<link rel="stylesheet" href="../css/fontface.css" type="text/css">
-<link rel="stylesheet" href="../css/swiper.min.css">
-<script src="../js/jquery-1.12.4.min.js"></script>
-<script src="../js/common.js"></script>
-<script src="../js/main.js"></script>
-<script src="../js/swiper.min.js"></script>
+<link rel="stylesheet" href="./css/style.css" type="text/css">
+<link rel="stylesheet" href="./css/common.css" type="text/css">
+<link rel="stylesheet" href="./css/main.css" type="text/css">
+<link rel="stylesheet" href="./css/sub.css" type="text/css">
+<link rel="stylesheet" href="./css/fontface.css" type="text/css">
+<link rel="stylesheet" href="./css/swiper.min.css">
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/swiper.min.js"></script>
 <body>
 
 
@@ -33,19 +33,27 @@
 	<a href="#footer">하단 바로가기</a>
 </div>
 
-<!-- units -->
-
-
 <header id="header" class="header">
 	<div class="navi">
 		<div class="menu_bg"></div>
 		<h1><a href="#">사회서비스 공급자·종사자 상담지원시스템</a></h1>
-		<a class="m_menu" href="#"><span class="d_none">모바일메뉴</span></a>
+		<div class="m_util">
+			<a href="#" class="btn_search"><em class="d_none">검색</em></a>
+			<a class="m_menu" href="#"><span class="d_none">모바일메뉴</span></a>
+		</div>
+		
 		<nav id="gnbMenu" class="gnb">
-			<!--<p class="all_menu_title">전체메뉴</p>
-			<p class="all_menu_close">
-				<a href="#"><em class="d_none">전체메뉴 닫기</em></a>
-			</p>-->
+			<div class="m_member">
+				<a href="#" class="login">로그인</a>
+				<!-- 로그인 후
+				<a href="#" class="account">홍길동</a>
+				<a href="#" class="login">로그아웃</a>
+				-->
+				<a href="#" class="join">회원가입</a>
+			</div>
+			<div class="all_menu_close">
+				<a href="#"><em class="hidden">전체메뉴 닫기</em></a>
+			</div>
 			<ul class="gnb">
 				<li class="depth">
 					<a class="menu01 on" href="#">지원사업소개</a>
@@ -109,29 +117,51 @@
 						<em class="d_none">검색</em>
 					</a>
 				</li>
-				
-				<li class="account"><a href="#">홍길동</a></li>
-				<li class="login"><a href="#">로그아웃</a></li>
+				<li class="part provider"><!-- 공급자인 경우 class 값 provider , 종사자인 경우 class 값 employee -->
+					<a href="#">김지은 <em>(공급자)</em></a>
+				</li>
+				<!-- 종사자인 경우
+				<li class="part employee"> 
+					<a href="#">김지은 <em>(공급자)</em></a>
+				</li>-->
+				<li class="account"><a href="#">마이페이지</a></li>
+				<li class="logout"><a href="#">로그아웃</a></li>
 				<!-- 로그인 전 
 				<li class="login"><a href="#">로그인</a></li>
 				-->
 				<li class="join"><a href="#">회원가입</a></li>
+				<!-- Sitemap-->
+				<li class="all_menu_btn"><a class="all_menu" href="#gnbMenu"><em class="hidden">전체메뉴</em></a></li>
 			</ul>
 		</nav>
 		
 	</div>
+	<aside class="quick_menu" id="quick_menu">
+		<ul>
+			<li><a href="#"><i class="link01">홈</i></a></li>
+			<li><a href="#"><i class="link02">임신</i></a></li>
+			<li><a href="#"><i class="link03">출산</i></a></li>
+			<li><a href="#"><i class="link04">육아</i></a></li>
+			<li><a href="#"><i class="link05">어린이집</i></a></li>
+			<li><a href="#none"><i class="top">TOP</i></a></li>
+		</ul>
+	</aside>
 </header>
 <div class="menu_dimmed"></div>
 
-<div class="top-search-wrap">
-	<strong>통합검색</strong>
+
+<div class="top_search">
+	<strong class="hidden">통합검색</strong>
+
 	<fieldset>
 		<form>
-			<input type="text" autocomplete="off" id="topKwd" name="innerKwd" title="검색어 입력" placeholder="검색어를 입력하세요." value="">
-			<button class="btn-search" title="Next" onclick="">검색</button>
+			<div class="search_bar">
+				<label for="search" class="hidden">검색어를 입력해주세요.</label>
+				<input id="search" type="text" placeholder="검색어를 입력해주세요" value="">
+				<button class="btn_search" title="검색" onclick=""><span class="hidden">검색</span></button>
+			</div>
 		</form>
 	</fieldset>
-	<a href="javascript:;" class="search-close-btn">검색 닫기</a>
 </div>
 
 

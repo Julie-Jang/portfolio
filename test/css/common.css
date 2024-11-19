@@ -44,9 +44,18 @@ nav.sitemap_view .all_menu_close a::before {content: 'X'; font-size:3rem; color:
 .utility li a {display:block; font-size: 1.5rem;font-weight: 500; padding:0.3rem 1rem;}
 .utility li.btn_search_open {margin-right:8rem;}
 .utility li.btn_search_open a {width:2.3rem; height:2.3rem; background:url(../images/icon/icon_search.svg) no-repeat center center; background-size:2.3rem 2.2rem;}
+.utility li.btn_search_open a.close {width:2.3rem; height:2.3rem; background:none; position:relative;}
+.utility li.btn_search_open a.close::before {content: '';  position: absolute; right:50%; top: 0; width: 0.3rem; height: 2rem; transform: rotate(45deg); background-color: #697283; border-radius:1rem;}
+.utility li.btn_search_open a.close::after {content: '';  position: absolute; right:50%; top: 0; width: 0.3rem; height: 2rem; transform: rotate(135deg); background-color: #697283;border-radius:1rem;}
+.utility li.part {position:absolute; top:-4.3rem; right:0; text-align:center; padding:0.3rem 0; width:19rem; border-radius:0 0 1rem 1rem;}
+.utility li.part.provider {background:#8ABA4B;}
+.utility li.part.employee {background:#0099DB;}
+.utility li.part a {color:white; background:url(../images/icon/icon_V.svg) no-repeat 0 center; padding-left:2rem; display:inline-block; font-family:'Pretendard'; font-size:1.4rem; text-decoration:underline; font-weight:400;}
 .utility li .all_menu::before {content:"☰"; font-size:2rem;}
 .utility li.login a {background:url(../images/icon/icon_login.svg) no-repeat 0 center; background-size:1.5rem; padding-left:2rem;}
+.utility li.logout a {background:url(../images/icon/icon_logout.svg) no-repeat 0 center; background-size:1.5rem; padding-left:2rem;}
 .utility li.join a {background:#8D8D97; border-radius:0.5rem; color:white;}
+.utility li.account a {background:url(../images/icon/icon_mypage.svg) no-repeat 0 center; background-size:1.5rem; padding-left:2rem;}
 .utility li.all_menu_btn {display:none;}
 
 /* Footer (디자인 미적용) */
@@ -60,23 +69,16 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 .footer_wrap .address_wrap .address_inner p {float:left; width:24.7rem;}
 .footer_wrap .address_wrap .address_inner address {float:right;width: calc(100% - 24.7rem); padding-left:7rem;font-size:1.5rem; color:#999; font-weight:400; font-family:'Pretendard'}
 
-/* Search (디자인 미적용) */
+/* Search */
 #header.action + .top_search {top:6rem;}
-.top_search {display:none; position:fixed; top:6rem; left:0; z-index:3; width:100%; background:white;box-shadow:5px 10px 10px 0 #eee; text-align:center; height:70vh;}
+.top_search {display:none; position:fixed; top:11rem; left:0; z-index:3; width:100%; background:white;text-align:center;}
 .header.action + .top_search.active {top:5rem;}
-.top_search .top_search_close {position: absolute;top: 6rem;right: 11%; }
-.top_search .top_search_close a {display:block; width:7rem;height:7rem;}
-.top_search .top_search_close::before {content: '';  position: absolute; right:50%; top: 0; width: 0.1rem; height: 7rem; transform: rotate(45deg); background-color: black;}
-.top_search .top_search_close::after {content: '';  position: absolute; right:50%; top: 0; width: 0.1rem; height: 7rem; transform: rotate(135deg); background-color: black;}
-.top_search input[type="text"] {border:4px solid #5478B5; border-radius:10rem; font-size:2.2rem; padding:3.6rem 3rem; width:50%; margin:18rem 0 5rem;}
-.top_search .btn_search {position:relative; top:5em; right:6rem; width:3rem; height:3rem;}
-.top_search .btn_search::after{content:'';position:absolute;right:0.5rem;top:0.2rem;width:1.8rem;height:1.8rem;border:2px solid  #000;border-radius:100%;}
-.top_search .btn_search::before{content:'';position:absolute;right:0.3rem;top:1.8rem;width:0.5rem;height:0.2rem;transform:rotate(45deg);background-color:#000;}
-.top_search dl.recommend {display: flex; display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex; width:100%; max-width:110rem; margin:0 auto; flex-wrap: wrap; -webkit-box-lines: multiple; -moz-box-lines: multiple; -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap;justify-content: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; gap:2rem;}
-.top_search dl.recommend dt {position:relative; margin:1rem 1rem 0 0; padding-left:3rem; color:#666; font-size:1.4rem; }
-.top_search dl.recommend dt::after{content:'';position:absolute;left:0.5rem;top:0.2rem;width:1.5rem;height:1.5rem;border:2px solid  #666;border-radius:100%;}
-.top_search dl.recommend dt::before{content:'';position:absolute;left:1.7rem;top:1.4rem;width:0.5rem;height:0.2rem;transform:rotate(45deg);background-color:#666;}
-.top_search dl.recommend dd a {display:block; padding:0.7rem 2rem; color:#666; border-radius:10rem; background:#eee;}
+
+.top_search .search_bar {position:relative;margin:4rem auto; width:48rem;}
+.top_search input[type="text"] {border:2px solid #2C5AA5; border-radius:2rem; font-size:1.8rem; font-family:'Pretendard'; font-weight:400; padding:0 3rem; width:100%; height:5.8rem; }
+.top_search .btn_search {position:absolute; top:0; right:0; width:5.8rem; height:5.8rem; background:#2C5AA5; border-radius:2rem 2rem 1rem 2rem}
+.top_search .btn_search::after{content:'';position:absolute;right:2rem;top:2rem;width:2rem;height:2rem;border:3px solid  white;border-radius:100%;}
+.top_search .btn_search::before{content:'';position:absolute;right:1.6rem;top:3.7rem;width:0.8rem;height:0.3rem;transform:rotate(45deg);background-color:white; border-radius:1rem;}
 
 
 /* quick_menu */
@@ -178,7 +180,7 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 	.utility {right:2rem; gap:0.5rem;}
 	nav > ul.gnb {gap:2rem; padding-left:0;}
 	nav > ul.gnb > li > a {font-size:1.6rem;}
-	.utility li.btn_search_open {margin-right:0;}
+	.utility li.btn_search_open {margin-right:2rem;}
 }
 
 @media screen and (max-width: 1350px) {
@@ -193,7 +195,11 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 	#header > .navi > .m_util > .m_menu {display:inline-block;vertical-align:middle; width:2.3rem; height:2.3rem; background:url(../images/icon/icon_m.svg) no-repeat center center; background-size:2.3rem 2.2rem;}
 	#header > .navi > .m_util > .m_menu.off {background:url(../images/icon/icon_close.svg) no-repeat center center; background-size:2.3rem 2.2rem;}
 	.m_util .btn_search {display:inline-block; vertical-align:middle; margin-right:2rem;width:2.3rem; height:2.3rem; background:url(../images/icon/icon_search.svg) no-repeat center center; background-size:2.3rem 2.2rem;}
-
+	.m_util .btn_search.close  {width:2.3rem; height:2.3rem; background:none; position:relative;}
+	.m_util .btn_search.close::before {content: '';  position: absolute; right:50%; top: 0; width: 0.3rem; height: 2.5rem; transform: rotate(45deg); background-color: #000A2E; border-radius:1rem;}
+	.m_util .btn_search.close::after {content: '';  position: absolute; right:50%; top: 0; width: 0.3rem; height: 2.5rem; transform: rotate(135deg); background-color: #000A2E;border-radius:1rem;}
+	.top_search {top:7rem;}
+	.top_search .search_bar {width:80%; margin:3rem auto;}
 	nav {display: none;background:white url(../images/bg_m_menu.gif) no-repeat center bottom; background-size:contain; top: 5.1rem;margin-left: 0;position: absolute;width: 100%;overflow: auto;height:auto; padding-bottom:20rem;}
 	nav > .m_member {display:block;padding:3rem 3rem 0 3rem; overflow:hidden;}
 	nav > .m_member a {display:block; float:left; }

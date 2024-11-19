@@ -13,16 +13,17 @@ $(document).ready(function () {
 
         if (container.classList.contains("main_visual")) {
             slidesPerViewValue = 1;
-            spaceBetweenValue = 10;
+            spaceBetweenValue = 0;
         } else if (container.classList.contains("slides-2")) {
             slidesPerViewValue = 2.5;
             spaceBetweenValue = 20;
             autoplayEnabled = false; // slides-2 자동 롤링 비활성화
-            loopEnabled = false; // slides-2는 loop 비활성화
+            loopEnabled = true; // slides-2는 loop 비활성화
             paginationType = "bullets"; // 기본으로 bullets 사용
         } else if (container.classList.contains("slides-3")) {
             slidesPerViewValue = 3;
             spaceBetweenValue = 60;
+            loopEnabled = true; // slides-2는 loop 비활성화
             autoplayEnabled = true;
             paginationType = "bullets"; // 기본으로 bullets 사용
         } else if (container.classList.contains("slides-auto")) {
