@@ -57,15 +57,7 @@ $(document).ready(function() {
 		}
 	});
 	
-	// Ensure menu closes on focusout
-	$('.end_menu').on('focusout', function(){
-		$('nav > ul > li > ul, .menu_bg').slideUp(100);
-		$('.menu_dimmed').hide(); // Also hide the dimmed background on focus out
-	});
-	
-	
-	
-	
+
 	// Mobile menu
 	$('.m_menu').click(function() {
 		$(this).toggleClass('off');
@@ -125,24 +117,6 @@ $(document).ready(function() {
 		$('.tab_wrap ul').removeAttr("style"); 
 	});
 	
-	// Sub menu
-	$(".sub_nav_wrap > div > ul > li").hover(
-		function() {
-			$(this).addClass("on");
-			$(this).find("a").attr("aria-label","메뉴 닫기");
-			$(this).find("ul").slideDown(100);
-		}, 
-		function() {
-			$(this).removeClass("on");
-			$(this).find("a").attr("aria-label","메뉴 열기");
-			$(this).find("ul").slideUp(100);
-		}
-	);
-	$(".sub_nav_wrap > div > ul > li > ul").on("mouseleave",function() {
-		$(this).slideUp(100);
-		$(this).prev().attr("aria-label","메뉴 열기");
-		$(this).parent().removeClass("on");
-	});
 	
 	// lnb
 	$(".lnb > ul > li > ul > li a").on("click", function(e){
@@ -167,93 +141,13 @@ $(document).ready(function() {
 			}
 	});
 	
-	$(".sub_nav_wrap > div > ul > li > ul > li:last-child a").blur(function() {
-		$(this).parent().parent().slideUp(100);
-		$('.sub_nav_wrap > div > ul > li').removeClass();
-		$('.sub_nav_wrap > div > ul > li > a').attr("aria-label","메뉴 열기");
-		
-	});
-	$(".last_menu > a").blur(function() {
-		$(this).parent().parent().slideUp(100);
-		$('.menu_bg').slideUp(100);
-		$('nav > ul > li > ul').slideUp(100);
-	});
-	
 	// Top button
 	$(".top").click(function(){
 		$('body, html').animate({scrollTop:0}, 500);
 		return false;
 	});
 
-	// Sub tab
-	$('.contents h3.tab_title a').click(function() {
-		$(this).parent().next().toggle();
-		$(this).parent().toggleClass('on');
-	});
-	$(window).resize(function() {
-		$('.tab_menu ul').removeAttr("style"); 
-	});
 	
-
-	// Tab menu
-	$(".tab_wrap > a").click(function() {
-		$(".tab_wrap ul").slideToggle();
-		return false;
-	});
-	
-	// Search tab
-	$(".sch_tab_box > a").click(function() {
-		$(".sch_tab_box ul").slideToggle();
-	});
-
-	// language
-	$(".utility > li.btn-language > a").click(function() {
-		$(".language").slideToggle();
-	});
-	$('.last_link').on('focusout',function(){
-		$(".language").fadeOut();
-	});
-
-	// FAQ
-	var article = $('.faq .article');
-	article.addClass('hide');
-	article.find('.a').slideUp(100);
-	
-	$('.faq .article .trigger').click(function(){
-		var myArticle = $(this).parents('.article:first');
-		var articleTrigger = $(this);
-	
-		if (myArticle.hasClass('hide')) {
-			article.addClass('hide').removeClass('show'); 
-			article.find('.a').slideUp(100); 
-			myArticle.removeClass('hide').addClass('show');
-			myArticle.find('.a').slideDown(100);
-			articleTrigger.attr('title', '답변 닫기');
-		} else {
-			myArticle.removeClass('show').addClass('hide');
-			myArticle.find('.a').slideUp(100);
-			articleTrigger.attr('title', '답변 열기'); 
-		}
-	});
-	
-	$('.faq .hgroup .trigger').click(function(){
-		var hidden = $('.faq .article.hide').length;
-		var articleTriggers = $('.faq .article .trigger');
-		var hgroupTrigger = $(this); 
-	
-		if (hidden > 0) {
-			article.removeClass('hide').addClass('show');
-			article.find('.a').slideDown(100);
-			articleTriggers.attr('title', '답변 닫기'); 
-			hgroupTrigger.attr('title', '답변 모두 닫기'); 
-		} else {
-			article.removeClass('show').addClass('hide');
-			article.find('.a').slideUp(100);
-			articleTriggers.attr('title', '답변 열기'); 
-			hgroupTrigger.attr('title', '답변 모두 열기'); 
-		}
-	});
-
 	let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 
