@@ -76,8 +76,33 @@ $(document).ready(function() {
 		$('.menu_dimmed').toggle();
 		$('nav > ul > li > ul').removeAttr("style");
 		$("body").toggleClass("search_active");
+		$(".top_search").hide();
+		$('.btn_search').removeClass('close');
 		return false;	
 	});
+
+	$(".btn_search_open a, .m_util .btn_search").click(function() {
+        $(".top_search").slideToggle(function() {
+            // 슬라이드 애니메이션 후 Swiper를 재초기화
+            //document.querySelectorAll(".slide_show").forEach((slideShowContainer) => {
+            //    initializeSwiper(slideShowContainer);
+            //});
+        });
+        $(this).toggleClass("close");
+        $('nav > ul > li > ul, .menu_bg').hide();
+		$('.m_menu').removeClass('off');
+        $('.menu_dimmed').toggle();
+    });
+
+    $(".btn_search_open a.close, .m_util .btn_search.close").click(function() {
+        $(".top_search").slideUp(function() {
+            // 슬라이드 애니메이션 후 Swiper를 재초기화
+            //document.querySelectorAll(".slide_show").forEach((slideShowContainer) => {
+            //    initializeSwiper(slideShowContainer);
+            //});
+        });
+        $('.menu_dimmed').hide();
+    });
 
     // PC Sitemap
     $('.all_menu').on('click', function() {
@@ -232,27 +257,7 @@ $(document).ready(function() {
 		}
 	});
 
-    $(".btn_search_open a, .m_util .btn_search").click(function() {
-        $(".top_search").slideToggle(function() {
-            // 슬라이드 애니메이션 후 Swiper를 재초기화
-            //document.querySelectorAll(".slide_show").forEach((slideShowContainer) => {
-            //    initializeSwiper(slideShowContainer);
-            //});
-        });
-        $(this).toggleClass("close");
-        $('nav > ul > li > ul, .menu_bg').stop().slideUp(100);
-        $('.menu_dimmed').toggle();
-    });
 
-    $(".btn_search_open a.close, .m_util .btn_search.close").click(function() {
-        $(".top_search").slideUp(function() {
-            // 슬라이드 애니메이션 후 Swiper를 재초기화
-            //document.querySelectorAll(".slide_show").forEach((slideShowContainer) => {
-            //    initializeSwiper(slideShowContainer);
-            //});
-        });
-        $('.menu_dimmed').hide();
-    });
 	
 });
 
