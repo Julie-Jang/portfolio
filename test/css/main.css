@@ -25,7 +25,6 @@
 .slide_show.main_visual .count em:first-child {position:absolute; top:0; left:0;}
 .slide_show.main_visual .count em:last-child {position:absolute; top:0; right:7rem;}
 
-
 .main_wrap {overflow:hidden; position:relative;}
 .second_banner {overflow: hidden; position:relative; background:url(../images/bg_second_banner.png) no-repeat center bottom; background-size:contain; padding-bottom:6rem;}
 .second_banner h2 {margin:11.2rem 0 0;  text-align:center; font-size:4.2rem; font-weight:800;}
@@ -78,16 +77,9 @@
 .fourth_banner .slide_show .swiper_slide a .txt {display:block; padding-top:1rem; font-family:'Dotum'; line-height:1.2; max-height:18rem;overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp:7 ; -webkit-box-orient: vertical; }
 .fourth_banner .slide_show .swiper_slide a .info {overflow:hidden;display:block; font-size:1.5rem; text-align:right; padding-top:1.7rem;}
 .fourth_banner .slide_show .swiper_slide a .view {display:inline-block; background:url(../images/icon/icon_views.svg) no-repeat 0 center; padding-left:3rem;}
-.tab_banner {float:right; width:70%; position:relative; height:30rem; }
-.tab_banner > li {float:left;}
-.tab_banner > li > .tab_contents {position:absolute; top:3rem; left:0;}
 
 .slide_show .visual_pagination-wrap .swiper-pagination-bullet {margin:0 0.5rem;}
 .slide_show .visual_pagination-wrap .swiper-pagination-bullet-active {width:3rem; border-radius:1rem;}
-
-
-/* slide banner */
-
 
 @media screen and (max-width: 1400px) {
     .slide_show.main_visual .swiper_wrap .swiper_slide p {padding:0 4rem;}
@@ -95,8 +87,6 @@
     .second_banner .banner_visual .swiper-ctrl {padding-right:4rem;}
     .main_content {width:100%; padding:0 4rem;}
     .fourth_banner .slide_show {/*padding-right:4rem;*/}
-    
-
 }
 
 @media screen and (max-width: 1050px) {  /* 반응형 레이아웃 변경 시작 */

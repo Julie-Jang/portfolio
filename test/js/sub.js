@@ -362,144 +362,115 @@ $(document).ready(function() {
         
     
     // Selectbox 커스터마이징
-    $(document).ready(function() {
-        // select_selected 클릭 시 select_items 토글
-        $('.custom_select .select_selected').click(function(event) {
-            const $selectItems = $(this).closest('.custom_select').find('.select_items');
-            
-            // 현재 상태에 따라 토글
-            if ($selectItems.is(':visible')) {
-                $selectItems.slideUp(); // 이미 열려있다면 닫기
+    $('.custom_select .select_selected').click(function (event) {
+        const $customSelect = $(this).closest('.custom_select');
+        const $selectItems = $customSelect.find('.select_items');
+        const $options = $selectItems.find('div');
+    
+        // 현재 상태에 따라 토글
+        if ($selectItems.is(':visible')) {
+            $selectItems.slideUp(0); // 이미 열려있다면 닫기
+            $(this).removeClass('on'); // dropdown이 닫히면 'on' 클래스 제거
+        } else {
+            // 다른 모든 select_items 닫기 및 on 클래스 제거
+            $('.custom_select .select_items').slideUp(0); 
+            $('.custom_select .select_selected').removeClass('on'); // 열려 있던 항목 초기화
+    
+            $selectItems.slideDown(0); // 클릭한 select_items 열기
+            $options.first().focus(); // 첫 번째 항목에 포커스
+            $(this).addClass('on'); // dropdown이 열리면 'on' 클래스 추가
+        }
+    
+        event.stopPropagation(); // 이벤트 전파 방지
+        return false; // 클릭 시 기본 동작 방지
+    });
+    
+
+    // 키보드 이벤트 처리
+    $('.custom_select').on('keydown', function (event) {
+        const $customSelect = $(this);
+        const $selectItems = $customSelect.find('.select_items');
+        const $options = $selectItems.find('div');
+        let $current = $options.filter('.on'); // 이미 선택된 옵션을 추적
+
+        if (!$selectItems.is(':visible')) return; // 드롭다운이 열리지 않았다면 무시
+
+        if (event.key === 'ArrowDown') {
+            // 아래로 이동
+            event.preventDefault();
+            if (!$current.length || $current.is(':last-child')) {
+                $current = $options.first();
             } else {
-                $('.custom_select .select_items').slideUp(); // 다른 모든 select_items 닫기
-                $selectItems.slideDown(); // 클릭한 select_items 열기
+                $current = $current.next();
             }
-    
-            event.stopPropagation(); // 이벤트 전파 방지
-        });
-    
-        // document 클릭 시 모든 select_items 닫기
-        $(document).click(function() {
-            $('.custom_select .select_items').slideUp();
-        });
-    });
-    
-
-    // 지역선택 select box 커스텀
-    document.addEventListener('click', function(event) {
-        document.querySelectorAll('.custom_select2_wrap').forEach(function(selectWrap) {
-            const isClickInside = selectWrap.contains(event.target);
-
-            // 만약 클릭한 위치가 selectWrap 밖이라면 selectWrap을 숨깁니다.
-            if (!isClickInside) {
-                selectWrap.style.display = 'none';
+            $options.removeClass('on'); // 이전 선택된 항목에서 'on' 클래스 제거
+            $current.addClass('on').focus(); // 새로운 항목에 'on' 클래스 추가 및 포커스 이동
+        } else if (event.key === 'ArrowUp') {
+            // 위로 이동
+            event.preventDefault();
+            if (!$current.length || $current.is(':first-child')) {
+                $current = $options.last();
+            } else {
+                $current = $current.prev();
             }
-        });
-    });
+            $options.removeClass('on'); // 이전 선택된 항목에서 'on' 클래스 제거
+            $current.addClass('on').focus(); // 새로운 항목에 'on' 클래스 추가 및 포커스 이동
+        } else if (event.key === 'Enter') {
+            // 선택
+            event.preventDefault();
+            if ($current.length) {
+                const selectedText = $current.text();
+                $customSelect.find('.select_selected a').html(selectedText); // 선택된 항목을 <a> 태그 안에 삽입
 
-    document.querySelectorAll('.custom_select2_wrap .select_area').forEach(function(selectArea, index) {
-        const selected = selectArea.querySelector('.selected');
-        const selectItems = selectArea.querySelector('ul');
-        const selectOptions = selectItems.querySelectorAll('li');
+                // 선택된 옵션에 'on' 클래스 추가 및 title="선택됨" 추가
+                $options.removeClass('on').removeAttr('title'); // 이전 선택된 항목 초기화
+                $current.addClass('on').attr('title', '선택됨'); // 현재 선택된 항목에 클래스 및 title 추가
 
-        // Add ARIA roles and tabindex for accessibility
-        selectArea.setAttribute('role', 'listbox');
-        selected.setAttribute('tabindex', '0');
-        selected.setAttribute('aria-expanded', 'false');
-        selected.setAttribute('aria-haspopup', 'listbox');
-
-        selectOptions.forEach(function(option, optionIndex) {
-            option.setAttribute('role', 'option');
-            option.querySelector('a').setAttribute('tabindex', '-1');
-            option.querySelector('a').setAttribute('id', `option-${optionIndex}`);
-        });
-
-        // Toggle the display of the select items when the select box is clicked or Enter/Space is pressed
-        selected.addEventListener('click', function(event) {
-            event.stopPropagation(); // Prevent click from propagating to the document
-            toggleDropdown(selected, selectItems);
-        });
-
-        selected.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                toggleDropdown(selected, selectItems);
-            } else if (e.key === 'ArrowDown') {
-                e.preventDefault();
-                selectOptions[0].querySelector('a').focus();
+                $selectItems.slideUp(0);
+                $customSelect.find('.select_selected').removeClass('on');
+                
             }
-        });
-
-        // Handle the click or keyboard selection on each item inside the custom select
-        selectOptions.forEach(function(item) {
-            const anchor = item.querySelector('a');
-
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();  // Prevent default anchor behavior
-                selectItem(selected, item, index);
-                return false;  // Return false to stop propagation
-            });
-
-            anchor.addEventListener('keydown', function(e) {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    selectItem(selected, item, index);
-                    return false;
-                } else if (e.key === 'ArrowDown') {
-                    e.preventDefault();
-                    let nextOption = item.nextElementSibling?.querySelector('a');
-                    if (nextOption) nextOption.focus();
-                } else if (e.key === 'ArrowUp') {
-                    e.preventDefault();
-                    let prevOption = item.previousElementSibling?.querySelector('a');
-                    if (prevOption) prevOption.focus();
-                }
-            });
-        });
+        }
     });
 
-    // Function to toggle the dropdown
-    function toggleDropdown(selected, selectItems) {
-        const isOpen = selected.getAttribute('aria-expanded') === 'true';
-        selected.setAttribute('aria-expanded', !isOpen);
-        selectItems.style.display = isOpen ? 'none' : 'block';
-    }
+    // 선택 항목 클릭 이벤트
+    $('.custom_select .select_items div').click(function () {
+        const $customSelect = $(this).closest('.custom_select');
+        const selectedText = $(this).text();
+        const $selectItems = $customSelect.find('.select_items');
+        const $options = $selectItems.find('div');
 
-    // Function to select an item (and update the title)
-    function selectItem(selected, item, selectIndex) {
-        // Get the current value of the custom_select2
-        const customSelect = document.querySelector('.custom_select2');
-        let currentValue = customSelect.textContent.split(' / ').filter(Boolean);
+        $customSelect.find('.select_selected a').html(selectedText); // 선택된 항목을 <a> 태그 안에 삽입
 
-        // Update the selected item and its display
-        item.classList.add('on');
-        item.setAttribute('title', '선택됨'); // Set title to '선택됨'
+        // 선택된 옵션에 'on' 클래스 및 title="선택됨" 추가
+        $options.removeClass('on').removeAttr('title'); // 이전 선택된 항목 초기화
+        $(this).addClass('on').attr('title', '선택됨'); // 현재 선택된 항목에 클래스 및 title 추가
 
-        // Remove class 'on' and title '선택됨' from all other li elements within the same select area
-        const siblingItems = item.parentElement.querySelectorAll('li');
-        siblingItems.forEach(function(li) {
-            if (li !== item) {
-                li.classList.remove('on'); // Remove class 'on' from other li elements
-                li.removeAttribute('title'); // Remove title from other li elements
-            }
-        });
+        $selectItems.slideUp(0); // 선택 후 dropdown 닫기
+        $customSelect.find('.select_selected').removeClass('on'); // 선택 후 select_selected에서 'on' 클래스 제거
 
-        // Update the custom_select2 value based on the selected item
-        currentValue[selectIndex] = item.querySelector('a').textContent; // Update the respective index
-        customSelect.textContent = currentValue.filter(Boolean).join(' / '); // Join with '/'
+        return false; // 클릭 시 기본 동작 방지
+    });
 
-        // Clear previous selections in custom_select2 if the current item was not previously selected
-        // (this is handled by directly replacing the value)
-    }
+    // 외부 클릭 시 닫기
+    $(document).click(function (event) {
+        if (!$(event.target).closest('.custom_select').length) {
+            $('.custom_select .select_items').slideUp(0);
+            $('.select_selected').removeClass('on');
+        }
+    });
+
+    // 선택 항목에 tabindex 추가
+    $('.custom_select .select_items div').attr('tabindex', '0');
 
 
     // tab 스크롤 위치로 이동
-    var $activeItem = $('.tab .on'); // .on 클래스를 가진 요소
-    var offset = 3 * parseFloat($("html").css("font-size")); // 5rem을 픽셀로 변환
+    var $activeItem = $('.join_steps .steps .on, .tab .on'); // .on 클래스를 가진 요소
+    var offset = 4 * parseFloat($("html").css("font-size")); // 5rem을 픽셀로 변환
 
     if ($activeItem.length) {
         // 스크롤 위치에 5rem만큼 여백을 추가
-        $('.tab').scrollLeft($activeItem.position().left - offset);
+        $('.steps, .tab').scrollLeft($activeItem.position().left - offset);
     }
 
     //var $activeItem = $('.h2_tab .on'); // .on 클래스를 가진 요소
@@ -510,4 +481,23 @@ $(document).ready(function() {
      //   $('.h2_tab').scrollLeft($activeItem.position().left - offset);
     //}
 
+    document.querySelectorAll('input[type="radio"]').forEach(radio => {
+        radio.addEventListener('click', event => {
+            console.log('Checked:', radio.checked); // 클릭 후 상태 확인
+        });
+    });
+
+    // 회원가입 라디오 버튼 테이블 
+    $('input[name="partAB"]').click(function () {
+        if ($(this).attr('id') === 'partA') {
+            $("#radio_tab02").hide();
+            $("#radio_tab01").show();
+        } else if ($(this).attr('id') === 'partB') {
+            $("#radio_tab01").hide();
+            $("#radio_tab02").show();
+        }
+    
+        // Set the clicked radio button to checked
+        $(this).prop('checked', true);
+    });
 });

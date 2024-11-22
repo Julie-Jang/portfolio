@@ -24,7 +24,7 @@ $(document).ready(function () {
             slidesPerViewValue = 3;
             spaceBetweenValue = 60;
             loopEnabled = true; // slides-2는 loop 비활성화
-            autoplayEnabled = true;
+            autoplayEnabled = false;
             paginationType = "bullets"; // 기본으로 bullets 사용
         } else if (container.classList.contains("slides-auto")) {
             slidesPerViewValue = 'auto';

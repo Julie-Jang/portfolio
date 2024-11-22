@@ -22,80 +22,240 @@
 <script src="./js/jquery-1.12.4.min.js"></script>
 <script src="./js/common.js"></script>
 <script src="./js/main.js"></script>
+<script src="./js/sub.js"></script>
 <script src="./js/swiper.min.js"></script>
-
-
-<!-- include js 개발서버에는 적용 필요 없음!! -->
-<script src="./js/include.js"></script>
-<!--// include js -->
-
 <body>
 
-<!-- include header 개발서버에는 적용 필요 없음!! -->
-<div include-html="./include/header.html"></div> 
-<!--// include header 개발서버에는 적용 필요 없음!! -->
+
+<!--Skip menu-->
+<div class="skipnav">
+	<a href="#contents">본문내용 바로가기</a>
+	<a href="#gnbMenu">대메뉴 바로가기</a>
+	<a href="#footer">하단 바로가기</a>
+</div>
+
+<header id="header" class="header">
+	<div class="navi">
+		<div class="menu_bg"></div>
+		<h1><a href="#">사회서비스 공급자·종사자 상담지원시스템</a></h1>
+		<div class="m_util">
+			<a href="#" class="btn_search"><em class="d_none">검색</em></a>
+			<a class="m_menu" href="#"><span class="d_none">모바일메뉴</span></a>
+		</div>
+		
+		<nav id="gnbMenu" class="gnb">
+			<!-- 모바일 로그인 영역 -->
+			<!-- 로그인 전 -->
+			<div class="m_member">
+				<a href="#" class="login">로그인</a>
+				<a href="#" class="join">회원가입</a>
+			</div>
+			
+			<!-- 로그인 후 -->
+			<!-- 공급자인 경우 class 값 provider , 종사자인 경우 class 값 employee -->
+			<!-- 공급자인 경우 
+			<div class="m_member provider">
+				<a href="#">김지은 <em>(공급자)</em></a>
+				<span class="right">
+					<a href="#" class="account"><span class="hidden">마이페이지</span></a>
+					<a href="#" class="logout"><span class="hidden">로그아웃</span></a>
+				</span>
+			</div>
+			-->
+			<!-- 종사자인 경우
+			<div class="m_member employee">
+				<a href="#">김지은 <em>(종사자)</em></a>
+				<span class="right">
+					<a href="#" class="account"><span class="hidden">마이페이지</span></a>
+					<a href="#" class="logout"><span class="hidden">로그아웃</span></a>
+				</span>
+			</div>
+			-->
+
+			<!--<a href="#" class="login">로그인</a>-->
+			<div class="all_menu_close">
+				<a href="#"><em class="hidden">전체메뉴 닫기</em></a>
+			</div>
+			<ul class="gnb">
+				<li class="depth">
+					<a class="menu01 on" href="#">지원사업소개</a>
+					<ul>
+						<li class="depth">
+							<a href="#">지원사업1</a>
+							<!--<ul>
+								<li><a href="#"></a></li> 
+								<li><a href="#"></a></li> 
+								<li><a href="#"></a></li> 
+							</ul>-->
+						</li>
+						<li class="depth"><a href="#">지원사업2</a></li>
+						<li class="depth"><a href="#">지원사업3</a></li>
+					</ul>
+				</li>
+				<li class="depth">
+					<a class="menu02" href="#">노무·법률·세무상담</a>
+					<ul>
+						<li class="depth"><a href="#">이용안내</a></li>
+						<li class="depth"><a href="#">상담게시판</a></li>
+					</ul>
+				</li>
+				<li class="depth">
+					<a class="menu03" href="#">품질평가·시설평가 문의</a>
+					<ul>
+						<li class="depth"><a href="#">상담신청</a></li>
+					</ul>
+				</li>
+				<li class="depth">
+					<a class="menu03" href="#">심리상담 지원</a>
+					<ul>
+						<li class="depth"><a href="#">상담지원 신청</a></li>
+					</ul>
+				</li>
+				<li class="depth">
+					<a class="menu04" href="#">지원사업</a>
+					<ul>
+						<li class="depth"><a href="#">공급자지원사업</a></li>
+						<li class="depth"><a href="#">종사자지원사업</a></li>
+					</ul>
+				</li>
+				<li class="depth">
+					<a class="menu05" href="#">온라인 심리체크</a>
+					<!--<ul>
+						<li class="depth"><a href="#">111</a></li>
+					</ul>-->
+				</li>
+				<li class="depth">
+					<a class="menu06" href="#">알림마당</a>
+					<ul>
+						<li class="depth"><a href="#">공지사항</a></li>
+						<li class="depth"><a href="#">우수사례</a></li>
+						<li class="depth"><a href="#">자주하는 질문</a></li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="utility">
+				<li class="btn_search_open ">
+					<a href="#">
+						<em class="d_none">검색</em>
+					</a>
+				</li>
+				<!-- 공급자인 경우 class 값 provider , 종사자인 경우 class 값 employee -->
+				<!-- 공급자인 경우
+				<li class="part provider">
+					<a href="#">김지은 <em>(공급자)</em></a>
+				</li>
+				<li class="account"><a href="#">마이페이지</a></li>
+				<li class="logout"><a href="#">로그아웃</a></li>
+				-->
+
+				<!-- 종사자인 경우
+				<li class="part employee"> 
+					<a href="#">김지은 <em>(공급자)</em></a>
+				</li>
+				<li class="account"><a href="#">마이페이지</a></li>
+				<li class="logout"><a href="#">로그아웃</a></li>
+				-->
+
+				<!-- 로그인 전 -->
+				<li class="login"><a href="#">로그인</a></li>
+				<li class="join"><a href="#">회원가입</a></li>
+				<!-- Sitemap-->
+				<li class="all_menu_btn"><a class="all_menu" href="#gnbMenu"><em class="hidden">전체메뉴</em></a></li>
+			</ul>
+		</nav>
+		
+	</div>
+	<aside class="quick_menu" id="quick_menu">
+		<ul>
+			<li><a href="#"><i class="link01">홈</i></a></li>
+			<li><a href="#"><i class="link02">임신</i></a></li>
+			<li><a href="#"><i class="link03">출산</i></a></li>
+			<li><a href="#"><i class="link04">육아</i></a></li>
+			<li><a href="#"><i class="link05">어린이집</i></a></li>
+			<li><a href="#none"><i class="top">TOP</i></a></li>
+		</ul>
+	</aside>
+</header>
+<div class="menu_dimmed"></div>
+
+<div class="top_search">
+	<strong class="hidden">통합검색</strong>
+
+	<fieldset>
+		<form>
+			<div class="search_bar">
+				<label for="search" class="hidden">검색어를 입력해주세요.</label>
+				<input id="search" type="text" placeholder="검색어를 입력해주세요" value="">
+				<button class="btn_search" title="검색" onclick=""><span class="hidden">검색</span></button>
+			</div>
+		</form>
+	</fieldset>
+</div>
+<!--// Header -->
 
 
 <!-- sub title -->
-<section class="sub_visual sub01" id="contents">
+<div class="sub_visual" id="contents">
 	<div class="sub_title">
-		<h2>임신</h2>
-		<p class="txt">아이가 있어 행복한 사회 "아이사랑"이 만들어 가겠습니다.</p>
+		<h2>Subtitle</h2>
+		<!--<p>Sub Title text</p>-->
 	</div>
-</section>
-
-<!-- Location -->
-<div class="location">
-	<ul>
-		<li><a href="#"><em class="hidden">홈</em></a></li>
-		<li>
-            <div class="custom_select">
-                <div class="select_selected"><a href="#">육아</a></div>
-                <div class="select_items">
-                    <div><a href="#">임신</a></div>
-                    <div><a href="#">출산</a></div>
-                    <div class="on" title="선택됨"><a href="#">육아</a></div>
-                    <div><a href="#">어린이집</a></div> <!-- 선택된 위치에 class on -->
-                    <div><a href="#">소통 &middot; 참여</a></div>
-                    <div><a href="#">상담실</a></div>
-                    <div><a href="#">홍보 &middot; 알림</a></div>
-                </div>
-            </div>
-        </li>
-		<li>
-            <div class="custom_select">
-                <div class="select_selected">월령별 성장 및 돌보기</a></div>
-                <div class="select_items">
-                    <div><a href="#"></a></div><!-- 선택된 위치에 class on -->
-                    <div class="on" title="선택됨"><a href="#">월령별 성장 및 돌보기 </a></div>
-                </div>
-            </div>
-        </li>
-        <li>
-            <div class="custom_select">
-                <div class="select_selected"><a href="#">이른둥이</a></div>
-                <div class="select_items">
-                    <div class="on" title="선택됨"><a href="#">이른둥이</a></div> <!-- 선택된 위치에 class on -->
-                    <div><a href="#"></a></div>
-
-                </div>
-            </div>
-        </li>
-		<li>
-            <div class="custom_select">
-                <div class="select_selected"><a href="#">이른둥이란?</a></div>
-                <div class="select_items">
-                    <div class="on" title="선택됨"><a href="#">이른둥이란?</a></div> <!-- 선택된 위치에 class on -->
-                    <div><a href="#"></a></div>
-                </div>
-            </div>
-        </li>
-	</ul>
+	<!-- Location -->
+	<div class="location">
+		<ul>
+			<li class="home"><a href="#"><span class="hidden">홈</span></a></li>
+			<li><a href="#">마이페이지</a></li>
+		</ul>
+	</div>
 </div>
 
 <!-- Contents -->
-<section class="contents_wrap" id="contents">
-	<h3 class="title"></h3>
+<main class="section_wrap">
+	<!-- LNB -->
+	<aside class="lnb">
+		<ul>
+			<li>
+				<h3><a href="#">11111</a></h3>
+				<ul>
+					<li class="depth active">
+						<a href="#">222</a>
+						<ul style="display: block;">
+							<li class="depth_1 active"><a href="#">Depth3</a></li>
+							<li class="depth_2"><a href="#">Depth3</a></li>
+							<li class="depth_3"><a href="#">Depth3</a></li>
+						</ul>
+					</li>
+					<li class="depth">
+						<a href="#">2222222</a>
+						<ul>
+							<li class="depth_1"><a href="#">Depth3</a></li>
+							<li class="depth_2"><a href="#">Depth3</a></li>
+							<li class="depth_3"><a href="#">Depth3</a></li>
+						</ul>
+					</li>
+					<li class="depth">
+						<a href="#">333333</a>
+						<ul>
+							<li class="depth_1"><a href="#">Depth3</a></li>
+						</ul>
+					</li>
+					<li class="depth">
+						<a href="#">444444</a>
+						<ul>
+							<li class="depth_1"><a href="#">Depth3</a></li>
+							<li class="depth_2"><a href="#">Depth3</a></li>
+							<li class="depth_3"><a href="#">Depth3</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</aside>
+
+	<!-- Sub contents -->
+	<div class="contents_wrap" id="contents" >
+		<h3 class="hidden">정보수정</h3>
+		<h4 class="title">제목</h4>
 	<ul class="tab">
 		<li class="on" title="선택됨"><a href="#"></a></li>
         <li><a href="#"></a></li>
@@ -156,21 +316,33 @@
 			</li>
 		</ul>
 	</div>
+	<!--// Sub contents -->
+</main>
 
-
-
-
-</section>
-<!--// contents -->
-
-
-
-<!-- include footer 개발서버에는 적용 필요 없음!! -->
-<div include-html="./include/footer.html"></div> 
-<script>
-	includeHTML(); 
-</script>
-<!--// include footer 개발서버에는 적용 필요 없음!! -->
+<!--Footer -->
+<footer id="footer">
+	<div class="footer_wrap">
+		<div class="f_link">
+			<ul class="link_wrap">
+				<li><a href="#">중앙사회서비스원 소개</a></li>
+				<li><a href="#">이메일주소무단수집거부</a></li>
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">오시는길</a></li>
+				<!--<li>
+					<span class="webwach-logo">
+						<a href="https://www.wa.or.kr/board/list.asp?search=total&amp;SearchString=%BE%C6%C0%CC%BB%E7%B6%FB&amp;BoardID=0006" target="_blank"><img src="https://www.childcare.go.kr/usr/images/common/wa.png" alt="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹 접근성 우수사이트 인증마크(WA인증마크)" style="width:50px;"></a>
+					</span>
+				</li>-->
+			</ul>
+		</div>
+		<div class="address_wrap">
+			<div class="address_inner">
+				<address>(04551) 서울특별시 중구 삼일대로 340, 9층 대표번호 : 02-2271-9017<br/>Copyright © 2022 kcpass. All rights reserved.</address>
+				<p><img src="./images/logo_fotter.png" alt="사회서비스 공급자·종사자 상담지원시스템"></p>
+			</div>
+		</div>
+	</div>
+</footer>
 
 </body>
 </html>
