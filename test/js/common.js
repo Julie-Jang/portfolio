@@ -34,26 +34,26 @@ $(document).ready(function() {
 				$('header').removeClass("on");
 			});
 			
-		} else if($(window).width() < 1350 && e.type === "click") {
+		} else if ($(window).width() < 1350 && e.type === "click") {
 			var clickElement = $(this).next();
 			$('nav ul li').removeClass('active');
-			$(this).closest('li').addClass('active');
 			
+			// 조건 추가: 하위 메뉴가 닫히지 않을 때만 active 유지
 			if (clickElement.is('ul') && clickElement.is(':visible')) {
 				$(this).closest('li').removeClass('active');
 				clickElement.slideUp(100);
-			}
-			
-			if (clickElement.is('ul') && !clickElement.is(':visible')) {
+			} else if (clickElement.is('ul') && !clickElement.is(':visible')) {
+				// 하위 메뉴 열 때만 active 추가
+				$(this).closest('li').addClass('active');
 				$(this).closest("ul").find("ul").slideUp(100);
 				clickElement.slideDown(100);
 			}
-	
+		
 			if ($(this).closest('li').find('ul').children().length === 0) {
 				return true;
 			} else {
-				return false;    
-			}
+				return false;
+			}		
 		}
 	});
 	
@@ -80,17 +80,17 @@ $(document).ready(function() {
         $(this).toggleClass("close");
         $('nav > ul > li > ul, .menu_bg').hide();
 		$('.m_menu').removeClass('off');
-        $('.menu_dimmed').toggle();
+        $('.menu_dimmed').show();
     });
 
     $(".m_menu.off, .btn_search_open a.close, .m_util .btn_search.close").click(function() {
+		$('.menu_dimmed').hide();
         $(".top_search").slideUp(function() {
             // 슬라이드 애니메이션 후 Swiper를 재초기화
             //document.querySelectorAll(".slide_show").forEach((slideShowContainer) => {
             //    initializeSwiper(slideShowContainer);
             //});
         });
-        $('.menu_dimmed').hide();
     });
 
     // PC Sitemap
