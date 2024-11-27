@@ -92,7 +92,7 @@ select:focus {background-color: white; }
 .form-file input[type=text]{width: calc(100% - 12.5rem); background:white; padding:0 1rem 0 2rem !important;}
 .form-file .flie-box .btn {font-family:"SUITE"; font-size:1.5rem;border:1px solid #A0A8BC; background:white url(../images/icon/icon_addfile.svg) no-repeat left 2rem center; background-size:1.1rem; color:#303038; padding:1.6rem 2rem 1.4rem 4rem;}
 @media (max-width:820px) {
-	/*html { font-size: 9px; }*/
+	html { font-size: 9px; }
 }
 
 /* for IE */
