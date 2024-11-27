@@ -166,16 +166,6 @@
 		</nav>
 		
 	</div>
-	<aside class="quick_menu" id="quick_menu">
-		<ul>
-			<li><a href="#"><i class="link01">홈</i></a></li>
-			<li><a href="#"><i class="link02">임신</i></a></li>
-			<li><a href="#"><i class="link03">출산</i></a></li>
-			<li><a href="#"><i class="link04">육아</i></a></li>
-			<li><a href="#"><i class="link05">어린이집</i></a></li>
-			<li><a href="#none"><i class="top">TOP</i></a></li>
-		</ul>
-	</aside>
 </header>
 <div class="menu_dimmed"></div>
 
@@ -316,12 +306,19 @@
 		
 		<div class="right">
 			<div class="board_top"><!-- 게시판 검색 -->
-				<select class="selectbox large mr5" title="지역 구분을 선택해주세요."><!-- 일반게시판의 경우 지역 selectbox 삭제 -->
+				<!--<select class="selectbox large mr5" title="지역 구분을 선택해주세요.">
 					<option>서울</option>
 					<option></option>
 					<option></option>
-				</select>
-				<input type="text" id="" title="검색 키워드를 입력해주세요." placeholder="검색 키워드를 입력해주세요.">
+				</select>-->
+				<div class="custom_select ml5" title="지역 구분을 선택해주세요.">
+					<div class="select_selected" title="선택 열기"><a href="#">서울</a></div>
+					<div class="select_items">
+						<div><a href="#">서울</a></div>
+						<div><a href="#"></a></div>
+					</div>
+				</div>
+				<input type="text" id="" title="검색할 단어를 입력해 주세요." placeholder="검색할 단어를 입력해 주세요.">
 				<button class="btn default h50 ml5" type="button">검색</button>
 			</div> 
 			<div class="board boardlist responsive t_center">

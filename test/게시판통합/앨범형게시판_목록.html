@@ -165,16 +165,6 @@
 		</nav>
 		
 	</div>
-	<aside class="quick_menu" id="quick_menu">
-		<ul>
-			<li><a href="#"><i class="link01">홈</i></a></li>
-			<li><a href="#"><i class="link02">임신</i></a></li>
-			<li><a href="#"><i class="link03">출산</i></a></li>
-			<li><a href="#"><i class="link04">육아</i></a></li>
-			<li><a href="#"><i class="link05">어린이집</i></a></li>
-			<li><a href="#none"><i class="top">TOP</i></a></li>
-		</ul>
-	</aside>
 </header>
 <div class="menu_dimmed"></div>
 
@@ -204,7 +194,25 @@
 	<div class="location">
 		<ul>
 			<li class="home"><a href="#"><span class="hidden">홈</span></a></li>
-			<li><a href="#">마이페이지</a></li>
+			<li>
+				<div class="custom_select">
+					<div class="select_selected" title="선택 열기"><a href="#">마이페이지</a></div>
+					<div class="select_items" style="display: none;">
+						<div class="on"><a href="#">마이페이지</a></div><!-- 선택된 위치에 class on -->
+						<div><a href="#"></a></div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="custom_select">
+					<div class="select_selected" title="선택 열기"><a href="#">공지사항</a></div>
+					<div class="select_items" style="display: none;">
+						<div class="on"><a href="#">공지사항</a></div><!-- 선택된 위치에 class on -->
+						<div><a href="#">우수사례</a></div>
+						<div><a href="#">자주하는 질문</a></div>
+					</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 </div>
@@ -215,37 +223,21 @@
 	<aside class="lnb">
 		<ul>
 			<li>
-				<h3><a href="#">11111</a></h3>
+				<h3><a href="#">알림마당</a></h3>
 				<ul>
 					<li class="depth active">
-						<a href="#">222</a>
-						<ul style="display: block;">
+						<a href="#">공지사항</a>
+						<!--<ul style="display: block;">
 							<li class="depth_1 active"><a href="#">Depth3</a></li>
 							<li class="depth_2"><a href="#">Depth3</a></li>
 							<li class="depth_3"><a href="#">Depth3</a></li>
-						</ul>
+						</ul>-->
 					</li>
 					<li class="depth">
-						<a href="#">2222222</a>
-						<ul>
-							<li class="depth_1"><a href="#">Depth3</a></li>
-							<li class="depth_2"><a href="#">Depth3</a></li>
-							<li class="depth_3"><a href="#">Depth3</a></li>
-						</ul>
+						<a href="#">우수사례</a>
 					</li>
 					<li class="depth">
-						<a href="#">333333</a>
-						<ul>
-							<li class="depth_1"><a href="#">Depth3</a></li>
-						</ul>
-					</li>
-					<li class="depth">
-						<a href="#">444444</a>
-						<ul>
-							<li class="depth_1"><a href="#">Depth3</a></li>
-							<li class="depth_2"><a href="#">Depth3</a></li>
-							<li class="depth_3"><a href="#">Depth3</a></li>
-						</ul>
+						<a href="#">자주하는 질문</a>
 					</li>
 				</ul>
 			</li>
@@ -261,12 +253,14 @@
 
             <!-- 게시판 검색 -->    
             <div class="board_top">
-                <select class="selectbox large" title="구분 선택">
-                    <option>전체</option>
-                    <option>제목</option>
-                    <option>내용</option>
-                </select>
-                <input type="text" id="" title="검색 키워드를 입력해주세요." placeholder="검색 키워드를 입력해주세요.">
+                <div class="custom_select ml5" title="지역 구분을 선택해주세요.">
+					<div class="select_selected" title="선택 닫기"><a href="#">전체</a></div>
+					<div class="select_items">
+						<div><a href="#">전체</a></div>
+						<div><a href="#"></a></div>
+					</div>
+				</div>
+                <input type="text" id="" title="검색할 단어를 입력해 주세요." placeholder="검색할 단어를 입력해 주세요.">
                 <button class="btn_search" title="검색" onclick=""><span class="hidden">검색</span></button>
             </div>
 

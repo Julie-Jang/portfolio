@@ -147,6 +147,37 @@ $(document).ready(function() {
 		return false;
 	});
 
+	// Selectbox 커스터마이징
+    $('.custom_select .select_selected').click(function (event) {
+        const $customSelect = $(this).closest('.custom_select');
+        const $selectItems = $customSelect.find('.select_items');
+        const $options = $selectItems.find('div');
+    
+        // 현재 상태에 따라 토글
+		if ($selectItems.is(':visible')) {
+			$selectItems.slideUp(0); // 이미 열려있다면 닫기
+			$(this)
+				.removeClass('on') // dropdown이 닫히면 'on' 클래스 제거
+				.attr('title', '선택 열기'); // title 업데이트
+		} else {
+			// 다른 모든 select_items 닫기 및 on 클래스 제거
+			$('.custom_select .select_items').slideUp(0);
+			$('.custom_select .select_selected')
+				.removeClass('on')
+				.attr('title', '선택 열기'); // 초기화 시 title도 기본값으로 설정
+
+			$selectItems.slideDown(0); // 클릭한 select_items 열기
+			$options.first().focus(); // 첫 번째 항목에 포커스
+			$(this)
+				.addClass('on') // dropdown이 열리면 'on' 클래스 추가
+				.attr('title', '선택 닫기'); // title 업데이트
+		}
+    
+        event.stopPropagation(); // 이벤트 전파 방지
+        return false; // 클릭 시 기본 동작 방지
+    });
+    
+
 	
 	let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);

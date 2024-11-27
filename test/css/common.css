@@ -74,9 +74,6 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 .top_search .btn_search::after{content:'';position:absolute;right:2rem;top:2rem;width:2rem;height:2rem;border:3px solid  white;border-radius:100%;}
 .top_search .btn_search::before{content:'';position:absolute;right:1.6rem;top:3.7rem;width:0.8rem;height:0.3rem;transform:rotate(45deg);background-color:white; border-radius:1rem;}
 
-/* quick_menu */
-.quick_menu {display:none;}
-
 /* JJ Added */
 .section_wrap {display: -webkit-flex;display: flex;max-width:140rem; margin:0 auto; position:relative; padding-top:5rem;}
 
@@ -115,21 +112,18 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 .location > ul > li > .custom_select .select_selected {border:0; border-radius:0;}
 .location > ul > li > .custom_select .select_selected > a {position: relative;padding:0 1rem; min-width:7rem; text-align:center;}
 .location > ul > li > .custom_select .select_selected > a::after {content:""; position:absolute; top:1rem; right:-1.5rem; display:block;border:solid #AFB6C0;width:1rem;height:1rem;margin:0 0 0.1rem 0.9rem;border-width:0 0.2rem 0.2rem 0;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);}
-.location > ul > li:not(:last-child) > a::after {content:""; position:absolute; top:1rem; right:-1.5rem; display:block;border:solid #AFB6C0;width:1rem;height:1rem;margin:0 0 0.1rem 0.9rem;border-width:0 0.2rem 0.2rem 0;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);}
+.location > ul > li:last-child > .custom_select .select_selected > a::after {display:none;}
 .location > ul > li.home > a {background:url(../images/icon/icon_home.svg) no-repeat center center; background-size:1.8rem;display: inline-block; width:3rem;height:1.8rem; height:100%;}
 .location > ul > li > strong {padding-left: 1.2rem}
-.location > ul > li > .custom_select .select_items {z-index:1;position:absolute; top:4.6rem; left:-1.5rem; border-radius:1.3rem; background:#fff; border:1px solid #2C5AA5; min-width:10rem; display:none;overflow:hidden; padding:0.5rem 0;}
-.location > ul > li > .custom_select .select_items div a{display:block; border:0; position:relative; padding:0.6rem 2rem;word-break:keep-all;color:#767680; }
+.location > ul > li > .custom_select .select_items {z-index:1;position:absolute; top:4.6rem; left:-3.5rem; border-radius:1.3rem; background:#fff; border:1px solid #2C5AA5; min-width:16rem; display:none;overflow:hidden; padding:0.5rem 0;}
+.location > ul > li > .custom_select .select_items div a{display:block; border:0; position:relative; padding:0.6rem 2rem;word-break:keep-all; white-space:nowrap; color:#767680; }
 .location > ul > li > .custom_select .select_items div.on a,
 .location > ul > li > .custom_select .select_items div a:hover {color:#2d5aa5;}
 
 /* sub visual */
 /* JJ Added */
-.contents_wrap {-webkit-flex: 3; -ms-flex: 3; flex: 3; max-width:114rem;padding:0 0 0 6rem; min-height:80rem;}
+.contents_wrap {-webkit-flex: 3; -ms-flex: 3; flex: 3; max-width:114rem;padding:0 0 20rem 6rem; min-height:80rem;overflow:hidden;}
 /*.contents_wrap {margin: 0 auto;position: relative;font-weight: 200;max-width:142rem;padding-left: 25rem;min-height:80rem}*/
-.contents_wrap {overflow:hidden;}
-.contents_wrap h4.title:first-child {margin-top:0;}
-.contents_wrap h3.hidden + h4.title {margin-top:0;}
 .webwach-logo > img {max-width:90.9rem;width:100%;}
 
 @media screen and (min-width: 1351px) {
@@ -236,8 +230,9 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 	.location > ul > li {width:100%;}
 	.location > ul > li:not(:last-child) {display:none;}
 	.location > ul > li > .custom_select .select_selected > a{color:white; text-align:left; font-size:2.2rem; padding:0 4rem;}
-	.location > ul > li > .custom_select .select_selected > a:before {content:"";display:block; position:absolute; top:0; right:3rem; width:3.2rem; height:3.2rem; background:white; border-radius:100%;}
-	.location > ul > li > .custom_select .select_selected > a::after {content:"";display:block;position:absolute; top:0.8rem; right:4.1rem; border:solid #2C5AA5;width:1.1rem;height:1.1rem;margin:0 0 0.1rem 0.9rem;border-width:0 0.3rem 0.3rem 0;transform:rotate(45deg);-webkit-transform:rotate(45deg);}
+	.location > ul > li:last-child > .custom_select .select_selected > a:before {content:"";display:block; position:absolute; top:0; right:3rem; width:3.2rem; height:3.2rem; background:white; border-radius:100%;}
+	.location > ul > li:last-child > .custom_select .select_selected > a::after {content:"";display:block;position:absolute; top:0.8rem; right:4.1rem; border:solid #2C5AA5;width:1.1rem;height:1.1rem;margin:0 0 0.1rem 0.9rem;border-width:0 0.3rem 0.3rem 0;transform:rotate(45deg);-webkit-transform:rotate(45deg);}
+	.location > ul > li:last-child > .custom_select .select_selected.on > a::after {top: 1.3rem;transform:rotate(-135deg);-webkit-transform:rotate(-135deg);}
 	.location > ul > li > .custom_select .select_items {width:100%; top:5rem; left:0rem; border-radius:0; background:#fff; border:1px solid #2C5AA5; padding:0; }
 	.location > ul > li > .custom_select .select_items div a{ padding:1rem 4rem; }
 	.location > ul > li > .custom_select .select_items div.on a,

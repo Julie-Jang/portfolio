@@ -167,16 +167,6 @@
 		</nav>
 		
 	</div>
-	<aside class="quick_menu" id="quick_menu">
-		<ul>
-			<li><a href="#"><i class="link01">홈</i></a></li>
-			<li><a href="#"><i class="link02">임신</i></a></li>
-			<li><a href="#"><i class="link03">출산</i></a></li>
-			<li><a href="#"><i class="link04">육아</i></a></li>
-			<li><a href="#"><i class="link05">어린이집</i></a></li>
-			<li><a href="#none"><i class="top">TOP</i></a></li>
-		</ul>
-	</aside>
 </header>
 <div class="menu_dimmed"></div>
 
@@ -207,7 +197,7 @@
 			<li class="home"><a href="#"><span class="hidden">홈</span></a></li>
 			<li>
 				<div class="custom_select">
-					<div class="select_selected"><a href="#">1111</a></div>
+					<div class="select_selected" title="선택 열기"><a href="#">1111</a></div>
 					<div class="select_items" style="display: none;">
 						<div class="on"><a href="#">1111</a></div><!-- 선택된 위치에 class on -->
 						<div><a href="#">2222222</a></div>
@@ -215,15 +205,13 @@
 				</div>
 			</li>
 			<li>
-				<li>
-					<div class="custom_select">
-						<div class="select_selected"><a href="#">2222</a></div>
-						<div class="select_items" style="display: none;">
-							<div class="on"><a href="#">3333</a></div><!-- 선택된 위치에 class on -->
-							<div><a href="#">44444</a></div>
-						</div>
+				<div class="custom_select">
+					<div class="select_selected" title="선택 열기"><a href="#">2222</a></div>
+					<div class="select_items" style="display: none;">
+						<div class="on"><a href="#">3333</a></div><!-- 선택된 위치에 class on -->
+						<div><a href="#">44444</a></div>
 					</div>
-				</li>
+				</div>
 			</li>
 		</ul>
 	</div>
@@ -448,7 +436,7 @@
 	
 	<div class="board responsive t_left">
 		<p class="t_right caution">* 표시는 필수 입력 항목입니다</p>
-		<div class="fraction"><b>총</b> <span>1,125</span> 건</div>
+		<div class="fraction"><b>총</b> <span>124</span> 개</div>
 		<table>
 			<caption>회원 구분, 아이디, 이름, 비밀번호, 비밀번호확인, 유선전화, 휴대전화, E-mail, 주소, 이메일 수신여부, SMS 수신여부, 결혼유무, 임신여부, 자녀유무, 인증서등록, 관심보육센터 테이블</caption>
 			<colgroup class="medium_none">
@@ -503,7 +491,7 @@
                         <div class="col_one">
 							<input type="text" class="maxw440m100" name="" id="" title="이메일 주소를 입력하세요." value="" maxlength="8" placeholder=""/>
                             <div class="custom_select ml5" title="이메일 도메인을 선택해주세요.">
-                                <div class="select_selected" title="선택됨"><a href="#">직접입력</a></div>
+                                <div class="select_selected" title="선택 열기"><a href="#">직접입력</a></div>
                                 <div class="select_items">
                                     <div><a href="#">naver.com</a></div>
                                     <div><a href="#">gmail.comgmail.comgmail.com</a></div>
@@ -602,7 +590,7 @@
 							<input type="text" name="emil02" id="emil02" title="이메일 도메인 입력" value="">
 							
 							<div class="custom_select ml5" title="이메일 도메인을 선택해주세요.">
-                                <div class="select_selected" title="선택됨"><a href="#">직접입력</a></div>
+                                <div class="select_selected" title="선택 열기"><a href="#">직접입력</a></div>
                                 <div class="select_items">
                                     <div><a href="#">naver.com</a></div>
                                     <div><a href="#">gmail.com</a></div>
@@ -639,11 +627,11 @@
 					<td>
                         <div class="form-file" id="form-file-row">
                             <div class="file-input-container">
+								<input type="text" id="fileValue1" title="썸네일(첨부파일)" placeholder="선택된 파일 없음" disabled="">
                                 <div class="flie-box">
                                     <span class="btn line darkgray h48 ml5">파일선택</span>
                                     <input type="file" onchange="document.getElementById('fileValue1').value=this.value;" title="썸네일(첨부파일)을 선택해 주세요.">
                                 </div>
-                                <input type="text" id="fileValue1" title="썸네일(첨부파일)" placeholder="선택된 파일 없음" disabled="">
                             </div>
                         </div>
                         <p class="c_999 mt10">abc.jpg X</p>
@@ -750,6 +738,9 @@
 	<a href="#" class="arrow_down">다음</a>
 
 	<h4 class="title mt50">상태 표시(배지) .badge / 색상 .blue .green .red .yellow .gray .black</h4>
+	<span class="badge line gray">배지</span>
+	<span class="badge line blue">배지</span>
+	<span class="badge orange">배지</span>
 	<span class="badge blue">배지</span>
 	<span class="badge green">배지</span>
 	<span class="badge red">배지</span>
@@ -761,6 +752,8 @@
 	<div class="btn_group no_margin">
 		<a href="#" class="btn">버튼</a>
 		<a href="#" class="btn default">버튼</a>
+		<a href="#" class="btn default_light">버튼</a>
+		<a href="#" class="btn default_dark">버튼</a>
 		<a href="#" class="btn gray">버튼</a>
 		<a href="#" class="btn lightgray">버튼</a>
 		<a href="#" class="btn yellow">버튼</a>
@@ -778,6 +771,16 @@
 		<button class="btn h26 line navy" type="button">버튼</button>
 		<button class="btn h26 line red" type="button">버튼</button>
 		<button class="btn h26 line black" type="button">버튼</button>
+	</div>
+	<h4 class="title mt50">높이 30px .h30</h4>
+	<div class="btn_group no_margin">
+		<a href="#" class="btn h30">버튼</a>
+		<a href="#" class="btn gray h30">버튼</a>
+		<a href="#" class="btn sky h30">버튼</a>
+		<a href="#" class="btn btn_write h30">등록</a>
+		<button class="btn h30 line navy" type="button">버튼</button>
+		<button class="btn h30 line red" type="button">버튼</button>
+		<button class="btn h30 line black" type="button">버튼</button>
 	</div>
 	<h4 class="title mt50">높이 32px .h32</h4>
 	<div class="btn_group no_margin">
@@ -897,8 +900,8 @@
 	</div>
 	<!-- Alert popup -->
 	<div id="pop-up-alert" class="popup_wrap">
-		<div class="popup_inner_wrap maxw525">
-			<h3>알림</h3>
+		<div class="popup_contents maxw525">
+			<h6>알림</h6>
 			<a href="#" class="popup_close"><span class="hidden">닫기</span></a>
 			<section class="mt30 pl30 pr30">
 				<p class="f_18">로그인이 필요합니다.</p>
@@ -910,8 +913,8 @@
 	</div>
 
 	<div id="pop-up-alert2" class="popup_wrap">
-		<div class="popup_inner_wrap maxw525">
-			<h5>알림</h5>
+		<div class="popup_contents maxw525">
+			<h6>알림</h6>
 			<a href="#" class="popup_close"><span class="hidden">닫기</span></a>
 			<section class="mt30 pl30 pr30">
 				<p class="no_button">로그인이 필요합니다.</p>

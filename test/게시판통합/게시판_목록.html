@@ -165,16 +165,6 @@
 		</nav>
 		
 	</div>
-	<aside class="quick_menu" id="quick_menu">
-		<ul>
-			<li><a href="#"><i class="link01">홈</i></a></li>
-			<li><a href="#"><i class="link02">임신</i></a></li>
-			<li><a href="#"><i class="link03">출산</i></a></li>
-			<li><a href="#"><i class="link04">육아</i></a></li>
-			<li><a href="#"><i class="link05">어린이집</i></a></li>
-			<li><a href="#none"><i class="top">TOP</i></a></li>
-		</ul>
-	</aside>
 </header>
 <div class="menu_dimmed"></div>
 
@@ -204,7 +194,25 @@
 	<div class="location">
 		<ul>
 			<li class="home"><a href="#"><span class="hidden">홈</span></a></li>
-			<li><a href="#">마이페이지</a></li>
+			<li>
+				<div class="custom_select">
+					<div class="select_selected" title="선택 열기"><a href="#">마이페이지</a></div>
+					<div class="select_items" style="display: none;">
+						<div class="on"><a href="#">마이페이지</a></div><!-- 선택된 위치에 class on -->
+						<div><a href="#"></a></div>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="custom_select">
+					<div class="select_selected" title="선택 열기"><a href="#">공지사항</a></div>
+					<div class="select_items" style="display: none;">
+						<div class="on"><a href="#">공지사항</a></div><!-- 선택된 위치에 class on -->
+						<div><a href="#">우수사례</a></div>
+						<div><a href="#">자주하는 질문</a></div>
+					</div>
+				</div>
+			</li>
 		</ul>
 	</div>
 </div>
@@ -215,37 +223,21 @@
 	<aside class="lnb">
 		<ul>
 			<li>
-				<h3><a href="#">11111</a></h3>
+				<h3><a href="#">알림마당</a></h3>
 				<ul>
 					<li class="depth active">
-						<a href="#">222</a>
-						<ul style="display: block;">
+						<a href="#">공지사항</a>
+						<!--<ul style="display: block;">
 							<li class="depth_1 active"><a href="#">Depth3</a></li>
 							<li class="depth_2"><a href="#">Depth3</a></li>
 							<li class="depth_3"><a href="#">Depth3</a></li>
-						</ul>
+						</ul>-->
 					</li>
 					<li class="depth">
-						<a href="#">2222222</a>
-						<ul>
-							<li class="depth_1"><a href="#">Depth3</a></li>
-							<li class="depth_2"><a href="#">Depth3</a></li>
-							<li class="depth_3"><a href="#">Depth3</a></li>
-						</ul>
+						<a href="#">우수사례</a>
 					</li>
 					<li class="depth">
-						<a href="#">333333</a>
-						<ul>
-							<li class="depth_1"><a href="#">Depth3</a></li>
-						</ul>
-					</li>
-					<li class="depth">
-						<a href="#">444444</a>
-						<ul>
-							<li class="depth_1"><a href="#">Depth3</a></li>
-							<li class="depth_2"><a href="#">Depth3</a></li>
-							<li class="depth_3"><a href="#">Depth3</a></li>
-						</ul>
+						<a href="#">자주하는 질문</a>
 					</li>
 				</ul>
 			</li>
@@ -254,32 +246,25 @@
 
 	<!-- Sub contents -->
 	<div class="contents_wrap" id="contents" >
-		<h3 class="hidden">정보수정</h3>
-		<h4 class="title">제목</h4>
+		<h3 class="hidden">알림마당</h3>
+		<h4 class="title">공지사항</h4>
 		<!-- 정보 입력 -->
 		<form>
 			
 			<div class="board_top"><!-- 게시판 검색 -->
-				<select class="selectbox large mr30" title="지역 구분 선택"><!-- 일반게시판의 경우 지역 selectbox 삭제 -->
-					<option>지역</option>
-					<option></option>
-					<option></option>
-				</select>
-				<select class="selectbox large" title="구분 선택">
-					<option>전체</option>
-					<option>제목</option>
-					<option>내용</option>
-				</select>
-				<input type="text" id="" title="검색 키워드를 입력해주세요." placeholder="검색 키워드를 입력해주세요.">
+				<div class="custom_select ml5" title="지역 구분을 선택해주세요.">
+					<div class="select_selected" title="선택 닫기"><a href="#">전체</a></div>
+					<div class="select_items">
+						<div><a href="#">전체</a></div>
+						<div><a href="#"></a></div>
+					</div>
+				</div>
+				
+				<input type="text" id="" title="검색할 단어를 입력해 주세요." placeholder="검색할 단어를 입력해 주세요.">
 				<button class="btn_search" title="검색" onclick=""><span class="hidden">검색</span></button>
 			</div> 
 
-			<!-- 버튼 영역 추가 -->
-			<div class="btn_right">
-				<a href="#" class="btn_link" title="새창" target="_blank">전국 산후조리원 현황 조회</a>
-			</div>
-			<!-- 버튼 영역 추가 -->
-			<div class="fraction"><b>총</b> <span>1,125</span> 건</div>
+			<div class="fraction"><b>총</b> <span>124</span> 개</div>
 			<div class="board boardlist responsive t_center">
 				<table>
 					<caption>제목, 첨부파일, 등록자, 등록일, 조회수 내용의 테이블</caption>
@@ -288,121 +273,127 @@
 						<col style="width: auto;">
 						<col style="width: 8%;">
 						<col style="width: 13%;">
-						<col style="width: 13%;">
 						<col style="width: 8%;">
 					</colgroup>
 					<thead class="medium_none">
 						<tr>
 							<th scope="col">번호</th>
 							<th scope="col">제목</th>
-							<th scope="col">첨부파일</th>
-							<th scope="col">등록자</th>
-							<th scope="col">등록일</th>
-							<th scope="col">조회수</th>
+							<th scope="col">관리자</th>
+							<th scope="col">등록일시</th>
+							<th scope="col">조회건수</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td class="divide"><span class="btn h30">공지</span></td>
+							<td class="divide"><span class="btn h32 round default maxw70">공지</span></td>
 							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.
-									<i class="icon_new"><em class="hidden">새글</em></i>
-								</a>
+								<a href="#" title="상세 페이지로 이동">
+									제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</a>
+								<i class="icon_new"><em class="hidden">새글</em></i>
+								<i class="icon_file"><span class="hidden">첨부파일</span></i>
 							</td>
-							<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
+							<td class="divide line">관리자1</td>
 							<td class="divide line">2024-01-01</td>
 							<td class="divide">100</td>
 						</tr>
 						<tr>
 							<td class="divide line">100</td>
 							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.</a>
+								<a href="#" title="상세 페이지로 이동">
+									제목입니다.</a>
+								<i class="icon_new"><em class="hidden">새글</em></i>
+								<i class="icon_lock"><span class="hidden">비밀글</span></i>
 							</td>
-							<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
+							<td class="divide line">관리자1</td>
 							<td class="divide line">2024-01-01</td>
 							<td class="divide">100</td>
 						</tr>
 						<tr>
 							<td class="divide line">100</td>
 							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.</a>
+								<a href="#" title="상세 페이지로 이동">
+									제목입니다.제목입니다.제목입니다.
 							</td>
-							<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
-							<td class="divide line">2024-01-01</td>
-							<td class="divide">100</td>
-						</tr>
-						<tr>
-							<td class="divide line">100</td>
-							<td class="t_left divide t_con"><!-- 비밀글일 경우 수정됨 Jun/05/2024-->
-								<a href="#" title="상세 페이지로 이동">제목입니다.
-									<i class="icon_new"><em class="hidden">새글</em></i>
-								</a>
-							</td>
-							<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
+							<td class="divide line">관리자1</td>
 							<td class="divide line">2024-01-01</td>
 							<td class="divide">100</td>
 						</tr>
 						<tr>
 							<td class="divide line">100</td>
 							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.</a>
+								<a href="#" title="상세 페이지로 이동">
+									제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</a>
 							</td>
-							<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
+							<td class="divide line">관리자1</td>
 							<td class="divide line">2024-01-01</td>
 							<td class="divide">100</td>
 						</tr>
 						<tr>
 							<td class="divide line">100</td>
 							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.</a>
+								<a href="#" title="상세 페이지로 이동">
+									제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</a>
+								<i class="icon_new"><em class="hidden">새글</em></i>
+								<i class="icon_file"><span class="hidden">첨부파일</span></i>
 							</td>
-							<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
+							<td class="divide line">관리자1</td>
 							<td class="divide line">2024-01-01</td>
 							<td class="divide">100</td>
 						</tr>
 						<tr>
 							<td class="divide line">100</td>
 							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.</a>
+								<a href="#" title="상세 페이지로 이동">
+									제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</a>
+								<i class="icon_new"><em class="hidden">새글</em></i>
+								<i class="icon_file"><span class="hidden">첨부파일</span></i>
 							</td>
-							<td class="right"></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
+							<td class="divide line">관리자1</td>
 							<td class="divide line">2024-01-01</td>
 							<td class="divide">100</td>
 						</tr>
 						<tr>
 							<td class="divide line">100</td>
 							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.</a>
+								<a href="#" title="상세 페이지로 이동">
+									제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</a>
+								<i class="icon_new"><em class="hidden">새글</em></i>
+								<i class="icon_file"><span class="hidden">첨부파일</span></i>
 							</td>
-							<td class="right"></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
+							<td class="divide line">관리자1</td>
 							<td class="divide line">2024-01-01</td>
 							<td class="divide">100</td>
 						</tr>
 						<tr>
 							<td class="divide line">100</td>
 							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.</a>
+								<a href="#" title="상세 페이지로 이동">
+									제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</a>
+								<i class="icon_new"><em class="hidden">새글</em></i>
+								<i class="icon_file"><span class="hidden">첨부파일</span></i>
 							</td>
-							<td class="right"></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
+							<td class="divide line">관리자1</td>
 							<td class="divide line">2024-01-01</td>
 							<td class="divide">100</td>
 						</tr>
 						<tr>
 							<td class="divide line">100</td>
 							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.</a>
+								<a href="#" title="상세 페이지로 이동">
+									제목입니다.
 							</td>
-							<td class="right"></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
+							<td class="divide line">관리자1</td>
+							<td class="divide line">2024-01-01</td>
+							<td class="divide">100</td>
+						</tr>
+						<tr>
+							<td class="divide line">100</td>
+							<td class="t_left divide t_con">
+								<a href="#" title="상세 페이지로 이동">
+									제목입니다.제목입니다.제목입니다.제목입니다.
+							</td>
+							<td class="divide line">관리자1</td>
 							<td class="divide line">2024-01-01</td>
 							<td class="divide">100</td>
 						</tr>
