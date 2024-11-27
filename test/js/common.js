@@ -20,7 +20,7 @@ $(document).ready(function() {
 	
 			// Adjust the mouseleave event for the nav menu
 			$('nav').on('mouseleave', function(){
-				if (!$('.menu_bg:hover').length) { // Check if mouse is over menu_dimmed
+				if (!$('.menu_bg:hover,.top_search:hover ').length) { // Check if mouse is over menu_dimmed
 					$('.menu_dimmed').hide();
 					$('nav > ul > li > ul, .menu_bg').stop().slideUp(100);
 					$('header').removeClass("on");
@@ -80,7 +80,12 @@ $(document).ready(function() {
         $(this).toggleClass("close");
         $('nav > ul > li > ul, .menu_bg').hide();
 		$('.m_menu').removeClass('off');
-        $('.menu_dimmed').show();
+        $('.menu_dimmed').toggle();
+		$(".search_recommend").hide();
+    });
+
+	$(".top_search .btn_search").click(function() {
+        $(".search_recommend").slideToggle();
     });
 
     $(".m_menu.off, .btn_search_open a.close, .m_util .btn_search.close").click(function() {

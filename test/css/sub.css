@@ -105,6 +105,15 @@ h5.dot_title::before {content: ''; display:block; position:absolute;left:0; top:
 .board_top .custom_select .select_items div a:hover {background:#F0F6FE;color:#2d5aa5;border:0; }
 .board_top .custom_select .select_items div:focus {outline: 1px solid white; /* 파란색 테두리 예시 */}
 
+.board_top .search_bar {margin: 0 auto;}
+.board_top .search_bar input[type="text"] {border: 2px solid #2C5AA5;
+    border-radius: 2rem;
+    font-size: 1.8rem;
+    font-family: 'Pretendard';
+    font-weight: 400;
+    padding: 0 3rem;
+    width: 100%;
+    height: 5.8rem;}
 /* 우편번호팝업 */
 .popup_wrap .color1 {background:#DEEAF6; padding:0 5rem;}
 .popup_wrap .color1 .zipcode_search {font-family:"Pretendard";text-align:center; background:white; border:1px solid #2d5aa5; border-radius:2rem; padding:1.2rem 2rem;}
@@ -140,7 +149,7 @@ h5.dot_title::before {content: ''; display:block; position:absolute;left:0; top:
 .board table > tbody > tr {border-bottom:1px solid #E4E4E4;}
 .board table > thead > tr > th,.board table > tbody > tr > th{padding:1rem 1rem; vertical-align:middle;word-break:break-all;font-weight:500;height:7.1rem;}
 .board table > tbody > tr > td {padding:1.2rem 1rem; vertical-align:middle;word-break:break-all; height:7.1rem;font-family:"Pretendard"; letter-spacing:-0.05rem;}
-.board.list table > thead > tr > th,.board.list table > tbody > tr > th,
+.board.list table > tbody > tr > th,
 .board.list table > tbody > tr > td {padding:1.2rem 1rem; height:5.7rem;}
 .board.list table a {max-width:unset; white-space: unset; text-align:left; display:block;overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp:1 ; -webkit-box-orient: vertical; text-align:left;}
 .board table a:not(.btn):hover {text-decoration:underline; color:#2d5aa5; text-underline-offset:0.3rem;}
@@ -281,7 +290,7 @@ em.count{margin:0 1rem;}
 .eventlist > li .list_box li:last-child::after{display:none;}
 .gallaylist > li.nodata,
 .eventlist > li.nodata{width:100%;margin:-2rem 0 0;border:0;border-radius:0;}
-.nodata{text-align:center;font-size:1.8rem;padding:3rem 0!important;color:#333!important; width:100%; border-bottom:1px solid #E4E4E4;}
+.nodata{font-family:'Pretendard' !important; letter-spacing:-0.05em;  text-align:center;font-size:1.8rem;padding:1.4rem 0!important;color:#333!important; width:100%; border-top:1px solid #E4E4E4;border-bottom:1px solid #E4E4E4;}
 
 
 /* pagenation */
@@ -392,6 +401,9 @@ section.contents_wrap.search_area > h3.title span em{color:#3A69CC; font-size:2r
 .fraction {margin-bottom:1.2rem;}
 .fraction b {color:#303038;}
 .fraction span {color:#5478B5; font-weight:500;font-family:"Pretendard"; letter-spacing: -0.05rem; padding-left:0.5rem;}
+h5.dot_title .fraction {font-size:1.5rem; padding-left:3rem;}
+.fraction span {font-size:1.8rem;}
+
 
 /* 이전, 다음 */
 .arrow_up, .arrow_down {position:relative; display:inline-block; padding-right:4rem;}

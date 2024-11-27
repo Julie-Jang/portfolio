@@ -65,20 +65,24 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 
 /* Search */
 #header.action + .top_search {top:6rem;}
-.top_search {display:none; position:fixed; top:11rem; left:0; z-index:5; width:100%; background:white;text-align:center;}
+.top_search {display:none; position:fixed; top:11rem; left:0; z-index:3; width:100%; background:white;text-align:center;}
 .header.action + .top_search.active {top:5rem;}
 
-.top_search .search_bar {position:relative;margin:4rem auto; width:48rem;}
-.top_search input[type="text"] {border:2px solid #2C5AA5; border-radius:2rem; font-size:1.8rem; font-family:'Pretendard'; font-weight:400; padding:0 3rem; width:100%; height:5.8rem; }
-.top_search .btn_search {position:absolute; top:0; right:0; width:5.8rem; height:5.8rem; background:#2C5AA5; border-radius:2rem 2rem 1rem 2rem}
-.top_search .btn_search::after{content:'';position:absolute;right:2rem;top:2rem;width:2rem;height:2rem;border:3px solid  white;border-radius:100%;}
-.top_search .btn_search::before{content:'';position:absolute;right:1.6rem;top:3.7rem;width:0.8rem;height:0.3rem;transform:rotate(45deg);background-color:white; border-radius:1rem;}
-
-/* JJ Added */
+.search_bar {position:relative;margin:4rem auto; width:48rem;}
+.search_bar input[type="text"] {z-index:2; position:relative; border:2px solid #2C5AA5; border-radius:2rem; font-size:1.8rem; font-family:'Pretendard'; font-weight:400; padding:0 3rem; width:100%; height:5.8rem; }
+.search_bar .btn_search {position:absolute;z-index:2;  top:0; right:0; width:5.8rem; height:5.8rem; background:#2C5AA5; border-radius:2rem 2rem 1rem 2rem}
+.search_bar .btn_search::after{content:'';position:absolute;right:2rem;top:2rem;width:2rem;height:2rem;border:3px solid  white;border-radius:100%;}
+.search_bar .btn_search::before{content:'';position:absolute;right:1.6rem;top:3.7rem;width:0.8rem;height:0.3rem;transform:rotate(45deg);background-color:white; border-radius:1rem;}
+.search_bar .search_recommend {z-index:1; overflow:hidden; text-align:left; padding:2.5rem 0 1.5rem; display:none; position:absolute; top:4rem; left:0; width:100%; border:2px solid #2C5AA5; border-radius:0 0 2rem 2rem;background-color:white;}
+.search_bar .search_recommend li {position:relative;}
+.search_bar .search_recommend li a {display:block; padding:0.6rem 3rem;}
+.search_bar .search_recommend li:hover {background:#F0F6FE; color:#2C5AA5;}
+.search_bar .search_recommend li:hover a{color:#2C5AA5;}
+.search_bar .search_recommend li a.delete_result {display:block;position:absolute; top:0; right:0; width:3rem; height:3rem;}
+.search_bar .search_recommend li a.delete_result::before {content:'+'; font-size:2rem;font-weight:600; display:block;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);}
+.search_bar .search_recommend li a.delete_result:hover {font-weight:800;}
 .section_wrap {display: -webkit-flex;display: flex;max-width:140rem; margin:0 auto; position:relative; padding-top:5rem;}
 
-/* lnb (디자인 미적용) */
-/* JJ Added */
 .lnb {-webkit-flex:1; -ms-flex:1; flex: 1; max-width:26rem; }
 /*.lnb {position: absolute;max-width: 140rem;left: 50%;z-index: 1;transform: translate(-50%, 0);width: 100%}*/
 .lnb > ul > li > h3 a {display:block; padding:3.2rem 3rem 6.5rem; border-radius:3rem 0;background:#2C5AA5 url(../images/lnb_logo.gif) no-repeat right 3rem bottom 2rem; background-size:5.9rem 1.8rem;color: #fff;font-size: 2.3rem;font-weight: 600;color:#fff; }
@@ -101,10 +105,10 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 .sub_visual.sub05 {background:url(../images/sub/sub_visual_05.gif) no-repeat center center;} 
 .sub_visual.sub06 {background:url(../images/sub/sub_visual_06.gif) no-repeat center center;} 
 .sub_visual.sub07 {background:url(../images/sub/sub_visual_07.gif) no-repeat center center;} 
-.sub_visual.mypage {background:url(../images/sub/sub_visual_mypage.gif) no-repeat center center;} 
+.sub_visual.search {background:url(../images/sub/sub_visual_search.gif) no-repeat center center;} 
 
 /*.location {margin: 0 auto;position: relative;font-weight: 200;max-width: 140rem;padding-left: 25rem}*/
-.location {width:100%; padding:2.2rem 0 2.2rem; border-top:1px solid #DAE8F5; border-bottom:1px solid #DAE8F5;  font-size:1.7rem;}
+.location {width:100%; padding:2.3rem 0 2.2rem; border-bottom:1px solid #DAE8F5;  font-size:1.7rem;}
 .location > ul {position: relative; width:100%; max-width:142rem; margin:0 auto; gap:2rem; display: flex; display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex; justify-content: center; -webkit-box-pack: center; -moz-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center;}
 .location > ul > li {position: relative;}
 .location > ul > li a {display:block; color:black;}
@@ -192,6 +196,7 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 	.m_util .btn_search.close::after {content: '';  position: absolute; right:50%; top: 0; width: 0.3rem; height: 2.5rem; transform: rotate(135deg); background-color: #000A2E;border-radius:1rem;}
 	.top_search {top:7rem;}
 	.top_search .search_bar {width:80%; margin:3rem auto;}
+	.board_top .search_bar {width:100%; margin:3rem auto;}
 	nav {display: none;background:white url(../images/bg_m_menu.gif) no-repeat center bottom; background-size:contain; top: 5.1rem;margin-left: 0;position: absolute;width: 100%;overflow: auto;height:auto; padding:0 3rem 20rem;}
 	nav > .m_member {display:block; overflow:hidden; border-radius:0.5rem; width:100%; margin-top:2rem;}
 	nav > .m_member.provider {background:#8ABA4B;padding:1.5rem 2rem; }
@@ -223,7 +228,8 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 	.section_wrap {display:block;}
 	.lnb {display:none;}
 	.contents_wrap {padding:0;}
-	.sub_visual {background: url(../images/sub/sub_visual_m.gif) no-repeat center center;background-size:cover;}
+	.sub_visual,
+	.sub_visual.search {background: url(../images/sub/sub_visual_m.gif) no-repeat center center;background-size:cover;}
 	.sub_visual .sub_title {padding:6rem 0;}
 	.sub_visual .sub_title h2 {font-size:4rem;}
 	.location {background:#2C5AA5; padding:1.5rem 0;}
@@ -233,10 +239,10 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 	.location > ul > li:last-child > .custom_select .select_selected > a:before {content:"";display:block; position:absolute; top:0; right:3rem; width:3.2rem; height:3.2rem; background:white; border-radius:100%;}
 	.location > ul > li:last-child > .custom_select .select_selected > a::after {content:"";display:block;position:absolute; top:0.8rem; right:4.1rem; border:solid #2C5AA5;width:1.1rem;height:1.1rem;margin:0 0 0.1rem 0.9rem;border-width:0 0.3rem 0.3rem 0;transform:rotate(45deg);-webkit-transform:rotate(45deg);}
 	.location > ul > li:last-child > .custom_select .select_selected.on > a::after {top: 1.3rem;transform:rotate(-135deg);-webkit-transform:rotate(-135deg);}
-	.location > ul > li > .custom_select .select_items {width:100%; top:5rem; left:0rem; border-radius:0; background:#fff; border:1px solid #2C5AA5; padding:0; }
-	.location > ul > li > .custom_select .select_items div a{ padding:1rem 4rem; }
+	.location > ul > li > .custom_select .select_items {width:100%; top:5rem;background: #2C5AA5; left:0rem; border-radius:0; padding:0 1rem; }
+	.location > ul > li > .custom_select .select_items div a{ color:white;padding: 1.5rem 3rem;  font-size: 2.2rem;border-top:1px solid #3D69B4;  }
 	.location > ul > li > .custom_select .select_items div.on a,
-	.location > ul > li > .custom_select .select_items div a:hover {color:#2d5aa5; background:#EEF6FE;}
+	.location > ul > li > .custom_select .select_items div a:hover {color:white;}
 	
 }
 
