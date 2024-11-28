@@ -124,8 +124,8 @@ $(document).ready(function() {
 	
 	
 	// lnb
-	$(".lnb > ul > li > ul > li a").on("click", function(e){
-		$('.lnb > ul > li > ul li').removeClass('active');
+	$(".lnb > ul > li a").on("click", function(e){
+		$('.lnb > ul li').removeClass('active');
 		var clickElement = $(this).next();
 		$(this).closest('li').addClass('active');
 		if((clickElement.is('ul')) && (clickElement.is(':visible'))) {

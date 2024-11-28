@@ -78,7 +78,7 @@
 			</div>
 			<ul class="gnb">
 				<li class="depth">
-					<a class="menu01 on" href="#">지원사업소개</a>
+					<a class="menu01" href="#">지원사업소개</a>
 					<ul>
 						<li class="depth">
 							<a href="#">지원사업1</a>
@@ -125,7 +125,7 @@
 					</ul>-->
 				</li>
 				<li class="depth">
-					<a class="menu06" href="#">알림마당</a>
+					<a class="menu06 on" href="#">알림마당</a>
 					<ul>
 						<li class="depth"><a href="#">공지사항</a></li>
 						<li class="depth"><a href="#">우수사례</a></li>
@@ -185,7 +185,8 @@
 
 
 <!-- sub title -->
-<div class="sub_visual" id="contents">
+<!-- 카테고리 순서별로 sub01 ~ sub07 class 설정-->
+<div class="sub_visual sub07" id="contents">
 	<div class="sub_title">
 		<h2>알림마당</h2>
 		<!--<p>Sub Title text</p>-->
@@ -221,25 +222,21 @@
 <main class="section_wrap">
 	<!-- LNB -->
 	<aside class="lnb">
+		<h3><a href="#">알림마당</a></h3>
 		<ul>
-			<li>
-				<h3><a href="#">알림마당</a></h3>
-				<ul>
-					<li class="depth active">
-						<a href="#">공지사항</a>
-						<!--<ul style="display: block;">
-							<li class="depth_1 active"><a href="#">Depth3</a></li>
-							<li class="depth_2"><a href="#">Depth3</a></li>
-							<li class="depth_3"><a href="#">Depth3</a></li>
-						</ul>-->
-					</li>
-					<li class="depth">
-						<a href="#">우수사례</a>
-					</li>
-					<li class="depth">
-						<a href="#">자주하는 질문</a>
-					</li>
-				</ul>
+			<li class="depth active">
+				<a href="#">공지사항</a>
+				<!--<ul style="display: block;">
+					<li class="depth_1 active"><a href="#">Depth3</a></li>
+					<li class="depth_2"><a href="#">Depth3</a></li>
+					<li class="depth_3"><a href="#">Depth3</a></li>
+				</ul>-->
+			</li>
+			<li class="depth">
+				<a href="#">우수사례</a>
+			</li>
+			<li class="depth">
+				<a href="#">자주하는 질문</a>
 			</li>
 		</ul>
 	</aside>
@@ -262,8 +259,9 @@
 			<button class="btn default h50 ml5" type="button">검색</button>
 		</div> 
 
-		<div class="fraction"><b>총</b> <span>124</span> 개</div>
+		
 		<div class="board boardlist responsive t_center">
+			<div class="fraction"><b>총</b> <span>124</span> 개</div>
 			<table>
 				<caption>제목, 첨부파일, 등록자, 등록일, 조회수 내용의 테이블</caption>
 				<colgroup class="medium_none">

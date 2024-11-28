@@ -53,7 +53,7 @@ input.full, textarea.full   {width:100%;}
 .join_completed .txt {margin:4.5rem auto 5rem; text-align:left; max-width:65rem; font-size:1.8rem;}
 .join_completed b {font-weight:700;}
 
-h2 {text-align:center; font-size:4.2rem; font-weight:700; color:#303038; margin:9rem 0 3rem;}
+.sub_title h2 {text-align:center; font-size:4.2rem; font-weight:700; color:#303038; margin:9rem 0 3rem;}
 h4.title {font-size:2.2rem; margin:3.8rem 0 0.9rem; font-weight:500;}
 h5.title {font-size:2.2rem; margin:3.8rem 0 0.9rem; font-weight:500;}
 h5.dot_title {font-size:2.2rem; margin:3.8rem 0 0.9rem; font-weight:500; padding-left:2rem; position:relative;}
@@ -305,6 +305,75 @@ em.count{margin:0 1rem;}
 
 .main_content .pagination{margin:2rem 0;}
 
+/* 사회서비스 공급자 조회 지도 */
+.map_area {display:inline-block;margin-left:-6rem; vertical-align:top; position:relative; background:url(../images/sub/img_map.png) no-repeat 0 0; background-size:contain;  aspect-ratio: 52.3 / 67.5;
+	width: 100%; /* 반응형에 맞게 조정 */
+	height: auto; max-width:50%;}
+.map_area ul li {position:absolute;}
+.map_area ul li a {display:block; color:white; padding:0.8rem 0 0 0.6rem;font-size:1.44rem; width:4.3rem; height:5.6rem; background:url(../images/sub/img_pin.png) no-repeat 0 0; background-size:contain;}
+.map_area ul li.on a {padding:1.2rem 0 0 0.8rem;width:5.6rem; margin:-1rem 0 0 -0.5rem; height:6.7rem; background-image:url(../images/sub/img_pin_on.png);}
+/*
+.map_area ul li.list01 {left:17.3rem; top:6.9rem;}
+.map_area ul li.list02 {left:22.8rem; top:12.9rem;}
+.map_area ul li.list03 {left:11.7rem; top:8.3rem;}
+.map_area ul li.list04 {left:18.7rem; top:21.3rem;}
+.map_area ul li.list05 {left:13.5rem; top:23.5rem;}
+.map_area ul li.list06 {left:28rem; top:18rem;}
+.map_area ul li.list07 {left:35.5rem; top:10rem;}
+.map_area ul li.list08 {left:21.5rem; top:26rem;}
+.map_area ul li.list09 {left:17.3rem; top:34.2rem;}
+.map_area ul li.list10 {left:12.8rem; top:41rem;}
+.map_area ul li.list11 {left:18rem; top:44.8rem;}
+.map_area ul li.list12 {left:27.5rem; top:41.2rem;}
+.map_area ul li.list13 {left:38rem; top:43rem;}
+.map_area ul li.list14 {left:40rem; top:38.3rem;}
+.map_area ul li.list15 {left:33rem; top:33.4rem;}
+.map_area ul li.list16 {left:35.8rem; top:27.4rem;}
+.map_area ul li.list17 {left:13.7rem; top:59.3rem;}
+*/
+.map_area ul li.list01 {left:33.08%; top:10.8%;}
+.map_area ul li.list02 {left:43.60%; top:19.11%;}
+.map_area ul li.list03 {left:22.37%; top:12.30%;}
+.map_area ul li.list04 {left:35.75%; top:31.56%;}
+.map_area ul li.list05 {left:25.81%; top:34.81%;}
+.map_area ul li.list06 {left:53.54%; top:26.67%;}
+.map_area ul li.list07 {left:67.88%; top:14.81%;}
+.map_area ul li.list08 {left:41.11%; top:38.52%;}
+.map_area ul li.list09 {left:33.08%; top:50.67%;}
+.map_area ul li.list10 {left:24.47%; top:60.74%;}
+.map_area ul li.list11 {left:34.41%; top:66.37%;}
+.map_area ul li.list12 {left:52.59%; top:61.04%;}
+.map_area ul li.list13 {left:72.66%; top:63.70%;}
+.map_area ul li.list14 {left:76.48%; top:56.74%;}
+.map_area ul li.list15 {left:63.10%; top:49.48%;}
+.map_area ul li.list16 {left:68.45%; top:40.59%;}
+.map_area ul li.list17 {left:26.20%; top:87.85%;}
+.map_area.map01 {background-image:url(../images/sub/img_map_01.png);}
+.map_area.map02 {background-image:url(../images/sub/img_map_02.png);}
+.map_area.map03 {background-image:url(../images/sub/img_map_03.png);}
+.map_area.map04 {background-image:url(../images/sub/img_map_04.png);}
+.map_area.map05 {background-image:url(../images/sub/img_map_05.png);}
+.map_area.map06 {background-image:url(../images/sub/img_map_06.png);}
+.map_area.map07 {background-image:url(../images/sub/img_map_07.png);}
+.map_area.map08 {background-image:url(../images/sub/img_map_08.png);}
+.map_area.map09 {background-image:url(../images/sub/img_map_09.png);}
+.map_area.map10 {background-image:url(../images/sub/img_map_10.png);}
+.map_area.map11 {background-image:url(../images/sub/img_map_11.png);}
+.map_area.map12 {background-image:url(../images/sub/img_map_12.png);}
+.map_area.map13 {background-image:url(../images/sub/img_map_13.png);}
+.map_area.map14 {background-image:url(../images/sub/img_map_14.png);}
+.map_area.map15 {background-image:url(../images/sub/img_map_15.png);}
+.map_area.map16 {background-image:url(../images/sub/img_map_16.png);}
+.map_area.map17 {background-image:url(../images/sub/img_map_17.png);}
+
+.map_area + .board.boardlist {max-width:calc(50% + 5rem); display:inline-block;}
+.map_area + .board.boardlist td.t_con a {max-width:100%;}
+.map_area + .board.boardlist td:last-child {white-space:nowrap; overflow:hidden;text-overflow:ellipsis;width:100%;}
+.map_area + .board.boardlist td,
+.map_area + .board.boardlist th {height:4.6rem;padding:0.5rem;}
+
+
+
 /* old */
 
 /* h2 tab */
@@ -398,7 +467,7 @@ section.contents_wrap.search_area > h3.title span em{color:#3A69CC; font-size:2r
 .search_result > li.on > a,.search_result > li.on > span{background:#5478B5;border:1px solid #5478B5;border-radius:3rem;color:#fff}
 .search_result > li.on > a span.highlight{background:none}
 
-.fraction {margin-bottom:1.2rem;}
+.fraction {margin-bottom:1.2rem; text-align:left;}
 .fraction b {color:#303038;}
 .fraction span {color:#5478B5; font-weight:500;font-family:"Pretendard"; letter-spacing: -0.05rem; padding-left:0.5rem;}
 h5.dot_title .fraction {font-size:1.5rem; padding-left:3rem;}
@@ -777,6 +846,11 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 	.linebox {padding:0;}
 }
 
+@media screen and (max-width: 1200px) {
+	.map_area {margin-left:0;}
+	.map_area + .board.boardlist {max-width: calc(50% - 1rem); }
+}
+
 @media screen and (max-width: 1000px) {
 	.linebox {display:block;}
 	.linebox li + li {margin-top:2rem;}
@@ -920,6 +994,12 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 	.survey_box .board.responsive.survey td:nth-child(n+3) ,
 	.survey_box .board.responsive.survey table > tbody > tr > td:last-child {min-width:49%;}
 	.board.responsive.survey table > tbody > tr > td:first-child {width:auto;}
+	.map_area {display:block; margin:0 auto 3rem;}
+	.map_area + .board.boardlist {max-width:100%; display:block;}
+	.map_area + .board.boardlist td {height:auto;}
+	.map_area + .board.boardlist td.t_con {text-align:left !important;}
+	.map_area + .board.boardlist td:nth-child(3),
+	.map_area + .board.boardlist td:nth-child(5) {padding-left:3rem;}
 }
 
 @media screen and (max-width: 640px) {
@@ -943,6 +1023,7 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 	.policy_box .scroll_box {padding:2rem;}
 
 	.btn.maxw215 {max-width:15.4rem;}
+	.map_area {max-width:100%;}
 
 }
 
