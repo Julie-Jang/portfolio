@@ -13,7 +13,11 @@ $(document).ready(function() {
 		
 	// GNB
 	$("nav > ul.gnb > li > a,nav > ul.gnb a, .menu_bg").bind("mouseover focus click", function(e){
-		if($(window).width() >= 1350 && (e.type === "mouseover" || e.type === "focus")) {
+			// .sitemap_view nav의 경우 작동하지 않도록 설정
+			if ($(this).closest('.sitemap_view').length > 0) {
+				return;
+			}
+			if($(window).width() >= 1400 && (e.type === "mouseover" || e.type === "focus")) {
 			$('.menu_dimmed').show();
 			$('header').addClass("on");
 			$('nav > ul > li > ul, .menu_bg').stop().slideDown(100);
@@ -34,7 +38,7 @@ $(document).ready(function() {
 				$('header').removeClass("on");
 			});
 			
-		} else if ($(window).width() < 1350 && e.type === "click") {
+		} else if ($(window).width() < 1400 && e.type === "click") {
 			var clickElement = $(this).next();
 			$('nav ul li').removeClass('active');
 			
@@ -56,7 +60,7 @@ $(document).ready(function() {
 			}		
 		}
 	});
-	
+
 
 	// Mobile menu
 	$('.m_menu').click(function() {
@@ -101,14 +105,17 @@ $(document).ready(function() {
     // PC Sitemap
     $('.all_menu').on('click', function() {
 		const $this = $(this);
-		const $targetMenus = $('.gnb, nav > ul > li > ul, nav > ul > li > ul > li > ul');
+		const $targetMenus = $('.header, nav > ul > li > ul, nav > ul > li > ul > li > ul');
 		
 		$targetMenus.toggleClass('sitemap_view');
 		$this.toggleClass('sitemap_view');
+		$('.menu_dimmed').show();
 	});
 	// all_menu_close 버튼 클릭 이벤트 추가
 	$('.all_menu_close').on('click', function() {
 		$('.sitemap_view').removeClass('sitemap_view');
+		$('.menu_dimmed').hide();
+
 	});
 		
 	// resize

@@ -54,7 +54,7 @@
 .third_banner .main_content {width:100%; max-width:121.4rem; margin:11.5rem auto 0;overflow:hidden;}
 .third_banner .main_content .left {width:30%; float:left;}
 .third_banner .main_content .right {width:70%; float:left;}
-.third_banner .main_content h2 {padding:2.7rem 0 1rem; font-size:3.4rem; font-weight:700; }
+.third_banner .main_content h2 {padding:2.7rem 0 1rem; font-size:3.4rem; font-weight:700; margin:0; text-align:left;}
 .third_banner .main_content p.txt {line-height:1.2; margin-bottom:3.5rem;}
 .third_banner .main_content p.more_btn {display:inline-block;position:relative;}
 .third_banner .main_content p.more_btn a{display:block; position:relative; padding-right:2rem;font-weight:800;}
@@ -109,7 +109,7 @@
     .third_banner {background:#F5F5F8;}
     .third_banner .main_content {margin-top:5rem;}
     .third_banner .main_content .left {width:100%; float:unset; text-align:center;}
-    .third_banner .main_content h2 {padding-top:0; margin:0;}
+    .third_banner .main_content h2 {padding-top:0; margin:0; text-align:center;}
     .third_banner .main_content p.txt {margin-bottom:2rem;}
     .third_banner .main_content p.more_btn {margin-bottom:3rem; }
     .third_banner .main_content .right {width:100%; float:unset;}

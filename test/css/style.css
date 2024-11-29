@@ -15,7 +15,7 @@ caption {width: 0;height: 0;margin: 0;padding: 0;overflow: hidden;border: 0;text
 hr {height:0; -moz-box-sizing:content-box; box-sizing:content-box;border:none}
 a:active, a:hover, button:active, button:hover {outline:0 none;}
 button.btn-bg-sgreen:hover {color: #e8ff6b}
-a:focus {color: #2d5aa5;text-decoration: none;}
+a:focus {color: #2d5aa5;text-decoration: none; }
 /*a:hover, a:focus, a:active {text-decoration: underline;}*/
 em, address {font-style:normal}			
 em, address {font-style:normal}			
