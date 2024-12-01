@@ -178,17 +178,15 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 	/* header */
 	nav.sitemap_view {display:none;}
 	.menu_bg {height:auto;background:white;}
-	#header {padding:2rem 0; border-bottom:1px solid #F4F4F4;}
+	#header {display:none;padding:2rem 0; border-bottom:1px solid #F4F4F4;}
 	#header > .navi > h1 {position: relative;width:auto; display:block; float:left; z-index: 4;top:unset; left:4rem;}
-	#header > .navi > h1 > a {background-size: 77%;height:3rem; margin-left:0;}
+	#header > .navi > h1 > a {margin-left:0;}
 	.utility {display:none;}
 	.m_util {float:right;padding-right:4rem;}
-	#header > .navi > .m_util > .m_menu {display:inline-block;vertical-align:middle; width:2.3rem; height:2.3rem; background:url(../images/icon/icon_m.svg) no-repeat center center; background-size:2.3rem 2.2rem;}
-	#header > .navi > .m_util > .m_menu.off {background:url(../images/icon/icon_close.svg) no-repeat center center; background-size:2.3rem 2.2rem;}
-	.m_util .btn_search {display:inline-block; vertical-align:middle; margin-right:2rem;width:2.3rem; height:2.3rem; background:url(../images/icon/icon_search.svg) no-repeat center center; background-size:2.3rem 2.2rem;}
-	.m_util .btn_search.close  {width:2.3rem; height:2.3rem; background:none; position:relative;}
-	.m_util .btn_search.close::before {content: '';  position: absolute; right:50%; top: 0; width: 0.3rem; height: 2.5rem; transform: rotate(45deg); background-color: #000A2E; border-radius:1rem;}
-	.m_util .btn_search.close::after {content: '';  position: absolute; right:50%; top: 0; width: 0.3rem; height: 2.5rem; transform: rotate(135deg); background-color: #000A2E;border-radius:1rem;}
+	#header > .navi > .m_util > .m_menu {display:inline-block;vertical-align:middle; width:3rem; height:3rem; background:url(../images/icon/icon_m.svg) no-repeat center center; background-size:3rem 3rem;}
+	#header > .navi > .m_util > .m_menu.off {background:url(../images/icon/icon_close.svg) no-repeat center center; background-size:3rem;}
+	.m_util .btn_search {display:inline-block; vertical-align:middle; margin-right:2rem;width:3rem; height:3rem; background:url(../images/icon/icon_search.svg) no-repeat center center; background-size:3rem;}
+	.m_util .btn_search.close  {background:url(../images/icon/icon_close.svg) no-repeat center center; background-size:3rem;}
 	.top_search {top:7rem;}
 	.top_search .search_bar {width:80%; margin:3rem auto;}
 	.board_top .search_bar {width:100%; margin:3rem auto;}
