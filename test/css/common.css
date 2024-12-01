@@ -5,10 +5,7 @@ html, body {min-width:34rem}
 .skipnav a {display: block;color: #fff;font-weight: bold;width: 0;height: 0;line-height: 0;font-size: 0}
 .skipnav a:focus, .skip a:active {display: block;padding: 0.5rem 0;width: auto;height: auto;line-height: 1.5;font-size: 1.4rem}
 
-/* intro */
-section.intro ul{  display: flex; height: 100vh; align-items: center; justify-content: space-evenly; flex-wrap: wrap;}
-section.intro ul li {  background-color: #f1f1f1; margin: 10px; text-align: center;}
-/* header (디자인 미적용) */
+/* header  */
 #header {position: relative;width: 100%;z-index: 5;background-color: white; border-bottom:1px solid #ddd;}
 #header.action {position: fixed;top:0;}
 #header:after {content: '';clear: both;display: block}
@@ -20,7 +17,6 @@ nav:after {content: '';clear: both;display: block}
 .menu_bg {width: 100%;height:29rem;position: absolute;top: 11rem;display: none;left: 0;z-index: 4;background:url(../images/bg_gnb.gif) no-repeat center 0; background-size:contain;}
 .menu_dimmed {display: none; position: fixed;left: 0%;top: 0%;z-index:3;background-color:rgba(0,0,0,0.3) ;width: 100%; height:100vh; }
 
-/* JJ Added */
 /* Sitemap */
 #header.all_menu_title {display:none;}
 #header.all_menu_close {display:none;}
@@ -60,9 +56,9 @@ nav:after {content: '';clear: both;display: block}
 
 
 /* Footer (디자인 미적용) */
-footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200;position: relative}
+footer {display:none;background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200;position: relative}
 .footer_wrap .f_link {background:#2C3039;}
-.f_link > .link_wrap {max-width:117rem;margin:0 auto;display: flex; flex-wrap: wrap; justify-content: space-between;}
+.f_link > .link_wrap {max-width:117rem;margin:0 auto;display: flex; display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex; flex-wrap: wrap; -webkit-box-lines: multiple; -moz-box-lines: multiple; -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap; justify-content: space-between; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between;}
 .f_link > .link_wrap li a {padding: 2rem 0;display: block;white-space: nowrap;color: #fff; font-size:1.7rem;}
 .f_link > .link_wrap li a:hover, .f_link .link_wrap li a:focus {color: #f28427}
 .footer_wrap .address_wrap {max-width: 140rem;margin: 0 auto; padding: 3.5rem 0 10rem;}
@@ -178,7 +174,7 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 	/* header */
 	nav.sitemap_view {display:none;}
 	.menu_bg {height:auto;background:white;}
-	#header {display:none;padding:2rem 0; border-bottom:1px solid #F4F4F4;}
+	#header {padding:2rem 0; border-bottom:1px solid #F4F4F4;}
 	#header > .navi > h1 {position: relative;width:auto; display:block; float:left; z-index: 4;top:unset; left:4rem;}
 	#header > .navi > h1 > a {margin-left:0;}
 	.utility {display:none;}
