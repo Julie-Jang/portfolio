@@ -22,7 +22,7 @@ nav:after {content: '';clear: both;display: block}
 #header.sitemap_view {position:fixed; top:0; left:0; width:100%; height:auto;background-color:white; overflow-y:auto; }
 #header.sitemap_view .all_menu_close {display:block; position:absolute; top:0; right:0; z-index:2; background:url(../images/icon/icon_close_w.gif) no-repeat 0 0; width:7rem; height:7rem;}
 .sitemap_view .utility {display:none;}
-.sitemap_view nav > ul.gnb {display:block; padding-top:12.5rem;overflow:hidden; max-width:110rem; margin:0 auto 10rem;}
+.sitemap_view nav > ul.gnb {display:block; padding-top:12.5rem;overflow:hidden; max-width:110rem; width:100%; margin:0 auto 10rem;}
 .sitemap_view nav > ul.gnb > li {overflow:hidden; border-bottom:1px solid #ddd;}
 .sitemap_view nav > ul.gnb > li > a {float:left; width:30%;font-size:3rem; font-weight:600; color:#2d5aa5;text-align:left;padding:3.1rem 0; }
 .sitemap_view nav > ul.gnb > li > ul {float:left; width:70%; position:unset; overflow:hidden; padding-top:2rem;}
@@ -59,7 +59,7 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 .f_link > .link_wrap {max-width:117rem;margin:0 auto;display: flex; display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex; flex-wrap: wrap; -webkit-box-lines: multiple; -moz-box-lines: multiple; -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap; justify-content: space-between; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between;}
 .f_link > .link_wrap li a {padding: 2rem 0;display: block;white-space: nowrap;color: #fff; font-size:1.7rem;}
 .f_link > .link_wrap li a:hover, .f_link .link_wrap li a:focus {color: #f28427}
-.footer_wrap .address_wrap {max-width: 140rem;margin: 0 auto; padding: 3.5rem 0 10rem;}
+.footer_wrap .address_wrap {max-width: 140rem; width:100%; margin: 0 auto; padding: 3.5rem 0 10rem;}
 .footer_wrap .address_wrap .address_inner {overflow:hidden;}
 .footer_wrap .address_wrap .address_inner p {float:left; width:24.7rem;}
 .footer_wrap .address_wrap .address_inner address {float:right;width: calc(100% - 24.7rem); padding-left:7rem;font-size:1.5rem; color:#999; font-weight:400; font-family:'Pretendard'}
@@ -82,9 +82,9 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 .search_bar .search_recommend li a.delete_result {display:block;position:absolute; top:0; right:0; width:3rem; height:3rem;}
 .search_bar .search_recommend li a.delete_result::before {content:'+'; font-size:2rem;font-weight:600; display:block;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);}
 .search_bar .search_recommend li a.delete_result:hover {font-weight:800;}
-.section_wrap {display: -webkit-flex;display: flex;max-width:140rem; margin:0 auto; position:relative; padding-top:5rem;}
+.section_wrap {display: -webkit-flex;display: flex;max-width:140rem; width:100%;  margin:0 auto; position:relative; padding-top:5rem;}
 
-.lnb {-webkit-flex:1; -ms-flex:1; flex: 1; max-width:26rem; }
+.lnb {-webkit-flex:1; -ms-flex:1; flex: 1; max-width:26rem; width:100%; }
 /*.lnb {position: absolute;max-width: 140rem;left: 50%;z-index: 1;transform: translate(-50%, 0);width: 100%}*/
 .lnb > h3 a {display:block; padding:3.2rem 3rem 6.5rem; border-radius:3rem 0;background:#2C5AA5 url(../images/lnb_logo.gif) no-repeat right 3rem bottom 2rem; background-size:5.9rem 1.8rem;color: #fff;font-size: 2.3rem;font-weight: 600;color:#fff; }
 .lnb > ul > li.active > a, .lnb > ul > li > ul > li:hover > a {color: #2C5AA5;background:url(../images/icon/icon_lnb_arrow.svg) no-repeat right 3rem center; background-size:3.4rem;}
@@ -95,7 +95,7 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 
 /* sub visual */
 .sub_visual {position:relative; max-height:26rem; background:url(../images/sub/sub_visual.gif) no-repeat center center; background-size: cover;}
-.sub_visual .sub_title {max-width: 140rem;margin: 0 auto;padding:7.3rem 0 3.1rem; }
+.sub_visual .sub_title {max-width: 140rem;width:100%; margin: 0 auto;padding:7.3rem 0 3.1rem; }
 .sub_visual .sub_title h2 {font-size:5.2rem; color:#303038; font-weight:700; margin:0; text-align:center;}
 .sub_visual .sub_title p {font-size:2.2rem;}
 .sub_visual.sub01 {background:url(../images/sub/sub_visual_01.gif) no-repeat center center;} 
@@ -230,6 +230,7 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 	.location > ul > li > .custom_select .select_items div a{ color:white;padding: 1.5rem 3rem;  font-size: 2.2rem;border-top:1px solid #3D69B4;  }
 	.location > ul > li > .custom_select .select_items div.on a,
 	.location > ul > li > .custom_select .select_items div a:hover {color:white;}
+	.f_link > .link_wrap {max-width:100%;}
 	
 }
 
