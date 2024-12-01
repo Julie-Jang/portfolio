@@ -1,7 +1,7 @@
 @charset "utf-8";
 *, *::before, *::after { -webkit-box-sizing: border-box; box-sizing: border-box; margin:0;padding:0;}
 html { overflow: hidden; overflow-y: auto; -webkit-box-sizing: border-box; box-sizing: border-box; font-size:10px; }
-body { margin: 0; padding: 0; font-size: 1.6rem; line-height: 1.6; font-family:"SUITE","Pretendard","Arita","Dotum","sans-serif"; font-weight: 400; color: #303038; letter-spacing: -0.01em; word-break:keep-all; overflow-x:hidden; width:100%;max-width:100%;box-sizing: border-box;}
+body { margin: 0; padding: 0; font-size: 1.6rem; line-height: 1.6; font-family:"SUITE","Pretendard","Arita","Dotum","sans-serif"; font-weight: 400; color: #303038; letter-spacing: -0.01em; overflow:hidden; width:100%;max-width:100%;box-sizing: border-box;}
 textarea {border:solid 0.1rem #d8d8d8;border-radius:1.5rem;width:100%;min-height:13.5rem;box-sizing:border-box;resize:none;padding:2rem;font-family:"SUITE","Pretendard","sans-serif"}
 *, *:before, *:after {-webkit-box-sizing: inherit;-moz-box-sizing: inherit;box-sizing: inherit}
 html {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;-ms-text-size-adjust:none; -webkit-text-size-adjust:none}
