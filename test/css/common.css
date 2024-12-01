@@ -56,7 +56,7 @@ nav:after {content: '';clear: both;display: block}
 
 
 /* Footer (디자인 미적용) */
-footer {display:none;background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200;position: relative}
+footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200;position: relative}
 .footer_wrap .f_link {background:#2C3039;}
 .f_link > .link_wrap {max-width:117rem;margin:0 auto;display: flex; display: -webkit-box;  display: -moz-box; display: -ms-flexbox; display: -webkit-flex; flex-wrap: wrap; -webkit-box-lines: multiple; -moz-box-lines: multiple; -ms-flex-wrap: wrap; -webkit-flex-wrap: wrap; justify-content: space-between; -webkit-box-pack: justify; -moz-box-pack: justify; -ms-flex-pack: justify; -webkit-justify-content: space-between;}
 .f_link > .link_wrap li a {padding: 2rem 0;display: block;white-space: nowrap;color: #fff; font-size:1.7rem;}
