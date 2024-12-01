@@ -148,7 +148,7 @@ h5.dot_title::before {content: ''; display:block; position:absolute;left:0; top:
 .survey_box{border:2px solid #E3E5E9; border-radius:3rem; padding:3rem; overflow:hidden; margin:6rem 8rem; box-shadow:7px 8px 0px 0px rgba(0, 0, 0, 0.05);}
 
 /* 게시판 */
-.board_top {width:100%; border-radius:3rem; padding:4rem; /*z-index:1;*/ background:#EAEAF1; margin-bottom:3.3rem; position:relative; text-align:center;}
+.board_top {width:100%; border-radius:3rem; padding:4rem; z-index:1; background:#EAEAF1; margin-bottom:3.3rem; position:relative; text-align:center;}
 .board_top .custom_select {min-width:13%; font-family:inherit; font-weight:400; margin-right:0.5rem;}
 .board_top input[type="text"] {min-width:35%;border:0; border-radius:1.5rem; font-size:1.5rem; padding:0 2rem; height:5.2rem; margin:0 0 0; }
 .board_top .btn {vertical-align:middle; height:5.2rem;}
@@ -916,7 +916,7 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 	.search_preschool_detail dl dt {float:unset; padding:0 0 1rem 0;}
 	.medium_none {display:none !important;}
 	/* Board responsive */
-	.board_top {padding:4rem; /*z-index:2;*/ }
+	.board_top {padding:4rem; z-index:2; }
 	.board_top select.selectbox {width:100%; margin-right:0; padding:0 2.5rem 0 1.5rem; background-position:right 2rem center;}
 	.board_top select.selectbox + select.selectbox,
 	.board_top select.selectbox + input[type="text"]  {margin-top:1rem;}
