@@ -216,7 +216,7 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 @media screen and (max-width: 1200px) {
 	.section_wrap {display:block;}
 	.lnb {display:none;}
-	.contents_wrap {padding:0;}
+	.contents_wrap {padding:0;max-width:100%;}
 	.sub_visual,
 	.sub_visual.search {background: url(../images/sub/sub_visual_m.gif) no-repeat center center;background-size:cover;}
 	.sub_visual .sub_title {padding:6rem 0;}
