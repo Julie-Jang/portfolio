@@ -681,7 +681,7 @@ dl.list dd {margin-bottom:2rem;}
 .badge.red{background-color:#ee4946;}
 .badge.black{background-color:#666;}
 .badge.yellow{background-color:#ffd800;color:#000;}
-.badge.orange{background:#F2842E url(../images/icon/icon_check.svg) no-repeat left 1.5rem top 1rem; background-size:0.8rem;color:white; padding-left:3rem;text-align:left;}
+.badge.orange{background:#F2842E url(../images/icon/icon_check.svg) no-repeat left 1.5rem top 1rem; background-size:0.8rem;color:white !important; padding-left:3rem;text-align:left;}
 .badge.line {border:1px solid #9EBAEA; background-color:unset;color:#5478B5;}
 .badge.line.gray {border:1px solid #E3E5E9; background-color:#F9F9F9;color:#777680;}
 .badge.line.navy {border:1px solid #5478B5; background-color:#F6F8FE;color:#2C5AA5;}
@@ -694,7 +694,7 @@ dl.list dd {margin-bottom:2rem;}
 .btn{font-family:"SUITE"; position:relative;display:inline-block;border:1px solid #2C5AA5;border-radius:1.3rem;line-height:1;padding:1.6rem 2rem 1.4rem;background-color:#2C5AA5; font-size:1.6rem; font-weight:400; text-align:center;white-space:nowrap;color:#fff; white-space:nowrap !important;}
 .btn:hover,.btn:focus {color:#fff; text-decoration: none !important; }
 .btn.yellow{border-color:#FEE15B;background-color:#FEE15B;color:#3c1d1f;}
-.btn.green{border-color:#06C852;background-color:#06C852;color:#fff;}
+.btn.green{border-color:#06C852;background-color:#06C852;color:#fff !important;}
 .btn.blue{border-color:#0074A9;background-color:#0074A9;color:#fff !important;}
 .btn.gray{border-color:#333;background-color:#333;color:#fff;}
 .btn.lightgray{border-color:#E5E4E9;background-color:#E5E4E9;color:#303038;}
