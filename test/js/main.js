@@ -21,11 +21,16 @@ $(document).ready(function () {
             loopEnabled = true; // slides-2는 loop 비활성화
             paginationType = "bullets"; // 기본으로 bullets 사용
         } else if (container.classList.contains("slides-3")) {
-            slidesPerViewValue = 3;
+            slidesPerViewValue = 3;``
             spaceBetweenValue = 60;
             loopEnabled = true; // slides-2는 loop 비활성화
             autoplayEnabled = false;
             paginationType = "bullets"; // 기본으로 bullets 사용
+        } else if (container.classList.contains("mental_check")) {
+            slidesPerViewValue = 1;
+            spaceBetweenValue = 0;
+            loopEnabled = false; // slides-2는 loop 비활성화
+            autoplayEnabled = false;
         } else if (container.classList.contains("slides-auto")) {
             slidesPerViewValue = 'auto';
             spaceBetweenValue = 0;
@@ -40,6 +45,8 @@ $(document).ready(function () {
         }
 
         const swiper = new Swiper(swiperContainer, {
+            preventClicks: true,
+            preventClicksPropagation: true,
             loop: loopEnabled,
             autoplay: autoplayEnabled ? {
                 delay: 5000,
@@ -56,6 +63,17 @@ $(document).ready(function () {
                     if (paginationType === "bullets") {
                         return null;
                     }
+
+                    // .mental_check 클래스용 커스텀 pagination
+                    if (container.classList.contains("mental_check")) {
+                        return `
+                            <span class="count">
+                                <em>${current}</em>
+                                <span class="dot">...</span>
+                                <em>${total}</em>
+                            </span>`;
+                    }
+
                     const percentage = (current / total) * 100;
                     return `
                         <div class="pagination_bar">
@@ -140,6 +158,20 @@ $(document).ready(function () {
         const autoplayButton = slideShowContainer.querySelector(".btn_autoplay");
         if (autoplayButton) {
             toggleAutoplay(swiper, autoplayButton);
+        }
+        // mental_check에서 .btn.btn_next 클릭 시 다음 슬라이드로 이동
+        // mental_check에서 .btn.btn_next 클릭 시 다음 슬라이드로 이동
+        // Swiper 이벤트 리스너 추가
+
+        if (slideShowContainer.classList.contains("mental_check")) {
+            const nextButton = document.querySelector(".btn.btn_next");
+            if (nextButton) {
+                nextButton.addEventListener("click", (event) => {
+                    event.preventDefault(); // 기본 동작 차단
+                    swiper.slideNext(); // 다음 슬라이드로 이동
+                    return false; // 추가적인 동작 방지
+                });
+            }
         }
     });
 

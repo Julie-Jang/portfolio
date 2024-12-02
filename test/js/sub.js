@@ -200,7 +200,7 @@ $(document).ready(function() {
 
     // tab 스크롤 위치로 이동
     var $activeItem = $('.join_steps .steps .on, .tab .on'); // .on 클래스를 가진 요소
-    var offset = 4 * parseFloat($("html").css("font-size")); // 5rem을 픽셀로 변환
+    var offset = 10 * parseFloat($("html").css("font-size")); // 5rem을 픽셀로 변환
 
     if ($activeItem.length) {
         // 스크롤 위치에 5rem만큼 여백을 추가
@@ -220,6 +220,8 @@ $(document).ready(function() {
             console.log('Checked:', radio.checked); // 클릭 후 상태 확인
         });
     });
+
+    
 
     // 회원가입 라디오 버튼 테이블 
     $('input[name="partAB"]').click(function () {

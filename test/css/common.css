@@ -87,7 +87,7 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 .lnb {-webkit-flex:1; -ms-flex:1; flex: 1; max-width:26rem; width:100%; }
 /*.lnb {position: absolute;max-width: 140rem;left: 50%;z-index: 1;transform: translate(-50%, 0);width: 100%}*/
 .lnb > h3 a {display:block; padding:3.2rem 3rem 6.5rem; border-radius:3rem 0;background:#2C5AA5 url(../images/lnb_logo.gif) no-repeat right 3rem bottom 2rem; background-size:5.9rem 1.8rem;color: #fff;font-size: 2.3rem;font-weight: 600;color:#fff; }
-.lnb > ul > li.active > a, .lnb > ul > li > ul > li:hover > a {color: #2C5AA5;background:url(../images/icon/icon_lnb_arrow.svg) no-repeat right 3rem center; background-size:3.4rem;}
+.lnb > ul > li.active > a, .lnb > ul > li > ul > li:hover > a {color: #2C5AA5;background:url(../images/icon/icon_lnb_arrow.svg) no-repeat right 3rem top 2rem; background-size:3.4rem;}
 .lnb > ul > li > a {display: block;  padding:2.1rem 0 2rem 2.2rem;font-size:2.1rem;border-bottom: 1px solid  #E7E7E7;font-weight: 600;position: relative;letter-spacing: -0.08rem;}
 .lnb > ul > li > ul {background-color: #edeff7;padding: 0.5rem;border-bottom: 1px solid  #E7E7E7;display: none}
 .lnb > ul > li > ul > li > a {padding: 0.3rem 0.3rem 0.3rem 3rem;display: inline-block;position: relative;font-size: 1.4rem;}
@@ -247,6 +247,7 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 	.footer_wrap .address_wrap .address_inner p {float:unset; width:100%;}
 	.footer_wrap .address_wrap .address_inner address {float:unset; width:100%; padding-left:0; margin-bottom:3rem; font-size:1.6rem;}
 	.footer_wrap .address_wrap .address_inner p img {width:19rem;}
+	.section_wrap.w100 {padding:0;}
 
 
 }
