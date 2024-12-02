@@ -219,6 +219,14 @@ footer {background-color: #383B44;color: #fff;font-size: 1.4rem;font-weight: 200
 	.sub_visual.search {background: url(../images/sub/sub_visual_m.gif) no-repeat center center;background-size:cover;}
 	.sub_visual .sub_title {padding:6rem 0;}
 	.sub_visual .sub_title h2 {font-size:4rem;}
+	.sub_visual.sub01,
+	.sub_visual.sub02,
+	.sub_visual.sub03,
+	.sub_visual.sub04,
+	.sub_visual.sub05,
+	.sub_visual.sub06,
+	.sub_visual.sub07,
+	.sub_visual.search {background-image:url(../images/sub/sub_visual_m.gif);background-size:cover;} 
 	.location {background:#2C5AA5; padding:1.5rem 0;}
 	.location > ul > li {width:100%;}
 	.location > ul > li:not(:last-child) {display:none;}
