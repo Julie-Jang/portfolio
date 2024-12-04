@@ -1,15 +1,4 @@
-<svg id="_" data-name="&gt;" xmlns="http://www.w3.org/2000/svg" width="8.32" height="15.15" viewBox="0 0 8.32 15.15">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke: #5478b5;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 2px;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="_복사" data-name="&lt; 복사" class="cls-1" d="M1269.34,2613.57l6.32-6.59-6.32-6.58" transform="translate(-1268.34 -2599.41)"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+    <path stroke="#E4E4E4" fill="none" d="M15.5.5C7.216.5.5 7.216.5 15.5c0 8.284 6.716 15 15 15 8.284 0 15-6.716 15-15 0-8.284-6.716-15-15-15z"/>
+    <path stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" d="m16.5 19.5 4-4-4-4M10.5 19.5l4-4-4-4"/>
 </svg>

@@ -98,11 +98,11 @@ footer .footer_wrap .f_link {width:100%; overflow:hidden;}
 .location > ul {position: relative; width:100%;  text-align:right; }
 .location > ul > li {position: relative; display:inline-block;}
 .location > ul > li a {display:block; color:#303038; padding:0 2rem;font-size:1.7rem;}
-.location > ul > li:not(:last-child) > a::after {content:""; position:absolute; top:0.9rem; right:-1rem; display:block;border:solid #B4BBC5;width:0.8rem;height:0.8rem;margin:0 0 0.1rem 0.9rem;border-width:0 0.2rem 0.2rem 0;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);}
+.location > ul > li:not(:last-child) > a::after {content:""; position:absolute; top:0.9rem; right:-0.5rem; display:block;border:solid #B4BBC5;width:0.8rem;height:0.8rem;margin:0 0 0.1rem 0.9rem;border-width:0 0.2rem 0.2rem 0;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);}
 
 /* sub visual */
 /* JJ Added */
-.contents_wrap {position:relative;-webkit-flex: 3; -ms-flex: 3; flex: 3; width:100%; max-width:140rem;padding:0 0 10rem 0; min-height:80rem;overflow:hidden;}
+.contents_wrap {position:relative;-webkit-flex: 3; -ms-flex: 3; flex: 3; width:100%; max-width:140rem;padding:0 0 20rem 0; min-height:80rem;overflow:hidden;}
 /*.contents_wrap {margin: 0 auto;position: relative;font-weight: 200;max-width:142rem;padding-left: 25rem;min-height:80rem}*/
 .webwach-logo > img {max-width:90.9rem;width:100%;}
 
@@ -177,18 +177,9 @@ footer .footer_wrap .f_link {width:100%; overflow:hidden;}
 	.sub_visual .sub_title {padding:6rem 0;}
 	.sub_visual .sub_title h2 {font-size:4rem;}
 	
-	.location > ul > li {width:100%;}
-	.location > ul > li:not(:last-child) {display:none;}
-	.location > ul > li > .custom_select .select_selected > a{color:white; text-align:left; font-size:2.2rem; padding:0 4rem;}
-	.location > ul > li:last-child > .custom_select .select_selected > a:before {content:"";display:block; position:absolute; top:0; right:3rem; width:3.2rem; height:3.2rem; background:white; border-radius:100%;}
-	.location > ul > li:last-child > .custom_select .select_selected > a::after {content:"";display:block;position:absolute; top:0.8rem; right:4.1rem; border:solid #541E11;width:1.1rem;height:1.1rem;margin:0 0 0.1rem 0.9rem;border-width:0 0.3rem 0.3rem 0;transform:rotate(45deg);-webkit-transform:rotate(45deg);}
-	.location > ul > li:last-child > .custom_select .select_selected.on > a::after {top: 1.3rem;transform:rotate(-135deg);-webkit-transform:rotate(-135deg);}
-	.location > ul > li > .custom_select .select_items {width:100%; top:5rem;background: #541E11; left:0rem; border-radius:0; padding:0 1rem; }
-	.location > ul > li > .custom_select .select_items div a{ color:white;padding: 1.5rem 3rem;  font-size: 2.2rem;border-top:1px solid #3D69B4;  }
-	.location > ul > li > .custom_select .select_items div.on a,
-	.location > ul > li > .custom_select .select_items div a:hover {color:white;}
+
 	.f_link > .link_wrap {max-width:100%;}
-	
+	.location {display:none;}
 }
 
 @media screen and (max-width: 640px) {
