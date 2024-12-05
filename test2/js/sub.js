@@ -212,19 +212,5 @@ $(document).ready(function() {
         });
     });
 
-    
 
-    // 회원가입 라디오 버튼 테이블 
-    $('input[name="partAB"]').click(function () {
-        if ($(this).attr('id') === 'partA') {
-            $("#radio_tab02").hide();
-            $("#radio_tab01").show();
-        } else if ($(this).attr('id') === 'partB') {
-            $("#radio_tab01").hide();
-            $("#radio_tab02").show();
-        }
-    
-        // Set the clicked radio button to checked
-        $(this).prop('checked', true);
-    });
 });

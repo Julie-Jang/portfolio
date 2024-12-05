@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>경기도 교육청 북부 유아 체험 교육원</title>
+<title>공지사항 &lt; 알림마당 &lt; 경기도 교육청 북부 유아 체험 교육원</title>
 <link rel="shortcut icon" href="../images/favicon.ico">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
@@ -190,41 +190,6 @@
 		
 	</div>
 </header>
-
-<!--
-<div class="top_search">
-	<strong class="hidden">통합검색</strong>
-
-	<fieldset>
-		<form>
-			<div class="search_bar">
-				<label for="search" class="hidden">검색어를 입력해주세요.</label>
-				<input id="search" type="text" placeholder="검색어를 입력해주세요" value="">
-				<button class="btn_search" title="검색" onclick=""><span class="hidden">검색</span></button>
-
-                
-                <div class="search_recommend">
-                    <ul>
-                        <li>
-                            <a href="#">사회서비스 종사자</a>
-                            <a href="#" class="delete_result" title="삭제"><span class="hidden">검색어 삭제</span></a>
-                        </li>
-                        <li>
-                            <a href="#">사회서비스 공급자</a>
-                            <a href="#" class="delete_result" title="삭제"><span class="hidden">검색어 삭제</span></a>
-                        </li>
-                        <li>
-                            <a href="#">사회서비스 정책 종사자</a>
-                            <a href="#" class="delete_result" title="삭제"><span class="hidden">검색어 삭제</span></a>
-                        </li>
-                    </ul>
-                </div>
-                
-			</div>
-		</form>
-	</fieldset>
-</div>
--->
 <!--// Header -->
 
 <!-- Contents -->
@@ -257,194 +222,211 @@
 	<!-- Sub contents -->
 	<div class="contents_wrap" id="contents" >
 		<!-- Location -->
+		<!-- 마이페이지를 제외한 다른 페이지는 location 없음
 		<div class="location">
 			<ul>
 				<li class="home"><a href="#"><span class="hidden">홈</span></a></li>
 				<li><a href="#">마이페이지</a></li>
 			</ul>
 		</div>
+		-->
 		
-		<h3 class="hidden">정보수정</h3>
-		<h4 class="title">제목</h4>
-		<!-- 정보 입력 -->
-		<form>
+		<h3 class="hidden">알림마당</h3>
+		<h4 class="title">공지사항</h4>
+		
+		<!-- 게시판 tab -->
+		<ul class="board_tab">
+			<li class="on" title="선택됨"><a href="#">전체</a></li>
+			<li><a href="#">공지</a></li>
+			<li><a href="#">체험</a></li>
+			<li><a href="#">연수</a></li>
+		</ul>
+
+		<!-- 게시판 상단 텍스트 -->
+		<div class="border_box">
+			<p class="dot_list">게시되는 글의 본문이나 첨부파일에 개인정보(주민등록번호, 휴대폰번호, 주소, 은행계좌번호, 신용카드번호 등 개인을 식별할 수 있는 모든 정보)를 포함시키지 않도록 주의하시기 바랍니다.</p>
+			<p class="dot_list">개인정보가 게시되어 노출 될 경우 해당 게시물 작성자가 관련 법령에 따라 처분을 받을 수 있으니 유의하시기 바랍니다.</p>
+			<p class="dot_list">게시글에 이미지 삽입 시 [상세 내용]을 입력해야 합니다.(장애인차별금지법에 따른 웹접근성 준수)</p>
+			<p class="dot_list">외부 동영상 탑재 시 콘텐츠(음성정보 등)에 대한 대체 수단(자막삽입 또는 본문설명)이 제공되어야 합니다.</p>
+			<p class="dot_list">저작권자의 허락없이 제작물(사진,그림,영상,폰트 등)을 올릴경우 저작권법에 의하여 처벌 받을 수 있으니 유의하시기 바랍니다.</p>
+		</div>
+
+		<div class="board boardlist responsive t_center">
+			<!-- 게시글 갯수 -->
+			<div class="fraction"><b>검색결과 총</b> <span>20</span> 건 (<span>1</span>/2)</div>
+			<!-- 게시판 상단 버튼 영역 -->
+			<div class="btn_table_right">
+				<div class="search_top"><!-- 게시판 검색 -->
+					<input type="text" id="" title="검색 키워드를 입력해주세요." placeholder="검색어 입력"/>
+					<button class="btn_search" title="검색" onclick=""><span class="hidden">검색</span></button>
+				</div> 
+			</div>
 			
-			<div class="board_top"><!-- 게시판 검색 -->
-				<select class="selectbox large mr30" title="지역 구분 선택"><!-- 일반게시판의 경우 지역 selectbox 삭제 -->
-					<option>지역</option>
-					<option></option>
-					<option></option>
-				</select>
-				<select class="selectbox large" title="구분 선택">
-					<option>전체</option>
-					<option>제목</option>
-					<option>내용</option>
-				</select>
-				<input type="text" id="" title="검색 키워드를 입력해주세요." placeholder="검색 키워드를 입력해주세요.">
-				<button class="btn_search" title="검색" onclick=""><span class="hidden">검색</span></button>
-			</div> 
+			<table>
+				<caption>제목, 첨부파일, 등록자, 등록일, 조회수 내용의 테이블</caption>
+				<colgroup class="medium_none">
+					<col style="width: 8%">
+					<col style="width: 8%;">
+					<col style="width: auto;">
+					<col style="width: 10%;">
+					<col style="width: 12%;">
+				</colgroup>
+				<thead class="medium_none">
+					<tr>
+						<th scope="col">No</th>
+						<th scope="col">구분</th>
+						<th scope="col">제목</th>
+						<th scope="col">첨부파일</th>
+						<th scope="col">등록일</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- 공지글인 경우 -->
+					<tr>
+						<td class="divide"><span class="btn line navy h30">중요</span></td>
+						<td class="divide"><span class="badge blue">체험</span></td><!-- 체험 blue, 연수 green, 공지 pink-->
+						<td class="t_left divide t_con">
+							<a href="#" title="상세 페이지로 이동">
+								제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.</a>
+							<i class="icon_new"><em class="hidden">새글</em></i>
+							<i class="icon_lock"><em class="hidden">비밀글</em></i>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td>2024-01-01</td>
+					</tr>
+					<!-- 일반 No -->
+					<tr>
+						<td class="divide">9</td>
+						<td class="divide"><span class="badge green">연수</span></td><!-- 체험 blue, 연수 green, 공지 pink-->
+						<td class="t_left divide t_con">
+							<a href="#" title="상세 페이지로 이동">
+								제목입니다.</a>
+							<i class="icon_new"><em class="hidden">새글</em></i>
+							<i class="icon_lock"><em class="hidden">비밀글</em></i>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td>2024-01-01</td>
+					</tr>
+					<tr>
+						<td class="divide">8</td>
+						<td class="divide"><span class="badge pink">공지</span></td><!-- 체험 blue, 연수 green, 공지 pink-->
+						<td class="t_left divide t_con">
+							<a href="#" title="상세 페이지로 이동">
+								제목입니다.</a>
+							<i class="icon_new"><em class="hidden">새글</em></i>
+							<i class="icon_lock"><em class="hidden">비밀글</em></i>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td>2024-01-01</td>
+					</tr>
+					<tr>
+						<td class="divide">7</td>
+						<td class="divide"><span class="badge blue">체험</span></td><!-- 체험 blue, 연수 green, 공지 pink-->
+						<td class="t_left divide t_con">
+							<a href="#" title="상세 페이지로 이동">
+								제목입니다.</a>
+							<i class="icon_new"><em class="hidden">새글</em></i>
+							<i class="icon_lock"><em class="hidden">비밀글</em></i>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td>2024-01-01</td>
+					</tr>
+					<tr>
+						<td class="divide">6</td>
+						<td class="divide"><span class="badge blue">체험</span></td>
+						<td class="t_left divide t_con">
+							<a href="#" title="상세 페이지로 이동">
+								제목입니다.</a>
+							<i class="icon_new"><em class="hidden">새글</em></i>
+							<i class="icon_lock"><em class="hidden">비밀글</em></i>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td>2024-01-01</td>
+					</tr>
+					<tr>
+						<td class="divide">5</td>
+						<td class="divide"><span class="badge blue">체험</span></td>
+						<td class="t_left divide t_con">
+							<a href="#" title="상세 페이지로 이동">
+								제목입니다.</a>
+							<i class="icon_new"><em class="hidden">새글</em></i>
+							<i class="icon_lock"><em class="hidden">비밀글</em></i>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td>2024-01-01</td>
+					</tr>
+					<tr>
+						<td class="divide">4</td>
+						<td class="divide"><span class="badge blue">체험</span></td>
+						<td class="t_left divide t_con">
+							<a href="#" title="상세 페이지로 이동">
+								제목입니다.</a>
+							<i class="icon_new"><em class="hidden">새글</em></i>
+							<i class="icon_lock"><em class="hidden">비밀글</em></i>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td>2024-01-01</td>
+					</tr>
+					<tr>
+						<td class="divide">3</td>
+						<td class="divide"><span class="badge blue">체험</span></td>
+						<td class="t_left divide t_con">
+							<a href="#" title="상세 페이지로 이동">
+								제목입니다.</a>
+							<i class="icon_new"><em class="hidden">새글</em></i>
+							<i class="icon_lock"><em class="hidden">비밀글</em></i>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td>2024-01-01</td>
+					</tr>
+					<tr>
+						<td class="divide">2</td>
+						<td class="divide"><span class="badge blue">체험</span></td>
+						<td class="t_left divide t_con">
+							<a href="#" title="상세 페이지로 이동">
+								제목입니다.</a>
+							<i class="icon_new"><em class="hidden">새글</em></i>
+							<i class="icon_lock"><em class="hidden">비밀글</em></i>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td>2024-01-01</td>
+					</tr>
+					<tr>
+						<td class="divide">1</td>
+						<td class="divide"><span class="badge blue">체험</span></td>
+						<td class="t_left divide t_con">
+							<a href="#" title="상세 페이지로 이동">
+								제목입니다.</a>
+							<i class="icon_new"><em class="hidden">새글</em></i>
+							<i class="icon_lock"><em class="hidden">비밀글</em></i>
+						</td>
+						<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
+						<td>2024-01-01</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="nodata">작성된 글이 없습니다.</p>
+		</div>
 
+		<!-- pagenation -->
+		<div class="pagination">
+			<a href="#" class="first"><span class="hidden">첫 페이지 목록으로 이동</span></a>
+			<a href="#" class="prev"><span class="hidden">이전 페이지 목록으로 이동</span></a>
+			<a href="#" class="active" title="현재 페이지">1</a>
+			<a href="#" title="2페이지로 이동">2</a>
+			<a href="#" title="3페이지로 이동">3</a>
+			<a href="#" title="4페이지로 이동">4</a>
+			<a href="#" title="5페이지로 이동">5</a>
+			<a href="#" title="5페이지로 이동">6</a>
+			<a href="#" title="5페이지로 이동">7</a>
+			<a href="#" title="5페이지로 이동">8</a>
+			<a href="#" title="5페이지로 이동">9</a>
+			<a href="#" title="5페이지로 이동">10</a>
+			<a href="#" class="next"><span class="hidden">다음 페이지 목록으로 이동</span></a>
+			<a href="#" class="last"><span class="hidden">마지막 페이지 목록으로 이동</span></a>
+		</div>
+		<!--// pagenation -->
 
-			<div class="board boardlist responsive t_center">
-				<!-- 게시글 갯수 -->
-				<div class="fraction"><b>검색결과 총</b> <span>20</span> 건 (<span>1</span>/2)</div>
-				<!-- 게시판 상단 버튼 영역 -->
-				<div class="btn_table_right">
-					<span class="btn default h30 ">전체</span>
-					<span class="btn line navy h30">신청완료</span>
-					<span class="btn line red h30">취소완료</span>
-					<span class="btn line lightgray h30">체험완료</span>
-				</div>
-				
-				<table>
-					<caption>제목, 첨부파일, 등록자, 등록일, 조회수 내용의 테이블</caption>
-					<colgroup class="medium_none">
-						<col style="width: 10%">
-						<col style="width: auto;">
-						<col style="width: 10%;">
-						<col style="width: 20%;">
-						<col style="width: 12%;">
-						<col style="width: 10%;">
-					</colgroup>
-					<thead class="medium_none">
-						<tr>
-							<th scope="col">번호</th>
-							<th scope="col">제목</th>
-							<th scope="col">첨부파일</th>
-							<th scope="col">등록자</th>
-							<th scope="col">등록일</th>
-							<th scope="col">조회수</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="divide"><span class="btn h30">공지</span></td>
-							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.제목입니다.
-									<i class="icon_new"><em class="hidden">새글</em></i>
-								</a>
-							</td>
-							<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
-							<td class="divide line">2024-01-01</td>
-							<td class="divide">100</td>
-						</tr>
-						<tr>
-							<td class="divide line">100</td>
-							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.</a>
-							</td>
-							<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
-							<td class="divide line">2024-01-01</td>
-							<td class="divide">100</td>
-						</tr>
-						<tr>
-							<td class="divide line">100</td>
-							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.</a>
-							</td>
-							<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
-							<td class="divide line">2024-01-01</td>
-							<td class="divide">100</td>
-						</tr>
-						<tr>
-							<td class="divide line">100</td>
-							<td class="t_left divide t_con"><!-- 비밀글일 경우 수정됨 Jun/05/2024-->
-								<a href="#" title="상세 페이지로 이동">제목입니다.
-									<i class="icon_new"><em class="hidden">새글</em></i>
-								</a>
-							</td>
-							<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
-							<td class="divide line">2024-01-01</td>
-							<td class="divide">100</td>
-						</tr>
-						<tr>
-							<td class="divide line">100</td>
-							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.</a>
-							</td>
-							<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
-							<td class="divide line">2024-01-01</td>
-							<td class="divide">100</td>
-						</tr>
-						<tr>
-							<td class="divide line">100</td>
-							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.</a>
-							</td>
-							<td class="right"><i class="icon_file"><span class="hidden">첨부파일</span></i></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
-							<td class="divide line">2024-01-01</td>
-							<td class="divide">100</td>
-						</tr>
-						<tr>
-							<td class="divide line">100</td>
-							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.</a>
-							</td>
-							<td class="right"></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
-							<td class="divide line">2024-01-01</td>
-							<td class="divide">100</td>
-						</tr>
-						<tr>
-							<td class="divide line">100</td>
-							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.</a>
-							</td>
-							<td class="right"></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
-							<td class="divide line">2024-01-01</td>
-							<td class="divide">100</td>
-						</tr>
-						<tr>
-							<td class="divide line">100</td>
-							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.</a>
-							</td>
-							<td class="right"></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
-							<td class="divide line">2024-01-01</td>
-							<td class="divide">100</td>
-						</tr>
-						<tr>
-							<td class="divide line">100</td>
-							<td class="t_left divide t_con">
-								<a href="#" title="상세 페이지로 이동">제목입니다.</a>
-							</td>
-							<td class="right"></td>
-							<td class="divide line">한국보육진흥원/평가기반팀</td>
-							<td class="divide line">2024-01-01</td>
-							<td class="divide">100</td>
-						</tr>
-					</tbody>
-				</table>
-				<p class="nodata">작성된 글이 없습니다.</p>
-			</div>
-
-			<!-- pagenation -->
-			<div class="pagination">
-				<a href="#" class="first"><span class="hidden">첫 페이지 목록으로 이동</span></a>
-				<a href="#" class="prev"><span class="hidden">이전 페이지 목록으로 이동</span></a>
-				<a href="#" class="active" title="현재 페이지">1</a>
-				<a href="#" title="2페이지로 이동">2</a>
-				<a href="#" title="3페이지로 이동">3</a>
-				<a href="#" title="4페이지로 이동">4</a>
-				<a href="#" title="5페이지로 이동">5</a>
-				<a href="#" title="5페이지로 이동">6</a>
-				<a href="#" title="5페이지로 이동">7</a>
-				<a href="#" title="5페이지로 이동">8</a>
-				<a href="#" title="5페이지로 이동">9</a>
-				<a href="#" title="5페이지로 이동">10</a>
-				<a href="#" class="next"><span class="hidden">다음 페이지 목록으로 이동</span></a>
-				<a href="#" class="last"><span class="hidden">마지막 페이지 목록으로 이동</span></a>
-			</div>
-			<!--// pagenation -->
-		</form>
 
 	</div>
 <!--// Sub contents -->

@@ -1,13 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="7.031" height="11.5" viewBox="0 0 7.031 11.5">
+<svg xmlns="http://www.w3.org/2000/svg" width="7" height="12.28" viewBox="0 0 7 12.28">
   <defs>
     <style>
       .cls-1 {
-        fill: black;
-        stroke: black;
-        stroke-width: 1px;
+        fill: #fffefe;
         fill-rule: evenodd;
       }
     </style>
   </defs>
-  <path id="icon___" data-name="icon__&lt;" class="cls-1" d="M482.959,569.5a0.75,0.75,0,0,0,0,1.061l4.5,4.5A0.751,0.751,0,0,0,488.521,574l-3.971-3.971,3.968-3.97A0.75,0.75,0,0,0,487.457,565l-4.5,4.5Z" transform="translate(-482.219 -564.281)"/>
+  <path id="icon___" data-name="icon__&lt;" class="cls-1" d="M365.184,2664.67a0.878,0.878,0,0,0,0,1.24l5.25,5.25a0.876,0.876,0,0,0,1.239-1.24l-4.632-4.63,4.629-4.63a0.876,0.876,0,0,0-1.239-1.24l-5.25,5.25h0Z" transform="translate(-364.938 -2659.16)"/>
 </svg>

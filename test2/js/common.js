@@ -23,7 +23,7 @@ $(document).ready(function() {
 	
 			// Adjust the mouseleave event for the nav menu
 			$('nav').on('mouseleave', function(){
-				if (!$('.menu_bg:hover,.top_search:hover ').length) {
+				if (!$('.menu_bg:hover ').length) {
 					$('nav > ul > li > ul, .menu_bg').stop().slideUp(100);
 					$('header').removeClass("on");
 				}
@@ -64,36 +64,9 @@ $(document).ready(function() {
 		$('nav').slideToggle(300);
 		$('nav > ul > li > ul').removeAttr("style");
 		$("body").toggleClass("search_active");
-		$(".top_search").hide();
 		$('.btn_search').removeClass('close');
 		return false;	
 	});
-
-	$(".btn_search_open a, .m_util .btn_search").click(function() {
-        $(".top_search").slideToggle(function() {
-            // 슬라이드 애니메이션 후 Swiper를 재초기화
-            //document.querySelectorAll(".slide_show").forEach((slideShowContainer) => {
-            //    initializeSwiper(slideShowContainer);
-            //});
-        });
-        $(this).toggleClass("close");
-        $('nav > ul > li > ul, .menu_bg').hide();
-		$('.m_menu').removeClass('off');
-		$(".search_recommend").hide();
-    });
-
-	$(".top_search .btn_search").click(function() {
-        $(".search_recommend").slideToggle();
-    });
-
-    $(".m_menu.off, .btn_search_open a.close, .m_util .btn_search.close").click(function() {
-        $(".top_search").slideUp(function() {
-            // 슬라이드 애니메이션 후 Swiper를 재초기화
-            //document.querySelectorAll(".slide_show").forEach((slideShowContainer) => {
-            //    initializeSwiper(slideShowContainer);
-            //});
-        });
-    });
 
     // PC Sitemap
     $('.all_menu').on('click', function() {
