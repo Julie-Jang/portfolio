@@ -1,30 +1,36 @@
 $(document).ready(function () {
     function initializeSwiper(container) {
-        const swiperContainer = container.querySelector(".swiper_container");
+        const swiperContainer = container.querySelector(".swiper_container");  
         const paginationEl = container.querySelector(".visual_pagination");
         const nextEl = container.querySelector(".btn_next");
         const prevEl = container.querySelector(".btn_prev");
+        // 기존 Swiper 제거
+        if (container.swiperInstance) {
+            container.swiperInstance.destroy(true, true);
+        }
 
-        let slidesPerViewValue = 1; // 기본값
+        let slidesPerViewValue = 1; 
         let spaceBetweenValue = 0; 
         let autoplayEnabled = true;
         let loopEnabled = true;
-
+    
         if (container.classList.contains("slides-2")) {
-            slidesPerViewValue = 3;
+            slidesPerViewValue = 2;
             spaceBetweenValue = 20;
             autoplayEnabled = false;
+            loopEnabled = true;
         } else if (container.classList.contains("slides-3")) {
-            slidesPerViewValue = 3;
-            spaceBetweenValue = 60;
-            autoplayEnabled = false;
+            slidesPerViewValue = 2;
+            spaceBetweenValue = 20;
+            autoplayEnabled = true;
+            loopEnabled = true;
         } else if (container.classList.contains("family-site")) {
-            loopEnabled = false;
-            autoplayEnabled = false;
-        } else if (container.classList.contains("slides-auto")) {
-            slidesPerViewValue = 'auto';
+            slidesPerViewValue = 4;
+            spaceBetweenValue = 20;
+            loopEnabled = true;
+            autoplayEnabled = true;
         }
-
+    
         const swiper = new Swiper(swiperContainer, {
             preventClicks: true,
             preventClicksPropagation: true,
@@ -46,65 +52,24 @@ $(document).ready(function () {
             },
             breakpoints: {
                 1400: {
-                    slidesPerView: container.classList.contains("main_visual")
-                        ? 1
-                        : container.classList.contains("slides-2")
-                        ? 2
-                        : container.classList.contains("slides-3")
-                        ? 2
-                        : container.classList.contains("family-site")
-                        ? 4
-                        : slidesPerViewValue,
-                    spaceBetween: container.classList.contains("slides-3")
-                        ? 10
-                        : container.classList.contains("family-site")
-                        ? 10
-                        : spaceBetweenValue,
+                    slidesPerView: slidesPerViewValue,
                 },
                 800: {
-                    slidesPerView: container.classList.contains("main_visual")
-                        ? 1
-                        : container.classList.contains("slides-2")
-                        ? 2
-                        : container.classList.contains("slides-3")
-                        ? 2
-                        : container.classList.contains("family-site")
-                        ? 3
-                        : slidesPerViewValue,
-                    spaceBetween: container.classList.contains("slides-3") || container.classList.contains("family-site")
-                        ? 20
-                        : spaceBetweenValue,
+                    slidesPerView: slidesPerViewValue > 2 ? 2 : slidesPerViewValue,
                 },
                 700: {
-                    slidesPerView: container.classList.contains("main_visual")
-                        ? 1
-                        : container.classList.contains("slides-2")
-                        ? 1
-                        : container.classList.contains("slides-3")
-                        ? 1
-                        : container.classList.contains("family-site")
-                        ? 2
-                        : slidesPerViewValue,
-                    spaceBetween: container.classList.contains("slides-3") || container.classList.contains("family-site")
-                        ? 15
-                        : spaceBetweenValue,
+                    slidesPerView: container.classList.contains("family-site") ? 2 : 1,
+                    spaceBetween: 10,
                 },
                 301: {
-                    slidesPerView: container.classList.contains("main_visual")
-                        ? 1
-                        : container.classList.contains("slides-2")
-                        ? 1
-                        : container.classList.contains("slides-3")
-                        ? 1
-                        : container.classList.contains("family-site")
-                        ? 1
-                        : slidesPerViewValue,
-                    spaceBetween: container.classList.contains("family-site") ? 10 : spaceBetweenValue,
-                }
-            }
-            
+                    slidesPerView: container.classList.contains("family-site") ? 2 : 1,
+                    spaceBetween: 10,
+                },
+            },
         });
-
+    
+        // Swiper 인스턴스 저장
+        container.swiperInstance = swiper;
         return swiper;
     }
 
@@ -130,6 +95,7 @@ $(document).ready(function () {
 
     document.querySelectorAll(".slide_show").forEach((slideShowContainer) => {
         const swiper = initializeSwiper(slideShowContainer);
+        swiper.update(); // DOM 갱신
         const autoplayButton = slideShowContainer.querySelector(".btn_autoplay");
         if (autoplayButton) {
             toggleAutoplay(swiper, autoplayButton);
@@ -147,9 +113,14 @@ $(document).ready(function () {
         }
     });
 
+    
+
     window.addEventListener("resize", () => {
         document.querySelectorAll(".main_visual").forEach((slideShowContainer) => {
             initializeSwiper(slideShowContainer);
         });
     });
+
+
+
 });

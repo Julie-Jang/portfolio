@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {font-weight:400}
 button {cursor:pointer;font-family:inherit;}
 input:focus, button:focus, select:focus, textarea:focus {}
 ::placeholder {color:#999;}
-:focus {outline-offset:3px;}
+:focus {outline-offset:-1px;}
 input, select, textarea {font-size:1em;vertical-align:middle; font-family:inherit;}
 /*input[type="text"], input[type="submit"],input[type="password"], 
 select {-webkit-appearance:none;-webkit-border-radius:0;font-family: 'Pretendard SemiBold';}*/

@@ -185,6 +185,26 @@
 						</li>
 					</ul>
 				</li>
+
+				<!-- 로그인 후 마이페이지 메뉴 노출 -->
+				<li class="depth">
+					<a href="#">마이페이지</a>
+					<ul>
+						<li class="depth"><a href="#">단체체험(기관) 예약내역</a></li>
+						<li class="depth"><a href="#">가족체험(개인) 예약내역</a></li>
+						<li class="depth"><a href="#">회원정보 수정</a></li>
+					</ul>
+				</li>
+
+				<!-- 로그인 후 마이페이지 메뉴 노출 -->
+				<li class="depth">
+					<a href="#">마이페이지</a>
+					<ul>
+						<li class="depth"><a href="#">단체체험(기관) 예약내역</a></li>
+						<li class="depth"><a href="#">가족체험(개인) 예약내역</a></li>
+						<li class="depth"><a href="#">회원정보 수정</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 		
@@ -238,68 +258,312 @@
 
 
 <!-- Contents -->
-<div class="main_wrap">
+<main class="main_wrap">
 
-	<div class="banner_visual">
-		<!-- Slide show -->
-		<div class="slide_show slides-2">
-			<div class="swiper_wrap">
-				<!-- 이전, 다음 슬라이드 버튼  -->
-				<div class="swiper-ctrl">
-					<button type="button" class="btn-ctrl btn_prev"><span class="hidden">이전</span></button>
-					<button type="button" class="btn-ctrl btn_next"><span class="hidden">다음</span></button>
-				</div>
-				<div class="swiper_container">
-					<ul class="swiper_wrapper">
-						<!-- 1 -->
-						<li class="swiper_slide">
-							<a href="#">
-								<img src="./images/samples/banner01.gif" alt=" "/>
-								<span class="title">제목</span>
-								<span class="txt">내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</span>
-								<span class="info">
-									<span class="view">155</span>
-									<span class="date">2024.1030 16:15</span>
-								</span>
-							</a>
-						</li>
-						<!-- 2 -->
-						<li class="swiper_slide">
-							<a href="#">
-								<img src="./images/samples/banner01.gif" alt=" "/>
-								<span class="title">제목</span>
-								<span class="txt">내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</span>
-								<span class="info">
-									<span class="view">155</span>
-									<span class="date">2024.1030 16:15</span>
-								</span>
-							</a>
-						</li>
-						<!-- 3 -->
-						<li class="swiper_slide">
-							<a href="#">
-								<img src="./images/samples/banner01.gif" alt=" "/>
-								<span class="title">제목</span>
-								<span class="txt">내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</span>
-								<span class="info">
-									<span class="view">155</span>
-									<span class="date">2024.1030 16:15</span>
-								</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="visual_pagination-wrap">
-					<div class="visual_pagination"></div>
-					<!--<button type="button" class="btn_autoplay" aria-pressed="false" title="메인팝업 슬라이드 정지">정지</button>-->
+	<!-- 두번째 배너 -->
+	<div class="second_banner">
+		<!-- 기상정보 배너 -->
+		<div class="weather">
+			<h6>기상정보</h6>
+			<p class="temperature sun">15<em>℃</em></p><!-- 온도와 날씨 아이콘 클라스로 구분 태양 sun, 비 rain, 구름 cloud,눈 snow -->
+			<ul>
+				<li><em>미세먼지</em> <span class="btn h24 green ml5">좋음</span></li>
+				<li><em>식중독</em> <span class="btn h24 blue ml5">주의</span></li>
+			</ul>
+		</div>
+		<ul class="benners">
+			<li><a href="#">체험영역 소개</a></li>
+			<li><a href="#">단체체험 예약</a></li>
+			<li><a href="#">가족체험 예약</a></li>
+			<li><a href="#">예약 조회/취소</a></li>
+			<li><a href="#">만족도 조사</a></li>
+			<li><a href="#">사후 설문</a></li>
+		</ul>
+	</div>
+
+	<!-- 세번째 배너 -->
+	<div class="third_banner">
+		<div class="left">
+			<h5 class="main_title">아하! <em>소식</em></h5>
+			<ul class="tab_wrap_inner">
+				<li class="on"><a href="javascript:;" data-tab="tab-1">공지사항</a>
+					<div class="btn_view_more"  style="display:block;">
+						<a href="#" title="공지사항 더보기"><span class="hidden">공지사항 더보기</span></a>
+					</div>
+					<div class="tab_con_inner" id="b_tab-1" style="display:block;">
+						<!-- 공지사항 Slide show -->
+						<div class="slide_show slides-2">
+							<div class="swiper_wrap">
+								<!-- 이전, 다음 슬라이드 버튼  -->
+								<div class="swiper-ctrl">
+									<button type="button" class="btn-ctrl btn_prev"><span class="hidden">이전</span></button>
+									<button type="button" class="btn-ctrl btn_next"><span class="hidden">다음</span></button>
+								</div>
+								<div class="swiper_container">
+									<ul class="swiper_wrapper">
+										<!-- 1 -->
+										<li class="swiper_slide">
+											<a href="#">
+												<p><span class="btn h30 pink">공지사항</span></p>
+												<p class="title f_P"><i class="icon_new"><em class="hidden">새글</em></i>111제목제목제목제목제목제목제목제목제목제목제목제목제목제목</p>
+												<p class="txt f_P">내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</p>
+											</a>
+										</li>
+										<!-- 2 -->
+										<li class="swiper_slide">
+											<a href="#">
+												<p><span class="btn h30 pink">공지사항</span></p>
+												<p class="title f_P"><i class="icon_new"><em class="hidden">새글</em></i>222제목제목제목제목제목제목제목제목제목제목제목제목제목제목</p>
+												<p class="txt f_P">내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</p>
+											</a>
+										</li>
+										<!-- 3 -->
+										<li class="swiper_slide">
+											<a href="#">
+												<p><span class="btn h30 pink">공지사항</span></p>
+												<p class="title f_P"><i class="icon_new"><em class="hidden">새글</em></i>333제목제목제목제목제목제목제목제목제목제목제목제목제목제목</p>
+												<p class="txt f_P">내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li><a href="javascript:;" data-tab="tab-2">보도자료</a>
+					<div class="btn_view_more">
+						<a href="#" title="보도자료 더보기"><span class="hidden">보도자료 더보기</span></a>
+					</div>
+					<div class="tab_con_inner" id="b_tab-2">
+						<!-- 보도자료 Slide show -->
+						<div class="slide_show slides-2">
+							<div class="swiper_wrap">
+								<!-- 이전, 다음 슬라이드 버튼  -->
+								<div class="swiper-ctrl">
+									<button type="button" class="btn-ctrl btn_prev"><span class="hidden">이전</span></button>
+									<button type="button" class="btn-ctrl btn_next"><span class="hidden">다음</span></button>
+								</div>
+								<div class="swiper_container">
+									<ul class="swiper_wrapper">
+										<!-- 1 -->
+										<li class="swiper_slide">
+											<a href="#">
+												<p><span class="btn h30 pink">보도자료</span></p>
+												<p class="title f_P"><i class="icon_new"><em class="hidden">새글</em></i>111제목제목제목제목제목제목제목제목제목제목제목제목제목제목</p>
+												<p class="txt f_P">내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</p>
+											</a>
+										</li>
+										<!-- 2 -->
+										<li class="swiper_slide">
+											<a href="#">
+												<p><span class="btn h30 pink">보도자료</span></p>
+												<p class="title f_P"><i class="icon_new"><em class="hidden">새글</em></i>222제목제목제목제목제목제목제목제목제목제목제목제목제목제목</p>
+												<p class="txt f_P">내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</p>
+											</a>
+										</li>
+										<!-- 3 -->
+										<li class="swiper_slide">
+											<a href="#">
+												<p><span class="btn h30 pink">보도자료</span></p>
+												<p class="title f_P"><i class="icon_new"><em class="hidden">새글</em></i>333제목제목제목제목제목제목제목제목제목제목제목제목제목제목</p>
+												<p class="txt f_P">내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</p>
+											</a>
+										</li>
+										<!-- 4 -->
+										<li class="swiper_slide">
+											<a href="#">
+												<p><span class="btn h30 pink">보도자료</span></p>
+												<p class="title f_P"><i class="icon_new"><em class="hidden">새글</em></i>444제목제목제목제목제목제목제목제목제목제목제목제목제목제목</p>
+												<p class="txt f_P">내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용내용</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		
+
+		<div class="right">
+			<h5 class="main_title">아하! <em>팝업존</em></h5>
+			<div class="btn_view_more">
+				<a href="#" title="팝업존 더보기"><span class="hidden">팝업존 더보기</span></a>
+			</div>
+			<div class="slide_show slides-3">
+				<div class="swiper_wrap">
+					<!-- 이전, 다음 슬라이드 버튼  -->
+					<div class="swiper-ctrl">
+						<button type="button" class="btn-ctrl btn_prev"><span class="hidden">이전</span></button>
+						<button type="button" class="btn_autoplay" aria-pressed="false" title="메인팝업 슬라이드 정지"><span class="hidden">정지</span></button>
+						<button type="button" class="btn-ctrl btn_next"><span class="hidden">다음</span></button>
+					</div>
+					<div class="swiper_container">
+						<ul class="swiper_wrapper">
+							<!-- 1 -->
+							<li class="swiper_slide">
+								<a href="#none" title="상세 페이지로 이동">
+									<img src="./images/sample/banner01.png" alt="샘플"/>
+								</a>
+							</li>
+							<!-- 2 -->
+							<li class="swiper_slide">
+								<a href="#none" title="상세 페이지로 이동">
+									<img src="./images/sample/banner02.png" alt="샘플"/>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-</div>
 
-<!-- // tab_banner -->
+	<!-- 네번째 배너 -->
+	<div class="fourth_banner">
+		<div class="left">
+			<h5 class="main_title">아하! <em>영상</em><span>홍보영상</span></h5>
+			<!--<div class="btn_view_more"  style="display:block;">
+				<a href="#" title="아하! 영상 더보기"><span class="hidden">아하! 영상 더보기</span></a>
+			</div>-->
+			<div class="banner">
+				<a href="#">
+					<img src="./images/sample/banner03.png" alt="유-초 이음 교육">
+					<p class="txt">♡유-초 이음 교육 "마음을 잇다마음 이음 교육 ♡유-초 이음 교육 "마음을 잇다마음 이음 교육</p>
+				</a>
+			</div>
+		</div>
+		<div class="right">
+			<h5 class="main_title">아하! <em>놀이톡</em><span>소식지</span></h5>
+			<!--<div class="btn_view_more"  style="display:block;">
+				<a href="#" title="아하! 놀이톡 더보기"><span class="hidden">아하! 놀이톡 더보기</span></a>
+			</div>-->
+			<ul>
+				<li>
+					<a href="#">
+						<img src="./images/sample/banner04.png" alt="유-초 이음 교육">
+						<div>
+							<p class="title">♡유-초 이음 교육 "마음을 잇다마음 이음 교육 ♡유-초 이음 교육 "마음을 잇다마음 이음 교육</p>
+							<p class="txt">♡유-초 이음 교육 "마음을 잇다마음 이음 교육 ♡유-초 이음 교육 "마음을 잇다마음 이음 교육</p>
+						</div>
+						
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="./images/sample/banner04.png" alt="유-초 이음 교육">
+						<div>
+							<p class="title">♡유-초 이음 교육 "마음을 잇다마음 이음 교육 ♡유-초 이음 교육 "마음을 잇다마음 이음 교육</p>
+							<p class="txt">♡유-초 이음 교육 "마음을 잇다마음 이음 교육 ♡유-초 이음 교육 "마음을 잇다마음 이음 교육</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="fifth_banner">
+		<h5 class="main_title">아하! <em>갤러리</em></h5>
+		<div class="btn_view_more"  style="display:block;">
+			<a href="#" title="아하! 갤러리 더보기"><span class="hidden">아하! 갤러리 더보기</span></a>
+		</div>
+		<ul>
+			<li>
+				<a href="#">
+					<img src="./images/sample/banner04.png" alt="유-초 이음 교육">
+					<p class="txt">♡유-초 이음 교육</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="./images/sample/banner04.png" alt="유-초 이음 교육">
+					<p class="txt">♡유-초 이음 교육 "마음을 잇다마음 이음 교육 ♡유-초 이음 교육 "마음을 잇다마음 이음 교육</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="./images/sample/banner04.png" alt="유-초 이음 교육">
+					<p class="txt">♡유-초 이음 교육 "마음을 잇다마음 이음 교육 ♡유-초 이음 교육 "마음을 잇다마음 이음 교육</p>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="./images/sample/banner04.png" alt="유-초 이음 교육">
+					<p class="txt">♡유-초 이음 교육 "마음을 잇다마음 이음 교육 ♡유-초 이음 교육 "마음을 잇다마음 이음 교육</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+</main>
+<!--// Contents -->
+
+
+<!-- family sites -->
+<div class="family_site">
+	<div class="slide_show family-site">
+		<div class="swiper_wrap">
+			<!-- 이전, 다음 슬라이드 버튼  -->
+			<div class="swiper-ctrl">
+				<span class="f_P">배너모음</span>
+				<div>
+					<button type="button" class="btn-ctrl btn_prev"><span class="hidden">이전</span></button>
+					<button type="button" class="btn_autoplay" aria-pressed="false" title="메인팝업 슬라이드 정지"><span class="hidden">정지</span></button>
+					<button type="button" class="btn-ctrl btn_next"><span class="hidden">다음</span></button>
+				</div>
+			</div>
+			<div class="swiper_container">
+				<ul class="swiper_wrapper">
+					<!-- 1 -->
+					<li class="swiper_slide" tabindex="0">
+						<a href="#none" title="상세 페이지로 이동">
+							<img src="./images/main/family_site01.png" alt="샘플"/>
+						</a>
+					</li>
+					<!-- 2 -->
+					<li class="swiper_slide">
+						<a href="#none" title="상세 페이지로 이동">
+							<img src="./images/main/family_site02.png" alt="샘플"/>
+						</a>
+					</li>
+					<!-- 3 -->
+					<li class="swiper_slide">
+						<a href="#none" title="상세 페이지로 이동">
+							<img src="./images/main/family_site03.png" alt="샘플"/>
+						</a>
+					</li>
+					<!-- 4 -->
+					<li class="swiper_slide">
+						<a href="#none" title="상세 페이지로 이동">
+							<img src="./images/main/family_site04.png" alt="샘플"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<!-- 유관기관 바로가기 -->
+			<ul class="btn_family_site">
+				<a href="#" title="열기">유관기관 바로가기</a>
+				<ul class="family_site_list f_P">
+					<li><a href="" target="_blank" title="새창열림">서울특별시교육청 유아교육진흥원</a></li>
+					<li><a href="" target="_blank" title="새창열림">대구광역시유아교육진흥원</a></li>
+					<li><a href="" target="_blank" title="새창열림">인천광역시유아교육진흥원</a></li>
+					<li><a href="" target="_blank" title="새창열림">광주광역시교육청유아교육진흥원</a></li>
+					<li><a href="" target="_blank" title="새창열림">대전유아교육진흥원</a></li>
+					<li><a href="" target="_blank" title="새창열림">울산광역시유아교육진흥원</a></li>
+					<li><a href="" target="_blank" title="새창열림">경기도 유아체험교육원</a></li>
+
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!--// family sites -->
 
 
 <!--Footer -->

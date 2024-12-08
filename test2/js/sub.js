@@ -33,18 +33,30 @@ $(document).ready(function() {
     $('.tab_wrap_inner > li > a').on('click focus', function() {
         var $thisTabWrap = $(this).closest('.tab_wrap_inner');
         var tab_id = $(this).attr('data-tab');
-        
+    
         $thisTabWrap.find('li').removeClass("on");
         $thisTabWrap.find('li > a').removeAttr("title");
-        
+    
         $(this).parent().addClass("on");
         $(this).attr("title", "선택됨");
-        
+    
         $thisTabWrap.find('.tab_con_inner').hide();
-        $thisTabWrap.find('.btn_more_dot').hide();
-        
-        $thisTabWrap.find("#b_" + tab_id).show();
-        $(this).closest('li').find('.btn_more_dot').show(); // Only show the btn_more_dot of the clicked tab
+        $thisTabWrap.find('.btn_view_more').hide();
+    
+        const activeTab = $thisTabWrap.find("#b_" + tab_id);
+        activeTab.show();
+        $(this).closest('li').find('.btn_view_more').show();
+    
+        // Swiper 갱신
+        activeTab.find('.swiper_container').each(function() {
+            const swiperInstance = this.swiper;
+            if (swiperInstance) {
+                swiperInstance.update(); // Swiper 레이아웃 갱신
+            } else {
+                initializeSwiper(activeTab[0]); // 초기화 누락 시 다시 초기화
+            }
+        });
+    
         return false;
     });
 

@@ -154,5 +154,25 @@ $(document).ready(function() {
     });
 
 
+	// family site
+// family site
+$('.btn_family_site > a').on('click', function (event) {
+    event.preventDefault(); // 기본 동작 차단
+    const $this = $(this); // this를 jQuery 객체로 변환
+    $('.btn_family_site > ul').slideToggle(300);
+
+    // 클래스 토글
+    $this.toggleClass('on');
+
+    // title 속성 업데이트
+    if ($this.hasClass('on')) {
+        $this.attr('title', '닫기'); // on 클래스가 있을 때 닫기
+    } else {
+        $this.attr('title', '열기'); // 기본값 열기
+    }
+});
+
+
+
 });
 

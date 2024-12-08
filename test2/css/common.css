@@ -53,7 +53,7 @@ footer {background-color: #552012;color: #fff;position: relative; font-family:"P
 footer .footer_wrap {width:100%; max-width:140rem;margin:0 auto; overflow:hidden;}
 footer .footer_wrap .f_link {width:100%; overflow:hidden;}
 .f_link > .link_wrap li {float:left; position:relative;}
-.f_link > .link_wrap li:not(:last-child)::after {content: ''; display:block; position:absolute; top:1.8rem; right:-1.5rem; width:0.1rem; height:1rem; background:#997D79; vertical-align: middle;}
+.f_link > .link_wrap li:not(:last-child)::after {content: ''; display:block; position:absolute; top:33%; right:-1.5rem; width:0.1rem; height:30%; background:#997D79; vertical-align: middle;}
 .f_link > .link_wrap li + li {margin-left:3rem;}
 .f_link > .link_wrap li a {padding:0.5rem 0;display: block;white-space: nowrap;color: #fff; font-size:2.1rem; font-weight:600;}
 .f_link > .link_wrap li a:hover, .f_link .link_wrap li a:focus {color: #fabe00}
@@ -171,5 +171,11 @@ footer .footer_wrap .f_link {width:100%; overflow:hidden;}
 
 @media screen and (max-width: 640px) {
 	#header .header_top > h1 > a {width:30rem; height:5.3rem;}
+
+
+	/* 디자인 미적용 */
+	.f_link > .link_wrap {text-align:center;}
+	.f_link > .link_wrap li {float:unset; display:inline-block; width:41%;}
+	.f_link > .link_wrap li:not(:last-child)::after {display:none;}
 
 }
