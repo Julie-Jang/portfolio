@@ -211,12 +211,12 @@ $(document).ready(function() {
 
 
     // tab 스크롤 위치로 이동
-    var $activeItem = $('.join_steps li.on, .tab .on'); // .on 클래스를 가진 요소
+    var $activeItem = $('.join_steps li.on,.steps li.on, .tab .on'); // .on 클래스를 가진 요소
     var offset = 10 * parseFloat($("html").css("font-size")); // 5rem을 픽셀로 변환
 
     if ($activeItem.length) {
         // 스크롤 위치에 5rem만큼 여백을 추가
-        $('.join_steps, .tab').scrollLeft($activeItem.position().left - offset);
+        $('.join_steps,.steps, .tab').scrollLeft($activeItem.position().left - offset);
     }
     document.querySelectorAll('input[type="radio"]').forEach(radio => {
         radio.addEventListener('click', event => {

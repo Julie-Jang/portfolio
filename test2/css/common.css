@@ -111,7 +111,7 @@ footer .footer_wrap .f_link {width:100%; overflow:hidden;}
 	nav > ul.gnb > li > a:hover, nav > ul > li > a:focus, nav > ul > li > a:active {color:#551f12}
 	nav > ul.gnb > li > ul {position: absolute; min-width:16rem; display: none;z-index: 5;top:10rem; left:-1.5rem;font-family:"Pretendard"; letter-spacing:-0.05rem; white-space:nowrap ;}
 	nav > ul.gnb > li > ul > li > a {display: block; position:relative; padding:0.6rem 4rem 0.5rem 1.5rem;font-size: 1.7rem; color:white;}
-	nav > ul.gnb > li > ul > li a:hover, nav > ul > li > ul > li a:focus {background:#EAB2A5; border-radius:2rem; color:#551f12; font-weight:700;}
+	nav > ul.gnb > li > ul > li a:hover, nav > ul > li > ul > li a:focus {background:#EAB2A5; border-radius:3rem; color:#551f12; font-weight:700;}
 	nav > ul.gnb > li > ul > li a:hover::after, nav > ul > li > ul > li a:focus::after {content:"";display:block; position:absolute; top:41%; right:1.5rem; border:solid #551f12;width:0.7rem;height:0.7rem;margin:0 0 0.1rem 0.9rem;border-width:0 0.2rem 0.2rem 0;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);} 
 	nav > ul.gnb > li > ul > li > ul {margin-bottom:1rem;}
 	nav > ul.gnb > li > ul > li > ul > li > a {display:block; position:relative; font-size:1.6rem;padding:0.3rem 4rem 0.3rem 1.5rem; color:white;}
@@ -150,10 +150,10 @@ footer .footer_wrap .f_link {width:100%; overflow:hidden;}
 	nav > ul.gnb > li > ul {margin-bottom:1rem;}
 	nav > ul > li.depth {position:relative; }
 	nav > ul > li.depth > a::after  {content:"";display:block; position:absolute; top:1.5rem; right:0.5rem; border:solid #aaa;width:1rem;height:1rem;margin:0 0 0.1rem 0.9rem;border-width:0 0.3rem 0.3rem 0;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);}
-	nav > ul > li.depth > ul > li a {display: block; position:relative; padding: 0.8rem 3rem 0.8rem 1rem;font-size: 1.8rem; font-weight: 600;color: black;}
+	nav > ul > li.depth > ul > li a {display: block; position:relative; padding: 0.8rem 3rem 0.8rem 3rem;font-size: 1.8rem; font-weight: 600;color: black;}
 
-	nav > ul.gnb > li > ul > li a:hover, nav > ul > li > ul > li a:focus {background:#EAB2A5; border-radius:2rem; color:#551f12; font-weight:700;}
-	nav > ul.gnb > li > ul > li a:hover::after, nav > ul > li > ul > li a:focus::after {content:"";display:block; position:absolute; top:41%; right:1.5rem; border:solid #551f12;width:0.7rem;height:0.7rem;margin:0 0 0.1rem 0.9rem;border-width:0 0.2rem 0.2rem 0;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);} 
+	nav > ul.gnb > li > ul > li a:hover, nav > ul > li > ul > li a:focus {background:#EAB2A5; border-radius:3rem; color:#551f12; font-weight:700;}
+	nav > ul.gnb > li > ul > li a:hover::after, nav > ul > li > ul > li a:focus::after {content:"";display:block; position:absolute; top:41%; right:3rem; border:solid #551f12;width:0.7rem;height:0.7rem;margin:0 0 0.1rem 0.9rem;border-width:0 0.2rem 0.2rem 0;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);} 
 
 
 	.utility .all_menu_btn {display:none}
