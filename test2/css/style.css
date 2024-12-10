@@ -104,6 +104,11 @@ select:focus {background-color: white; }
 }
 
 @media print {
+    @page {
+        size: A4; /* A4 크기로 지정 */
+        margin: 0; /* 여백 없음 */
+    } 
+    body {margin: 0;padding: 0;}
 	#header {display:none}
 	footer {display:none}
 	img {max-width: 100% !important}
