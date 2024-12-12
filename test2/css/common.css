@@ -9,7 +9,7 @@
 #header.action {position: fixed;top:0;}
 #header:after {content: '';clear: both;display: block}
 #header .navi {margin: 0 auto; position: relative}
-#header .header_top > h1 {padding:1.8rem 0 1.3rem 4rem; width:60%;}
+#header .header_top > h1 {padding:1.8rem 0 1.3rem 2rem; width:60%;}
 #header .header_top > h1 > a {background: url(../images/logo.svg) no-repeat; background-size:contain; display:block; width:41.2rem;height: 6.3rem; font-size:0;}
 #header .header_top > .m_menu {position: absolute;right: 0.8rem;top: 1.3rem;z-index: 5;color: black;display: block;display:none;}
 nav:after {content: '';clear: both;display: block}
@@ -49,7 +49,7 @@ nav:after {content: '';clear: both;display: block}
 
 
 /* Footer (디자인 미적용) */
-footer {background-color: #552012;color: #fff;position: relative; font-family:"Pretendard"; letter-spacing: -0.05rem; padding:2rem 0 4rem;}
+footer {background-color: #552012;color: #fff;position: relative; font-family:"Pretendard"; letter-spacing: -0.05rem; padding:2rem 0 2rem;}
 footer .footer_wrap {width:100%; max-width:140rem;margin:0 auto; overflow:hidden;}
 footer .footer_wrap .f_link {width:100%; overflow:hidden;}
 .f_link > .link_wrap li {float:left; position:relative;}
@@ -97,10 +97,15 @@ footer .footer_wrap .f_link {width:100%; overflow:hidden;}
 /*.contents_wrap {margin: 0 auto;position: relative;font-weight: 200;max-width:142rem;padding-left: 25rem;min-height:80rem}*/
 .webwach-logo > img {max-width:90.9rem;width:100%;}
 
+.error_page {width:100%; max-width:120rem; margin:10rem auto; background:#F8F8F8; border-radius:5rem; padding:10rem 0; text-align:center;}
+.error_page h1 {background: url(../images/logo_brown.svg) no-repeat center top; background-size:contain; display:block; width:100%;height:5.6rem; font-size:0;}
+.error_page p.title {font-size:5rem; font-weight:700; margin:4rem 0 0.3rem;}
+.error_page p.txt {font-size:2.4rem; }
+
 @media screen and (max-width: 1400px) {
-	nav > ul.gnb {padding:0 4rem;}
-	.section_wrap {padding:5rem 4rem;}
-	.footer_wrap {padding:0 4rem;}
+	nav > ul.gnb {padding:0 2rem;}
+	.section_wrap {padding:5rem 2rem;}
+	.footer_wrap {padding:0 2rem;}
 	.utility li.all_menu_btn {margin-right:0;}
 }
 
@@ -127,7 +132,7 @@ footer .footer_wrap .f_link {width:100%; overflow:hidden;}
 	#header > .navi > h1 {position: relative;width:auto; display:block; float:left; z-index: 4;top:unset; left:4rem;}
 	#header > .navi > h1 > a {margin-left:0;}
 	.utility {display:none;}
-	.m_util {position:absolute; top:2.5rem; right:4rem;}
+	.m_util {position:absolute; top:2.5rem; right:2rem;}
 	#header .header_top >.m_util > .m_menu {display:inline-block;vertical-align:middle; width:3rem; height:3rem; background:url(../images/icon/icon_m.svg) no-repeat center center; background-size:3rem 3rem;}
 	#header .header_top >.m_util > .m_menu.off {background:url(../images/icon/icon_close.svg) no-repeat center center; background-size:3rem;}
 	.m_util .btn_search {display:inline-block; vertical-align:middle; margin-right:2rem;width:3rem; height:3rem; background:url(../images/icon/icon_search.svg) no-repeat center center; background-size:3rem;}
@@ -167,6 +172,12 @@ footer .footer_wrap .f_link {width:100%; overflow:hidden;}
 
 	.f_link > .link_wrap {max-width:100%;}
 	.location {display:none;}
+
+	.error_page {border-radius:0; margin:0; padding:10rem 2rem; }
+	.error_page h1 {height:4rem;}
+	.error_page p.title {font-size:3rem;}
+	.error_page p.txt {font-size:1.8rem; }
+
 }
 
 @media screen and (max-width: 640px) {

@@ -2,11 +2,11 @@
 *, *::before, *::after { -webkit-box-sizing: border-box; box-sizing: border-box; word-break: keep-all; margin:0;padding:0;}
 html { overflow: hidden; overflow-y: auto; -webkit-box-sizing: border-box; box-sizing: border-box; font-size:10px;  }
 body { margin: 0; padding: 0; font-size: 1.6rem; line-height: 1.6; font-family:"SUITE","Pretendard","Arita","Dotum","sans-serif"; font-weight: 400; color: black; letter-spacing: -0.01em;width: 100%;max-width: 100%;overflow-x: hidden; box-sizing: border-box;}
-textarea {border:solid 0.1rem #d8d8d8;border-radius:1.5rem;width:100%;min-height:13.5rem;box-sizing:border-box;resize:none;padding:2rem;font-family:"SUITE","Pretendard","sans-serif"}
+textarea {border:solid 0.1rem #888;border-radius:0.5rem;width:100%;min-height:10rem;box-sizing:border-box;resize:none;padding:1rem;font-family:"SUITE","Pretendard","sans-serif"}
 *, *:before, *:after {-webkit-box-sizing: inherit;-moz-box-sizing: inherit;box-sizing: inherit}
 html {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;-ms-text-size-adjust:none; -webkit-text-size-adjust:none}
 a {text-decoration:none}
-audio[controls], canvas, video {display:inline-block; *display:inline; *zoom:1}
+audio[controls], canvas, video {display:inline-block; *display:inline; *zoom:1; max-width:100%;}
 audio:not([controls]) {display:none; height:0}
 label, input, button, a, span {/*line-height:1.6*/}
 select	{color:#333}
@@ -28,7 +28,8 @@ i {font-style:normal;}
 blockquote:before, blockquote:after, q:before, q:after {content:'' ;content:none}
 img {border:0; vertical-align:top; -ms-interpolation-mode:bicubic;max-width: 100%}
 a, span, p, em, label, dt, dd, li, strong {color:inherit;font-size:inherit;font-weight:inherit;font-family:inherit}
-strong, b {font-weight:500}
+strong {font-weight:800}
+b {font-weight:500}
 ::-webkit-input-placeholder {color:#555}
 :-moz-placeholder {color:#555}
 ::-moz-placeholder {color:#555}
@@ -54,7 +55,10 @@ input[type=number]{-moz-appearance:textfield;}
 input[type=password]{-webkit-text-security:disc!important;}
 /* input custom */
 input[type="checkbox"],input[type="radio"]{position:absolute;opacity:0;z-index:-1;width:0;}
+input.input2 {border:1px solid #666; border-radius:0.5rem; vertical-align: middle;}
 .checkbox, .radio {display:inline-block; padding-top:0.4rem; padding-left:3.5rem; margin-right:3rem; font-size:1.6rem;font-weight:300; }
+.radio.square{display:inline-block; padding-top:0; padding-left:3.5rem; margin-right:0;margin-bottom:0.5rem; font-size:1.6rem;color:#999; font-weight:400; }
+label.radio.square span {white-space:nowrap; vertical-align:top; width:auto; padding:0.4rem 2rem 0.3rem; text-align:center; height:3.5rem; border-radius: 0.5rem; font-size: 1.6rem; border:2px solid #888; min-width: 11rem;}
 .checkbox:last-child, .radio:last-child {margin-right:0;}
 label.checkbox span,label.radio span{width:2rem;height:2rem;display:inline-block;background:white; border:1px solid #949DB4;position:relative;cursor:pointer; margin:-0.4rem 0.5rem 0 -3.2rem;}
 label.radio span {border:1px solid #ddd;}
@@ -66,6 +70,8 @@ label.radio span{border-radius:50%}
 input:checked + label.checkbox span::after{content:'';position:absolute;top:0;left:0;width: 100%;height:100%; border-radius:0.3rem;background:#ddd url(../images/icon/icon_check.svg) no-repeat center center; background-size:1.2rem 0.8rem;}
 input:checked + label.checkbox.large span::after{border-radius:0.5rem;background:#03369E url(../images/icon/icon_check.svg) no-repeat center center; background-size:1.2rem 0.8rem;}
 input:checked + label.radio span::after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background-color:#03369E; border-radius:0.2rem;width:0.6rem;height:0.6rem;border-radius:50%}
+input:checked + label.radio.square span{border:2px solid #03369E; color:#03369E;}
+input:checked + label.radio.square span::after{display:none;}
 input:checked.radio span {border:1px solid #4B5767;}
 input:focus + label span{outline:2px solid #005fcc;}
 .checkbox:focus,.radio:focus{outline:2px solid #005fcc;border-radius:3px;}

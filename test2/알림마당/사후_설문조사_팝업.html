@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>사후 설문조사 &lt; 알림마당 &lt; 경기도 교육청 북부 유아 체험 교육원</title>
+<link rel="shortcut icon" href="../images/favicon.ico">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no, address=no, email=no">
+<meta name="description" content="경기도 교육청 북부 유아 체험 교육원시스템">
+<meta name="keywords" content="경기도 교육청 북부 유아 체험 교육원시스템">
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
+</script>
+<![endif]-->
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<link rel="stylesheet" href="../css/common.css" type="text/css">
+<link rel="stylesheet" href="../css/main.css" type="text/css">
+<link rel="stylesheet" href="../css/sub.css" type="text/css">
+<link rel="stylesheet" href="../css/fontface.css" type="text/css">
+<link rel="stylesheet" href="../css/swiper.min.css">
+<link rel="stylesheet" href="../css/jquery-ui.css">
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/sub.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script src="../js/jquery.ui.datepicker.js"></script>
+<body>
+
+<!-- textarea 글자수 체크 script -->
+<script>
+    function fnChkByte(obj, maxByte, byteInfoId) {
+        var str = obj.value;
+        var str_len = str.length;
+
+        var rbyte = 0; // 실제 바이트 수
+        var rlen = 0; // 잘라낼 문자열의 길이
+        var one_char = ""; // 한 글자씩 추출
+        var str2 = ""; // 잘라낸 최종 문자열
+
+        for (var i = 0; i < str_len; i++) {
+            one_char = str.charAt(i);
+            if (escape(one_char).length > 4) {
+                rbyte += 2; // 한글 2 Byte
+            } else {
+                rbyte++; // 영문 등 나머지 1 Byte
+            }
+
+            if (rbyte <= maxByte) {
+                rlen = i + 1; // 제한 바이트 내 문자열의 길이
+            }
+        }
+
+        if (rbyte > maxByte) {
+            alert("한글 " + maxByte / 2 + "자 / 영문 " + maxByte + "자를 초과 입력할 수 없습니다.");
+            str2 = str.substr(0, rlen); // 문자열 자르기
+            obj.value = str2; // 잘라낸 문자열로 설정
+            fnChkByte(obj, maxByte, byteInfoId); // 재귀 호출로 바이트 갱신
+        } else {
+            document.getElementById(byteInfoId).innerText = rbyte; // 해당 span에 바이트 표시
+        }
+    }
+</script>
+
+
+<!-- 만족도 조사 팝업 -->
+<div id="" class="popup_wrap" tabindex="0" style="display:block;">
+    <div class="popup_contents maxw930">
+        <h5>사후 설문 조사</h5>
+        <a href="#" class="popup_close"><span class="hidden">닫기</span></a>
+        
+        <section>
+            <h6>체험 프로그램에 대한 사후 설문 조사</h6>
+            <h5 class="title mt0">신청정보</h5>
+            <div class="board t_left responsive break_all">
+                <p class="text_table_right caution">* 표시는 필수 항목입니다.</p>
+                <table>
+                    <caption>신청정보</caption>
+                    <colgroup>
+                        <col style="width: 25%">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><label for="mbrid">기관명/성명 <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td><input type="text" class="maxw440m100" name="mbrid" id="mbrid" title="기관명/성명 입력" value=""></td>
+                        </tr>
+                        <tr>
+                            <th>체험 날짜 <i class="required" aria-label="필수입력사항">*</i></th>
+                            <td>
+                                <div class="calendar-box">
+                                    <input type="text" class="datepicker" title="체험 날짜를 입력해 주세요. 입력예시) 년도-월-일" placeholder="2024-08-01"/>
+                                </div>
+                                <script type="text/javascript">
+                                    $(".datepicker").datepicker({
+                                        minDate: "today"
+                                    });
+                                </script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="">유아 연령  <i class="required" aria-label="필수입력사항">*</i></label></th>
+                            <td>
+                                <select class="selectbox" name="" id="" title="유아 연령 선택" onchange="">
+                                    <option selected="selected" value="">선택</option>
+                                    
+                                </select> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="board t_center break_all mt50 b_black">
+                <table>
+                    <caption>주소검색 결과 도로명/지번, 주소, 우편번호 결과 내용의 테이블</caption>
+                    <colgroup>
+                        <col style="width: 20%">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">번호</th>
+                            <th scope="col">문항</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- 1 -->
+                        <tr>
+                            <td><span class="no">1</span></td>
+                            <td class="relative t_left">
+                                <p class="mb10">체험교육원에서의 놀이 경험 후 유치원의 놀이로 연계(연결), 확장, 심화되는 부분이 있나요? <i class="required" aria-label="필수입력사항">*</i></p>
+                                <textarea id="textarea1" onKeyUp="javascript:fnChkByte(this, '1000', 'byteInfo1')"></textarea>
+                                <div class="byte_area">
+                                    <span id="byteInfo1">0</span> / 1,000
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- 2 -->
+                        <tr>
+                            <td><span class="no">2</span></td>
+                            <td class="relative t_left">
+                                <p class="mb10">체험교육원에서의 놀이 경험이 유아의 놀이를 다양하고 풍부하게 만드는 부분이 있나요?<br/>
+                                    <span class="c_999">(놀이의 주제, 재료, 방법, 내용 등)</span>  <i class="required" aria-label="필수입력사항">*</i></p>
+                                <textarea id="textarea2" onKeyUp="javascript:fnChkByte(this, '1000', 'byteInfo2')"></textarea>
+                                <div class="byte_area">
+                                    <span id="byteInfo2">0</span> / 1,000
+                                </div>
+                            </td>
+                        </tr>
+                        <!-- 3 -->
+                        <tr>
+                            <td><span class="no">3</span></td>
+                            <td class="relative t_left">
+                                <p class="mb10">체험교육원에서의 놀이 경험 전과 후를 비교할 때 긍정적으로 달라진 부분이 있나요? <br/>
+                                    <span class="c_999">(놀이 방법, 놀이 기술, 놀이 태도 등 달라진 부분을 적어주세요.)</span> <i class="required" aria-label="필수입력사항">*</i></p>
+                                <textarea id="textarea3" onKeyUp="javascript:fnChkByte(this, '1000', 'byteInfo3')"></textarea>
+                                <div class="byte_area">
+                                    <span id="byteInfo3">0</span> / 1,000
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="btn_group mt40">
+                <a href="#" class="btn h60">제출하기</a>
+            </div>
+        </section>
+    </div>
+</div>
+<!--// 만족도 조사 팝업 -->
+
+
+
+
+</body>

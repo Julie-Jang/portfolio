@@ -128,7 +128,7 @@ h5.main_title span {display:block; position:absolute; top:-2.5rem; right:-7rem;w
     .slide_show.main_visual .swiper_wrap .swiper_slide p,
     .slide_show .visual_pagination-wrap,
     .main_wrap,
-    .family_site .slide_show {padding:0 4rem;}
+    .family_site .slide_show {padding:0 2rem;}
     .second_banner .benners {max-width:125rem;}
     .second_banner .weather {max-width:15rem;}
     .second_banner .benners li a {width:14rem; height:14rem; font-size:1.8rem;padding-top:8.5rem; }
