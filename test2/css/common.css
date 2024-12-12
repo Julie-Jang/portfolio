@@ -96,6 +96,7 @@ footer .footer_wrap .f_link {width:100%; overflow:hidden;}
 .contents_wrap {position:relative;-webkit-flex: 3; -ms-flex: 3; flex: 3; width:100%; max-width:140rem;padding:0 0 20rem 0; min-height:100rem;overflow:hidden;}
 /*.contents_wrap {margin: 0 auto;position: relative;font-weight: 200;max-width:142rem;padding-left: 25rem;min-height:80rem}*/
 .webwach-logo > img {max-width:90.9rem;width:100%;}
+.contents_wrap.maxw1060 {overflow:visible;}
 
 .error_page {width:100%; max-width:120rem; margin:10rem auto; background:#F8F8F8; border-radius:5rem; padding:10rem 0; text-align:center;}
 .error_page h1 {background: url(../images/logo_brown.svg) no-repeat center top; background-size:contain; display:block; width:100%;height:5.6rem; font-size:0;}
@@ -177,6 +178,7 @@ footer .footer_wrap .f_link {width:100%; overflow:hidden;}
 	.error_page h1 {height:4rem;}
 	.error_page p.title {font-size:3rem;}
 	.error_page p.txt {font-size:1.8rem; }
+	.f_link > .link_wrap li a {font-size: 1.6rem;}
 
 }
 
@@ -186,7 +188,9 @@ footer .footer_wrap .f_link {width:100%; overflow:hidden;}
 
 	/* 디자인 미적용 */
 	.f_link > .link_wrap {text-align:center;}
-	.f_link > .link_wrap li {float:unset; display:inline-block; width:41%;}
+	.f_link > .link_wrap li {float:unset; display:inline-block; width:auto;margin:0 2rem;}
+	.f_link > .link_wrap li + li {margin:0 2rem;}
 	.f_link > .link_wrap li:not(:last-child)::after {display:none;}
+	.f_link > .link_wrap li a {font-size: 1.4rem;}
 
 }

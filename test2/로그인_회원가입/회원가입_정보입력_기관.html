@@ -270,13 +270,27 @@
                     <tr>
 						<th scope="row">고유번호증 <i class="required" aria-label="필수입력사항">*</i></label></th>
 						<td>
-							<div class="col_cell">
+							<!--<div class="col_cell">
 								<input type="text" class="maxw120" name="" id="" title="고유번호증 앞자리" value="" maxlength="">
 								<em class="space">-</em>
 								<input type="text" class="maxw120" name="" id="" title="고유번호증 중간자리" value="" maxlength="">
 								<em class="space">-</em>
 								<input type="text" class="maxw120" name="" id="" title="고유번호증 뒷자리" value="" maxlength="">
-						    </div>
+							</div>-->
+							<!-- 파일 찾기 영역 추가 -->
+							<div class="form-file" id="form-file-row">
+								<div class="file-input-container">
+									<input type="text" id="fileValue1" title="썸네일(첨부파일)" placeholder="선택된 파일 없음" disabled="">
+									<div class="flie-box">
+										<span class="btn line gray h35">파일선택</span>
+										<input type="file" onchange="document.getElementById('fileValue1').value=this.value;" title="썸네일(첨부파일)을 선택해 주세요.">
+									</div>
+									<!-- 추가 제거가 필요한 경우 -->
+									<button class="btn_plus" type="button"><span class="hidden">추가</span></button>
+									<button class="btn_minus" type="button"><span class="hidden">제거</span></button>
+								</div>
+							</div>
+							<p class="c_999 mt10">abc.jpg</p>
 						</td>
 					</tr>
 					<tr>
