@@ -801,7 +801,7 @@ i.count.not {border:0; background:#666;  color:white;line-height:1.8;  }
 	.member_wrap .member_row {padding:3rem 2rem;}
 	.member_wrap .member_row li label ,
 	.member_wrap .member_row li label + input {width:100%;}
-	.btn.h60 {min-width:auto;}
+	.btn.h60 {min-width:auto; padding:2.1rem 3rem 1.9rem;}
 	.program_wrap .calendar .case.f_right li {margin-left:2rem;font-size:1.6rem; }
 
 	ul.program_wrap {gap:1rem;}

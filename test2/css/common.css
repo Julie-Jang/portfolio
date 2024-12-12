@@ -98,7 +98,7 @@ footer .footer_wrap .f_link {width:100%; overflow:hidden;}
 .webwach-logo > img {max-width:90.9rem;width:100%;}
 .contents_wrap.maxw1060 {overflow:visible;}
 
-.error_page {width:100%; max-width:120rem; margin:10rem auto; background:#F8F8F8; border-radius:5rem; padding:10rem 0; text-align:center;}
+.error_page {width:100%; max-width:120rem; margin:10rem auto; border:3px solid #002F8B; box-shadow:5px 4px 9px 3px #ccc; border-radius:2.5rem; padding:10rem 0; text-align:center;}
 .error_page h1 {background: url(../images/logo_brown.svg) no-repeat center top; background-size:contain; display:block; width:100%;height:5.6rem; font-size:0;}
 .error_page p.title {font-size:5rem; font-weight:700; margin:4rem 0 0.3rem;}
 .error_page p.txt {font-size:2.4rem; }
@@ -174,7 +174,7 @@ footer .footer_wrap .f_link {width:100%; overflow:hidden;}
 	.f_link > .link_wrap {max-width:100%;}
 	.location {display:none;}
 
-	.error_page {border-radius:0; margin:0; padding:10rem 2rem; }
+	.error_page {margin:2rem; padding:10rem 2rem; width:auto; max-width:unset; }
 	.error_page h1 {height:4rem;}
 	.error_page p.title {font-size:3rem;}
 	.error_page p.txt {font-size:1.8rem; }
