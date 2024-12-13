@@ -1,0 +1,128 @@
+@charset "UTF-8";
+.service-section { margin-top: 29px; }
+.service-section > div + div { margin-top: 20px; }
+
+/* 인포 그래픽 박스 */
+.service-info-box { position: relative; padding: 30px; padding-bottom: 30px; border: 1px solid #e3e3e3; }
+.service-info-box .introduction { background: url("/image/voucher/bg_service_info_box.png") no-repeat center center; padding: 0; position: absolute; text-align: center; top: 0px; left: 50%; width: 340px; height: 340px; margin-left: -170px; z-index: 99; }
+.service-info-box .introduction img { margin-top: 70px; display: inline-block; zoom: 1; *display: inline; }
+
+@media \0screen{
+	.service-info-box .introduction img{
+		 margin-top: 60px;
+	}
+}
+
+.service-info-box .introduction h2 { margin-top: 14px; font-size: 16px; color: #333333; font-weight: 700; }
+.service-info-box > div { float: left; position: relative; width: 348px; box-sizing: border-box; display: inline-block; zoom: 1; *display: inline; }
+.service-info-box > div > * { display: block; }
+.service-info-box > div h3 { font-size: 18px; font-weight: 800; color: #000000; }
+.service-info-box > div h3 + * { margin-top: 20px; }
+.service-info-box > div ul ~ * { margin-top: 15px; }
+.service-info-box .basic-paragraph { /*font-weight: 700;*/ color: #555; font-size:13px !important;}
+.service-info-box .item-list:after { display: table; clear: both; content: " "; }
+.service-info-box .item-list li { display: inline-block; zoom: 1; *display: inline; }
+.service-info-box .item-list li + li { margin-left: 6px; }
+.service-info-box .item-list .item-box { width: 80px; height: 80px; box-sizing: border-box; background: url("/image/voucher/bg_target_box.png") no-repeat center center; font-size: 18px; font-weight: 800; color: #fff; display: table-cell; vertical-align: middle; text-align: center; }
+.service-info-box .item-list .item-box .small { font-size: 16px; color: #fff; font-weight: 800; }
+.service-info-box .benefit, .service-info-box .usage { text-align: right; }
+.service-info-box .online-applying { line-height: 20px; }
+.service-info-box .online-applying > * { vertical-align: middle; }
+.service-info-box .online-applying strong { font-weight: 800; }
+.service-info-box .online-applying .card-company { display: inline-block; zoom: 1; *display: inline; }
+.service-info-box .online-applying .card-company li { display: inline-block; zoom: 1; *display: inline; }
+.service-info-box .online-applying .card-company li a { padding-right: 20px; background: url("/image/voucher/ico_link_arrow.png") no-repeat right 3px; }
+.service-info-box .online-applying .card-company li + li { margin-left: 9px; }
+.service-info-box .online-applying .card-company li.em a { color: #eb6b56; font-weight: 800; background: url("/image/voucher/ico_link_arrow3.png") no-repeat right 3px; }
+
+/* 자세히보기 */
+.detail-view-box { padding: 10px; border: 1px solid #e3e3e3; padding-right: 0; background: #f7f7f7; height: 80px; }
+.detail-view-box:after { display: table; clear: both; content: " "; }
+.detail-view-box > * { vertical-align: top; float: left; }
+.detail-view-box h3 { margin-left: 20px; margin-top: 8px; width: 159px; height: 80px; box-sizing: border-box; display: inline-block; zoom: 1; *display: inline; }
+.detail-view-box ul { height: 100%; box-sizing: border-box; display: inline-block; zoom: 1; *display: inline; }
+.detail-view-box ul:after { display: table; clear: both; content: " "; }
+.detail-view-box ul li { position: relative; width: 284px; float: left; height: 100%; box-sizing: border-box; border-left: 1px solid #e3e3e3; padding: 7px 20px; background: url("/image/voucher/ico_link_arrow2.png") no-repeat 230px center; }
+.detail-view-box ul li a { width: 100%; height: 100%; box-sizing: border-box; }
+.detail-view-box ul li .description { position: absolute; top: 43px; display: block; font-weight: 700; }
+
+.usage-search-box h3 { width: 181px; }
+.usage-search-box > * { float: left; }
+.usage-search-box:after { display: table; clear: both; content: " "; }
+.usage-search-box .usage-search-list:after { display: table; clear: both; content: " "; }
+.usage-search-box .usage-search-list li { margin-left: 10px; float: left; position: relative; text-align: center; width: 183px; height: 150px; border: 1px solid #e3e3e3; box-sizing: border-box; }
+.usage-search-box .usage-search-list li a { displau: block; padding: 20px; width: 100%; height: 100%; box-sizing: border-box; }
+.usage-search-box .usage-search-list li strong { left: 20px; bottom: 20px; position: absolute; display: block; text-align: left; font-weight: 700; }
+.usage-search-box .usage-search-list li strong:after { position: relative; top: 1px; margin-left: 5px; vertical-align: middle; content: url("/image/voucher/ico_link_arrow3.png"); }
+.usage-search-box .usage-search-list li .bokjoro, .usage-search-box .usage-search-list li .insurance { margin-top: 12px; }
+
+.paragraph-tip { display: block; font-size: 12px; color: #555; }
+
+/*# sourceMappingURL=voucher.css.map */
+
+
+
+
+
+/************* Voucher New css Start ****************/
+.sub-heading { margin-top: 50px; margin-bottom:22px; font-weight: bold; font-size: 17px; color: #333; padding-left: 11px; background: url(../image/voucher/bullet_sub_heading.png) no-repeat left center;}
+
+
+#voucher {margin-top:30px;}
+#voucher .voucher_top_box {background:#F9F9F9; padding:30px; margin-bottom:30px;}
+#voucher .voucher_top_box .title_line {position:relative; font-size:18px; color:black; font-weight:800; margin-bottom:30px;}
+#voucher .voucher_top_box .title_line::after {content: ''; display:block; position:absolute; bottom:-10px; left:0; width:25px; height:3px; background:#3252C8;}
+#voucher .info_list > li {position:relative; border:1px solid #ddd; padding:30px; margin-bottom:20px; min-height:153px;}
+#voucher h3 {font-size:18px;color:black; font-weight:800; line-height:40px; margin-bottom:20px;}
+#voucher .info_list > li h3 em {display:inline-block; width:40px; height:40px; text-align:center; font-style: normal; background:#3252C8; border-radius:100%; color:white; margin-right:15px;}
+#voucher .dot_list {}
+#voucher .dot_list > li {width:100%; max-width:500px;  margin-bottom: 10px; position: relative; text-align: left;padding-left:10px;}
+#voucher .dot_list.w100 > li {max-width:100%;}
+#voucher .dot_list > li::before {content: '';display: block;position: absolute;left: 0;top:7px;width:2px;height:2px;border-radius: 100%;background: black;}
+#voucher .dot_list > li p, #voucher .dot_list > li ul {margin:10px 0;}
+#voucher .dot_list .w50 {overflow:hidden;}
+#voucher .dot_list .w50 > li {float:left; width:50%;margin-bottom:10px;}
+#voucher .dot_list a {vertical-align: middle;}
+#voucher .img_area {position:absolute; top:30px; right:30px;}
+#voucher .img_area li+li {margin-top:10px;}
+#voucher .point {color:#3252C8; font-weight:bold;}
+#voucher .help_desks {margin-top:40px; color:black; font-weight:600; max-width:100% !important;}
+#voucher li.help_desks p {margin:15px 0;}
+#voucher li.help_desks p a + a {display:inline-block; margin-left:5px;}
+#voucher li.help_desks > ul {margin-top:20px;}
+#voucher li.help_desks > ul > li span {display:inline-block; width:calc(100% - 200px); margin-left:20px;font-weight:normal;}
+#voucher li.help_desks > ul > li {margin-bottom:20px;}
+#voucher .mt0 {margin-top:0 !important;}
+#voucher .mt10 {margin-top:10px !important;}
+#voucher .mt20 {margin-top:20px !important;}
+#voucher .mr10 {margin-right:10px !important;}
+#voucher .ml10 {margin-left:10px !important;}
+#voucher .ml20 {margin-left:20px !important;}
+#voucher .pl106 {padding-left:106px !important;}
+#voucher .hidden,#voucher caption,.popup_wrap .hidden  {font-size:0; width:0; height:0; text-indent: -99999px; position:absolute; top:0; left:0;}
+
+#voucher .dl_list {border-top:2px solid #3252C8; overflow:hidden;border-bottom:1px solid #E3E3E3 }
+#voucher .dl_list th {padding:30px 20px; border-bottom:2px solid #9AADF6; text-align:left; font-size:15px; font-weight:700;}
+#voucher .dl_list tr:last-child th ,#voucher .dl_list tr:last-child td{border-bottom:0;}
+#voucher .dl_list td {padding:30px 20px; border-bottom:1px solid #E3E3E3}
+#voucher div.dl_list {padding:30px 20px;}
+#voucher .language {text-align:right; margin:40px 0 20px;}
+
+.popup_wrap {display: none; position: fixed;left: 0%;top: 0%;z-index:10;background-color:rgba(0,0,0,0.3) ;width: 100%; height: calc(100vh - 1px); }
+.popup_wrap > div {max-height:95%; overflow:hidden; padding-bottom:40px;}
+.popup_wrap .popup_contents {width:900px; height:auto; position: fixed;left: 50%;top: 50%;z-index: 10; background-color: #fff; box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.26); transform: translate(calc(-50.2% + 0.5px), calc(-50.2% + 0.5px));}
+.popup_wrap section {backface-visibility: hidden; height:100%; padding:0 30px; overflow-y:auto;max-height:70vh;}
+.popup_wrap .popup_contents > h6 {background:#3252C8; color:white;padding:20px 50px 20px 30px; font-size:1.7rem; font-weight:500;}
+.popup_close {position: absolute;top:15px; right:30px;display:block ;width:40px;height:40px;color: #fff; }
+.popup_close::before {content: '';  position: absolute; right:50%; top: 0; width:1px; height:40px; transform: rotate(45deg); background-color: white;}
+.popup_close::after {content: '';  position: absolute; right:50%; top: 0; width:1px; height:40px; transform: rotate(135deg); background-color: white;}
+
+
+
+
+
+
+
+
+
+

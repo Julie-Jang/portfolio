@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+*{
+	
+	font-family: 'Nanum Gothic';
+	font-size: 14px;
+	color: #333333;
+}
+
+body,
+a, h1, h2, h3, h4, h5, h6, ul, li, dl, dd, dt, ol, p, input, select, textarea, fieldset{
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+image{
+	max-width: 100%;
+	border: 0;
+}
+
+ul, dl, ol{
+	list-style: none;
+}
+
+fieldset{
+	border: 0;
+}
+
+label{
+	cursor: pointer;
+}
+
+table{
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+	
+table td{
+	letter-spacing: -0.3px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	box-sizing: border-box;
+}
+
+
+/* float clear*/
+.clear-both:after{
+	display: table;
+	clear: both;
+	content: " ";
+}
+
+button{
+	margin: 0;
+	padding: 2px;	
+	cursor: pointer;
+}
+
+/* button - IE 브라우저 계열 button */
+
+button,
+button:active{
+	background: none;
+	border: 0;
+}
+
+button span{
+    position: relative;
+}
+
+/* 웹 접근성 IR 기법 컨텐츠 처리 */
+.ir-content{
+	position: absolute;
+	left: -80000%;
+	top: -80000%;
+}
+
+
+.basic-select,
+.basic-input
+{
+	padding: 6px 0;
+	border: 1px solid #dddddd;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-weight : 700;
+	color: #555555;
+}
+
+.basic-select{
+	padding-left: 6px;	
+}
+.basic-input{
+	padding-left: 10px;	
+}
+
+
+/* 날짜 선택 모듈 */
+.date-picker-module{
+	line-height: 30px;
+}
+.date-picker-module > *{
+	float: left;
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 5px;
+}
+.date-picker-module input[type='text']{
+	text-align: center;	
+}
+.date-picker-module > button{
+	position: relative;
+	top: 2px;
+}
+
+/* buitton */
+
+.basic-button-1,
+.basic-button-2,
+.basic-button-3
+{
+	vertical-align: middle;
+	display: inline-block;
+	font-weight: 800;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 3px;
+	height: 30px;
+	line-height: 29px;
+	padding: 0 22px;
+	box-sizing: border-box; 
+}
+.basic-button-1{
+	background: #eb6b57;
+}
+.basic-button-2{
+	background: #666666;
+}
+
+.basic-button-3{
+	color: #333;
+	background: #f7f7f7;
+	border: 1px solid #666666;
+}
+
+/* 관리자용 편집 버튼 */
+#viewModeBtnDiv.button-container,
+#editModeBtnDiv.button-container
+{
+	position: absolute;
+	top: 0;
+	right: 0;	
+	text-align: right;
+}
+
+.btn-admin-type{
+	vertical-align: middle;
+	display: inline-block;
+	font-weight: 800;
+	font-size: 14px;
+	color: #FFF;
+	border-radius: 3px;
+	height: 30px;
+	line-height: 28px;
+	padding: 0px 22px;
+	box-sizing: border-box;
+	background: #EB6B57 none repeat scroll 0% 0%;	
+}
